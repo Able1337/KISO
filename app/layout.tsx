@@ -6,6 +6,7 @@ const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin', 'cyr
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kiso-it-exam-lab.andreyouou.chatgpt.site'),
   title: 'Kiso — подготовка к ITPEC и IPA',
   description: 'Интерактивный тренажёр для экзаменов IP и FE систем ITPEC и IPA.',
   openGraph: {
