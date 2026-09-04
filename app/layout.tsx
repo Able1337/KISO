@@ -6,19 +6,19 @@ const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin', 'cyr
 const geistMono = Geist_Mono({ variable: '--font-geist-mono', subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kiso-it-exam-lab.andreyouou.chatgpt.site'),
+  metadataBase: new URL('https://able1337.github.io/KISO/'),
   title: 'Kiso — подготовка к ITPEC и IPA',
   description: 'Интерактивный тренажёр для экзаменов IP и FE систем ITPEC и IPA.',
   openGraph: {
     title: 'Kiso — ITPEC & IPA Exam Lab',
     description: 'Подготовка к экзаменам IP и FE в режимах обучения, пробного экзамена и экзамена.',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Kiso — ITPEC & IPA Exam Lab' }],
+    images: [{ url: '/KISO/og.png', width: 1200, height: 630, alt: 'Kiso — ITPEC & IPA Exam Lab' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Kiso — ITPEC & IPA Exam Lab',
     description: 'Интерактивная подготовка к IP и FE.',
-    images: ['/og.png'],
+    images: ['/KISO/og.png'],
   },
 };
 
