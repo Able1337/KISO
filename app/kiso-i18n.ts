@@ -9,7 +9,7 @@ export const uiCopy = {
     learn: 'Обучение', learnDesc: 'Ответ и учебный разбор появляются сразу', mock: 'Пробный экзамен', mockDesc: 'Без таймера и подсказок, итог в конце', exam: 'Экзамен', examDesc: 'С таймером, без подсказок, итог в конце',
     session: 'Ваша сессия', verified: 'Проверенный формат', localProgress: 'Локальный прогресс', answers: 'ответов', correctShort: 'верных', examsByYear: 'Экзамены по годам', attempts: 'попыток', best: 'лучший', notTaken: 'ещё не пройден', passed: 'Успешно', available: 'проверочных вопросов', start: 'Начать сессию',
     question: 'Вопрос', of: 'из', questionLanguage: 'Язык вопроса', original: 'Оригинал', russian: 'Русский', interface: 'Интерфейс', exit: 'Выйти', next: 'Дальше', finishA: 'Завершить A', results: 'К результату',
-    correct: 'Верно', wrong: 'Пока неверно', quickReason: 'Короткий ответ', learnTopic: 'Изучить тему подробно', principle: 'Принцип', method: 'Как решать', example: 'Разобранный пример', pitfall: 'Типичная ошибка', remember: 'Запомнить',
+    correct: 'Верно', wrong: 'Пока неверно', quickReason: 'Короткий ответ', learnTopic: 'Изучить тему подробно', searchFor: 'Тема для поиска', principle: 'Принцип', method: 'Как решать', example: 'Разобранный пример', pitfall: 'Типичная ошибка', remember: 'Запомнить',
     partDone: 'Часть A завершена', breakText: 'Перед частью B можно сделать перерыв. Ответы части A сохранены и изменить их уже нельзя.', officialBreak: 'Официальный максимум — 10 минут.', organizerBreak: 'ITPEC не задаёт единую длительность перерыва: следуйте правилам организатора.', breakLeft: 'Осталось перерыва', untimedBreak: 'Пауза без таймера', startB: 'Начать часть B',
     sessionDone: 'Сессия завершена', examPassed: 'Экзамен пройден', thresholdMissed: 'Порог не достигнут', learnDone: 'Вы разобрали ответы. Повторите темы с низким результатом после короткого перерыва.', ipRule: 'В MVP успешным считается результат от 60%. Официальная оценка IP дополнительно требует порога по каждой области.', feRule: 'Для успешного FE нужно не менее 60% отдельно в каждой части',
     fullReview: 'Полный разбор', reviewTitle: 'Что было отвечено и где ошибка', errors: 'ошибок', noAnswer: 'нет ответа', error: 'ошибка', yourAnswer: 'Ваш ответ', correctAnswer: 'Правильный ответ', answerMissing: 'Ответ не выбран', back: 'К настройке', retry: 'Пройти ещё раз', technology: 'Технологии', management: 'Управление', strategy: 'Стратегия', source: 'Учебная адаптация',
@@ -20,7 +20,7 @@ export const uiCopy = {
     learn: 'Learn', learnDesc: 'Answer and lesson appear immediately', mock: 'Mock exam', mockDesc: 'No timer or hints; results at the end', exam: 'Exam', examDesc: 'Timed, no hints; results at the end',
     session: 'Your session', verified: 'Verified format', localProgress: 'Local progress', answers: 'answers', correctShort: 'correct', examsByYear: 'Exams by year', attempts: 'attempts', best: 'best', notTaken: 'not attempted', passed: 'Passed', available: 'practice questions', start: 'Start session',
     question: 'Question', of: 'of', questionLanguage: 'Question language', original: 'Original', russian: 'Russian', interface: 'Interface', exit: 'Exit', next: 'Next', finishA: 'Finish A', results: 'View results',
-    correct: 'Correct', wrong: 'Not quite', quickReason: 'Short answer', learnTopic: 'Study the topic', principle: 'Principle', method: 'How to solve', example: 'Worked example', pitfall: 'Common mistake', remember: 'Remember',
+    correct: 'Correct', wrong: 'Not quite', quickReason: 'Short answer', learnTopic: 'Study the topic', searchFor: 'Search topic', principle: 'Principle', method: 'How to solve', example: 'Worked example', pitfall: 'Common mistake', remember: 'Remember',
     partDone: 'Subject A completed', breakText: 'You may take a break before Subject B. Subject A answers are saved and cannot be changed.', officialBreak: 'Official maximum: 10 minutes.', organizerBreak: 'ITPEC does not define one common break duration; follow your local organizer.', breakLeft: 'Break remaining', untimedBreak: 'Untimed break', startB: 'Start Subject B',
     sessionDone: 'Session complete', examPassed: 'Exam passed', thresholdMissed: 'Threshold not reached', learnDone: 'You reviewed the answers. Revisit weaker topics after a short break.', ipRule: 'In this MVP, 60% is treated as a pass. Official IP scoring also applies a threshold to every field.', feRule: 'To pass FE, score at least 60% in each subject',
     fullReview: 'Full review', reviewTitle: 'Your answers and mistakes', errors: 'errors', noAnswer: 'unanswered', error: 'incorrect', yourAnswer: 'Your answer', correctAnswer: 'Correct answer', answerMissing: 'No answer selected', back: 'Back to setup', retry: 'Try again', technology: 'Technology', management: 'Management', strategy: 'Strategy', source: 'Learning adaptation',
@@ -31,7 +31,7 @@ export const uiCopy = {
     learn: '学習', learnDesc: '解答後すぐに教材を表示', mock: '模擬試験', mockDesc: '時間制限・ヒントなし、最後に結果表示', exam: '試験', examDesc: '時間制限あり、ヒントなし、最後に結果表示',
     session: 'セッション', verified: '確認済みの形式', localProgress: '端末内の進捗', answers: '解答', correctShort: '正解', examsByYear: '年度別の結果', attempts: '回', best: '最高', notTaken: '未受験', passed: '合格', available: '問の練習問題', start: '開始',
     question: '問題', of: '/', questionLanguage: '問題の言語', original: '原文', russian: 'ロシア語', interface: '画面言語', exit: '終了', next: '次へ', finishA: '科目Aを終了', results: '結果を見る',
-    correct: '正解', wrong: '不正解', quickReason: '要点', learnTopic: '詳しく学ぶ', principle: '原理', method: '解き方', example: '例題', pitfall: 'よくある誤り', remember: '覚えること',
+    correct: '正解', wrong: '不正解', quickReason: '要点', learnTopic: '詳しく学ぶ', searchFor: '検索するテーマ', principle: '原理', method: '解き方', example: '例題', pitfall: 'よくある誤り', remember: '覚えること',
     partDone: '科目Aが終了しました', breakText: '科目Bの前に休憩できます。科目Aの解答は保存され、変更できません。', officialBreak: '公式の上限は10分です。', organizerBreak: 'ITPEC共通仕様では休憩時間が統一されていません。実施機関の案内に従ってください。', breakLeft: '残り休憩時間', untimedBreak: '時間制限なし', startB: '科目Bを開始',
     sessionDone: '学習完了', examPassed: '合格', thresholdMissed: '基準未達', learnDone: '解答を復習しました。苦手分野をもう一度確認しましょう。', ipRule: 'このMVPでは60%以上を合格とします。実際のIP試験では分野別の基準もあります。', feRule: 'FE合格には科目A・Bの両方で60%以上が必要です',
     fullReview: '全問レビュー', reviewTitle: '解答と間違いを確認', errors: '問不正解', noAnswer: '未回答', error: '不正解', yourAnswer: 'あなたの解答', correctAnswer: '正解', answerMissing: '未回答', back: '設定へ戻る', retry: 'もう一度', technology: 'テクノロジ', management: 'マネジメント', strategy: 'ストラテジ', source: '学習用アレンジ',
@@ -40,6 +40,20 @@ export const uiCopy = {
 
 export const topicLabels: Record<string, Record<UiLanguage, string>> = {
   'Логика': { ru: 'Логика', en: 'Logic', ja: '論理演算' }, 'Системы счисления': { ru: 'Системы счисления', en: 'Number systems', ja: '数値表現' }, 'Архитектура компьютера': { ru: 'Архитектура компьютера', en: 'Computer architecture', ja: 'コンピュータ構成' }, 'Управление проектами': { ru: 'Управление проектами', en: 'Project management', ja: 'プロジェクト管理' }, 'Финансы': { ru: 'Финансы', en: 'Finance', ja: '財務' }, 'Производительность': { ru: 'Производительность', en: 'Performance', ja: '性能' }, 'Базы данных': { ru: 'Базы данных', en: 'Databases', ja: 'データベース' }, 'Сложность алгоритмов': { ru: 'Сложность алгоритмов', en: 'Algorithm complexity', ja: '計算量' }, 'Аутентификация': { ru: 'Аутентификация', en: 'Authentication', ja: '認証' }, 'Структуры данных': { ru: 'Структуры данных', en: 'Data structures', ja: 'データ構造' }, 'Сети': { ru: 'Сети', en: 'Networks', ja: 'ネットワーク' },
+};
+
+export const searchQueries: Record<string, Record<UiLanguage, string>> = {
+  'ip-logic-and': { ru: 'таблицы истинности AND OR XOR NOT', en: 'AND OR XOR NOT truth tables', ja: 'AND OR XOR NOT 真理値表' },
+  'ip-binary-155': { ru: 'перевод из двоичной системы в десятичную и наоборот', en: 'convert binary to decimal and decimal to binary', ja: '2進数から10進数への変換と逆変換' },
+  'ip-cache': { ru: 'кэш-память процессора временная и пространственная локальность', en: 'CPU cache temporal and spatial locality', ja: 'CPU キャッシュ 時間的局所性 空間的局所性' },
+  'ip-wbs': { ru: 'WBS иерархическая структура работ пакеты работ', en: 'WBS work breakdown structure work packages', ja: 'WBS 作業分解構成図 ワークパッケージ' },
+  'ip-roe': { ru: 'ROE рентабельность собственного капитала формула', en: 'ROE return on equity formula', ja: 'ROE 自己資本利益率 計算式' },
+  'fe-a-cache-hit': { ru: 'среднее время доступа к памяти hit rate кэша', en: 'average memory access time cache hit rate', ja: 'キャッシュ ヒット率 平均アクセス時間' },
+  'fe-a-normalization': { ru: 'нормализация базы данных 1НФ 2НФ 3НФ аномалии обновления', en: 'database normalization 1NF 2NF 3NF update anomalies', ja: 'データベース 正規化 第1第2第3正規形 更新時異常' },
+  'fe-b-complexity': { ru: 'Big O последовательные и вложенные циклы сложность', en: 'Big O sequential loops versus nested loops', ja: 'Big O 連続ループ 入れ子ループ 計算量' },
+  'fe-b-security': { ru: 'безопасное хранение паролей соль KDF Argon2id', en: 'secure password storage salt KDF Argon2id', ja: 'パスワード 安全な保存 ソルト KDF Argon2id' },
+  'fe-b-stack': { ru: 'стек LIFO и очередь FIFO структуры данных', en: 'stack LIFO versus queue FIFO data structures', ja: 'スタック LIFO キュー FIFO データ構造' },
+  'fe-a-tcp': { ru: 'TCP и UDP сравнение надежность порядок доставки', en: 'TCP versus UDP reliability ordered delivery', ja: 'TCP UDP 違い 信頼性 順序制御' },
 };
 
 const L = (ru: Lesson, en: Lesson, ja: Lesson) => ({ ru, en, ja });
