@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { ArrowLeft, ArrowRight, BookOpenCheck, Check, CheckCircle2, Clock3, GraduationCap, Pause, Play, RotateCcw, ShieldCheck, Sparkles, Target, Timer, X, XCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, BookOpenCheck, CalendarDays, Check, CheckCircle2, Clock3, GraduationCap, Pause, Play, RotateCcw, ShieldCheck, Sparkles, Target, Timer, Trophy, X, XCircle } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -24,7 +24,9 @@ type Mode = 'learn' | 'mock' | 'exam';
 type Part = 'single' | 'A' | 'B';
 type View = 'setup' | 'quiz' | 'break' | 'result';
 type Language = 'original' | 'ru';
-type ProgressData = { attempts: number; correct: number; byTopic: Record<string, { attempts: number; correct: number }>; lastUpdated: string };
+type ExamYear = 2024 | 2025 | 2026;
+type ExamAttempt = { id: string; system: System; level: Level; year: ExamYear; mode: Exclude<Mode, 'learn'>; correct: number; total: number; passed: boolean; completedAt: string; partScores?: { A: number; B: number } };
+type ProgressData = { attempts: number; correct: number; byTopic: Record<string, { attempts: number; correct: number }>; sessions: ExamAttempt[]; lastUpdated: string };
 
 type Question = {
   id: string; systems: System[]; level: Level; part: Part; domain: string; topic: string;
@@ -70,8 +72,8 @@ const questions: Question[] = [
     takeaway: 'WBS → состав работ; schedule → сроки; risk register → риски; budget → стоимость.',
   },
   {
-    id: 'ip-roe', systems: ['ITPEC', 'IPA'], level: 'IP', part: 'single', domain: 'Strategy', topic: 'Финансы', year: 2026,
-    source: 'Адаптировано: (2026S, IP, Q68)',
+    id: 'ip-roe', systems: ['ITPEC', 'IPA'], level: 'IP', part: 'single', domain: 'Strategy', topic: 'Финансы', year: 2024,
+    source: 'По формату IP, 2024; авторская адаптация',
     prompt: 'Что означает буква E в показателе ROE?',
     options: ['Earnings', 'Employee', 'Enterprise', 'Equity'], answer: 3,
     explanation: 'ROE расшифровывается как Return on Equity — рентабельность собственного капитала. Обычно показатель рассчитывают как чистую прибыль, делённую на средний собственный капитал. Он показывает, насколько эффективно компания использует средства владельцев.',
@@ -114,6 +116,24 @@ const questions: Question[] = [
     optionNotes: ['Открытый текст сразу раскрывает все пароли при утечке.', 'Быстрый хеш позволяет проверять огромное число вариантов в секунду; отсутствие соли помогает массовой атаке.', 'Верно: это стандартный подход к устойчивому хранению паролей.', 'Base64 — обратимое кодирование, а не защита.'],
     takeaway: 'Соль не обязана быть секретной; её задача — уникализировать хеш. Секретность обеспечивает пароль, а стоимость перебора — KDF.',
   },
+  {
+    id: 'fe-b-stack', systems: ['ITPEC', 'IPA'], level: 'FE', part: 'B', domain: 'Algorithm', topic: 'Структуры данных', year: 2024,
+    source: 'По формату FE Subject B, 2024; авторская адаптация',
+    prompt: 'Какая структура данных непосредственно реализует принцип LIFO?',
+    options: ['Очередь', 'Стек', 'Двоичное дерево поиска', 'Хеш-таблица'], answer: 1,
+    explanation: 'LIFO означает Last In, First Out: последний добавленный элемент извлекается первым. Именно так работает стек. Добавление выполняется операцией push на вершину, а удаление — операцией pop с вершины. Очередь использует противоположный порядок FIFO: первым извлекается элемент, добавленный раньше остальных.',
+    optionNotes: ['Очередь реализует FIFO, а не LIFO.', 'Верно: push и pop работают с одной вершиной стека.', 'Дерево организует элементы по связям и ключам, а не по порядку поступления.', 'Хеш-таблица обеспечивает доступ по ключу и не задаёт LIFO-порядок.'],
+    takeaway: 'Стек — LIFO; очередь — FIFO. Стек удобно связывать со стопкой тарелок.',
+  },
+  {
+    id: 'fe-a-tcp', systems: ['ITPEC', 'IPA'], level: 'FE', part: 'A', domain: 'Technology', topic: 'Сети', year: 2026,
+    source: 'По формату FE Subject A, 2026; авторская адаптация',
+    prompt: 'Какое свойство отличает TCP от UDP?',
+    options: ['TCP гарантирует доставку и порядок байтового потока', 'TCP не устанавливает соединение', 'TCP не использует номера портов', 'TCP всегда быстрее UDP'], answer: 0,
+    explanation: 'TCP — протокол с установлением соединения. Он нумерует данные, подтверждает получение, повторно передаёт потерянные сегменты и восстанавливает правильный порядок байтов. UDP отправляет независимые датаграммы без встроенной гарантии доставки или порядка. За надёжность TCP платит дополнительными задержками и служебными данными.',
+    optionNotes: ['Верно: надёжный упорядоченный поток — ключевое свойство TCP.', 'Соединение устанавливает TCP; UDP работает без него.', 'И TCP, и UDP используют номера портов.', 'TCP не всегда быстрее: гарантии требуют дополнительного обмена.'],
+    takeaway: 'TCP — надёжный поток; UDP — лёгкие независимые датаграммы.',
+  },
 ];
 
 const originalText: Record<string, Record<System, { prompt: string; options: string[] }>> = {
@@ -153,9 +173,17 @@ const originalText: Record<string, Record<System, { prompt: string; options: str
     ITPEC: { prompt: 'After a password database leak, an attacker tests guesses offline. Which mechanism most increases the cost of each attempt?', options: ['Storing plaintext passwords', 'A fast unsalted hash', 'A slow key-derivation function with a unique salt', 'Base64 encoding'] },
     IPA: { prompt: 'パスワードデータベースの漏えい後，攻撃者がオフラインで推測を試みる。各試行のコストを最も高める仕組みはどれか。', options: ['平文で保存する', 'ソルトなしの高速ハッシュ', '一意なソルトを用いた低速な鍵導出関数', 'Base64で符号化する'] },
   },
+  'fe-b-stack': {
+    ITPEC: { prompt: 'Which data structure directly implements the LIFO principle?', options: ['Queue', 'Stack', 'Binary search tree', 'Hash table'] },
+    IPA: { prompt: 'LIFOの原則を直接実現するデータ構造はどれか。', options: ['キュー', 'スタック', '二分探索木', 'ハッシュ表'] },
+  },
+  'fe-a-tcp': {
+    ITPEC: { prompt: 'Which property distinguishes TCP from UDP?', options: ['TCP provides reliable, ordered delivery of a byte stream', 'TCP is connectionless', 'TCP does not use port numbers', 'TCP is always faster than UDP'] },
+    IPA: { prompt: 'TCPをUDPと区別する性質はどれか。', options: ['信頼性のある順序付きバイトストリームを提供する', 'コネクションを確立しない', 'ポート番号を使用しない', '常にUDPより高速である'] },
+  },
 };
 
-const emptyProgress: ProgressData = { attempts: 0, correct: 0, byTopic: {}, lastUpdated: '' };
+const emptyProgress: ProgressData = { attempts: 0, correct: 0, byTopic: {}, sessions: [], lastUpdated: '' };
 
 function shuffledOrders(items: Question[]) {
   return Object.fromEntries(items.map((item) => {
@@ -170,7 +198,13 @@ const modeInfo: Record<Mode, { title: string; description: string; icon: typeof 
   mock: { title: 'Пробный экзамен', description: 'Без таймера и подсказок, итог в конце', icon: Target },
   exam: { title: 'Экзамен', description: 'С таймером, без подсказок, итог в конце', icon: Timer },
 };
-const examFacts: Record<Level, string> = { IP: 'Одна часть · 100 вопросов · 120 минут', FE: 'Часть A: 60 / 90 мин · перерыв · часть B: 20 / 100 мин' };
+const examYears: ExamYear[] = [2026, 2025, 2024];
+const examFacts: Record<Level, string> = { IP: '100 вопросов · 120 минут', FE: 'A: 60 вопросов / 90 минут · B: 20 вопросов / 100 минут' };
+
+function breakFact(system: System, level: Level) {
+  if (level === 'IP') return 'Одна непрерывная часть';
+  return system === 'IPA' ? 'Между A и B — перерыв до 10 минут' : 'A и B идут раздельно; длительность перерыва задаёт организатор';
+}
 
 function formatTime(totalSeconds: number) {
   const safe = Math.max(0, totalSeconds); const hours = Math.floor(safe / 3600); const minutes = Math.floor((safe % 3600) / 60); const seconds = safe % 60;
@@ -178,22 +212,35 @@ function formatTime(totalSeconds: number) {
 }
 
 export default function Home() {
-  const [system, setSystem] = useState<System>('ITPEC'); const [level, setLevel] = useState<Level>('IP'); const [mode, setMode] = useState<Mode>('learn');
+  const [system, setSystem] = useState<System>('ITPEC'); const [level, setLevel] = useState<Level>('IP'); const [mode, setMode] = useState<Mode>('learn'); const [examYear, setExamYear] = useState<ExamYear>(2026);
   const [view, setView] = useState<View>('setup'); const [part, setPart] = useState<Part>('single'); const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({}); const [selected, setSelected] = useState<number | null>(null);
   const [secondsLeft, setSecondsLeft] = useState(120 * 60); const [breakSeconds, setBreakSeconds] = useState(10 * 60);
   const [language, setLanguage] = useState<Language>('original');
   const [optionOrders, setOptionOrders] = useState<Record<string, number[]>>({});
   const [progress, setProgress] = useState<ProgressData>(emptyProgress);
-  const pool = useMemo(() => questions.filter((q) => q.level === level && q.systems.includes(system)), [level, system]);
+  const [sessionRecorded, setSessionRecorded] = useState(false);
+  const pool = useMemo(() => questions.filter((q) => q.level === level && q.systems.includes(system) && q.year === examYear), [level, system, examYear]);
   const partPool = useMemo(() => pool.filter((q) => level === 'IP' || q.part === part), [level, part, pool]);
   const question = partPool[index]; const revealed = mode === 'learn' && selected !== null;
   const questionText = question ? (language === 'original' ? originalText[question.id][system] : { prompt: question.prompt, options: question.options }) : null;
   const optionOrder = question ? (optionOrders[question.id] ?? question.options.map((_, itemIndex) => itemIndex)) : [];
+  const answeredQuestions = pool.filter((item) => answers[item.id] !== undefined); const correctCount = answeredQuestions.filter((item) => answers[item.id] === item.answer).length;
+  const scorePercent = answeredQuestions.length ? Math.round(correctCount / answeredQuestions.length * 100) : 0;
+  const partScore = (target: 'A' | 'B') => { const items = pool.filter((item) => item.part === target); return items.length ? Math.round(items.filter((item) => answers[item.id] === item.answer).length / items.length * 100) : 0; };
+  const sessionPassed = level === 'IP' ? scorePercent >= 60 : partScore('A') >= 60 && partScore('B') >= 60;
 
   useEffect(() => {
-    try { const saved = window.localStorage.getItem('kiso-progress-v1'); if (saved) setProgress(JSON.parse(saved) as ProgressData); } catch { setProgress(emptyProgress); }
+    try { const saved = window.localStorage.getItem('kiso-progress-v1'); if (saved) { const parsed = JSON.parse(saved) as Partial<ProgressData>; setProgress({ ...emptyProgress, ...parsed, sessions: Array.isArray(parsed.sessions) ? parsed.sessions : [] }); } } catch { setProgress(emptyProgress); }
   }, []);
+
+  useEffect(() => {
+    if (view !== 'result' || mode === 'learn' || sessionRecorded) return;
+    const completedAt = new Date().toISOString();
+    const attempt: ExamAttempt = { id: `${completedAt}-${system}-${level}-${examYear}`, system, level, year: examYear, mode, correct: correctCount, total: answeredQuestions.length, passed: sessionPassed, completedAt, ...(level === 'FE' ? { partScores: { A: partScore('A'), B: partScore('B') } } : {}) };
+    setProgress((current) => { const next = { ...current, sessions: [attempt, ...current.sessions].slice(0, 100), lastUpdated: completedAt }; try { window.localStorage.setItem('kiso-progress-v1', JSON.stringify(next)); } catch { /* Keep the result for this tab. */ } return next; });
+    setSessionRecorded(true);
+  }, [view, mode, sessionRecorded, system, level, examYear, correctCount, answeredQuestions.length, sessionPassed]);
 
   useEffect(() => {
     if (view !== 'quiz' || mode !== 'exam') return;
@@ -201,10 +248,10 @@ export default function Home() {
     const timer = window.setInterval(() => setSecondsLeft((v) => v - 1), 1000); return () => window.clearInterval(timer);
   }, [view, mode, secondsLeft, level, part]);
   useEffect(() => {
-    if (view !== 'break' || mode !== 'exam') return;
+    if (view !== 'break' || mode !== 'exam' || system !== 'IPA') return;
     if (breakSeconds <= 0) { startPartB(); return; }
     const timer = window.setInterval(() => setBreakSeconds((v) => v - 1), 1000); return () => window.clearInterval(timer);
-  }, [view, mode, breakSeconds]);
+  }, [view, mode, breakSeconds, system]);
   useEffect(() => {
     const context = document.modelContext;
     if (!context?.registerTool) return;
@@ -212,6 +259,7 @@ export default function Home() {
     const allowedSystems: System[] = ['ITPEC', 'IPA'];
     const allowedLevels: Level[] = ['IP', 'FE'];
     const allowedModes: Mode[] = ['learn', 'mock', 'exam'];
+    const allowedYears: ExamYear[] = [2024, 2025, 2026];
     void Promise.resolve(context.registerTool({
       name: 'start_practice_session',
       title: 'Начать учебную сессию',
@@ -222,22 +270,23 @@ export default function Home() {
           system: { type: 'string', enum: allowedSystems },
           level: { type: 'string', enum: allowedLevels },
           mode: { type: 'string', enum: allowedModes },
+          year: { type: 'number', enum: allowedYears },
         },
-        required: ['system', 'level', 'mode'],
+        required: ['system', 'level', 'mode', 'year'],
         additionalProperties: false,
       },
       annotations: { readOnlyHint: false, untrustedContentHint: false },
       execute(input) {
-        const value = input as { system?: System; level?: Level; mode?: Mode };
-        if (!allowedSystems.includes(value.system as System) || !allowedLevels.includes(value.level as Level) || !allowedModes.includes(value.mode as Mode)) {
+        const value = input as { system?: System; level?: Level; mode?: Mode; year?: ExamYear };
+        if (!allowedSystems.includes(value.system as System) || !allowedLevels.includes(value.level as Level) || !allowedModes.includes(value.mode as Mode) || !allowedYears.includes(value.year as ExamYear)) {
           throw new Error('Некорректные параметры сессии');
         }
         const initialPart: Part = value.level === 'FE' ? 'A' : 'single';
-        setSystem(value.system!); setLevel(value.level!); setMode(value.mode!); setPart(initialPart);
-        setIndex(0); setAnswers({}); setSelected(null); setBreakSeconds(10 * 60); setLanguage('original');
-        setOptionOrders(shuffledOrders(questions.filter((q) => q.level === value.level && q.systems.includes(value.system!))));
+        setSystem(value.system!); setLevel(value.level!); setMode(value.mode!); setExamYear(value.year!); setPart(initialPart);
+        setIndex(0); setAnswers({}); setSelected(null); setBreakSeconds(10 * 60); setLanguage('original'); setSessionRecorded(false);
+        setOptionOrders(shuffledOrders(questions.filter((q) => q.level === value.level && q.systems.includes(value.system!) && q.year === value.year)));
         setSecondsLeft(value.level === 'FE' ? 90 * 60 : 120 * 60); setView('quiz');
-        return { status: 'started', system: value.system, level: value.level, mode: value.mode, part: initialPart };
+        return { status: 'started', system: value.system, level: value.level, mode: value.mode, year: value.year, part: initialPart };
       },
     }, { signal: lifecycle.signal })).catch(() => undefined);
     return () => lifecycle.abort();
@@ -247,32 +296,34 @@ export default function Home() {
     setProgress((current) => {
       const topic = current.byTopic[item.topic] ?? { attempts: 0, correct: 0 };
       const isCorrect = answer === item.answer;
-      const next: ProgressData = { attempts: current.attempts + 1, correct: current.correct + (isCorrect ? 1 : 0), byTopic: { ...current.byTopic, [item.topic]: { attempts: topic.attempts + 1, correct: topic.correct + (isCorrect ? 1 : 0) } }, lastUpdated: new Date().toISOString() };
+      const next: ProgressData = { attempts: current.attempts + 1, correct: current.correct + (isCorrect ? 1 : 0), byTopic: { ...current.byTopic, [item.topic]: { attempts: topic.attempts + 1, correct: topic.correct + (isCorrect ? 1 : 0) } }, sessions: current.sessions, lastUpdated: new Date().toISOString() };
       try { window.localStorage.setItem('kiso-progress-v1', JSON.stringify(next)); } catch { /* Progress remains available for this tab. */ }
       return next;
     });
   }
-  function startQuiz() { const initialPart: Part = level === 'FE' ? 'A' : 'single'; setPart(initialPart); setIndex(0); setAnswers({}); setSelected(null); setLanguage('original'); setOptionOrders(shuffledOrders(pool)); setSecondsLeft(level === 'FE' ? 90 * 60 : 120 * 60); setBreakSeconds(10 * 60); setView('quiz'); }
+  function startQuiz() { const initialPart: Part = level === 'FE' ? 'A' : 'single'; setPart(initialPart); setIndex(0); setAnswers({}); setSelected(null); setLanguage('original'); setSessionRecorded(false); setOptionOrders(shuffledOrders(pool)); setSecondsLeft(level === 'FE' ? 90 * 60 : 120 * 60); setBreakSeconds(10 * 60); setView('quiz'); }
   function chooseAnswer(answer: number) { if (!question || revealed) return; setSelected(answer); setAnswers((v) => ({ ...v, [question.id]: answer })); if (mode === 'learn') recordProgress(question, answer); }
   function goNext() { if (selected === null || !question) return; if (mode !== 'learn') recordProgress(question, selected); if (index < partPool.length - 1) { setIndex((v) => v + 1); setSelected(null); return; } if (level === 'FE' && part === 'A') setView('break'); else setView('result'); }
   function startPartB() { setPart('B'); setIndex(0); setSelected(null); setSecondsLeft(100 * 60); setView('quiz'); }
   function reset() { setView('setup'); setAnswers({}); setSelected(null); setIndex(0); }
-  const answeredQuestions = pool.filter((item) => answers[item.id] !== undefined); const correctCount = answeredQuestions.filter((item) => answers[item.id] === item.answer).length;
+  const relevantSessions = progress.sessions.filter((item) => item.system === system && item.level === level);
+  const yearSummary = examYears.map((year) => { const sessions = relevantSessions.filter((item) => item.year === year); const best = sessions.length ? Math.max(...sessions.map((item) => item.total ? Math.round(item.correct / item.total * 100) : 0)) : null; return { year, sessions, best, passed: sessions.some((item) => item.passed) }; });
 
   return <main className="min-h-screen bg-background text-foreground">
     <header className="sticky top-0 z-20 border-b border-border/70 bg-background/90 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
       <button className="flex items-center gap-3" onClick={reset} aria-label="На главную"><span className="grid size-10 place-items-center rounded-xl bg-primary text-primary-foreground shadow-[0_7px_20px_rgba(12,95,94,.22)]"><BookOpenCheck className="size-5" /></span><span className="text-left"><span className="block text-lg font-bold leading-none tracking-tight">Kiso</span><span className="mt-1 block text-[10px] font-semibold uppercase tracking-[.18em] text-muted-foreground">IT Exam Lab</span></span></button>
-      <div className="flex items-center gap-2">{view !== 'setup' && <Badge variant="outline">{system} · {level}</Badge>}<Badge className="hidden bg-[var(--warm)] text-[var(--warm-ink)] sm:inline-flex">MVP · 2024–2026</Badge></div>
+      <div className="flex items-center gap-2">{view !== 'setup' && <Badge variant="outline">{system} · {level} · {examYear}</Badge>}<Badge className="hidden bg-[var(--warm)] text-[var(--warm-ink)] sm:inline-flex">MVP · 2024–2026</Badge></div>
     </div></header>
 
     {view === 'setup' && <section className="mx-auto grid max-w-7xl gap-8 px-5 py-8 lg:grid-cols-[1fr_360px] lg:px-8 lg:py-12">
       <div><div className="mb-8 max-w-2xl"><Badge className="mb-4 bg-[var(--mint)] text-[var(--mint-ink)]">Подготовка по официальному формату</Badge><h1 className="font-heading text-4xl font-bold tracking-[-.04em] sm:text-5xl">Выберите свой маршрут<br /><span className="text-primary">к уверенной сдаче.</span></h1><p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">Практика по структуре ITPEC и IPA. В обучении каждая ошибка превращается в понятный разбор, а экзаменационные режимы сохраняют интригу до финала.</p></div>
       <div className="space-y-7">
         <ChoiceSection number="01" title="Система экзамена"><div className="grid gap-3 sm:grid-cols-2">{(['ITPEC','IPA'] as System[]).map((item) => <ChoiceCard key={item} active={system === item} onClick={() => setSystem(item)} title={item} description={item === 'ITPEC' ? 'Англоязычный экзамен стран ITPEC' : 'Японская система экзаменов IPA'} />)}</div></ChoiceSection>
-        <ChoiceSection number="02" title="Уровень"><div className="grid gap-3 sm:grid-cols-2">{(['IP','FE'] as Level[]).map((item) => <ChoiceCard key={item} active={level === item} onClick={() => setLevel(item)} title={item} description={item === 'IP' ? 'IT Passport · базовая IT-грамотность' : 'Fundamental Engineer · уровень 2'} />)}</div><p className="mt-3 flex items-center gap-2 text-sm text-muted-foreground"><Clock3 className="size-4" />{examFacts[level]}</p></ChoiceSection>
-        <ChoiceSection number="03" title="Режим"><div className="grid gap-3 md:grid-cols-3">{(Object.keys(modeInfo) as Mode[]).map((item) => { const Icon = modeInfo[item].icon; return <button key={item} onClick={() => setMode(item)} className={`mode-card ${mode === item ? 'mode-card-active' : ''}`}><Icon className="size-5" /><span className="mt-4 block font-semibold">{modeInfo[item].title}</span><span className="mt-1 block text-xs leading-5 text-muted-foreground">{modeInfo[item].description}</span></button>; })}</div></ChoiceSection>
+        <ChoiceSection number="02" title="Уровень"><div className="grid gap-3 sm:grid-cols-2">{(['IP','FE'] as Level[]).map((item) => <ChoiceCard key={item} active={level === item} onClick={() => setLevel(item)} title={item} description={item === 'IP' ? 'IT Passport · базовая IT-грамотность' : 'Fundamental Engineer · уровень 2'} />)}</div><div className="mt-3 space-y-1 text-sm text-muted-foreground"><p className="flex items-center gap-2"><Clock3 className="size-4" />{examFacts[level]}</p><p className="flex items-center gap-2"><Pause className="size-4" />{breakFact(system, level)}</p></div></ChoiceSection>
+        <ChoiceSection number="03" title="Год экзамена"><div className="grid grid-cols-3 gap-3">{examYears.map((year) => <button key={year} onClick={() => setExamYear(year)} className={`year-card ${examYear === year ? 'year-card-active' : ''}`}><CalendarDays className="size-4" /><span>{year}</span></button>)}</div></ChoiceSection>
+        <ChoiceSection number="04" title="Режим"><div className="grid gap-3 md:grid-cols-3">{(Object.keys(modeInfo) as Mode[]).map((item) => { const Icon = modeInfo[item].icon; return <button key={item} onClick={() => setMode(item)} className={`mode-card ${mode === item ? 'mode-card-active' : ''}`}><Icon className="size-5" /><span className="mt-4 block font-semibold">{modeInfo[item].title}</span><span className="mt-1 block text-xs leading-5 text-muted-foreground">{modeInfo[item].description}</span></button>; })}</div></ChoiceSection>
       </div></div>
-      <aside className="lg:pt-20"><div className="sticky top-28 overflow-hidden rounded-3xl border bg-card shadow-[0_25px_70px_rgba(15,35,42,.09)]"><div className="border-b bg-[var(--ink)] p-6 text-white"><div className="flex items-center justify-between"><span className="text-xs font-semibold uppercase tracking-[.18em] text-white/55">Ваша сессия</span><Sparkles className="size-5 text-[var(--lime)]" /></div><p className="mt-7 text-3xl font-bold">{system} / {level}</p><p className="mt-2 text-sm text-white/65">{modeInfo[mode].title}</p></div><div className="space-y-5 p-6"><div className="flex items-start gap-3"><ShieldCheck className="mt-0.5 size-5 text-primary" /><div><p className="text-sm font-semibold">Актуальный формат</p><p className="mt-1 text-xs leading-5 text-muted-foreground">Материалы и структура 2024–2026 годов</p></div></div>{level === 'FE' && <div className="flex items-start gap-3"><Pause className="mt-0.5 size-5 text-primary" /><div><p className="text-sm font-semibold">Пауза между A и B</p><p className="mt-1 text-xs leading-5 text-muted-foreground">Отдельный экран перерыва до 10 минут</p></div></div>}<div className="rounded-2xl bg-[var(--mint)] p-4"><p className="text-xs font-semibold text-[var(--mint-ink)]">Локальный прогресс</p><p className="mt-1 text-2xl font-bold">{progress.attempts}</p><p className="text-xs text-muted-foreground">ответов · {progress.attempts ? Math.round(progress.correct / progress.attempts * 100) : 0}% верных</p></div><div className="rounded-2xl bg-muted/70 p-4 text-xs leading-5 text-muted-foreground">В MVP доступно {pool.length} проверочных вопросов. Полный банк будет расширен официальными комплектами последних трёх лет.</div><Button className="h-12 w-full rounded-xl text-base" onClick={startQuiz}>Начать сессию <ArrowRight data-icon="inline-end" /></Button></div></div></aside>
+      <aside className="lg:pt-20"><div className="sticky top-28 overflow-hidden rounded-3xl border bg-card shadow-[0_25px_70px_rgba(15,35,42,.09)]"><div className="border-b bg-[var(--ink)] p-6 text-white"><div className="flex items-center justify-between"><span className="text-xs font-semibold uppercase tracking-[.18em] text-white/55">Ваша сессия</span><Sparkles className="size-5 text-[var(--lime)]" /></div><p className="mt-7 text-3xl font-bold">{system} / {level}</p><p className="mt-2 text-sm text-white/65">{examYear} · {modeInfo[mode].title}</p></div><div className="space-y-5 p-6"><div className="flex items-start gap-3"><ShieldCheck className="mt-0.5 size-5 text-primary" /><div><p className="text-sm font-semibold">Проверенный формат</p><p className="mt-1 text-xs leading-5 text-muted-foreground">{examFacts[level]}. {breakFact(system, level)}.</p></div></div><div className="rounded-2xl bg-[var(--mint)] p-4"><p className="text-xs font-semibold text-[var(--mint-ink)]">Локальный прогресс</p><p className="mt-1 text-2xl font-bold">{progress.attempts}</p><p className="text-xs text-muted-foreground">ответов · {progress.attempts ? Math.round(progress.correct / progress.attempts * 100) : 0}% верных</p></div><div><div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-[.12em] text-muted-foreground"><BarChart3 className="size-4" />Экзамены по годам</div><div className="space-y-2">{yearSummary.map((item) => <div key={item.year} className="flex items-center justify-between rounded-xl border bg-background px-3 py-2.5"><div><p className="text-sm font-semibold">{item.year}</p><p className="text-[11px] text-muted-foreground">{item.sessions.length ? `${item.sessions.length} попыток · лучший ${item.best}%` : 'ещё не пройден'}</p></div>{item.passed ? <span className="flex items-center gap-1 text-xs font-semibold text-[var(--success)]"><Trophy className="size-4" />Успешно</span> : <span className="text-xs text-muted-foreground">—</span>}</div>)}</div></div><div className="rounded-2xl bg-muted/70 p-4 text-xs leading-5 text-muted-foreground">Для {examYear} года в MVP доступно {pool.length} проверочных вопросов. Полный банк будет расширен официальными комплектами.</div><Button className="h-12 w-full rounded-xl text-base" onClick={startQuiz} disabled={!pool.length}>Начать сессию <ArrowRight data-icon="inline-end" /></Button></div></div></aside>
     </section>}
 
     {view === 'quiz' && question && <section className="mx-auto max-w-5xl px-5 py-7 lg:px-8 lg:py-10"><div className="mb-6 flex flex-wrap items-center justify-between gap-4"><div><div className="flex items-center gap-2"><Badge>{level === 'FE' ? `Часть ${part}` : level}</Badge><Badge variant="outline">{modeInfo[mode].title}</Badge></div><p className="mt-3 text-sm text-muted-foreground">Вопрос {index + 1} из {partPool.length} · {question.domain} / {question.topic}</p></div>{mode === 'exam' && <div className="flex items-center gap-2 rounded-xl border bg-card px-4 py-2.5 font-mono text-lg font-semibold tabular-nums shadow-sm"><Timer className="size-5 text-primary" /> {formatTime(secondsLeft)}</div>}</div><Progress value={((index + (selected !== null ? 1 : 0)) / partPool.length) * 100} className="mb-7 [&_[data-slot=progress-indicator]]:bg-primary" />
@@ -281,9 +332,9 @@ export default function Home() {
       {revealed && <div data-testid="explanation" className={`mt-7 rounded-2xl border p-5 sm:p-6 ${selected === question.answer ? 'explanation-correct' : 'explanation-wrong'}`}><div className="flex items-start gap-3">{selected === question.answer ? <CheckCircle2 className="mt-0.5 size-6 shrink-0 text-[var(--success)]" /> : <XCircle className="mt-0.5 size-6 shrink-0 text-destructive" />}<div><h3 className="font-semibold">{selected === question.answer ? 'Верно — закрепим логику' : 'Пока неверно — разберём по шагам'}</h3><p className="mt-2 text-sm leading-6 text-muted-foreground">{question.explanation}</p></div></div><div className="mt-5 border-t pt-5"><p className="text-xs font-bold uppercase tracking-[.14em] text-muted-foreground">Почему каждый вариант</p><div className="mt-3 space-y-2">{optionOrder.map((originalIndex, displayIndex) => <p key={originalIndex} className="flex gap-2 text-sm leading-6"><span className={`font-bold ${originalIndex === question.answer ? 'text-[var(--success)]' : 'text-muted-foreground'}`}>{String.fromCharCode(65 + displayIndex)}.</span>{question.optionNotes[originalIndex]}</p>)}</div></div><div className="mt-5 flex gap-3 rounded-xl bg-background/70 p-4 text-sm leading-6"><Sparkles className="mt-0.5 size-4 shrink-0 text-primary" /><span><strong>Запомнить:</strong> {question.takeaway}</span></div></div>}
       <div className="mt-7 flex items-center justify-between gap-3 border-t pt-6"><Button variant="ghost" onClick={reset}><ArrowLeft data-icon="inline-start" />Выйти</Button><Button className="min-w-32" disabled={selected === null} onClick={goNext}>{index === partPool.length - 1 ? (level === 'FE' && part === 'A' ? 'Завершить A' : 'К результату') : 'Дальше'}<ArrowRight data-icon="inline-end" /></Button></div></article></section>}
 
-    {view === 'break' && <section className="mx-auto flex min-h-[calc(100vh-74px)] max-w-3xl items-center px-5 py-12"><div className="w-full rounded-3xl border bg-card p-7 text-center shadow-[0_25px_80px_rgba(15,35,42,.09)] sm:p-12"><span className="mx-auto grid size-16 place-items-center rounded-2xl bg-[var(--mint)] text-primary"><Pause className="size-7" /></span><Badge className="mt-6">FE · переход A → B</Badge><h2 className="mt-4 text-3xl font-bold tracking-tight">Часть A завершена</h2><p className="mx-auto mt-3 max-w-lg leading-7 text-muted-foreground">Перед алгоритмической частью B можно сделать перерыв. Ответы части A сохранены и изменить их уже нельзя.</p><div className="mx-auto my-8 max-w-xs rounded-2xl bg-[var(--ink)] px-5 py-5 text-white"><p className="text-xs uppercase tracking-[.18em] text-white/55">{mode === 'exam' ? 'Осталось перерыва' : 'Пауза без таймера'}</p><p className="mt-2 font-mono text-4xl font-bold tabular-nums">{mode === 'exam' ? formatTime(breakSeconds) : '∞'}</p></div><Button size="lg" className="h-12 px-6" onClick={startPartB}><Play data-icon="inline-start" />Начать часть B</Button></div></section>}
+    {view === 'break' && <section className="mx-auto flex min-h-[calc(100vh-74px)] max-w-3xl items-center px-5 py-12"><div className="w-full rounded-3xl border bg-card p-7 text-center shadow-[0_25px_80px_rgba(15,35,42,.09)] sm:p-12"><span className="mx-auto grid size-16 place-items-center rounded-2xl bg-[var(--mint)] text-primary"><Pause className="size-7" /></span><Badge className="mt-6">{system} · FE · переход A → B</Badge><h2 className="mt-4 text-3xl font-bold tracking-tight">Часть A завершена</h2><p className="mx-auto mt-3 max-w-lg leading-7 text-muted-foreground">Перед алгоритмической частью B можно сделать перерыв. Ответы части A сохранены и изменить их уже нельзя. {system === 'IPA' ? 'Официальный максимум — 10 минут.' : 'ITPEC не задаёт единую длительность перерыва: следуйте правилам вашего организатора.'}</p><div className="mx-auto my-8 max-w-xs rounded-2xl bg-[var(--ink)] px-5 py-5 text-white"><p className="text-xs uppercase tracking-[.18em] text-white/55">{mode === 'exam' && system === 'IPA' ? 'Осталось перерыва' : 'Пауза без таймера'}</p><p className="mt-2 font-mono text-4xl font-bold tabular-nums">{mode === 'exam' && system === 'IPA' ? formatTime(breakSeconds) : '∞'}</p></div><Button size="lg" className="h-12 px-6" onClick={startPartB}><Play data-icon="inline-start" />Начать часть B</Button></div></section>}
 
-    {view === 'result' && <section className="mx-auto flex min-h-[calc(100vh-74px)] max-w-4xl items-center px-5 py-12"><div className="w-full rounded-3xl border bg-card p-6 shadow-[0_25px_80px_rgba(15,35,42,.09)] sm:p-10"><div className="grid items-center gap-8 sm:grid-cols-[180px_1fr]"><div className="result-ring" style={{ '--score': `${answeredQuestions.length ? (correctCount / answeredQuestions.length) * 100 : 0}%` } as React.CSSProperties}><div><strong>{correctCount}</strong><span>из {answeredQuestions.length}</span></div></div><div><Badge className="bg-[var(--mint)] text-[var(--mint-ink)]">Сессия завершена</Badge><h2 className="mt-4 text-3xl font-bold tracking-tight">Результат готов</h2><p className="mt-3 leading-7 text-muted-foreground">{mode === 'learn' ? 'Вы сразу разобрали каждую ошибку. Повторите темы с низким результатом после короткого перерыва.' : 'Во время сессии подсказки не показывались. Ниже — только итог, как вы и настроили.'}</p></div></div><div className="mt-9 grid gap-3 sm:grid-cols-3">{['Technology','Management','Strategy'].map((domain) => { const items = answeredQuestions.filter((item) => item.domain === domain || (domain === 'Technology' && ['Algorithm','Security'].includes(item.domain))); const correct = items.filter((item) => answers[item.id] === item.answer).length; return <div key={domain} className="rounded-2xl bg-muted/65 p-4"><p className="text-xs text-muted-foreground">{domain}</p><p className="mt-2 text-2xl font-bold">{correct} / {items.length}</p></div>; })}</div><div className="mt-8 flex flex-wrap justify-end gap-3 border-t pt-6"><Button variant="outline" onClick={reset}><ArrowLeft data-icon="inline-start" />К настройке</Button><Button onClick={startQuiz}><RotateCcw data-icon="inline-start" />Пройти ещё раз</Button></div></div></section>}
+    {view === 'result' && <section className="mx-auto flex min-h-[calc(100vh-74px)] max-w-4xl items-center px-5 py-12"><div className="w-full rounded-3xl border bg-card p-6 shadow-[0_25px_80px_rgba(15,35,42,.09)] sm:p-10"><div className="grid items-center gap-8 sm:grid-cols-[180px_1fr]"><div className="result-ring" style={{ '--score': `${scorePercent}%` } as React.CSSProperties}><div><strong>{correctCount}</strong><span>из {answeredQuestions.length}</span></div></div><div><Badge className={sessionPassed ? 'bg-[var(--mint)] text-[var(--mint-ink)]' : ''}>{mode === 'learn' ? 'Сессия завершена' : sessionPassed ? 'Экзамен пройден' : 'Порог не достигнут'}</Badge><h2 className="mt-4 text-3xl font-bold tracking-tight">{examYear}: {scorePercent}%</h2><p className="mt-3 leading-7 text-muted-foreground">{mode === 'learn' ? 'Вы сразу разобрали каждую ошибку. Повторите темы с низким результатом после короткого перерыва.' : level === 'IP' ? 'В MVP успешным считается результат от 60%. Официальная оценка IP дополнительно требует порога по каждой предметной области.' : `Для успешного FE нужно не менее 60% отдельно в каждой части: A — ${partScore('A')}%, B — ${partScore('B')}%.`}</p></div></div><div className="mt-9 grid gap-3 sm:grid-cols-3">{['Technology','Management','Strategy'].map((domain) => { const items = answeredQuestions.filter((item) => item.domain === domain || (domain === 'Technology' && ['Algorithm','Security'].includes(item.domain))); const correct = items.filter((item) => answers[item.id] === item.answer).length; return <div key={domain} className="rounded-2xl bg-muted/65 p-4"><p className="text-xs text-muted-foreground">{domain}</p><p className="mt-2 text-2xl font-bold">{correct} / {items.length}</p></div>; })}</div><div className="mt-8 flex flex-wrap justify-end gap-3 border-t pt-6"><Button variant="outline" onClick={reset}><ArrowLeft data-icon="inline-start" />К настройке</Button><Button onClick={startQuiz}><RotateCcw data-icon="inline-start" />Пройти ещё раз</Button></div></div></section>}
   </main>;
 }
 
