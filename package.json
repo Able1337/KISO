@@ -11,6 +11,8 @@
     "build:static": "vite build --config vite.static.config.ts",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "typecheck": "tsc --noEmit --incremental false",
     "format": "oxfmt"
   },
   "dependencies": {

@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { lessons, searchQueries, studyRecommendations, topicLabels, uiCopy, type UiLanguage } from './kiso-i18n';
+import OfficialExams from './official-exams';
 
 declare global {
   interface Document {
@@ -211,6 +212,7 @@ function formatTime(totalSeconds: number) {
 }
 
 export default function Home() {
+  const [officialView, setOfficialView] = useState(false);
   const [system, setSystem] = useState<System>('ITPEC'); const [level, setLevel] = useState<Level>('IP'); const [mode, setMode] = useState<Mode>('learn'); const [examYear, setExamYear] = useState<ExamYear>(2026);
   const [view, setView] = useState<View>('setup'); const [part, setPart] = useState<Part>('single'); const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({}); const [selected, setSelected] = useState<number | null>(null);
@@ -321,6 +323,7 @@ export default function Home() {
   const yearSummary = examYears.map((year) => { const sessions = relevantSessions.filter((item) => item.year === year); const best = sessions.length ? Math.max(...sessions.map((item) => item.total ? Math.round(item.correct / item.total * 100) : 0)) : null; return { year, sessions, best, passed: sessions.some((item) => item.passed) }; });
 
   const questionLangCode = questionLanguage === 'original' ? (system === 'ITPEC' ? 'en' : 'ja') : uiLanguage;
+  if (officialView) return <OfficialExams language={uiLanguage} onLanguage={changeUiLanguage} onExit={() => setOfficialView(false)} />;
   return <main className="min-h-screen bg-background text-foreground" lang={uiLanguage}>
     <header className="sticky top-0 z-20 border-b border-border/70 bg-background/90 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-5 py-4 lg:px-8">
       <button className="flex items-center gap-3" onClick={reset} aria-label={t.home}><span className="grid size-10 place-items-center rounded-xl bg-primary text-primary-foreground shadow-[0_7px_20px_rgba(12,95,94,.22)]"><BookOpenCheck className="size-5" /></span><span className="text-left"><span className="block text-lg font-bold leading-none tracking-tight">Kiso</span><span className="mt-1 block text-[10px] font-semibold uppercase tracking-[.18em] text-muted-foreground">IT Exam Lab</span></span></button>
@@ -329,6 +332,7 @@ export default function Home() {
 
     {view === 'setup' && <section className="mx-auto grid max-w-7xl gap-8 px-5 py-8 lg:grid-cols-[1fr_360px] lg:px-8 lg:py-12">
       <div><div className="mb-8 max-w-2xl"><Badge className="mb-4 bg-[var(--mint)] text-[var(--mint-ink)]">{t.badge}</Badge><h1 className="font-heading text-4xl font-bold tracking-[-.04em] sm:text-5xl">{t.heroA}<br /><span className="text-primary">{t.heroB}</span></h1><p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">{t.intro}</p></div>
+      <div className="mb-7 rounded-2xl border border-primary/30 bg-card p-5"><Badge variant="outline">ITPEC IP · April 2026 · 100 / 100</Badge><p className="my-3 text-sm leading-6 text-muted-foreground">{uiLanguage === 'ru' ? 'Доступен первый полный официальный вариант: оригинальные вопросы, таблицы, схемы и проверенный ключ. Переводы и разборы готовятся. Ниже остаются короткие учебные выборки MVP.' : uiLanguage === 'en' ? 'The first full official paper is available with original questions, tables, figures and a verified answer key. Translations and lessons are in preparation. The short MVP practice sets remain below.' : '原文・表・図と正解を収録した最初の公式全問セットが利用できます。翻訳と解説は準備中です。下記はMVPの短い練習セットです。'}</p><Button onClick={() => setOfficialView(true)}>{uiLanguage === 'ru' ? 'Полные экзамены' : uiLanguage === 'en' ? 'Full exams' : '全問試験'}<ArrowRight/></Button></div>
       <div className="space-y-7">
         <ChoiceSection number="01" title={t.system}><div className="grid gap-3 sm:grid-cols-2">{(['ITPEC','IPA'] as System[]).map((item) => <ChoiceCard key={item} active={system === item} onClick={() => setSystem(item)} title={item} description={item === 'ITPEC' ? 'ITPEC Common Examination' : 'IPA Japan Examination'} />)}</div><p className="mt-3 flex items-center gap-2 text-sm font-medium text-primary"><ShieldCheck className="size-4" />{t.examLanguage}: {system === 'ITPEC' ? t.english : t.japanese}</p></ChoiceSection>
         <ChoiceSection number="02" title={t.level}><div className="grid gap-3 sm:grid-cols-2">{(['IP','FE'] as Level[]).map((item) => <ChoiceCard key={item} active={level === item} onClick={() => setLevel(item)} title={item} description={item === 'IP' ? 'IT Passport · Level 1' : 'Fundamental Engineer · Level 2'} />)}</div><div className="mt-3 space-y-1 text-sm text-muted-foreground"><p className="flex items-center gap-2"><Clock3 className="size-4" />{examFact(level, uiLanguage)}</p><p className="flex items-center gap-2"><Pause className="size-4" />{breakFact(system, level, uiLanguage)}</p></div></ChoiceSection>
