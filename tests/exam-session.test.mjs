@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { makeAttempt, finishAttempt, secondsRemaining, summarize, readStorage, saveAttempt, isAttempt, guardedSave } from '../lib/exam-session.ts';
+import { makeAttempt, finishAttempt, secondsRemaining, summarize, readStorage, saveAttempt, isAttempt, guardedSave, answerQuestion } from '../lib/exam-session.ts';
 
 const pack=JSON.parse(readFileSync(new URL('../data/exams/itpec-ip-2026-spring.json',import.meta.url),'utf8'));
 test('official pack is complete; all keys, sources and assets are present',()=>{
@@ -75,4 +75,31 @@ test('stale tabs cannot overwrite answers or resurrect a completed attempt',()=>
   const resurrect=guardedSave(latest.storage,finished,updated);
   assert.equal(resurrect.conflict,true);assert.equal(resurrect.storage.active,null);
   assert.equal(resurrect.storage.history.length,1);
+});
+test('learning is untimed and preserves the first answer after feedback and navigation',()=>{
+  const q=pack.questions[3];const wrong=q.options.find(o=>o.id!==q.answerId).id;
+  const initial=makeAttempt(pack,'learn',1000);
+  assert.equal(secondsRemaining(initial,999999999),null);
+  const answered=answerQuestion(pack,initial,q.id,wrong,2000);
+  const resumed=readStorage(JSON.stringify(saveAttempt({version:1,active:null,history:[]},answered)),pack).active;
+  assert.equal(resumed.mode,'learn');assert.equal(resumed.answers[q.id],wrong);
+  const revisited={...resumed,index:3};
+  assert.equal(answerQuestion(pack,revisited,q.id,q.answerId,3000).answers[q.id],wrong);
+  assert.deepEqual(revisited.orders,initial.orders);
+});
+test('mock and exam answers can change before completion but not after it',()=>{
+  for(const mode of ['mock','exam']){
+    const q=pack.questions[0];const initial=makeAttempt(pack,mode,1000);
+    const wrong=answerQuestion(pack,initial,q.id,'a',2000);
+    const corrected=answerQuestion(pack,wrong,q.id,q.answerId,3000);
+    assert.equal(corrected.answers[q.id],q.answerId);
+    const done=finishAttempt(corrected,4000);
+    assert.deepEqual(answerQuestion(pack,done,q.id,'a',5000),done);
+  }
+});
+test('answering after a timed deadline finalizes without recording the late answer',()=>{
+  const a=makeAttempt(pack,'exam',1000);const q=pack.questions[0];
+  const result=answerQuestion(pack,a,q.id,q.answerId,a.deadline+1);
+  assert.equal(result.status,'finished');assert.equal(result.finishedAt,a.deadline);
+  assert.equal(result.answers[q.id],undefined);
 });

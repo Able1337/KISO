@@ -1,4 +1,4 @@
-export type ExamMode = 'mock' | 'exam';
+export type ExamMode = 'learn' | 'mock' | 'exam';
 export type Domain = 'technology' | 'management' | 'strategy';
 export type Asset = { src: string; width: number; height: number };
 export type ExamQuestion = { id: string; number: number; domain: Domain; sourcePage: number; source: string; promptText: string; prompt: Asset; options: { id: string; text: string; image: Asset }[]; answerId: string };
@@ -34,8 +34,8 @@ export function summarize(pack: ExamPack, attempt: Attempt) {
 export function isAttempt(value: unknown, pack: ExamPack): value is Attempt {
   if (!value || typeof value!=='object') return false;
   const a=value as Attempt;
-  if(a.version!==1||a.packId!==pack.id||typeof a.id!=='string'||!['mock','exam'].includes(a.mode)||!['active','finished'].includes(a.status)||!Number.isFinite(a.startedAt)||!Number.isInteger(a.index)||a.index<0||a.index>=pack.questions.length) return false;
-  if(a.mode==='mock'?a.deadline!==null:!Number.isFinite(a.deadline)||a.deadline!==a.startedAt+pack.durationSeconds*1000) return false;
+  if(a.version!==1||a.packId!==pack.id||typeof a.id!=='string'||!['learn','mock','exam'].includes(a.mode)||!['active','finished'].includes(a.status)||!Number.isFinite(a.startedAt)||!Number.isInteger(a.index)||a.index<0||a.index>=pack.questions.length) return false;
+  if(a.mode!=='exam'?a.deadline!==null:!Number.isFinite(a.deadline)||a.deadline!==a.startedAt+pack.durationSeconds*1000) return false;
   if(a.status==='active'?a.finishedAt!==null:!Number.isFinite(a.finishedAt)) return false;
   if(!a.answers||typeof a.answers!=='object'||Array.isArray(a.answers)||!a.orders||typeof a.orders!=='object') return false;
   if(!Object.entries(a.answers).every(([id,option])=>pack.questions.some(q=>q.id===id&&q.options.some(o=>o.id===option)))) return false;
@@ -59,4 +59,14 @@ export function saveAttempt(storage: ExamStorage, attempt: Attempt): ExamStorage
 export function guardedSave(expected: ExamStorage, latest: ExamStorage, attempt: Attempt) {
   if (JSON.stringify(expected) !== JSON.stringify(latest)) return {storage: latest, conflict: true};
   return {storage: saveAttempt(latest, attempt), conflict: false};
+}
+
+export function answerQuestion(pack: ExamPack, attempt: Attempt, questionId: string, optionId: string, now: number): Attempt {
+  if(attempt.status!=='active') return attempt;
+  if(secondsRemaining(attempt,now)===0) return finishAttempt(attempt,attempt.deadline!);
+  const question=pack.questions.find(q=>q.id===questionId);
+  if(!question?.options.some(o=>o.id===optionId)) return attempt;
+  // In learning mode feedback reveals the key immediately; keep the first answer.
+  if(attempt.mode==='learn'&&attempt.answers[questionId]!==undefined) return attempt;
+  return {...attempt,answers:{...attempt.answers,[questionId]:optionId}};
 }
