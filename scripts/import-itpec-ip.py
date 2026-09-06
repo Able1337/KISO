@@ -123,7 +123,8 @@ def main():
         'archiveUrl': 'https://itpec.org/pastexamqa/ip/2026S_IP.zip',
         'sourceSha256': hashlib.sha256(question_file.read_bytes()).hexdigest(),
         'answerSha256': hashlib.sha256(answer_file.read_bytes()).hexdigest(),
-        'translations': [], 'lessonsReady': False, 'questions': records,
+        # This paper's complete trilingual editorial bank is checked by npm test.
+        'translations': [], 'lessonsReady': True, 'questions': records,
         'editorialNotes': ['Source Q64 labels the fourth option e); normalized to d).', 'Source Q71 labels the second option d); normalized to b).', 'Answer IDs follow option positions and the official key; displayed option order is shuffled.', 'Domains assigned by syllabus topic: Technology 1–45, Management 46–65, Strategy 66–100.'],
     }
     (DATA / f'{PACK}.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')

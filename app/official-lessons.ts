@@ -1,6 +1,13 @@
 import { lessons, searchQueries, studyRecommendations, type UiLanguage } from './kiso-i18n';
+import { expandedLessons } from './official-lesson-bank';
 
-export type OfficialLesson = { core:string; detail:string; search:string; next:string };
+export type OfficialLesson = { core:string; detail:string; search:string; next:string; sources?:{title:string;url:string}[] };
+const lessonSources:Record<number,NonNullable<OfficialLesson['sources']>>={
+  22:[{title:'Open Source Definition · OSI',url:'https://opensource.org/osd'}],
+  76:[{title:'ISO 9001 · ISO',url:'https://www.iso.org/iso-9001-quality-management.html'}],
+  78:[{title:'ISO/IEC 27001:2022 · ISMS',url:'https://www.iso.org/standard/27001'},{title:'ISO 30401:2018 · Knowledge management systems',url:'https://www.iso.org/standard/68683.html'}],
+  99:[{title:'SDGs · UN',url:'https://sdgs.un.org/goals'}],
+};
 const reused:Record<number,string>={2:'ip-logic-and',4:'ip-binary-155',56:'ip-wbs'};
 const extra:Record<number,Record<UiLanguage,OfficialLesson>>={
   1:{
@@ -25,8 +32,9 @@ const extra:Record<number,Record<UiLanguage,OfficialLesson>>={
   }
 };
 
-export const officialLessonCount=Object.keys(reused).length+Object.keys(extra).length;
+export const officialLessonCount=new Set([...Object.keys(reused),...Object.keys(extra),...Object.keys(expandedLessons)]).size;
 export function officialLesson(number:number,language:UiLanguage):OfficialLesson|null {
+  if(expandedLessons[number]) return {...expandedLessons[number][language],sources:lessonSources[number]};
   if(extra[number]) return extra[number][language];
   const id=reused[number];if(!id)return null;
   const lesson=lessons[id][language];

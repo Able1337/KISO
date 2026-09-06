@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import packData from '@/data/exams/itpec-ip-2026-spring.json';
 import { answerQuestion, finishAttempt, guardedSave, makeAttempt, readStorage, secondsRemaining, STORAGE_KEY, summarize, type Attempt, type ExamMode, type ExamPack, type ExamStorage } from '@/lib/exam-session';
 import { uiCopy, type UiLanguage } from './kiso-i18n';
-import { officialLesson, officialLessonCount } from './official-lessons';
+import { officialLesson, officialLessonCount, type OfficialLesson } from './official-lessons';
 
 export const officialPack = packData as ExamPack;
 const pack=officialPack;
@@ -17,7 +17,7 @@ const text = {
     learn:'Обучение', learningDone:'Обучение завершено', pendingLesson:'Подробный разбор этого вопроса ещё готовится. Ниже показан ответ по официальному ключу.', loading:'Загрузка попытки…',
     paper:'ITPEC IP · апрель 2026', sync:'Попытка обновлена в другой вкладке. Показаны последние сохранённые ответы; повторите действие, если оно ещё нужно.',
     home:'К настройке', language:'Язык экзамена: английский',
-    ready:'Оригинал и ключ: 100 / 100', pending:'Вопросы показаны в оригинале из PDF. Подробные учебные разборы готовятся поэтапно.',
+    ready:'Оригинал и ключ: 100 / 100', pending:'Вопросы показаны в оригинале из PDF. Учебные разборы доступны для всех вопросов.',
     description:'ITPEC IP · апрель 2026 · 100 вопросов · 120 минут', source:'Официальный источник', notes:'Формулировки, таблицы и схемы перенесены из официального PDF. Буквы вариантов нормализованы, порядок ответов перемешивается. В оригинале Q64 содержит e вместо d, а Q71 — d вместо b; привязка проверена по официальному ключу.',
     mock:'Пробный экзамен', exam:'Экзамен с таймером', resume:'Продолжить', active:'Незавершённая попытка', saved:'Ответы сохраняются на этом устройстве. Таймер продолжает идти при закрытии страницы.',
     original:'Оригинал',
@@ -32,7 +32,7 @@ const text = {
     learn:'Learning', learningDone:'Learning session completed', pendingLesson:'The detailed lesson for this question is in preparation. The official answer is shown below.', loading:'Loading attempt…',
     paper:'ITPEC IP · April 2026', sync:'This attempt changed in another tab. The latest saved answers are shown; repeat your action if still needed.',
     home:'Back to setup', language:'Exam language: English',
-    ready:'Original and answer key: 100 / 100', pending:'Questions use original PDF images. Detailed learning explanations are being prepared in batches.',
+    ready:'Original and answer key: 100 / 100', pending:'Questions use original PDF images. Learning explanations are available for every question.',
     description:'ITPEC IP · April 2026 · 100 questions · 120 minutes', source:'Official source', notes:'Wording, tables and figures come from the official PDF. Answer labels are normalized and options are shuffled. Source Q64 uses e instead of d; Q71 uses d instead of b. Answers are matched to the official key.',
     mock:'Mock exam', exam:'Timed exam', resume:'Resume', active:'Unfinished attempt', saved:'Answers are saved on this device. The timer continues when the page is closed.',
     original:'Original',
@@ -47,7 +47,7 @@ const text = {
     learn:'学習', learningDone:'学習を終了しました', pendingLesson:'この問題の詳しい解説は準備中です。公式正解を以下に表示しています。', loading:'受験データを読み込み中…',
     paper:'ITPEC IP · 2026年4月', sync:'別のタブで受験データが更新されました。最新の保存済み解答を表示しています。必要に応じて操作を繰り返してください。',
     home:'設定へ戻る', language:'試験言語：英語',
-    ready:'原文・正解：100 / 100', pending:'問題はPDFの原文画像です。詳しい学習解説は順次追加します。',
+    ready:'原文・正解：100 / 100', pending:'問題はPDFの原文画像です。全問に詳しい学習解説があります。',
     description:'ITPEC IP · 2026年4月 · 100問 · 120分', source:'公式出典', notes:'問題文・表・図は公式PDFから取り込みました。選択肢の記号を正規化し、順序をシャッフルします。原本Q64のeはd、Q71の2番目のdはbに対応します。公式正解表と照合済みです。',
     mock:'模擬試験', exam:'時間制限付き試験', resume:'再開', active:'未完了の受験', saved:'解答はこの端末に保存されます。ページを閉じてもタイマーは進みます。',
     original:'原文',
@@ -59,6 +59,11 @@ const text = {
     storageError:'ブラウザーに保存できませんでした。解答はページを閉じるまで保持されます。', lostStorage:'この端末に保存', option:'選択肢', diagram:'解答の図', answerKey:'公式正解表',
   },
 };
+
+function LessonSources({lesson}:{lesson:OfficialLesson}) {
+  if(!lesson.sources?.length) return null;
+  return <ul className="mt-4 space-y-2">{lesson.sources.map(source=><li key={source.url}><a className="text-primary underline" href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a></li>)}</ul>;
+}
 
 function timeLabel(seconds:number) { return `${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`; }
 
@@ -157,7 +162,7 @@ export default function OfficialExams({language, onLanguage, onExit, entry}: {la
           {revealed&&<div data-testid="explanation" className={`mt-6 rounded-2xl border p-5 ${attempt.answers[q.id]===q.answerId?'explanation-correct':'explanation-wrong'}`}>
             <h2 className="font-semibold">{attempt.answers[q.id]===q.answerId?t.correct:t.incorrect}</h2>
             <p className="mt-2 font-semibold">{t.right}: {String.fromCharCode(65+attempt.orders[q.id].indexOf(q.answerId))}</p>
-            {lesson?<><p className="mt-3 leading-7">{lesson.core}</p><a className="search-topic" href={`https://www.google.com/search?q=${encodeURIComponent(lesson.search)}`} target="_blank" rel="noreferrer"><Search className="size-4"/><span><strong>{copy.searchFor}</strong>{lesson.search}</span></a><div className="study-next"><Lightbulb className="size-4"/><span><strong>{copy.studyNext}</strong>{lesson.next}</span></div><details className="lesson-details" key={q.id}><summary>{copy.learnTopic}</summary><div className="lesson-body"><p>{lesson.detail}</p></div></details></>:<p className="mt-3 text-muted-foreground">{t.pendingLesson}</p>}
+            {lesson?<><p className="mt-3 leading-7">{lesson.core}</p><a className="search-topic" href={`https://www.google.com/search?q=${encodeURIComponent(lesson.search)}`} target="_blank" rel="noreferrer"><Search className="size-4"/><span><strong>{copy.searchFor}</strong>{lesson.search}</span></a><div className="study-next"><Lightbulb className="size-4"/><span><strong>{copy.studyNext}</strong>{lesson.next}</span></div><details className="lesson-details" key={q.id}><summary>{copy.learnTopic}</summary><div className="lesson-body"><p>{lesson.detail}</p><LessonSources lesson={lesson}/></div></details></>:<p className="mt-3 text-muted-foreground">{t.pendingLesson}</p>}
           </div>}
           <div className="mt-7 flex flex-wrap items-center justify-between gap-3 border-t pt-5"><Button variant="outline" disabled={attempt.index===0} onClick={()=>update({...attempt,index:attempt.index-1})}><ArrowLeft/>{t.previous}</Button><Button variant="ghost" onClick={()=>setConfirmFinish(true)}>{t.finish}</Button><Button disabled={attempt.index===99} onClick={()=>update({...attempt,index:attempt.index+1})}>{t.next}<ArrowRight/></Button></div>
           {confirmFinish&&<div role="alert" className="mt-5 rounded-xl border border-primary bg-[var(--mint)] p-4"><p>{t.finishWarning}</p><p className="mt-2">{t.answered}: {result!.answered}/100 · {t.skipped}: {result!.unanswered}</p><div className="mt-4 flex flex-wrap gap-3"><Button onClick={finish}>{t.confirm}</Button><Button variant="outline" onClick={()=>setConfirmFinish(false)}>{t.cancel}</Button></div></div>}
@@ -169,7 +174,7 @@ export default function OfficialExams({language, onLanguage, onExit, entry}: {la
         <Badge>{t.paper}</Badge><h1 className="mt-4 text-3xl font-bold">{result.correct} / {result.total} · {result.percent}%</h1><p className="mt-3 text-xl font-semibold">{attempt.mode==='learn'?t.learningDone:result.passed?t.passed:t.failed}</p><p className="mt-2 text-muted-foreground">{t.skipped}: {result.unanswered}</p>{attempt.mode!=='learn'&&<p className="mt-4 max-w-3xl text-sm leading-6 text-muted-foreground">{t.grading}</p>}
         <div className="mt-6 grid gap-3 sm:grid-cols-3">{result.domains.map(d=><div className="rounded-xl border bg-card p-4" key={d.domain}><p>{t[d.domain]}</p><strong className="mt-2 block text-2xl">{d.correct}/{d.total}</strong></div>)}</div>
         <h2 className="mt-9 text-2xl font-semibold">{t.review}</h2><p className="mt-2 text-sm text-muted-foreground">{t.pending} ({officialLessonCount}/100)</p>
-        <div className="mt-4 space-y-3">{pack.questions.map(item=>{const reviewLesson=officialLesson(item.number,language);const selected=attempt.answers[item.id];const isCorrect=selected===item.answerId;return <details key={item.id} className={`review-item ${isCorrect?'review-correct':'review-wrong'}`}><summary><span className="review-number">{item.number}</span><span className="flex-1">{t.question} {item.number} · {selected===undefined?t.skipped:isCorrect?t.correct:t.incorrect}</span>{isCorrect?<CheckCircle2 className="size-5 text-primary"/>:<XCircle className="size-5 text-destructive"/>}</summary><div className="review-body"><img className="exam-prompt" loading="lazy" src={item.prompt.src} width={item.prompt.width} height={item.prompt.height} alt={item.promptText} lang="en"/><div className="mt-4 space-y-3">{attempt.orders[item.id].map((id,i)=>{const o=item.options.find(v=>v.id===id)!;return <div className={`official-option ${id===item.answerId?'review-answer-correct':id===selected?'review-answer-wrong':''}`} key={id}><span className="answer-letter">{String.fromCharCode(65+i)}</span><div className="min-w-0 flex-1"><div className="mb-2 text-sm font-semibold">{id===selected&&`${t.your} · `}{id===item.answerId&&t.right}</div><img loading="lazy" src={o.image.src} width={o.image.width} height={o.image.height} alt={o.text||t.diagram} lang="en"/></div></div>;})}</div>{reviewLesson&&<details className="lesson-details"><summary>{copy.learnTopic}</summary><div className="lesson-body"><p>{reviewLesson.core}</p><p className="mt-3">{reviewLesson.detail}</p></div></details>}<p className="mt-4 text-sm text-muted-foreground">{item.source} · {t.right}: {item.answerId.toUpperCase()} ({t.original})</p></div></details>;})}</div>
+        <div className="mt-4 space-y-3">{pack.questions.map(item=>{const reviewLesson=officialLesson(item.number,language);const selected=attempt.answers[item.id];const isCorrect=selected===item.answerId;return <details key={item.id} className={`review-item ${isCorrect?'review-correct':'review-wrong'}`}><summary><span className="review-number">{item.number}</span><span className="flex-1">{t.question} {item.number} · {selected===undefined?t.skipped:isCorrect?t.correct:t.incorrect}</span>{isCorrect?<CheckCircle2 className="size-5 text-primary"/>:<XCircle className="size-5 text-destructive"/>}</summary><div className="review-body"><img className="exam-prompt" loading="lazy" src={item.prompt.src} width={item.prompt.width} height={item.prompt.height} alt={item.promptText} lang="en"/><div className="mt-4 space-y-3">{attempt.orders[item.id].map((id,i)=>{const o=item.options.find(v=>v.id===id)!;return <div className={`official-option ${id===item.answerId?'review-answer-correct':id===selected?'review-answer-wrong':''}`} key={id}><span className="answer-letter">{String.fromCharCode(65+i)}</span><div className="min-w-0 flex-1"><div className="mb-2 text-sm font-semibold">{id===selected&&`${t.your} · `}{id===item.answerId&&t.right}</div><img loading="lazy" src={o.image.src} width={o.image.width} height={o.image.height} alt={o.text||t.diagram} lang="en"/></div></div>;})}</div>{reviewLesson&&<details className="lesson-details"><summary>{copy.learnTopic}</summary><div className="lesson-body"><p>{reviewLesson.core}</p><p className="mt-3">{reviewLesson.detail}</p><LessonSources lesson={reviewLesson}/></div></details>}<p className="mt-4 text-sm text-muted-foreground">{item.source} · {t.right}: {item.answerId.toUpperCase()} ({t.original})</p></div></details>;})}</div>
         <div className="mt-8 flex flex-wrap justify-between gap-3"><a className="text-sm text-primary underline" href={`exams/${pack.id}/answers.pdf`} target="_blank" rel="noreferrer">{t.answerKey} ↗</a><Button onClick={onExit}>{t.newAttempt}</Button></div>
       </>}
     </section>

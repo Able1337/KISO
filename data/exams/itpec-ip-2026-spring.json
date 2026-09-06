@@ -13,7 +13,7 @@
   "sourceSha256": "45a8042f5bf9a6a56e575cfd6a83efc752d4bc949d23d89009a311434a5dc8f8",
   "answerSha256": "6a44c9c694ef26916942af1671b235ac6f64be54017b741f1211e79ffbecb0da",
   "translations": [],
-  "lessonsReady": false,
+  "lessonsReady": true,
   "questions": [
     {
       "id": "itpec-ip-2026-spring-q001",
