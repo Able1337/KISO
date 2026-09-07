@@ -62,7 +62,9 @@ test('IPA lesson coverage is honest and keys match all reviewed translations',()
   assert.equal(details.size,3);
  }
  assert.equal(lessonCoverage[ip.id],ipaIp.length);assert.equal(lessonCoverage[fe.id],ipaFeA.length+ipaFeB.length);
- assert.equal(ipaLesson('IP',undefined,1,'ru'),null);
+ assert.equal(ipaIp.length,100);assert.equal(ip.lessonsReady,true);
+ assert.deepEqual(ipaIp.map(e=>e[0]).sort((a,b)=>a-b),Array.from({length:100},(_,i)=>i+1));
+ assert.equal(ipaLesson('IP',undefined,101,'ru'),null);
 });
 test('IPA IP calculations and algorithms independently verified',()=>{
  const payoff=[[20,-15],[5,0]], worst=payoff.map(row=>Math.min(...row));
@@ -78,12 +80,13 @@ test('IPA IP calculations and algorithms independently verified',()=>{
  const tasks=[['A',0,1],['B',1,2],['C',2,2],['D',2,1],['E',3,2],['F',4,1]];
  for(let slot=0;slot<5;slot++)assert.ok(tasks.filter(t=>t[1]===slot).reduce((s,t)=>s+t[2],0)<=3);
 });
-test('IPA IP new lessons: unique numbers and every incorrect option in three languages',()=>{
+test('IPA IP all 100 lessons: unique numbers and every incorrect option in three languages',()=>{
  assert.equal(new Set(ipaIp.map(e=>e[0])).size,ipaIp.length);
- for(const number of [2,3,4,6,8,10,14,16,18,20]){
+ for(const number of Array.from({length:100},(_,i)=>i+1)){
   const q=ip.questions.find(q=>q.number===number);
   for(const wrong of q.options.filter(o=>o.id!==q.answerId)){
    const a=answerQuestion(ip,makeAttempt(ip,'learn',1000),q.id,wrong.id,1001);
+   assert.equal(a.answers[q.id],wrong.id);
    assert.equal(summarize(ip,a).correct,0);
    for(const lang of ['ru','en','ja'])assert.ok(ipaLesson('IP',undefined,number,lang).detail.length>120);
   }
@@ -94,6 +97,52 @@ test('IPA FE truth table, availability, retention and SQL constraints',()=>{
  assert.equal((5000-100)/5000*100,98);assert.ok(Math.abs((5000-.5)/5000*100-99.99)<1e-10);
  const rates=[[1000,500,800],[1000,200,800],[1500,500,1100],[1500,1000,1800]].map(([start,added,end])=>(end-added)/start);assert.equal(rates.indexOf(Math.max(...rates)),1);
  const db=new DatabaseSync(':memory:');db.exec("CREATE TABLE p(code TEXT PRIMARY KEY,stock INT); INSERT INTO p VALUES ('A111',0),('A222',50),('A333',NULL),('A444',20)");assert.throws(()=>db.exec("UPDATE p SET code='A777' WHERE stock>=20"));assert.equal(db.prepare('SELECT count(*) AS n FROM p').get().n,4);db.close();
+});
+test('IPA IP learning examples: allocation, frame size, biometric rates, gradient and hashes',()=>{
+ assert.deepEqual([100,200].map(hours=>600*hours/300),[200,400]);
+ assert.equal(1920*1080*4,8294400);
+ assert.equal(2/1000*100,.2);assert.equal(10/500*100,2);
+ const loss=w=>(w-3)**2,gradient=w=>2*(w-3),w=1,eps=1e-6;
+ assert.ok(Math.abs((loss(w+eps)-loss(w-eps))/(2*eps)-gradient(w))<1e-6);
+ const next=w-.1*gradient(w);assert.equal(next,1.4);assert.ok(Math.abs(loss(next)-2.56)<1e-12);assert.ok(loss(next)<loss(w));
+ const hash=s=>createHash('sha256').update(s).digest('hex');
+ assert.equal(hash('abc'),hash('abc'));assert.notEqual(hash('abc'),hash('abc '));assert.equal(hash('abc').length,64);
+});
+test('IPA IP foreign keys and dependent inserts execute against an isolated in-memory database',()=>{
+ const db=new DatabaseSync(':memory:');
+ try{
+  db.exec('PRAGMA foreign_keys=ON; CREATE TABLE student(id INTEGER PRIMARY KEY); CREATE TABLE subject(id INTEGER PRIMARY KEY); CREATE TABLE grade(student_id INTEGER REFERENCES student(id), subject_id INTEGER REFERENCES subject(id), score INTEGER, PRIMARY KEY(student_id,subject_id)); INSERT INTO subject VALUES(1)');
+  assert.throws(()=>db.exec('INSERT INTO grade VALUES(42,1,80)'));
+  db.exec('INSERT INTO student VALUES(42); INSERT INTO grade VALUES(42,1,80)');
+  assert.throws(()=>db.exec('INSERT INTO grade VALUES(42,1,90)'));assert.throws(()=>db.exec('INSERT INTO grade VALUES(42,2,90)'));
+  db.exec('CREATE TABLE customer(id INTEGER PRIMARY KEY); CREATE TABLE account(id INTEGER PRIMARY KEY,customer_id INTEGER REFERENCES customer(id)); CREATE TABLE detail(id INTEGER PRIMARY KEY,account_id INTEGER REFERENCES account(id),amount INTEGER)');
+  assert.throws(()=>db.exec('INSERT INTO account VALUES(1,1)'));assert.throws(()=>db.exec('INSERT INTO detail VALUES(1,1,10000)'));
+  db.exec('BEGIN; INSERT INTO customer VALUES(1); INSERT INTO account VALUES(1,1); INSERT INTO detail VALUES(1,1,10000); COMMIT');
+  assert.equal(db.prepare('SELECT amount FROM detail').get().amount,10000);
+  db.exec('BEGIN; INSERT INTO customer VALUES(2)');
+  assert.throws(()=>db.exec('INSERT INTO account VALUES(1,2)'));db.exec('ROLLBACK');
+  assert.equal(db.prepare('SELECT count(*) AS n FROM customer').get().n,1);
+ }finally{db.close();}
+});
+test('IPA IP differential restore includes all changes since full, unlike an incremental chain',()=>{
+ const full={a:1,b:2},sunday={a:3,b:2,c:4},monday={a:3,b:5,c:4},tuesday={a:6,b:5,c:4};
+ const difference=(from,to)=>Object.fromEntries(Object.entries(to).filter(([k,v])=>from[k]!==v));
+ assert.deepEqual({...full,...difference(full,tuesday)},tuesday);
+ assert.notDeepEqual({...full,...difference(monday,tuesday)},tuesday);
+ assert.deepEqual({...full,...difference(full,sunday),...difference(sunday,monday),...difference(monday,tuesday)},tuesday);
+});
+test('IPA IP primary references and contextual caveats are preserved in all languages',()=>{
+ for(const number of [1,5,11,13,21,29,58,63,71,73,82,92,95,97])for(const lang of ['ru','en','ja']){
+  const l=ipaLesson('IP',undefined,number,lang);assert.ok(l.sources.length>0);
+  for(const source of l.sources)assert.equal(new URL(source.url).protocol,'https:');
+ }
+ for(const e of ipaIp){
+  for(const field of e[2])assert.match(field,/[а-яё]/i);
+  assert.doesNotMatch(e[3].join(' '),/[а-яё]/i);assert.doesNotMatch(e[4].join(' '),/[а-яё]/i);
+ }
+ assert.match(ipaLesson('IP',undefined,9,'en').detail,/shared inspection/);
+ assert.match(ipaLesson('IP',undefined,71,'en').detail,/not a recommendation/);
+ assert.match(ipaLesson('IP',undefined,95,'en').detail,/parameterized queries/);
 });
 test('IPA B algorithms: rotation, all 256 complements, recurrence, pointers, one-hot',()=>{
  const a=[1,2,3,4,5,6,7,8,9],top=a.at(-1);for(let i=a.length-1;i>=1;i--)a[i]=a[i-1];a[0]=top;assert.deepEqual(a,[9,1,2,3,4,5,6,7,8]);

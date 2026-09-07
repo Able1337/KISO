@@ -1,8 +1,13 @@
 import type {Entry} from './fe-lessons.ts';
 import {ipaIpNext} from './ipa-ip-lessons-next.ts';
+import {ipaIpStrategy} from './ipa-ip-lessons-strategy.ts';
+import {ipaIpManagement} from './ipa-ip-lessons-management.ts';
+import {ipaIpTechnology} from './ipa-ip-lessons-technology.ts';
+import {ipaIpSecurity} from './ipa-ip-lessons-security.ts';
 // Only reviewed lessons are published; absent entries deliberately have no fallback.
 export const ipaIp:Entry[]=[
  ...ipaIpNext,
+ ...ipaIpStrategy,...ipaIpManagement,...ipaIpTechnology,...ipaIpSecurity,
  [7,'b',
   ['В value engineering ценность = функция / стоимость.','Функция означает полезный результат для пользователя, а не число функций в меню. Ценность можно повысить, сохранив полезность при меньшей стоимости или увеличив полезность без пропорционального роста затрат. Например, при условной полезности 80 и стоимости 40 отношение равно 2; при той же полезности и стоимости 32 оно равно 2.5. Простое удешевление с потерей нужного качества не обязательно улучшает ценность. Это модель сравнения, а не универсальная денежная оценка любой функции.','функционально стоимостной анализ value engineering функция стоимость','Потренируйте оба пути: снижение затрат и повышение полезности. Различайте необходимые функции и избыточные затраты.'],
   ['Value engineering uses value = function / cost.','Function means useful performance for the customer, not the number of menu features. Improve value by maintaining performance at lower cost or increasing performance without proportionate cost growth. With illustrative performance 80 and cost 40, the ratio is 2; keeping performance and lowering cost to 32 raises it to 2.5. Cutting price while losing required quality does not necessarily improve value. This is a comparison model, not a universal monetary measure of every function.','value engineering function cost analysis','Practise both cost reduction and performance improvement. Separate necessary functions from unnecessary costs.'],

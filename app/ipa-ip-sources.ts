@@ -1,0 +1,22 @@
+// Primary references for legal rules, terminology and practical caveats.
+export const ipaIpSources:Record<number,{title:string;url:string}[]>={
+ 1:[{title:'文化庁 · AIと著作権',url:'https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html'}],
+ 5:[{title:'JPO · Software-related inventions',url:'https://www.jpo.go.jp/system/laws/rule/guideline/patent/tukujitu_kijun/ht/03_0100.html'}],
+ 11:[{title:'裁判所 · パブリシティ権',url:'https://www.courts.go.jp/assets/hanrei/hanrei-pdf-13369.pdf'}],
+ 12:[{title:'IPA · WFA',url:'https://www.ipa.go.jp/shiken/mondai-kaiotu/ug65p90000003ojp-att/2011h23a_ap_pm_qs.pdf'}],
+ 13:[{title:'PPC · 匿名加工情報',url:'https://www.ppc.go.jp/personalinfo/legal/guidelines_anonymous/'}],
+ 14:[{title:'ISO · ISO 26000',url:'https://www.iso.org/standard/42546.html'}],
+ 21:[{title:'NCO · サイバーセキュリティ基本法',url:'https://www.cyber.go.jp/policy/group/kihon-2/policy.html'}],
+ 29:[{title:'Japan Civil Code · Articles 633, 641',url:'https://www.japaneselawtranslation.go.jp/en/laws/view/4314/en'}],
+ 56:[{title:'PostgreSQL · CHECKPOINT',url:'https://www.postgresql.org/docs/16/sql-checkpoint.html'}],
+ 57:[{title:'PostgreSQL · Foreign keys',url:'https://www.postgresql.org/docs/18/ddl-constraints.html'}],
+ 58:[{title:'HCD-Net · 構造化シナリオ',url:'https://s3.ap-northeast-1.amazonaws.com/wraptas-prod/hcd-net/30ad0521-a442-80e7-9aa1-d240edf4e37e/9197d1b1827ff61f88575d9b895745ec.pdf'}],
+ 63:[{title:'CISA · StopRansomware Guide',url:'https://www.cisa.gov/stopransomware/ransomware-guide'}],
+ 71:[{title:'NIST · Digital Identity FAQ',url:'https://pages.nist.gov/800-63-FAQ/'}],
+ 73:[{title:'GNU · Copyleft',url:'https://www.gnu.org/licenses/copyleft.html.en'}],
+ 81:[{title:'Bluetooth SIG · Bluetooth LE Primer',url:'https://www.bluetooth.com/bluetooth-le-primer/'}],
+ 82:[{title:'PyTorch · Automatic differentiation',url:'https://docs.pytorch.org/tutorials/beginner/basics/autograd_tutorial.html'}],
+ 92:[{title:'NIST · Zero Trust Architecture',url:'https://www.nist.gov/publications/zero-trust-architecture'}],
+ 95:[{title:'OWASP · SQL Injection Prevention',url:'https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html'}],
+ 97:[{title:'OSI · Open Source Definition',url:'https://opensource.org/osd'}],
+};

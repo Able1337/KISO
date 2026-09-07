@@ -11,7 +11,7 @@
   "sourceUrl": "https://www3.jitec.ipa.go.jp/JitesCbt/html/openinfo/questions.html",
   "publishedSubset": true,
   "translations": [],
-  "lessonsReady": false,
+  "lessonsReady": true,
   "questions": [
     {
       "id": "ipa-ip-2026-public-q001",

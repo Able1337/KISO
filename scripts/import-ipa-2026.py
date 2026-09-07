@@ -190,6 +190,8 @@ def main():
             rows,meta=import_subject(level,part,count);records+=rows;parts.append(meta)
         pack=f'ipa-{level.lower()}-2026-public'
         manifest=dict(schemaVersion=1,id=pack,system='IPA',level=level,year=2026,season='public',originalLanguage='ja',title='2026 公開問題',durationSeconds=3600 if level=='FE' else 7200,sourceUrl='https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2026r08.html' if level=='FE' else 'https://www3.jitec.ipa.go.jp/JitesCbt/html/openinfo/questions.html',publishedSubset=True,translations=[],lessonsReady=level=='FE',questions=records,editorialNotes=['Original Japanese answer labels mapped in order to stable Latin IDs; options shuffled.','Published CBT questions, not an entire CBT bank.','FE practice timing proportional to published question count: A 30 min, B 30 min; real FE A 90 min, B 100 min.'] if level=='FE' else ['Original Japanese answer labels mapped in order to stable Latin IDs; options shuffled.','100 published CBT questions, not an entire CBT bank.','OCR is diagnostic only. Original scans are displayed.'])
+        # Both published 2026 packs now have complete, independently tested lesson banks.
+        manifest['lessonsReady']=True
         if level=='FE':manifest['parts']=parts
         else:manifest.update({k:parts[0][k] for k in ['sourceSha256','answerSha256']})
         (ROOT/'data/exams'/f'{pack}.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
