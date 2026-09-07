@@ -6,7 +6,9 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { answerQuestion, completeSection, expireAttempt, navigateQuestion, startNextPart, storageKey, guardedSave, makeAttempt, readStorage, secondsRemaining, summarize, type Attempt, type ExamMode, type ExamPack, type ExamStorage, type ExamQuestion } from '@/lib/exam-session';
 import { uiCopy, type UiLanguage } from './kiso-i18n';
-import { officialLesson, officialLessonCount, type OfficialLesson } from './official-lessons';
+import { officialLesson, type OfficialLesson } from './official-lessons';
+import { feLesson } from './fe-lessons';
+import { lessonCoverage } from '@/lib/lesson-coverage';
 
 export type OfficialEntry={mode?:ExamMode;attemptId?:string};
 const text = {
@@ -22,7 +24,7 @@ const text = {
     finishWarning:'После завершения ответы изменить нельзя. Пропущенные вопросы считаются неверными.', leave:'Сохранить и выйти', reference:'Оригинальный PDF и справочник',
     navigation:'Навигация по вопросам', review:'Разбор всех ответов', correct:'Верно', incorrect:'Неверно', skipped:'Нет ответа', your:'Ваш ответ', right:'Правильный ответ',
     passed:'Учебный порог достигнут', failed:'Учебный порог не достигнут', grading:'Учебный расчёт: не менее 60% в целом и 30% в каждой области. Распределение вопросов по областям размечено по темам; результат не является официальной оценкой ITPEC.',
-    technology:'Технологии', management:'Управление', strategy:'Стратегия', history:'Пройденные варианты', empty:'Завершённых попыток пока нет.', view:'Посмотреть результат', newAttempt:'К вариантам',
+    technology:'Технологии', management:'Управление', strategy:'Стратегия', history:'Пройденные варианты', empty:'Завершённых попыток пока нет.', view:'Посмотреть результат', newAttempt:'К настройке',
     storageError:'Браузер не разрешил сохранение. Ответы доступны только до закрытия этой страницы.', lostStorage:'Сохранение на этом устройстве', option:'Вариант', diagram:'Схема ответа', answerKey:'Официальный ключ',
   },
   en: {
@@ -74,8 +76,8 @@ export default function OfficialExams({pack, language, onLanguage, onExit, entry
   const key=storageKey(pack);
   const total=pack.questions.length;
   const paper=`${pack.system} ${pack.level} · ${label('апрель 2026','April 2026','2026年4月')}`;
-  const lessonFor=(question:ExamQuestion)=>pack.id==='itpec-ip-2026-spring'?officialLesson(question.number,language):null;
-  const lessonCount=pack.id==='itpec-ip-2026-spring'?officialLessonCount:0;
+  const lessonFor=(question:ExamQuestion)=>pack.id==='itpec-ip-2026-spring'?officialLesson(question.number,language):pack.id==='itpec-fe-2026-spring'?feLesson(question.part,question.number,language):null;
+  const lessonCount=lessonCoverage[pack.id]??0;
   const questionPdf=(question:ExamQuestion)=>pack.parts?.find(p=>p.id===question.part)?.questionPdf??`exams/${pack.id}/questions.pdf`;
   const [storage,setStorage]=useState<ExamStorage>({version:1,active:null,history:[]});
   const [attempt,setAttempt]=useState<Attempt|null>(null);
@@ -142,7 +144,7 @@ export default function OfficialExams({pack, language, onLanguage, onExit, entry
     if(navigator.locks) await navigator.locks.request(key,commit);
     else commit();
   }
-  function start(mode:ExamMode) { const current=Date.now(); setNow(current); update(makeAttempt(pack,mode,current)); }
+  function start(mode:ExamMode) { const current=Date.now(); setNow(current); update(makeAttempt(pack,mode,current,Math.random,storage.history[0]?.orders)); }
   function finish() { if(attempt) update(completeSection(pack,attempt,Date.now())); setConfirmFinish(false); }
   const result=attempt?summarize(pack,attempt):null;
   const q=attempt?pack.questions[attempt.index]:null;
@@ -187,7 +189,7 @@ export default function OfficialExams({pack, language, onLanguage, onExit, entry
         <Badge>{paper}</Badge><h1 className="mt-4 text-3xl font-bold">{result.correct} / {result.total} · {result.percent}%</h1><p className="mt-3 text-xl font-semibold">{attempt.mode==='learn'?t.learningDone:result.passed?t.passed:t.failed}</p><p className="mt-2 text-muted-foreground">{t.skipped}: {result.unanswered}</p>{attempt.mode!=='learn'&&<p className="mt-4 max-w-3xl text-sm leading-6 text-muted-foreground">{pack.parts?label('Учебный расчёт: не менее 60% отдельно в A и B. Равный вес вопросов — учебная модель, не официальный балл ITPEC.','Practice scoring: at least 60% separately in A and B. Equal question weights are a practice model, not official ITPEC marks.','学習用採点：A・Bそれぞれ60%以上。各問同配点の練習用計算で、ITPECの公式得点ではありません。'):t.grading}</p>}
         <div className="mt-6 grid gap-3 sm:grid-cols-3">{!pack.parts&&result.domains.map(d=><div className="rounded-xl border bg-card p-4" key={d.domain}><p>{t[d.domain]}</p><strong className="mt-2 block text-2xl">{d.correct}/{d.total}</strong></div>)}</div>
         {pack.parts&&<div className="mt-6 grid gap-3 sm:grid-cols-2">{result.parts.map(p=><div key={p.part} className="rounded-xl border bg-card p-4"><p>{label('Часть','Subject','科目')} {p.part}</p><strong className="mt-2 block text-2xl">{p.correct}/{p.total} · {p.percent}%</strong><p className="mt-2 text-sm">{p.passed?t.passed:t.failed}</p></div>)}</div>}
-        <h2 className="mt-9 text-2xl font-semibold">{t.review}</h2><p className="mt-2 text-sm text-muted-foreground">{pack.parts?label('Все вопросы и ключи перенесены. Подробные разборы FE ещё не добавлены.','All questions and keys are imported. Detailed FE lessons are not added yet.','全問題と正解を収録。FEの詳しい解説は未追加です。'):t.pending} ({lessonCount}/{total})</p>
+        <h2 className="mt-9 text-2xl font-semibold">{t.review}</h2><p className="mt-2 text-sm text-muted-foreground">{pack.parts?label('Все вопросы и ключи перенесены. Подробные разборы готовы для A1–A20; остальные ещё готовятся.','All questions and keys are imported. Detailed lessons cover A1–A20; the rest are in preparation.','全問題と正解を収録。A1～A20の詳しい解説があり、残りは準備中です。'):t.pending} ({lessonCount}/{total})</p>
         <div className="mt-4 space-y-3">{pack.questions.map(item=>{const reviewLesson=lessonFor(item);const selected=attempt.answers[item.id];const isCorrect=selected===item.answerId;return <details key={item.id} className={`review-item ${isCorrect?'review-correct':'review-wrong'}`}><summary><span className="review-number">{item.part&&`${item.part} `}{item.number}</span><span className="flex-1">{t.question} {item.part&&`${item.part} `}{item.number} · {selected===undefined?t.skipped:isCorrect?t.correct:t.incorrect}</span>{isCorrect?<CheckCircle2 className="size-5 text-primary"/>:<XCircle className="size-5 text-destructive"/>}</summary><div className="review-body"><PromptImages question={item}/><div className="mt-4 space-y-3">{attempt.orders[item.id].map((id,i)=>{const o=item.options.find(v=>v.id===id)!;return <div className={`official-option ${id===item.answerId?'review-answer-correct':id===selected?'review-answer-wrong':''}`} key={id}><span className="answer-letter">{String.fromCharCode(65+i)}</span><div className="min-w-0 flex-1"><div className="mb-2 text-sm font-semibold">{id===selected&&`${t.your} · `}{id===item.answerId&&t.right}</div><img loading="lazy" src={o.image.src} width={o.image.width} height={o.image.height} alt={o.text||t.diagram} lang="en"/></div></div>;})}</div>{reviewLesson&&<details className="lesson-details"><summary>{copy.learnTopic}</summary><div className="lesson-body"><p>{reviewLesson.core}</p><p className="mt-3">{reviewLesson.detail}</p><LessonSources lesson={reviewLesson}/></div></details>}<p className="mt-4 text-sm text-muted-foreground">{item.source} · {t.right}: {item.answerId.toUpperCase()} ({t.original})</p></div></details>;})}</div>
         <div className="mt-8 flex flex-wrap justify-between gap-3"><div className="flex gap-4">{(pack.parts??[{id:'IP',answerPdf:`exams/${pack.id}/answers.pdf`}]).map(p=><a key={p.id} className="text-sm text-primary underline" href={p.answerPdf} target="_blank" rel="noreferrer">{t.answerKey} · {p.id} ↗</a>)}</div><Button onClick={onExit}>{t.newAttempt}</Button></div>
       </>}

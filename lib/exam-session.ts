@@ -10,10 +10,24 @@ export const STORAGE_KEY = 'kiso-official-exams-v1';
 // Preserve the shipped IP storage key; new papers never overwrite another paper.
 export function storageKey(pack:ExamPack) { return pack.id==='itpec-ip-2026-spring'?STORAGE_KEY:`${STORAGE_KEY}:${pack.id}`; }
 
-export function makeAttempt(pack: ExamPack, mode: ExamMode, now: number, random = Math.random): Attempt {
+// Rejection sampling of permutations with no unchanged positions.
+// The bounded fallback also terminates for a constant/test RNG. Never mutate
+// saved orders: they are needed to interpret answers in resumed attempts.
+export function shuffleOptions(ids: string[], previous: string[] | undefined, random = Math.random) {
+  const baseline=previous?.length===ids.length&&new Set(previous).size===ids.length&&ids.every(id=>previous.includes(id))?previous:ids;
+  if(ids.length<2)return [...ids];
+  for(let tries=0;tries<32;tries++){
+    const candidate=[...ids];
+    for(let i=candidate.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[candidate[i],candidate[j]]=[candidate[j],candidate[i]];}
+    if(candidate.every((id,i)=>id!==baseline[i]))return candidate;
+  }
+  const shift=1+Math.floor(random()*(ids.length-1));
+  return [...baseline.slice(shift),...baseline.slice(0,shift)];
+}
+
+export function makeAttempt(pack: ExamPack, mode: ExamMode, now: number, random = Math.random, previousOrders?: Attempt['orders']): Attempt {
   const orders = Object.fromEntries(pack.questions.map(q => {
-    const ids = q.options.map(o => o.id);
-    for (let i=ids.length-1;i>0;i--) { const j=Math.floor(random()*(i+1)); [ids[i],ids[j]]=[ids[j],ids[i]]; }
+    const ids = shuffleOptions(q.options.map(o => o.id),previousOrders?.[q.id],random);
     return [q.id, ids];
   }));
   return {version:1,id:`${pack.id}-${now}-${Math.floor(random()*1e9)}`,packId:pack.id,mode,startedAt:now,deadline:mode==='exam'?now+(pack.parts?.[0].durationSeconds??pack.durationSeconds)*1000:null,index:0,answers:{},orders,status:'active',finishedAt:null,...(pack.parts?{stage:'A',partAEndedAt:null,partBStartedAt:null}:{})};
