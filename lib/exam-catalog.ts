@@ -1,6 +1,8 @@
 import type { ExamPack } from './exam-session';
 
 export const examCatalog=[
+  {id:'ipa-ip-2024-public',system:'IPA',level:'IP',year:2024,load:()=>import('../data/exams/ipa-ip-2024-public.json')},
+  {id:'ipa-ip-2025-public',system:'IPA',level:'IP',year:2025,load:()=>import('../data/exams/ipa-ip-2025-public.json')},
   ...[
     {id:'itpec-ip-2025-spring',level:'IP',year:2025,season:'spring',load:()=>import('../data/exams/itpec-ip-2025-spring.json')},
     {id:'itpec-ip-2025-autumn',level:'IP',year:2025,season:'autumn',load:()=>import('../data/exams/itpec-ip-2025-autumn.json')},

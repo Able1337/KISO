@@ -5,8 +5,8 @@ import {readdir,writeFile,access} from 'node:fs/promises';
 import path from 'node:path';
 const require=createRequire(import.meta.url);
 const {createWorker}=require(process.argv[2]);
-const dir=path.resolve('work/release-import/ipa-2026');
-const worker=await createWorker('jpn',1,{cachePath:dir});
+const dir=path.resolve(process.argv[3] || 'work/release-import/ipa-2026');
+const worker=await createWorker('jpn',1,{cachePath:path.resolve('work/release-import/ipa-2026')});
 try{
  for(const file of (await readdir(dir)).filter(f=>/^ip-\d+\.png$/.test(f)).sort()){
   const out=path.join(dir,file.replace('.png','.json'));

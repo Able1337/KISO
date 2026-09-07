@@ -59,8 +59,8 @@ def import_subject(level,part,count,year=2026,sample=False):
     out.mkdir(parents=True,exist_ok=True)
     question=SOURCE/(stem+'_qs.pdf'); answer=SOURCE/(stem+'_ans.pdf')
     if year!=2026:
-        question=ROOT/f'work/release-import/ipa-fe-{year}/{part.lower()}-qs.pdf'
-        answer=question.with_name(f'{part.lower()}-ans.pdf')
+        question=ROOT/f'work/release-import/ipa-fe-{year}/{part.lower()}-qs.pdf' if level=='FE' else ROOT/f'work/release-import/ipa-ip-{year}/qs.pdf'
+        answer=question.with_name(f'{part.lower()}-ans.pdf' if level=='FE' else 'ans.pdf')
     prefix=part.lower() if part else 'q'
     qp=f'{part.lower()}-questions.pdf' if part else 'questions.pdf'
     ap=f'{part.lower()}-answers.pdf' if part else 'answers.pdf'
@@ -76,18 +76,19 @@ def import_subject(level,part,count,year=2026,sample=False):
     starts=[]; pages=[]
     for pi,p in enumerate(pdf.pages):
         words=p.extract_words()
-        if level=='IP' and pi>0 and pi<49:
-            ocr=json.loads((SOURCE/f'ip-{pi+1:02}.json').read_text(encoding='utf8'))
+        if level=='IP' and pi>0 and (pi<49 if year==2026 else pi<len(pdf.pages)-2):
+            ocr=json.loads((question.parent/f'ip-{pi+1:02}.json').read_text(encoding='utf8'))
             words=[]
             for block in ocr['blocks'] or []:
                 for para in block['paragraphs']:
                     for line in para['lines']:
                         line_text=norm(line['text']).strip()
-                        if re.match(r'[問間]\s*\d+',line_text) and 'から' not in line_text.replace(' ','')[:18] and line['bbox']['x0']<175:
+                        if re.match(r'[問間]\s*\d+',line_text) and not re.match(r'[問間]\d+から[問間]\d+',line_text.replace(' ','')) and line['bbox']['x0']<175:
                             starts.append((len(starts)+1,pi,line['bbox']['y0']/2.5-4))
                         for w in line['words']:
                             b=w['bbox'];words.append(dict(text=w['text'],x0=b['x0']/2.5,x1=b['x1']/2.5,top=b['y0']/2.5,bottom=b['y1']/2.5))
-                            if len(w['symbols'])>1 and w['text'][0] in LETTERS and (w['symbols'][1]['bbox']['x0']-w['symbols'][0]['bbox']['x1']>10 or w['text']=='イィ') and any(abs(b['x0']/2.5-x)<6 for x in [76,171,266,360,66]):
+                            columns,tolerance=([76,171,266,360,66],6) if year==2026 else ([76,172,268,364,66],7)
+                            if len(w['symbols'])>1 and w['text'][0] in LETTERS and (year!=2026 or w['symbols'][1]['bbox']['x0']-w['symbols'][0]['bbox']['x1']>10 or w['text']=='イィ') and any(abs(b['x0']/2.5-x)<tolerance for x in columns):
                                 sb=w['symbols'][0]['bbox'];words.append(dict(text=w['text'][0],x0=sb['x0']/2.5,x1=sb['x1']/2.5,top=sb['y0']/2.5,bottom=sb['y1']/2.5))
         pages.append(words)
         if level=='IP' or pi<1:continue
@@ -122,7 +123,7 @@ def import_subject(level,part,count,year=2026,sample=False):
         return dict(src=f'exams/{pack}/{name}',width=im.width,height=im.height)
     records=[];errors=[]
     for i,(number,pi,top) in enumerate(starts):
-        end=starts[i+1] if i+1<len(starts) else (0,len(pdf.pages),0)
+        end=starts[i+1] if i+1<len(starts) else (0,pi+1 if level=='IP' else len(pdf.pages),0)
         last=end[1] if end[1]==pi else end[1]-1
         # Memo pages between questions are not part of the question.
         active=[j for j in range(pi,last+1) if j==pi or len(''.join(w['text'] for w in pages[j] if 45<w['top']<pdf.pages[j].height-48))>15]
@@ -132,8 +133,9 @@ def import_subject(level,part,count,year=2026,sample=False):
             lo,hi=bounds[j]
             for w in pages[j]:
                 if lo<=w['top']<hi and w['text'] in LETTERS and len(w['text'])==1:
-                    if level=='IP' and not any(abs(w['x0']-x)<6 for x in [76,171,266,360,66]):continue
-                    if level=='IP' and w['x0']>90:
+                    columns,tolerance=([76,171,266,360,66],6) if year==2026 else ([76,172,268,364,66],7)
+                    if level=='IP' and not any(abs(w['x0']-x)<tolerance for x in columns):continue
+                    if level=='IP' and year==2026 and w['x0']>90:
                         left=[v['x1'] for v in pages[j] if abs(v['top']-w['top'])<8 and v['x1']<=w['x0']]
                         if left and w['x0']-max(left)<12:continue
                     markers.append(dict(w,page=j))
@@ -142,12 +144,21 @@ def import_subject(level,part,count,year=2026,sample=False):
             for marker in markers:
                 if len(selected)<4 and marker['text']==LETTERS[len(selected)]:selected.append(marker)
             markers=selected
-            if number in IP_LAYOUTS:
+            if year==2026 and number in IP_LAYOUTS:
                 xs,ys=IP_LAYOUTS[number]
                 markers=[dict(text=LETTERS[k],x0=x,x1=x+9,top=y,page=pi) for k,(y,x) in enumerate((y,x) for y in ys for x in xs)]
-            if number in IP_TABLES:
+            if year==2026 and number in IP_TABLES:
                 left,right,ht,first,rh=IP_TABLES[number]
                 markers=[dict(text=LETTERS[k],x0=left-12,x1=left-2,top=first+k*rh,page=pi) for k in range(4)]
+        archive_table=None
+        positions=None
+        if level=='IP' and year!=2026:
+            from ipa_ip_archive_geometry import layout
+            positions,archive_table=layout(year,number,Image.open(question.parent/f'ip-{pi+1:02}.png'),top,bounds[pi][1])
+            if archive_table:
+                left,right,ys=archive_table
+                positions=[(left-12,y+3) for y in ys[1:-1]]
+            if positions:markers=[dict(text=LETTERS[k],x0=x,x1=x+9,top=y,page=pi) for k,(x,y) in enumerate(positions)]
         if not (''.join(m['text'] for m in markers)==LETTERS[:len(markers)] and 4<=len(markers)<=10):
             errors.append((number,pi+1,[(m['text'],round(m['x0'],1),round(m['top'],1)) for m in markers]));continue
         op=markers[0]['page']; option_top=min(m['top'] for m in markers)-5
@@ -159,9 +170,10 @@ def import_subject(level,part,count,year=2026,sample=False):
         # FE B4/B5 have column headers immediately above the answer rows.
         header_top=option_top-22 if year==2026 and part=='B' and number in (4,5) else None
         prompt_end=header_top if header_top else option_top
-        if level=='IP' and number in IP_TABLES:prompt_end=IP_TABLES[number][2]-2
+        if level=='IP' and year==2026 and number in IP_TABLES:prompt_end=IP_TABLES[number][2]-2
         if year==2026 and part=='B' and number==5:prompt_end=488
         if answer_table:prompt_end=answer_table.bbox[1]-2
+        if archive_table:prompt_end=archive_table[2][0]-2
         prompts=[];texts=[]
         for j in active:
             if j>op:break
@@ -178,13 +190,20 @@ def import_subject(level,part,count,year=2026,sample=False):
             box=(m['x0']-1,m['top']-4,min(right)-6 if right else p.width-42,min(below)-5 if below else bounds[j][1])
             remove_label=(m['x0']-1,m['top']-1,m['x1']+0.4,m.get('bottom',m['top']+11)+1)
             if level=='IP':box=(*box[:3],min(box[3],m['top']+(25 if len(same)>1 else 80)))
+            if level=='IP' and year!=2026 and positions and len(same)>1:
+                # Scan labels can be vertically offset (notably fractions).
+                # The reviewed grid's text begins after this label-only strip.
+                remove_label=(box[0],box[1],m['x0']+12,box[3])
+            if level=='IP' and year==2024 and number==73:
+                if m['text']=='ア':box=(*box[:3],431)
+                if m['text']=='イ':box=(box[0],431,*box[2:])
             oid=chr(97+LETTERS.index(m['text']));header=(box[0],header_top,box[2],option_top) if header_top else None
             if answer_table:
                 k=LETTERS.index(m['text'])
                 box=answer_table.rows[k+1].bbox
                 header=answer_table.rows[0].bbox
                 remove_label=None
-            if level=='IP' and number in IP_TABLES:
+            if level=='IP' and year==2026 and number in IP_TABLES:
                 left,right,ht,first,rh=IP_TABLES[number];k=LETTERS.index(m['text'])
                 box=(left,first+k*rh,right,first+(k+1)*rh)
                 header=(left,ht,right,first)
@@ -192,6 +211,9 @@ def import_subject(level,part,count,year=2026,sample=False):
             if year==2026 and part=='B' and number==5:
                 rows=[509.3,544.4,565.4,600.3,622.3];k=LETTERS.index(m['text'])
                 box=(104.4,rows[k],448.3,rows[k+1]);header=(104.4,488.5,448.3,509.3);remove_label=None
+            if archive_table:
+                left,right,ys=archive_table;k=LETTERS.index(m['text'])
+                box=(left,ys[k+1],right,ys[k+2]);header=(left,ys[0],right,ys[1]);remove_label=None
             try:image=crop(j,box,f'{prefix}{number:03}-{oid}.webp',header,remove_label)
             except AssertionError:
                 errors.append((number,pi+1,'empty option',oid,box));break
