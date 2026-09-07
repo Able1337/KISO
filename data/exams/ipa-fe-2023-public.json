@@ -1,0 +1,1710 @@
+{
+  "schemaVersion": 1,
+  "id": "ipa-fe-2023-public",
+  "system": "IPA",
+  "level": "FE",
+  "year": 2023,
+  "season": "public",
+  "originalLanguage": "ja",
+  "title": "2023 公開問題",
+  "durationSeconds": 3600,
+  "sourceUrl": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2023r05.html",
+  "publishedSubset": true,
+  "demonstration": false,
+  "publicationDate": null,
+  "timingBasis": "proportional-practice",
+  "translations": [],
+  "lessonsReady": true,
+  "parts": [
+    {
+      "id": "A",
+      "durationSeconds": 1800,
+      "questionCount": 20,
+      "questionPdf": "exams/ipa-fe-2023-public/a-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2023-public/a-answers.pdf",
+      "sourceSha256": "a381b2d4e1d1297b24adde48ca29dc9b5e9da533b831963cbf0756191f400181",
+      "answerSha256": "6a4c8b5a4852dd71dd641a8ab8824d54a4995e211e6660d7d14298bae8e2d473"
+    },
+    {
+      "id": "B",
+      "durationSeconds": 1800,
+      "questionCount": 6,
+      "questionPdf": "exams/ipa-fe-2023-public/b-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2023-public/b-answers.pdf",
+      "sourceSha256": "04fc7d8dbeed2f29bb7082d24ecdc8712c78b39012de0813c6a11cd1c5eea25a",
+      "answerSha256": "416572bcae9a3fdcdf21a6b0bde3717c31b66591fca1d58e27dcc750f438e6e6"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ipa-fe-2023-public-a001",
+      "number": 1,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 2,
+      "source": "IPA 2023 公開問題 FE A 問1",
+      "promptText": "問１ 16進小数0.Cを10進小数に変換したものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a001-p02.webp",
+        "width": 673,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a001-p02.webp",
+          "width": 673,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.12",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a001-a.webp",
+            "width": 72,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.55",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a001-b.webp",
+            "width": 73,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "0.75",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a001-c.webp",
+            "width": 72,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "0.84",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a001-d.webp",
+            "width": 74,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a002",
+      "number": 2,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 2,
+      "source": "IPA 2023 公開問題 FE A 問2",
+      "promptText": "問２ 双方向のポインタをもつリスト構造のデータを表に示す。この表において新たな社 員Gを社員Aと社員Kの間に追加する。追加後の表のポインタa～fの中で追加前と 比べて値が変わるポインタだけを全て列記したものはどれか。 表 アドレス 社員名 次ポインタ 前ポインタ 100 社員A 300 0 200 社員T 0 300 300 社員K 200 100 追加後の表 アドレス 社員名 次ポインタ 前ポインタ 100 社員A a b 200 社員T c d 300 社員K e f 400 社員G x y",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a002-p02.webp",
+        "width": 1020,
+        "height": 756
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a002-p02.webp",
+          "width": 1020,
+          "height": 756
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a，b，e，f",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a002-a.webp",
+            "width": 146,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "a，e，f",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a002-b.webp",
+            "width": 109,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "a，f",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a002-c.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "b，e",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a002-d.webp",
+            "width": 71,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a003",
+      "number": 3,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 3,
+      "source": "IPA 2023 公開問題 FE A 問3",
+      "promptText": "問３ コンピュータの高速化技術の一つであるメモリインタリーブに関する記述として， 適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a003-p03.webp",
+        "width": 1002,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a003-p03.webp",
+          "width": 1002,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "主記憶と入出力装置，又は主記憶同士のデータの受渡しをCPU経由でなく直接や り取りする方式",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a003-a.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "主記憶にデータを送り出す際に，データをキャッシュに書き込み，キャッシュが あふれたときに主記憶へ書き込む方式",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a003-b.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "主記憶のデータの一部をキャッシュにコピーすることによって，レジスタと主記 憶とのアクセス速度の差を縮める方式",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a003-c.webp",
+            "width": 947,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "主記憶を複数の独立して動作するグループに分けて，各グループに並列にアクセ スする方式",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a003-d.webp",
+            "width": 943,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a004",
+      "number": 4,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 3,
+      "source": "IPA 2023 公開問題 FE A 問4",
+      "promptText": "問４ エッジコンピューティングの説明として，最も適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a004-p03.webp",
+        "width": 854,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a004-p03.webp",
+          "width": 854,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "画面生成やデータ処理をクライアント側で実行することによって，Web アプリケ ーションソフトウェアの操作性や表現力を高めること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a004-a.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "データが送信されてきたときだけ必要なサーバを立ち上げて，処理が終わり次第 サーバを停止してリソースを解放すること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a004-b.webp",
+            "width": 946,
+            "height": 96
+          }
+        },
+        {
+          "id": "c",
+          "text": "複数のサーバや PC を仮想化して統合することによって一つの高性能なコンピュ ータを作り上げ，並列処理によって処理能力を高めること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a004-c.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "利用者や機器に取り付けられたセンサなどのデータ発生源に近い場所にあるサー バなどでデータを一次処理し，処理のリアルタイム性を高めること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a004-d.webp",
+            "width": 946,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a005",
+      "number": 5,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2023 公開問題 FE A 問5",
+      "promptText": "問５ 3次元グラフィックス処理におけるクリッピングの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a005-p04.webp",
+        "width": 823,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a005-p04.webp",
+          "width": 823,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CG 映像作成における最終段階として，物体のデータをディスプレイに描画でき るように映像化する処理である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a005-a.webp",
+            "width": 941,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "画像表示領域にウィンドウを定義し，ウィンドウの外側を除去し，内側の見える 部分だけを取り出す処理である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a005-b.webp",
+            "width": 944,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "スクリーンの画素数が有限であるために図形の境界近くに生じる，階段状のギザ ギザを目立たなくする処理である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a005-c.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "立体感を生じさせるために，物体の表面に陰影を付ける処理である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a005-d.webp",
+            "width": 780,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2023-public-a006",
+      "number": 6,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2023 公開問題 FE A 問6",
+      "promptText": "問６ 次の関数従属を満足するとき，成立する推移的関数従属はどれか。ここで，“A→ B”は Bが Aに関数従属していることを表し，“A→｛B，C｝”は，“A→B”かつ“A→ C”が成立することを表す。 〔関数従属〕 ｛注文コード，商品コード｝→｛顧客注文数量，注文金額｝ 注文コード →｛注文日，顧客コード，注文担当者コード｝ 商品コード →｛商品名，仕入先コード，商品販売価格｝ 仕入先コード →｛仕入先名，仕入先住所，仕入担当者コード｝ 顧客コード →｛顧客名，顧客住所｝",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a006-p04.webp",
+        "width": 1021,
+        "height": 446
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a006-p04.webp",
+          "width": 1021,
+          "height": 446
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "仕入先コード → 仕入担当者コード → 仕入先住所",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a006-a.webp",
+            "width": 597,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "商品コード → 仕入先コード → 商品販売価格",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a006-b.webp",
+            "width": 547,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "注文コード → 顧客コード → 顧客住所",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a006-c.webp",
+            "width": 472,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "注文コード → 商品コード → 顧客注文数量",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a006-d.webp",
+            "width": 522,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a007",
+      "number": 7,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2023 公開問題 FE A 問7",
+      "promptText": "問７ トランザクションが，データベースに対する更新処理を完全に行うか，全く処理し なかったかのように取り消すか，のどちらかの結果になることを保証する特性はどれ か。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a007-p05.webp",
+        "width": 1020,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a007-p05.webp",
+          "width": 1020,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "一貫性（consistency）",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a007-a.webp",
+            "width": 269,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "原子性（atomicity）",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a007-b.webp",
+            "width": 245,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "耐久性（durability）",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a007-c.webp",
+            "width": 257,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "独立性（isolation）",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a007-d.webp",
+            "width": 245,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2023-public-a008",
+      "number": 8,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2023 公開問題 FE A 問8",
+      "promptText": "問８ IPv4ネットワークにおいて，ネットワークの疎通確認に使われるものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a008-p05.webp",
+        "width": 986,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a008-p05.webp",
+          "width": 986,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BOOTP",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a008-a.webp",
+            "width": 85,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "DHCP",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a008-b.webp",
+            "width": 74,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "MIB",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a008-c.webp",
+            "width": 61,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "ping",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a008-d.webp",
+            "width": 71,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a009",
+      "number": 9,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2023 公開問題 FE A 問9",
+      "promptText": "問９ ドライブバイダウンロード攻撃に該当するものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a009-p05.webp",
+        "width": 730,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a009-p05.webp",
+          "width": 730,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PC から物理的にハードディスクドライブを盗み出し，その中のデータを Web サ イトで公開し，ダウンロードさせる。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a009-a.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "電子メールの添付ファイルを開かせて，マルウェアに感染した PC のハードディ スクドライブ内のファイルを暗号化し，元に戻すための鍵を攻撃者のサーバからダ ウンロードさせることと引換えに金銭を要求する。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a009-b.webp",
+            "width": 946,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用者が悪意のある Web サイトにアクセスしたときに，Web ブラウザの脆弱性を 悪用して利用者のPCをマルウェアに感染させる。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a009-c.webp",
+            "width": 945,
+            "height": 104
+          }
+        },
+        {
+          "id": "d",
+          "text": "利用者に気付かれないように無償配布のソフトウェアに不正プログラムを混在さ せておき，利用者の操作によって PC にダウンロードさせ，インストールさせるこ とでハードディスクドライブから個人情報を収集して攻撃者のサーバに送信する。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a009-d.webp",
+            "width": 944,
+            "height": 148
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a010",
+      "number": 10,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2023 公開問題 FE A 問10",
+      "promptText": "問10 図のような構成と通信サービスのシステムにおいて，Web アプリケーションの脆弱 性対策のための WAF の設置場所として，最も適切な箇所はどこか。ここで，WAF には 通信を暗号化したり，復号したりする機能はないものとする。 PC PC PC インターネット HTTPS a ファイアウォール HTTPS b SSLアクセラレータ HTTP c Webサーバ データベース d アクセス用サービス データベースサーバ",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a010-p06.webp",
+        "width": 1020,
+        "height": 780
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a010-p06.webp",
+          "width": 1020,
+          "height": 780
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a010-a.webp",
+            "width": 35,
+            "height": 38
+          }
+        },
+        {
+          "id": "b",
+          "text": "b",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a010-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "c",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a010-c.webp",
+            "width": 34,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "d",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a010-d.webp",
+            "width": 34,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a011",
+      "number": 11,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2023 公開問題 FE A 問11",
+      "promptText": "問11 次の流れ図において， ① → ② → ③ → ⑤ → ② → ③ → ④ → ② → ⑥ の順に実行させるために，①においてmとnに与えるべき初期値aとbの関係はどれ か。ここで，a，bはともに正の整数とする。 開始 m a n b ＜ m：n m：n ＝ ＞ mの値を印字 m （m － n） n （n － m） 終了",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a011-p07.webp",
+        "width": 1021,
+        "height": 765
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a011-p07.webp",
+          "width": 1021,
+          "height": 765
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a＝2b",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a011-a.webp",
+            "width": 97,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "2a＝b",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a011-b.webp",
+            "width": 97,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "2a＝3b",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a011-c.webp",
+            "width": 111,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "3a＝2b",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a011-d.webp",
+            "width": 110,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a012",
+      "number": 12,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2023 公開問題 FE A 問12",
+      "promptText": "問12 アジャイル開発手法のスクラムにおいて，開発チームの全員が1人ずつ“昨日やっ たこと”，“今日やること”，“障害になっていること”などを話し，全員でプロジェク トの状況を共有するイベントはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a012-p07.webp",
+        "width": 1017,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a012-p07.webp",
+          "width": 1017,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "スプリントプランニング",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a012-a.webp",
+            "width": 296,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "スプリントレビュー",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a012-b.webp",
+            "width": 245,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "デイリースクラム",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a012-c.webp",
+            "width": 220,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "レトロスペクティブ",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a012-d.webp",
+            "width": 243,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a013",
+      "number": 13,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2023 公開問題 FE A 問13",
+      "promptText": "問13 図に示すとおりに作業を実施する予定であったが，作業Aで1日の遅れが生じた。 各作業の費用増加率を表の値とするとき，当初の予定日数で終了するために掛かる増 加費用を最も少なくするには，どの作業を短縮すべきか。ここで，費用増加率とは， 作業を1日短縮するために要する増加費用のことである。 作業名 費用増加率 B E A 4 A 6 C 5 G B 6 C 3 4 8 5 D F D 2 4 4 E 2.5 凡例 F 2.5 作業名 G 5 標準日数",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a013-p08.webp",
+        "width": 1020,
+        "height": 526
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a013-p08.webp",
+          "width": 1020,
+          "height": 526
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "B",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a013-a.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "C",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a013-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "D",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a013-c.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "E",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a013-d.webp",
+            "width": 34,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a014",
+      "number": 14,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2023 公開問題 FE A 問14",
+      "promptText": "問14 A 社では，従業員が自宅の PC からインターネット経由で自社のネットワークに接 続して仕事を行うテレワーキングの実施を計画している。A 社が定めたテレワーキン グ運用規程について，情報セキュリティ管理基準（平成 28 年）に従って監査を実施 した。判明した事項のうち，監査人が，指摘事項として監査報告書に記載すべきもの はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a014-p08.webp",
+        "width": 1021,
+        "height": 247
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a014-p08.webp",
+          "width": 1021,
+          "height": 247
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "テレワーキング運用規程に従うことを条件に，全ての従業員が利用できる。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a014-a.webp",
+            "width": 855,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "テレワーキングで従業員が使用する PC は，A 社から支給されたものに限定する。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a014-b.webp",
+            "width": 931,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "テレワーキングで使用する PC へのマルウェア対策ソフト導入の要不要は，従業 員それぞれが判断する。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a014-c.webp",
+            "width": 947,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "テレワーキングで使用するPCを，従業員の家族に使用させない。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a014-d.webp",
+            "width": 743,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a015",
+      "number": 15,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2023 公開問題 FE A 問15",
+      "promptText": "問15 ハイブリッドクラウドの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a015-p09.webp",
+        "width": 529,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a015-p09.webp",
+          "width": 529,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "クラウドサービスが提供している機能の一部を，自社用にカスタマイズして利用 すること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a015-a.webp",
+            "width": 943,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "クラウドサービスのサービス内容を，消費者向けと法人向けの両方を対象とする ように構成して提供すること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a015-b.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "クラウドサービスのサービス内容を，有償サービスと無償サービスとに区分して 提供すること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a015-c.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "自社専用に使用するクラウドサービスと，汎用のクラウドサービスとの間でデー タ及びアプリケーションソフトウェアの連携や相互運用が可能となる環境を提供す ること",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a015-d.webp",
+            "width": 944,
+            "height": 146
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a016",
+      "number": 16,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2023 公開問題 FE A 問16",
+      "promptText": "問16 ダイバーシティマネジメントの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a016-p09.webp",
+        "width": 604,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a016-p09.webp",
+          "width": 604,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "従業員が仕事と生活の調和を図り，やりがいをもって業務に取り組み，組織の活 力を向上させることである。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a016-a.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "性別や年齢，国籍などの面で従業員の多様性を尊重することによって，組織の活 力を向上させることである。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a016-b.webp",
+            "width": 945,
+            "height": 96
+          }
+        },
+        {
+          "id": "c",
+          "text": "自ら設定した目標の達成を目指して従業員が主体的に業務に取り組み，その達成 度に応じて評価が行われることである。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a016-c.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "労使双方が労働条件についての合意を形成し，協調して収益の増大を目指すこと である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a016-d.webp",
+            "width": 942,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2023-public-a017",
+      "number": 17,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2023 公開問題 FE A 問17",
+      "promptText": "問17 ERPを説明したものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a017-p10.webp",
+        "width": 423,
+        "height": 46
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a017-p10.webp",
+          "width": 423,
+          "height": 46
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "営業活動に IT を活用して営業の効率と品質を高め，売上・利益の大幅な増加や， 顧客満足度の向上を目指す手法・概念である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a017-a.webp",
+            "width": 955,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "卸売業・メーカが小売店の経営活動を支援することによって，自社との取引量の 拡大につなげる手法・概念である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a017-b.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "企業全体の経営資源を有効かつ総合的に計画して管理し，経営の効率向上を図る ための手法・概念である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a017-c.webp",
+            "width": 943,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "消費者向けや企業間の商取引を，インターネットなどの電子的なネットワークを 活用して行う手法・概念である。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a017-d.webp",
+            "width": 944,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a018",
+      "number": 18,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2023 公開問題 FE A 問18",
+      "promptText": "問18 イノベータ理論では，消費者を新製品の購入時期によって，イノベータ，アーリー アダプタ，アーリーマジョリティ，レイトマジョリティ，ラガードの五つに分類す る。アーリーアダプタの説明として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a018-p10.webp",
+        "width": 1020,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a018-p10.webp",
+          "width": 1020,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "新しい製品及び新技術の採用には懐疑的で，周囲の大多数が採用している場面を 見てから採用する層",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a018-a.webp",
+            "width": 943,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "新商品，サービスなどを，リスクを恐れず最も早い段階で受容する層",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a018-b.webp",
+            "width": 795,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "新商品，サービスなどを早期に受け入れ，消費者に大きな影響を与える層であり， 流行に敏感で，自ら情報収集を行い判断する層",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a018-c.webp",
+            "width": 953,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "世の中の動きに関心が薄く，流行が一般化してからそれを採用することが多い層 であり，場合によっては不採用を貫く，最も保守的な層",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a018-d.webp",
+            "width": 945,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2023-public-a019",
+      "number": 19,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "IPA 2023 公開問題 FE A 問19",
+      "promptText": "問19 CIOの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a019-p11.webp",
+        "width": 323,
+        "height": 46
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a019-p11.webp",
+          "width": 323,
+          "height": 46
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "経営戦略の立案及び業務執行を統括する最高責任者",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a019-a.webp",
+            "width": 597,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "資金調達，財務報告などの財務面での戦略策定及び執行を統括する最高責任者",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a019-b.webp",
+            "width": 897,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "自社の技術戦略や研究開発計画の立案及び執行を統括する最高責任者",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a019-c.webp",
+            "width": 793,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "情報管理，情報システムに関する戦略立案及び執行を統括する最高責任者",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a019-d.webp",
+            "width": 848,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-a020",
+      "number": 20,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "IPA 2023 公開問題 FE A 問20",
+      "promptText": "問20 ボリュームライセンス契約の説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/a020-p11.webp",
+        "width": 579,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/a020-p11.webp",
+          "width": 579,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "企業などソフトウェアの大量購入者向けに，インストールできる台数をあらかじ め取り決め，ソフトウェアの使用を認める契約",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a020-a.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "使用場所を限定した契約であり，特定の施設の中であれば台数や人数に制限なく 使用が許される契約",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a020-b.webp",
+            "width": 940,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "ソフトウェアをインターネットからダウンロードしたとき画面に表示される契約 内容に同意するを選択することによって，使用が許される契約",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a020-c.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "標準の使用許諾条件を定め，その範囲で一定量のパッケージの包装を解いたとき に，権利者と購入者との間に使用許諾契約が自動的に成立したとみなす契約",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/a020-d.webp",
+            "width": 941,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2023-public-b001",
+      "number": 1,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2023 公開問題 FE B 問1",
+      "promptText": "問１ 次のプログラム中の a と b に入れる正しい答えの組合せを， 解答群の中から選べ。ここで，配列の要素番号は1から始まる。 関数 findPrimeNumbers は，引数で与えられた整数以下の，全ての素数だけを格納 した配列を返す関数である。ここで，引数に与える整数は2以上である。 〔プログラム〕 ○整数型の配列: findPrimeNumbers(整数型: maxNum) 整数型の配列: pnList ← {} // 要素数0の配列 整数型: i, j 論理型: divideFlag for (i を 2 から a まで 1 ずつ増やす) divideFlag ← true /* iの正の平方根の整数部分が2未満のときは，繰返し処理を実行しない */ for (j を 2 から iの正の平方根の整数部分 まで 1 ずつ増やす) // α if ( b ) divideFlag ← false αの行から始まる繰返し処理を終了する endif endfor if (divideFlag が true と等しい) pnListの末尾 に iの値 を追加する endif endfor return pnList 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/b001-p04.webp",
+        "width": 1021,
+        "height": 1140
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/b001-p04.webp",
+          "width": 1021,
+          "height": 1140
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "maxNum i ÷ j の余り が 0 と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b001-a.webp",
+            "width": 776,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "maxNum i ÷ j の商 が 1 と等しくない",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b001-b.webp",
+            "width": 776,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "maxNum ＋ 1 i ÷ j の余り が 0 と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b001-c.webp",
+            "width": 776,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "maxNum ＋ 1 i ÷ j の商 が 1 と等しくない",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b001-d.webp",
+            "width": 776,
+            "height": 120
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2023-public-b002",
+      "number": 2,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2023 公開問題 FE B 問2",
+      "promptText": "問２ 次の記述中の に入れる正しい答えを，解答群の中から選べ。 次のプログラムにおいて，手続 proc2 を呼び出すと， の順に出力され る。 〔プログラム〕 ○proc1() \"A\" を出力する proc3() ○proc2() proc3() \"B\" を出力する proc1() ○proc3() \"C\" を出力する 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/b002-p05.webp",
+        "width": 1021,
+        "height": 790
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/b002-p05.webp",
+          "width": 1021,
+          "height": 790
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "“A”，“B”，“B”，“C”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-a.webp",
+            "width": 245,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "“A”，“C”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-b.webp",
+            "width": 119,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "“A”，“C”，“B”，“C”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-c.webp",
+            "width": 245,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "“B”，“A”，“B”，“C”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-d.webp",
+            "width": 245,
+            "height": 48
+          }
+        },
+        {
+          "id": "e",
+          "text": "“B”，“C”，“B”，“A”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-e.webp",
+            "width": 245,
+            "height": 48
+          }
+        },
+        {
+          "id": "f",
+          "text": "“C”，“B”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-f.webp",
+            "width": 119,
+            "height": 48
+          }
+        },
+        {
+          "id": "g",
+          "text": "“C”，“B”，“A”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-g.webp",
+            "width": 182,
+            "height": 48
+          }
+        },
+        {
+          "id": "h",
+          "text": "“C”，“B”，“A”，“C”",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b002-h.webp",
+            "width": 245,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "h"
+    },
+    {
+      "id": "ipa-fe-2023-public-b003",
+      "number": 3,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2023 公開問題 FE B 問3",
+      "promptText": "問３ 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 次の手続sortは，大域の整数型の配列dataの，引数firstで与えられた要素番号 から引数 last で与えられた要素番号までの要素を昇順に整列する。ここで，first ＜ lastとする。手続sortをsort(1, 5) として呼び出すと，/*** α ***/ の行を最 初に実行したときの出力は“ ”となる。 〔プログラム〕 大域: 整数型の配列: data ← {2, 1, 3, 5, 4} ○sort(整数型: first, 整数型: last) 整数型: pivot, i, j pivot ← data[(first ＋ last) ÷ 2 の商] i ← first j ← last while (true) while (data[i] ＜ pivot) i ← i ＋ 1 endwhile while (pivot ＜ data[j]) j ← j － 1 endwhile if (i ≧ j) 繰返し処理を終了する endif data[i]とdata[j]の値を入れ替える i ← i ＋ 1 j ← j － 1 endwhile dataの全要素の値を要素番号の順に空白区切りで出力する /*** α ***/ if (first ＜ i － 1) sort(first, i － 1) endif if (j ＋ 1 ＜ last) sort(j ＋ 1, last) endif\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/b003-p06.webp",
+        "width": 1021,
+        "height": 1475
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/b003-p06.webp",
+          "width": 1021,
+          "height": 1475
+        },
+        {
+          "src": "exams/ipa-fe-2023-public/b003-p07.webp",
+          "width": 96,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1 2 3 4 5",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b003-a.webp",
+            "width": 134,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "1 2 3 5 4",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b003-b.webp",
+            "width": 134,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "2 1 3 4 5",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b003-c.webp",
+            "width": 136,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "2 1 3 5 4",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b003-d.webp",
+            "width": 136,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-b004",
+      "number": 4,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2023 公開問題 FE B 問4",
+      "promptText": "問４ 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 関数addは，引数で指定された正の整数valueを大域の整数型の配列hashArrayに 格納する。格納できた場合は true を返し，格納できなかった場合は false を返す。 ここで，整数valueをhashArrayのどの要素に格納すべきかを，関数calcHash1及び calcHash2を利用して決める。 手続testは，関数addを呼び出して，hashArrayに正の整数を格納する。手続 testの処理が終了した直後のhashArrayの内容は， である。 〔プログラム〕 大域: 整数型の配列: hashArray ○論理型: add(整数型: value) 整数型: i ← calcHash1(value) if (hashArray[i] ＝ －1) hashArray[i] ← value return true else i ← calcHash2(value) if (hashArray[i] ＝ －1) hashArray[i] ← value return true endif endif return false ○整数型: calcHash1(整数型: value) return (value mod hashArrayの要素数) ＋ 1 ○整数型: calcHash2(整数型: value) return ((value ＋ 3) mod hashArrayの要素数) ＋ 1 ○test() hashArray ← {5個の －1} add(3) add(18) add(11)\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/b004-p08.webp",
+        "width": 1022,
+        "height": 1489
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/b004-p08.webp",
+          "width": 1022,
+          "height": 1489
+        },
+        {
+          "src": "exams/ipa-fe-2023-public/b004-p09.webp",
+          "width": 96,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "{－1, 3, －1, 18, 11}",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b004-a.webp",
+            "width": 279,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "{－1, 11, －1, 3, －1}",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b004-b.webp",
+            "width": 292,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "{－1, 11, －1, 18, －1}",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b004-c.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "{－1, 18, －1, 3, 11}",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b004-d.webp",
+            "width": 279,
+            "height": 48
+          }
+        },
+        {
+          "id": "e",
+          "text": "{－1, 18, 11, 3, －1}",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b004-e.webp",
+            "width": 279,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-b005",
+      "number": 5,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2023 公開問題 FE B 問5",
+      "promptText": "問５ 次のプログラム中の a と b に入れる正しい答えの組合せを， 解答群の中から選べ。ここで，配列の要素番号は1から始まる。 コサイン類似度は，二つのベクトルの向きの類似性を測る尺度である。関数 calcCosineSimilarity は，いずれも要素数が n(n≧1) である実数型の配列 vector1 と vector2 を受け取り，二つの配列のコサイン類似度を返す。配列 vector1 が {a 1 , a 2 , …, a n }，配列vector2が {b 1 , b 2 , …, b n } のとき，コサイン類似度は次の数式で 計算される。ここで，配列vector1と配列vector2のいずれも，全ての要素に0が格 納されていることはないものとする。 a b ＋ a b ＋ … ＋ a b 1 1 2 2 n n a 2 ＋ a 2 ＋ … ＋ a 2 b 2 ＋ b 2 ＋ … ＋ b 2 1 2 n 1 2 n 〔プログラム〕 ○実数型: calcCosineSimilarity(実数型の配列: vector1, 実数型の配列: vector2) 実数型: similarity, numerator, denominator, temp ← 0 整数型: i numerator ← 0 for (i を 1 から vector1の要素数 まで 1 ずつ増やす) numerator ← numerator ＋ a endfor for (i を 1 から vector1の要素数 まで 1 ずつ増やす) temp ← temp ＋ vector1[i]の2乗 endfor denominator ← tempの正の平方根 temp ← 0 for (i を 1 から vector2の要素数 まで 1 ずつ増やす) temp ← temp ＋ vector2[i]の2乗 endfor denominator ← b similarity ← numerator ÷ denominator return similarity\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/b005-p10.webp",
+        "width": 1022,
+        "height": 1513
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/b005-p10.webp",
+          "width": 1022,
+          "height": 1513
+        },
+        {
+          "src": "exams/ipa-fe-2023-public/b005-p11.webp",
+          "width": 96,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(vector1[i] × vector2[i])の正の denominator × (tempの正の平方根) 平方根",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-a.webp",
+            "width": 954,
+            "height": 156
+          }
+        },
+        {
+          "id": "b",
+          "text": "(vector1[i] × vector2[i])の正の denominator ＋ (tempの正の平方根) 平方根",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-b.webp",
+            "width": 954,
+            "height": 157
+          }
+        },
+        {
+          "id": "c",
+          "text": "(vector1[i] × vector2[i])の正の tempの正の平方根 平方根",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-c.webp",
+            "width": 954,
+            "height": 156
+          }
+        },
+        {
+          "id": "d",
+          "text": "vector1[i] × vector2[i] denominator × (tempの正の平方根)",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-d.webp",
+            "width": 954,
+            "height": 121
+          }
+        },
+        {
+          "id": "e",
+          "text": "vector1[i] × vector2[i] denominator ＋ (tempの正の平方根)",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-e.webp",
+            "width": 954,
+            "height": 122
+          }
+        },
+        {
+          "id": "f",
+          "text": "vector1[i] × vector2[i] tempの正の平方根",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-f.webp",
+            "width": 954,
+            "height": 122
+          }
+        },
+        {
+          "id": "g",
+          "text": "vector1[i]の2乗 denominator × (tempの正の平方根)",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-g.webp",
+            "width": 954,
+            "height": 121
+          }
+        },
+        {
+          "id": "h",
+          "text": "vector1[i]の2乗 denominator ＋ (tempの正の平方根)",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-h.webp",
+            "width": 954,
+            "height": 121
+          }
+        },
+        {
+          "id": "i",
+          "text": "vector1[i]の2乗 tempの正の平方根",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b005-i.webp",
+            "width": 954,
+            "height": 122
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2023-public-b006",
+      "number": 6,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2023 公開問題 FE B 問6",
+      "promptText": "問６ A 社は，放送会社や運輸会社向けに広告制作ビジネスを展開している。A 社は，人 事業務の効率化を図るべく，人事業務の委託を検討することにした。A 社が委託する 業務（以下，B業務という）を図1に示す。 ・採用予定者から郵送されてくる入社時の誓約書，前職の源泉徴収票などの書類を PDF フ ァイルに変換し，ファイルサーバに格納する。 （省略） 図1 B業務 委託先候補のC社は，B業務について，次のようにA社に提案した。 ・B業務だけに従事する専任の従業員を割り当てる。 ・B業務では，図2の複合機のスキャン機能を使用する。 ・スキャン機能を使用する際は，従業員ごとに付与した利用者IDとパスワードをパネルに入 力する。 ・スキャンしたデータをPDFファイルに変換する。 ・PDFファイルを従業員ごとに異なる鍵で暗号化して，電子メールに添付する。 ・スキャンを実行した本人宛てに電子メールを送信する。 ・PDFファイルが大きい場合は，PDFファイルを添付する代わりに，自社の社内ネットワーク 上に設置したサーバ（以下，B サーバという）1)に自動的に保存し，保存先の URL を電子メ ールの本文に記載して送信する。 注1) Bサーバにアクセスする際は，従業員ごとの利用者IDとパスワードが必要になる。 図2 複合機のスキャン機能（抜粋） A社は，C社と業務委託契約を締結する前に，秘密保持契約を締結した。その後，C 社に質問表を送付し，回答を受けて，業務委託での情報セキュリティリスクの評価を 実施した。その結果，図3の発見があった。 ・複合機のスキャン機能では，電子メールの差出人アドレス，件名，本文及び添付ファイル 名を初期設定1)の状態で使用しており，誰がスキャンを実行しても同じである。 ・複合機のスキャン機能の初期設定情報はベンダーの Web サイトで公開されており，誰でも 閲覧できる。 注1) 複合機の初期設定はC社の情報システム部だけが変更可能である。 図3 発見事項\nそこで，A 社では，初期設定の状態のままでは A 社にとって情報セキュリティリス クがあり，初期設定から変更するという対策が必要であると評価した。 設問 対策が必要であるとA社が評価した情報セキュリティリスクはどれか。解答群の うち，最も適切なものを選べ。 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2023-public/b006-p12.webp",
+        "width": 1022,
+        "height": 1421
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2023-public/b006-p12.webp",
+          "width": 1022,
+          "height": 1421
+        },
+        {
+          "src": "exams/ipa-fe-2023-public/b006-p13.webp",
+          "width": 997,
+          "height": 347
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "B 業務に従事する従業員が，攻撃者からの電子メールを複合機からのものと信 じて本文中にあるURLをクリックし，フィッシングサイトに誘導される。その結 果，A社の採用予定者の個人情報が漏えいする。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b006-a.webp",
+            "width": 923,
+            "height": 148
+          }
+        },
+        {
+          "id": "b",
+          "text": "B 業務に従事する従業員が，複合機から送信される電子メールをスパムメール と誤認し，電子メールを削除する。その結果，再スキャンが必要となり，B 業務 が遅延する。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b006-b.webp",
+            "width": 922,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "攻撃者が，複合機から送信される電子メールを盗聴し，添付ファイルを暗号化 して身代金を要求する。その結果，A 社が復号鍵を受け取るために多額の身代金 を支払うことになる。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b006-c.webp",
+            "width": 921,
+            "height": 147
+          }
+        },
+        {
+          "id": "d",
+          "text": "攻撃者が，複合機から送信される電子メールを盗聴し，本文に記載されている URL を使って B サーバにアクセスする。その結果，A 社の採用予定者の個人情報 が漏えいする。",
+          "image": {
+            "src": "exams/ipa-fe-2023-public/b006-d.webp",
+            "width": 923,
+            "height": 147
+          }
+        }
+      ],
+      "answerId": "a"
+    }
+  ]
+}

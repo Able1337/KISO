@@ -1,0 +1,1791 @@
+{
+  "schemaVersion": 1,
+  "id": "ipa-fe-2025-public",
+  "system": "IPA",
+  "level": "FE",
+  "year": 2025,
+  "season": "public",
+  "originalLanguage": "ja",
+  "title": "2025 公開問題",
+  "durationSeconds": 3600,
+  "sourceUrl": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2025r07.html",
+  "publishedSubset": true,
+  "demonstration": false,
+  "publicationDate": null,
+  "timingBasis": "proportional-practice",
+  "translations": [],
+  "lessonsReady": true,
+  "parts": [
+    {
+      "id": "A",
+      "durationSeconds": 1800,
+      "questionCount": 20,
+      "questionPdf": "exams/ipa-fe-2025-public/a-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2025-public/a-answers.pdf",
+      "sourceSha256": "3c33fb495bfea51851d2202fca17adb325ce9cb2c216464a5f931725618dfadc",
+      "answerSha256": "6d6a14e7c346fe82c1848d2922ef0ea1325bcc3ff5f2224108baa1fe8f8912eb"
+    },
+    {
+      "id": "B",
+      "durationSeconds": 1800,
+      "questionCount": 6,
+      "questionPdf": "exams/ipa-fe-2025-public/b-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2025-public/b-answers.pdf",
+      "sourceSha256": "18c43738820a136adf48a1990aaf571fa4203e1f1a162d51322d29d319da67d9",
+      "answerSha256": "d2683dc460dffde9ca7817483edbd207c9696c061362281710ebc9d89ff6c2fe"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ipa-fe-2025-public-a001",
+      "number": 1,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 2,
+      "source": "IPA 2025 公開問題 FE A 問1",
+      "promptText": "問１ 大規模言語モデルを用いた自然言語処理において，事前学習済みのモデルに対して 行う，ファインチューニングに関する記述として，最も適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a001-p02.webp",
+        "width": 1018,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a001-p02.webp",
+          "width": 1018,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "強化学習を行い，最適な結果が得られるようにする。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a001-a.webp",
+            "width": 606,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "事前学習と同じデータを繰り返し用いて学習を行い，モデルの精度を高めるよう にする。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a001-b.webp",
+            "width": 940,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "大量のテキストデータを用いて学習を行い，モデルの精度を高めるようにする。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a001-c.webp",
+            "width": 905,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "特定のデータを用いて追加で学習を行い，目的とするタスクに適用できるように する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a001-d.webp",
+            "width": 944,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a002",
+      "number": 2,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 2,
+      "source": "IPA 2025 公開問題 FE A 問2",
+      "promptText": "問２ 浮動小数点形式で表現された数値の演算結果における丸め誤差の説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a002-p02.webp",
+        "width": 979,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a002-p02.webp",
+          "width": 979,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "演算結果がコンピュータの扱える最大値を超えることによって生じる誤差である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a002-a.webp",
+            "width": 930,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "数表現のけた数に限度があるので，最下位けたより小さい部分について四捨五入 や切上げ，切捨てを行うことによって生じる誤差である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a002-b.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "乗除算において，指数部が小さい方の数値の仮数部の下位部分が失われることに よって生じる誤差である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a002-c.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "絶対値がほぼ等しい数値の加減算において，上位の有効数字が失われることによ って生じる誤差である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a002-d.webp",
+            "width": 940,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2025-public-a003",
+      "number": 3,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 3,
+      "source": "IPA 2025 公開問題 FE A 問3",
+      "promptText": "問３ 図の木構造は 2 分探索木である。a～g の値の大小関係として，適切なものはどれ か。ここで，a～gの値は重複しないものとする。 a b c d e f g",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a003-p03.webp",
+        "width": 1020,
+        "height": 549
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a003-p03.webp",
+          "width": 1020,
+          "height": 549
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a＜b＜d＜e＜c＜f＜g",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a003-a.webp",
+            "width": 334,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "d＜b＜e＜a＜f＜c＜g",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a003-b.webp",
+            "width": 334,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "d＜e＜f＜g＜b＜c＜a",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a003-c.webp",
+            "width": 335,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "g＜f＜c＜e＜d＜b＜a",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a003-d.webp",
+            "width": 335,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2025-public-a004",
+      "number": 4,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 3,
+      "source": "IPA 2025 公開問題 FE A 問4",
+      "promptText": "問４ MTBF は 4,000 時間，MTTR は 1,000 時間の装置がある。今後の 6 年間は，予防保守 によってMTBFを前年に比べて毎年100時間ずつ改善し，遠隔保守によってMTTRを前 年に比べて毎年 100 時間ずつ改善していく計画である。6 年経過後の稼働率は幾らか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a004-p03.webp",
+        "width": 1030,
+        "height": 146
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a004-p03.webp",
+          "width": 1030,
+          "height": 146
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.88",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a004-a.webp",
+            "width": 72,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.90",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a004-b.webp",
+            "width": 72,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "0.92",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a004-c.webp",
+            "width": 72,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "0.94",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a004-d.webp",
+            "width": 74,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2025-public-a005",
+      "number": 5,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2025 公開問題 FE A 問5",
+      "promptText": "問５ ローコード開発ツールを用いたソフトウェア開発の説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a005-p04.webp",
+        "width": 830,
+        "height": 46
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a005-p04.webp",
+          "width": 830,
+          "height": 46
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アプリケーションソフトウェアの開発基盤の上で，用意された部品やテンプレー トをGUIを用いた操作で組み合わせたり，必要に応じて一部の処理のソースコード を記述したりすることによって，アプリケーションソフトウェアを作成する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a005-a.webp",
+            "width": 944,
+            "height": 149
+          }
+        },
+        {
+          "id": "b",
+          "text": "アプリケーションソフトウェアの開発基盤の上で，用意された部品やテンプレー トをGUIを用いた操作で組み合わせるだけで，ソースコードを記述せずに，アプリ ケーションソフトウェアを作成する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a005-b.webp",
+            "width": 945,
+            "height": 148
+          }
+        },
+        {
+          "id": "c",
+          "text": "アプリケーションソフトウェアの定型的な枠組みを参照して，独自の処理のソー スコードを記述することによって，アプリケーションソフトウェアを作成する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a005-c.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "利用者がシステムを利用して行う作業を自動化ツールに代行させるために，利用 者によるシステムの操作手順をツールに登録する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a005-d.webp",
+            "width": 946,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2025-public-a006",
+      "number": 6,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2025 公開問題 FE A 問6",
+      "promptText": "問６ “商品”表に対するSQL文と同じ結果が得られるSELECT文はどれか。 商品 商品ID 商品名称 仕入先ID 単価 S001 冷蔵庫 M001 155,000 S002 食器洗い機 M002 85,000 S003 電子レンジ M003 78,000 S004 炊飯器 M003 32,000 S005 コーヒーメーカー M004 15,000 S006 ホットプレート M004 12,000 〔SQL文〕 SELECT * FROM 商品 WHERE 仕入先ID IN ('M002', 'M004')",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a006-p05.webp",
+        "width": 867,
+        "height": 634
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a006-p05.webp",
+          "width": 867,
+          "height": 634
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "SELECT * FROM 商品 WHERE 仕入先ID = 'M002' AND 仕入先ID = 'M004'",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a006-a.webp",
+            "width": 829,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "SELECT * FROM 商品 WHERE 仕入先ID = 'M002' INTERSECT SELECT * FROM 商品 WHERE 仕入先ID = 'M004'",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a006-b.webp",
+            "width": 548,
+            "height": 118
+          }
+        },
+        {
+          "id": "c",
+          "text": "SELECT * FROM 商品 WHERE 仕入先ID = 'M002' OR 仕入先ID = 'M004'",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a006-c.webp",
+            "width": 816,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "SELECT * FROM 商品 WHERE 仕入先ID BETWEEN 'M002' AND 'M004'",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a006-d.webp",
+            "width": 760,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2025-public-a007",
+      "number": 7,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2025 公開問題 FE A 問7",
+      "promptText": "問７ 1G バイトの動画データを 40M ビット／秒の回線を使用してダウンロードしたとこ ろ，5 分掛かった。このときの回線利用率はおよそ何％か。ここで，ダウンロード時 には動画データに20％の制御情報が付加されるものとする。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a007-p05.webp",
+        "width": 1021,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a007-p05.webp",
+          "width": 1021,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "10",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a007-a.webp",
+            "width": 46,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "53",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a007-b.webp",
+            "width": 47,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "67",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a007-c.webp",
+            "width": 47,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "80",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a007-d.webp",
+            "width": 47,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a008",
+      "number": 8,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2025 公開問題 FE A 問8",
+      "promptText": "問８ HTTPとHTTPSを比較した場合において，HTTPSだけがもつ特徴を示したものはどれ か。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a008-p06.webp",
+        "width": 1020,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a008-p06.webp",
+          "width": 1020,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "cookieに保存されている情報を用いたセッション管理が可能である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a008-a.webp",
+            "width": 787,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "IDとパスワードによって利用者の認証を行うことが可能である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a008-b.webp",
+            "width": 736,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "Web ブラウザでキャッシュさせることによって通信量を減らすことが可能である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a008-c.webp",
+            "width": 932,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "通信相手先サーバをサーバ証明書によって確認することが可能である。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a008-d.webp",
+            "width": 806,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a009",
+      "number": 9,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2025 公開問題 FE A 問9",
+      "promptText": "問９ 暗号の危殆化に該当するものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a009-p06.webp",
+        "width": 529,
+        "height": 54
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a009-p06.webp",
+          "width": 529,
+          "height": 54
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ある CA でデジタル証明書の署名に使っている公開鍵のデジタル証明書の有効期 限が切れた。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a009-a.webp",
+            "width": 945,
+            "height": 96
+          }
+        },
+        {
+          "id": "b",
+          "text": "ある暗号アルゴリズムの秘密鍵が不正アクセスによって漏えいした。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a009-b.webp",
+            "width": 780,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "あるハッシュ関数においてハッシュ値が同じになるデータの組みを現実的な時間 内で発見する方法が見つかった。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a009-c.webp",
+            "width": 945,
+            "height": 96
+          }
+        },
+        {
+          "id": "d",
+          "text": "あるランサムウェアの一種で暗号化されたファイルの復号鍵が公開された。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a009-d.webp",
+            "width": 854,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2025-public-a010",
+      "number": 10,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2025 公開問題 FE A 問10",
+      "promptText": "問10 WAFの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a010-p06.webp",
+        "width": 323,
+        "height": 46
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a010-p06.webp",
+          "width": 323,
+          "height": 46
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Web サイトに対するアクセス内容を監視し，攻撃とみなされるパターンを検知し たときに当該アクセスを遮断する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a010-a.webp",
+            "width": 940,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "Wi-Fi アライアンスが認定した無線 LAN の暗号化方式の規格であり，AES 暗号に 対応している。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a010-b.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "様々なシステムの動作ログを一元的に蓄積，管理し，セキュリティ上の脅威とな る事象をいち早く検知，分析する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a010-c.webp",
+            "width": 940,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "ファイアウォール機能を有し，マルウェア対策機能，侵入検知機能などの複数の セキュリティ機能を連携させ，統合的に管理する。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a010-d.webp",
+            "width": 941,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2025-public-a011",
+      "number": 11,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2025 公開問題 FE A 問11",
+      "promptText": "問11 E-Rモデルにおけるエンティティの特徴はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a011-p07.webp",
+        "width": 648,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a011-p07.webp",
+          "width": 648,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "エンティティとインスタンスとは，1対1の対応関係をとる。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a011-a.webp",
+            "width": 698,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "エンティティとなり得るものは，物的に実現するものである。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a011-b.webp",
+            "width": 704,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "エンティティは，特性を表すための属性（アトリビュート）をもつ。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a011-c.webp",
+            "width": 780,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "異なった種類のエンティティ間の関係は，主として状態遷移として表現される。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a011-d.webp",
+            "width": 905,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2025-public-a012",
+      "number": 12,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2025 公開問題 FE A 問12",
+      "promptText": "問12 オブジェクト指向プログラミングの特徴のうち，異なるクラスのオブジェクトを同 一のインタフェースで操作したときに，操作対象クラスに応じた異なる動作を可能に することを何と呼ぶか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a012-p07.webp",
+        "width": 1019,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a012-p07.webp",
+          "width": 1019,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "委譲",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a012-a.webp",
+            "width": 72,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "継承",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a012-b.webp",
+            "width": 72,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "コンポジション",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a012-c.webp",
+            "width": 193,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "多相性",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a012-d.webp",
+            "width": 97,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a013",
+      "number": 13,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2025 公開問題 FE A 問13",
+      "promptText": "問13 アジャイル開発手法の一つであるスクラムにおいて，プロダクトバックログアイテ ムの内容や並び順を決定する役割をもつのは誰か。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a013-p07.webp",
+        "width": 1019,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a013-p07.webp",
+          "width": 1019,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "開発者",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a013-a.webp",
+            "width": 96,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "顧客",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a013-b.webp",
+            "width": 72,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "スクラムマスタ",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a013-c.webp",
+            "width": 192,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "プロダクトオーナ",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a013-d.webp",
+            "width": 218,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a014",
+      "number": 14,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2025 公開問題 FE A 問14",
+      "promptText": "問14 図は，あるプロジェクトの作業A～Iとその作業日数を表している。このプロジェ クトの最短所要日数は何日か。 F 14 G 11 A B C D I 3 6 8 6 5 開始 E 終了 5 H 15 凡例 作業名 作業日数 ：ダミー作業",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a014-p08.webp",
+        "width": 1017,
+        "height": 603
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a014-p08.webp",
+          "width": 1017,
+          "height": 603
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "27",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a014-a.webp",
+            "width": 48,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "28",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a014-b.webp",
+            "width": 48,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "29",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a014-c.webp",
+            "width": 48,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "31",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a014-d.webp",
+            "width": 44,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a015",
+      "number": 15,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2025 公開問題 FE A 問15",
+      "promptText": "問15 サーバ室の物理的な安全対策の状況について，情報セキュリティ管理基準（平成 28 年）に照らして，情報セキュリティ監査を行って判明した状況のうち，監査人が， 指摘事項として監査報告書に記載すべきものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a015-p08.webp",
+        "width": 1027,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a015-p08.webp",
+          "width": 1027,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "サーバが設置されている施設の無人領域では，営業時間中でも，警報装置が作動 するようになっている。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a015-a.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "サーバ室に非常口，避難器具，誘導灯などを設置している。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a015-b.webp",
+            "width": 681,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "社外からサーバ室へ直接出入りするドアを設置しているが，出入りを考慮して常 時施錠していない。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a015-c.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "場所が分からないように，サーバ室の所在を室外に表示していない。",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a015-d.webp",
+            "width": 781,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2025-public-a016",
+      "number": 16,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2025 公開問題 FE A 問16",
+      "promptText": "問16 データマイニングの手法の一つであって，POS などの蓄積データから“一緒に買わ れる商品”の組合せを発見する分析手法はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a016-p09.webp",
+        "width": 1020,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a016-p09.webp",
+          "width": 1020,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "3C分析",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a016-a.webp",
+            "width": 104,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "ABC分析",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a016-b.webp",
+            "width": 117,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "コンジョイント分析",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a016-c.webp",
+            "width": 245,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "マーケットバスケット分析",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a016-d.webp",
+            "width": 321,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a017",
+      "number": 17,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2025 公開問題 FE A 問17",
+      "promptText": "問17 インターネット上の生成 AI サービスを利用する際に，オプトアウトを設定するこ とはどのような場合に有効か。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a017-p09.webp",
+        "width": 1017,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a017-p09.webp",
+          "width": 1017,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "個々の利用者が，自身が生成 AI から得た情報に対して，著作権を主張したい場 合",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a017-a.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "個々の利用者が入力した情報を，生成AIの学習に利用させたくない場合",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a017-b.webp",
+            "width": 835,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "個々の利用者が入力した情報を，生成 AI を通じて，他の利用者にも知ってほし い場合",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a017-c.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "生成AIから得た情報の信ぴょう性を高めたい場合",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a017-d.webp",
+            "width": 584,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2025-public-a018",
+      "number": 18,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2025 公開問題 FE A 問18",
+      "promptText": "問18 物販事業において，ロングテールをビジネスとして成功させるために必要な施策は どれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a018-p09.webp",
+        "width": 1020,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a018-p09.webp",
+          "width": 1020,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "多くの有名ブランド店が出店するショッピングモールの構築",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a018-a.webp",
+            "width": 697,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "交通の利便性が高い地域に対する，生活必需品を広く浅く取りそろえた出店計画",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a018-b.webp",
+            "width": 921,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "店舗で購入した商品を近隣地域に無償で配送するサービスの実施",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a018-c.webp",
+            "width": 746,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "豊富な品ぞろえと，在庫コストや配送費用を抑えるための大規模な物流センタの 構築や活用",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a018-d.webp",
+            "width": 947,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a019",
+      "number": 19,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2025 公開問題 FE A 問19",
+      "promptText": "問19 表の条件で喫茶店を開業したい。月10万円の利益を出すためには，1客席当たり1 日平均何人の客が必要か。 客1人当たりの売上高 500円 客1人当たりの変動費 100円 固定費 300,000円／月 1か月の営業日数 20日 客席数 10席",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a019-p10.webp",
+        "width": 1017,
+        "height": 377
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a019-p10.webp",
+          "width": 1017,
+          "height": 377
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "3.75",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a019-a.webp",
+            "width": 73,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "4",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a019-b.webp",
+            "width": 36,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "4.2",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a019-c.webp",
+            "width": 61,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a019-d.webp",
+            "width": 35,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2025-public-a020",
+      "number": 20,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2025 公開問題 FE A 問20",
+      "promptText": "問20 カーボンフットプリントの説明として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/a020-p10.webp",
+        "width": 779,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/a020-p10.webp",
+          "width": 779,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "温室効果ガスの排出量から吸収量と除去量を差し引いた合計をゼロにする取組",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a020-a.webp",
+            "width": 897,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "原材料調達から廃棄・リサイクルに至るまでのライフサイクル全体を通して排出 される温室効果ガスの排出量を，CO 量に換算して，その値を商品やサービスに表 2 示すること",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a020-b.webp",
+            "width": 947,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "自動車のエンジンから排出される一酸化炭素，窒素酸化物や炭化水素類などの大 気汚染物質の排出量の定め",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a020-c.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "商品がどのような場所で作られて，流通し，販売されているかを把握するための 仕組み",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/a020-d.webp",
+            "width": 946,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2025-public-b001",
+      "number": 1,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2025 公開問題 FE B 問1",
+      "promptText": "問１ 次のプログラム中の a と b に入れる正しい答えの組合せを， 解答群の中から選べ。 関数function1が受け取る引数と，関数function2が受け取る引数とが同じとき， 二つの関数は同じ値を返す。ここで，引数nと引数mは正の整数であり，引数mは引 数nよりも10以上大きい数とする。 〔プログラム〕 ○整数型: function1(整数型: n, 整数型: m) 整数型: count ← 0 整数型: i for (iをnからmまで1ずつ増やす) if ((i mod 4)が0と等しい) count ← count ＋ 1 endif endfor return count ○整数型: function2(整数型: n, 整数型: m) 整数型: count ← 0 整数型: tempN ← n 整数型: i, j for ( a ) if ((tempN mod 4)が0と等しい) 繰返し処理を終了する endif tempN ← tempN ＋ 1 endfor for ( b ) count ← count ＋ 1 endfor return count\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/b001-p04.webp",
+        "width": 1019,
+        "height": 1305
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/b001-p04.webp",
+          "width": 1019,
+          "height": 1305
+        },
+        {
+          "src": "exams/ipa-fe-2025-public/b001-p05.webp",
+          "width": 96,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "jをnから始めてmを超えない範囲でtempNずつ iを1から2まで1ずつ増やす 増やす",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b001-a.webp",
+            "width": 974,
+            "height": 156
+          }
+        },
+        {
+          "id": "b",
+          "text": "iを1から2まで1ずつ増やす jをtempNからmまで1ずつ増やす",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b001-b.webp",
+            "width": 974,
+            "height": 122
+          }
+        },
+        {
+          "id": "c",
+          "text": "jをtempNから始めてmを超えない範囲で4ずつ iを1から2まで1ずつ増やす 増やす",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b001-c.webp",
+            "width": 974,
+            "height": 156
+          }
+        },
+        {
+          "id": "d",
+          "text": "jをnから始めてmを超えない範囲でtempNずつ iを1から3まで1ずつ増やす 増やす",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b001-d.webp",
+            "width": 974,
+            "height": 156
+          }
+        },
+        {
+          "id": "e",
+          "text": "iを1から3まで1ずつ増やす jをtempNからmまで1ずつ増やす",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b001-e.webp",
+            "width": 974,
+            "height": 122
+          }
+        },
+        {
+          "id": "f",
+          "text": "jをtempNから始めてmを超えない範囲で4ずつ iを1から3まで1ずつ増やす 増やす",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b001-f.webp",
+            "width": 974,
+            "height": 156
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2025-public-b002",
+      "number": 2,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2025 公開問題 FE B 問2",
+      "promptText": "問２ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。 関数 change は，10 より大きい整数を引数 n で受け取り，1 円玉，5 円玉，10 円玉 を使ってちょうどn円にする組合せの総数を返す。 例えば，12 円にする組合せは，次のように数えられる。10 円玉を使わない場合に は，1円玉と5円玉だけでちょうど12円にすることになる。その組合せは，使える5 円玉の枚数が 0 以上 (12 ÷ 5 の商) 以下なので，(12 ÷ 5 の商) ＋ 1 ＝ 3 通りあ る。同様に，10円玉を1枚使う場合には，1円玉と5円玉だけでちょうど2円にする ことになり，その組合せは (2 ÷ 5 の商) ＋ 1 ＝ 1 通りある。10 円玉を 2 枚以上 使う組合せはない。よって，1 円玉，5 円玉，10 円玉を使ってちょうど 12 円にする 組合せは，3 ＋ 1 ＝ 4通りである。 〔プログラム〕 ○整数型: change(整数型: n) 整数型: count ← 0 整数型: rest ← n while ( ) count ← count ＋ (rest ÷ 5 の商) ＋ 1 rest ← rest － 10 endwhile return count 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/b002-p06.webp",
+        "width": 1022,
+        "height": 1045
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/b002-p06.webp",
+          "width": 1022,
+          "height": 1045
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "rest ≧ 0",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b002-a.webp",
+            "width": 132,
+            "height": 44
+          }
+        },
+        {
+          "id": "b",
+          "text": "rest ≧ 5",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b002-b.webp",
+            "width": 133,
+            "height": 44
+          }
+        },
+        {
+          "id": "c",
+          "text": "rest ≧ 10",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b002-c.webp",
+            "width": 145,
+            "height": 44
+          }
+        },
+        {
+          "id": "d",
+          "text": "rest ＞ 0",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b002-d.webp",
+            "width": 132,
+            "height": 45
+          }
+        },
+        {
+          "id": "e",
+          "text": "rest ＞ 5",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b002-e.webp",
+            "width": 133,
+            "height": 45
+          }
+        },
+        {
+          "id": "f",
+          "text": "rest ＞ 10",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b002-f.webp",
+            "width": 145,
+            "height": 45
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2025-public-b003",
+      "number": 3,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2025 公開問題 FE B 問3",
+      "promptText": "問３ 次のプログラム中の a と b に入れる正しい答えの組合せを， 解答群の中から選べ。ここで，配列の要素番号は1から始まる。 関数 push は，引数で与えられた整数をスタックに格納する。格納できた場合は trueを返し，格納できなかった場合はfalseを返す。 関数popは，スタックから値を取り出して返す。スタックが空のときは未定義の値 を返す。 スタックを，要素数が 4 である大域の整数型の配列 stack，及び次に値を格納する 位置を示す大域の変数stackPosで表現する。スタックの初期状態を図に示す。 プログラムでは，配列の領域外を参照してはならないものとする。 要素番号 1 2 3 4 stack 4 3 ↑ stackPos 注記 網掛けはその要素が未定義であることを示す。 図 スタックの初期状態\n〔プログラム〕 大域: 整数型: stackPos ← 3 大域: 整数型の配列: stack ← {4, 3, 未定義の値, 未定義の値} ○論理型: push(整数型: inputData) if (stackPos ≦ stackの要素数) stack[ a ] ← inputData stackPos ← stackPos ＋ 1 return true else return false endif ○整数型: pop() 整数型: popData ← 未定義の値 if (stackPos ＞ 1) stackPos ← b popData ← stack[stackPos] stack[stackPos] ← 未定義の値 endif return popData 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/b003-p08.webp",
+        "width": 1021,
+        "height": 837
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/b003-p08.webp",
+          "width": 1021,
+          "height": 837
+        },
+        {
+          "src": "exams/ipa-fe-2025-public/b003-p09.webp",
+          "width": 816,
+          "height": 868
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "stackPos stackPos ＋ 1",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b003-a.webp",
+            "width": 599,
+            "height": 120
+          }
+        },
+        {
+          "id": "b",
+          "text": "stackPos stackPos － 1",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b003-b.webp",
+            "width": 599,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "stackPos － 1 stackPos ＋ 1",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b003-c.webp",
+            "width": 599,
+            "height": 120
+          }
+        },
+        {
+          "id": "d",
+          "text": "stackPos － 1 stackPos － 1",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b003-d.webp",
+            "width": 599,
+            "height": 120
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2025-public-b004",
+      "number": 4,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2025 公開問題 FE B 問4",
+      "promptText": "問４ 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 関数searchは，二つの文字型の配列を，それぞれ引数data及びkeyで受け取り， dataから，keyの要素の並びと同じ並びを全て探し，その先頭の要素番号を全て格納 した配列を返す。見つからなければ，要素数0の配列を返す。 関数 search を search({\"a\", \"b\", \"a\", \"b\", \"c\", \"a\", \"b\", \"c\"}, {\"a\", \"b\", \"c\"}) として呼び出すと，/*** β ***/の行の条件式が真となる回数は 回である。 〔プログラム〕 /* keyは，要素数1以上の配列である */ ○整数型の配列: search(文字型の配列: data, 文字型の配列: key) 整数型: i, j, lenData, lenKey 整数型の配列: result ← {} // 要素数0の配列 lenData ← dataの要素数 lenKey ← keyの要素数 /* (lenData － lenKey ＋ 1) が0以下のときは繰返し処理を実行しない */ for (i を 1 から (lenData － lenKey ＋ 1) まで 1 ずつ増やす) for (j を 1 から lenKey まで 1 ずつ増やす) // α if (data[i ＋ j － 1] が key[j] と等しい) /*** β ***/ if (j が lenKey と等しい) resultの末尾 に iの値 を追加する endif else αの行から始まる繰返し処理を終了する endif endfor endfor return result 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/b004-p10.webp",
+        "width": 1023,
+        "height": 1386
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/b004-p10.webp",
+          "width": 1023,
+          "height": 1386
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-a.webp",
+            "width": 29,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-c.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-d.webp",
+            "width": 36,
+            "height": 42
+          }
+        },
+        {
+          "id": "e",
+          "text": "5",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-e.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "f",
+          "text": "6",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-f.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "g",
+          "text": "7",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-g.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "h",
+          "text": "8",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-h.webp",
+            "width": 36,
+            "height": 42
+          }
+        },
+        {
+          "id": "i",
+          "text": "9",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-i.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "j",
+          "text": "10",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b004-j.webp",
+            "width": 45,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "h"
+    },
+    {
+      "id": "ipa-fe-2025-public-b005",
+      "number": 5,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2025 公開問題 FE B 問5",
+      "promptText": "問５ 次の記述中の a と b に入れる正しい答えの組合せを，解答群 の中から選べ。ここで，配列の要素番号は1から始まる。 予防接種の病気Xに対する予防効果を調査するために集めたデータの集計結果を基 に，病気Xにかかるかどうかが，予防接種の有無に影響されないと仮定した場合の人 数を計算する。この人数を理論度数という。表 1 に集計結果の例を示し，表 2 に表 1 を基に計算した理論度数を示す。 関数 f は，引数 data で受け取った集計結果を基に計算した理論度数を返す。引数 と戻り値は二次元配列で，その行が表の行，その列が表の列に対応する。 表1 集計結果の例 単位 人 病気Xにかからなかった 病気Xにかかった 予防接種を受けた 82 6 予防接種を受けていない 58 8 表2 表1を基に計算した理論度数 単位 人 病気Xにかからなかった 病気Xにかかった 予防接種を受けた a 予防接種を受けていない b 注記 網掛けの部分は表示していない。\n〔プログラム〕 ○実数型の二次元配列: f(実数型の二次元配列: data) 実数型: t ← dataの要素の和 整数型: row ← dataの行数 整数型: col ← dataの列数 実数型の二次元配列: result ← {row行col列の 未定義の値} 整数型: r, c for (r を 1 から row まで 1 ずつ増やす) for (c を 1 から col まで 1 ずつ増やす) result[r, c] ← (dataの行番号rの要素の和) × (dataの列番号cの要素の和) ÷ t endfor endfor return result 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/b005-p12.webp",
+        "width": 1022,
+        "height": 1088
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/b005-p12.webp",
+          "width": 1022,
+          "height": 1088
+        },
+        {
+          "src": "exams/ipa-fe-2025-public/b005-p13.webp",
+          "width": 791,
+          "height": 603
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "44 33",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-a.webp",
+            "width": 478,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "58 8",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-b.webp",
+            "width": 478,
+            "height": 122
+          }
+        },
+        {
+          "id": "c",
+          "text": "70 7",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-c.webp",
+            "width": 478,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "75 2",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-d.webp",
+            "width": 478,
+            "height": 122
+          }
+        },
+        {
+          "id": "e",
+          "text": "80 6",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-e.webp",
+            "width": 478,
+            "height": 121
+          }
+        },
+        {
+          "id": "f",
+          "text": "80 8",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-f.webp",
+            "width": 478,
+            "height": 122
+          }
+        },
+        {
+          "id": "g",
+          "text": "82 6",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b005-g.webp",
+            "width": 478,
+            "height": 121
+          }
+        }
+      ],
+      "answerId": "e"
+    },
+    {
+      "id": "ipa-fe-2025-public-b006",
+      "number": 6,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "IPA 2025 公開問題 FE B 問6",
+      "promptText": "問６ A 社は従業員 200 名の電子機器メーカーである。東京に本社があり，新潟に工場が ある。 A社では，ファイルサーバを図1のように運用している。 ・ファイルサーバは本社と工場のサーバルームに設置している。 ・ファイルサーバは，磁気テープを使用してファイルのバックアップを取得している。 ・土曜日の午前 2 時からフルバックアップを取得し，翌週の火曜日と木曜日の午前 2 時から 増分バックアップを取得している。 ・情報システム部の担当者は毎週月曜日，火曜日，木曜日の朝 10 時頃，バックアップジョ ブの実行結果の確認と磁気テープの交換を行い，磁気テープは耐火金庫に保管している。 ・磁気テープには上書きモードでバックアップを取得し，1 か月分の磁気テープを世代管理 している。 ・これまで，フルバックアップからのリストアには平均して 4 時間，1 回の増分バックアッ プからは平均して0.25時間掛かっている。 ・A社はICT継続のための試験を実施しており，ファイルサーバも試験対象である。 注記 事業影響度分析の結果に基づき，ファイルサーバは，72時間の目標復旧時点（RPO）と 120時間の目標復旧時間(RTO)が要求事項として定められている。 図1 A社のファイルサーバの運用 A 社は ISMS 認証を取得しており，最高情報セキュリティ責任者（CISO）を中心に 情報セキュリティに取り組み，定期的に，情報セキュリティリスクアセスメントを行 っている。今般，ISMS 認証基準が JIS Q 27001:2023 に改正されたことを受け，情報 セキュリティリーダーのBさんは，新基準への移行審査に向けて準備することになっ た。改正によって新たに追加された情報セキュリティ管理策について，B さんは情報 システム部の担当者に取組状況を確認し，その評価結果を表1にまとめた。 表1 Bさんの評価結果（抜粋） 項番 情報セキュリティ管理策 評価結果 1 （事業継続のための ICT の備え）事業継続の目的及び ICT 継続の 実施している 要求事項に基づいて，ICT の備えを計画し，実施し，維持し，試 験しなければならない。 B さんは，移行審査前の内部監査で，内部監査室から表1 の項番 1 に関するファイ ルサーバの運用について何点か質問を受け，表2のとおり回答した。\n表2 内部監査室へのBさんの回答（抜粋） 項番 Bさんの回答 1 例えば，金曜日の正午に障害が発生した場合，少なくとも a1 の時点のデ ータは復元しなければならない。 2 例えば，木曜日の正午に障害が発生し，ファイルサーバの全データが消失したとす ると，バックアップからのリストアには a2 時間掛かると予想される。 3 ICT継続の計画書は， a3 が承認している。 設問 表 2 中の a1 ～ a3 に入れる字句の適切な組合せを，a に関す る解答群の中から選べ。 aに関する解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2025-public/b006-p14.webp",
+        "width": 1021,
+        "height": 1407
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2025-public/b006-p14.webp",
+          "width": 1021,
+          "height": 1407
+        },
+        {
+          "src": "exams/ipa-fe-2025-public/b006-p15.webp",
+          "width": 997,
+          "height": 545
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "月曜日の正午 4.25 CISO",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-a.webp",
+            "width": 702,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "月曜日の正午 4.25 情報システム部の担当者",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-b.webp",
+            "width": 702,
+            "height": 122
+          }
+        },
+        {
+          "id": "c",
+          "text": "月曜日の正午 4.25 内部監査室長",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-c.webp",
+            "width": 702,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "月曜日の正午 4.50 CISO",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-d.webp",
+            "width": 702,
+            "height": 122
+          }
+        },
+        {
+          "id": "e",
+          "text": "月曜日の正午 4.50 情報システム部の担当者",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-e.webp",
+            "width": 702,
+            "height": 122
+          }
+        },
+        {
+          "id": "f",
+          "text": "火曜日の正午 4.25 情報システム部の担当者",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-f.webp",
+            "width": 702,
+            "height": 121
+          }
+        },
+        {
+          "id": "g",
+          "text": "火曜日の正午 4.25 内部監査室長",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-g.webp",
+            "width": 702,
+            "height": 122
+          }
+        },
+        {
+          "id": "h",
+          "text": "火曜日の正午 4.50 CISO",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-h.webp",
+            "width": 702,
+            "height": 121
+          }
+        },
+        {
+          "id": "i",
+          "text": "火曜日の正午 4.50 情報システム部の担当者",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-i.webp",
+            "width": 702,
+            "height": 122
+          }
+        },
+        {
+          "id": "j",
+          "text": "火曜日の正午 4.50 内部監査室長",
+          "image": {
+            "src": "exams/ipa-fe-2025-public/b006-j.webp",
+            "width": 702,
+            "height": 121
+          }
+        }
+      ],
+      "answerId": "h"
+    }
+  ]
+}

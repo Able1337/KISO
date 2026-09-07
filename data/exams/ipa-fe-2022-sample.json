@@ -1,0 +1,5232 @@
+{
+  "schemaVersion": 1,
+  "id": "ipa-fe-2022-sample",
+  "system": "IPA",
+  "level": "FE",
+  "year": 2022,
+  "season": "sample",
+  "originalLanguage": "ja",
+  "title": "2022 サンプル問題セット",
+  "durationSeconds": 11400,
+  "sourceUrl": "https://www.ipa.go.jp/shiken/syllabus/henkou/2022/20220425.html",
+  "publishedSubset": false,
+  "demonstration": true,
+  "publicationDate": "2022-12-26",
+  "timingBasis": "official-format",
+  "translations": [],
+  "lessonsReady": true,
+  "parts": [
+    {
+      "id": "A",
+      "durationSeconds": 5400,
+      "questionCount": 60,
+      "questionPdf": "exams/ipa-fe-2022-sample/a-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2022-sample/a-answers.pdf",
+      "sourceSha256": "5a95b05825d1bae7c5fac7e17b0d102e5559530869b9c281d1292d0ff5dd610e",
+      "answerSha256": "8fc77eee0fb06280462663a4ad507472112841b91dbb47a7cb301bc31ec75de9"
+    },
+    {
+      "id": "B",
+      "durationSeconds": 6000,
+      "questionCount": 20,
+      "questionPdf": "exams/ipa-fe-2022-sample/b-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2022-sample/b-answers.pdf",
+      "sourceSha256": "54e16b636f3c69fc30cd92dbbbcb1b0e0acbb1e64bbd5066e971dce954d7dd11",
+      "answerSha256": "6830553e6df6d54cf8d51365e00171e564e289edb27b7a5bcbee56035969fe3a"
+    }
+  ],
+  "questions": [
+    {
+      "id": "ipa-fe-2022-sample-a001",
+      "number": 1,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2022 サンプル問題セット FE A 問1",
+      "promptText": "問１ 負数を 2 の補数で表すとき，8 ビットの 2 進正数 n に対し－n を求める式はどれか。 ここで，＋は加算を表し，ORはビットごとの論理和，XORはビットごとの排他的論理 和を表す。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a001-p04.webp",
+        "width": 1029,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a001-p04.webp",
+          "width": 1029,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(n OR 10000000)＋00000001",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a001-a.webp",
+            "width": 342,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "(n OR 11111110)＋11111111",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a001-b.webp",
+            "width": 342,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "(n XOR 10000000)＋11111111",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a001-c.webp",
+            "width": 354,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "(n XOR 11111111)＋00000001",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a001-d.webp",
+            "width": 354,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a002",
+      "number": 2,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2022 サンプル問題セット FE A 問2",
+      "promptText": "問２ 次の流れ図は，10 進整数 j（0＜j＜100）を 8 桁の 2 進数に変換する処理を表し ている。2 進数は下位桁から順に，配列の要素 NISHIN (1) から NISHIN (8) に格納さ れる。流れ図の a 及び b に入れる処理はどれか。ここで，j div 2 は j を2 で割った 商の整数部分を，j mod 2は jを2で割った余りを表す。 開始 j を入力 変換 k：1，1， 8（注） a b （注）ループ端の繰返し指定は， 変換 変数名：初期値，増分，終値 を示す。 終了",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a002-p04.webp",
+        "width": 1020,
+        "height": 732
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a002-p04.webp",
+          "width": 1020,
+          "height": 732
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "j ← j div 2 NISHIN (k) ← j mod 2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a002-a.webp",
+            "width": 664,
+            "height": 116
+          }
+        },
+        {
+          "id": "b",
+          "text": "j ← j mod 2 NISHIN (k) ← j div 2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a002-b.webp",
+            "width": 664,
+            "height": 116
+          }
+        },
+        {
+          "id": "c",
+          "text": "NISHIN (k) ← j div 2 j ← j mod 2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a002-c.webp",
+            "width": 664,
+            "height": 117
+          }
+        },
+        {
+          "id": "d",
+          "text": "NISHIN (k) ← j mod 2 j ← j div 2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a002-d.webp",
+            "width": 664,
+            "height": 116
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a003",
+      "number": 3,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2022 サンプル問題セット FE A 問3",
+      "promptText": "問３ P，Q，R はいずれも命題である。命題 P の真理値は真であり，命題 (not P) or Q 及び命題 (not Q) or R のいずれの真理値も真であることが分かっている。Q，R の 真理値はどれか。ここで，X or YはXとYの論理和，not XはXの否定を表す。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a003-p05.webp",
+        "width": 1021,
+        "height": 150
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a003-p05.webp",
+          "width": 1021,
+          "height": 150
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "偽 偽",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a003-a.webp",
+            "width": 434,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "偽 真",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a003-b.webp",
+            "width": 434,
+            "height": 122
+          }
+        },
+        {
+          "id": "c",
+          "text": "真 偽",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a003-c.webp",
+            "width": 434,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "真 真",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a003-d.webp",
+            "width": 434,
+            "height": 122
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a004",
+      "number": 4,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2022 サンプル問題セット FE A 問4",
+      "promptText": "問４ 入力記号，出力記号の集合が｛0，1｝であり，状態遷移図で示されるオートマトン がある。0011001110 を入力記号とした場合の出力記号はどれか。ここで，入力記号 は左から順に読み込まれるものとする。また，S は初期状態を表し，遷移の矢印のラ 1 ベルは，入力／出力を表している。 〔状態遷移図〕 0／0 1／1 1／0 1／1 S S S 1 2 3 0／0 0／0",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a004-p05.webp",
+        "width": 1020,
+        "height": 525
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a004-p05.webp",
+          "width": 1020,
+          "height": 525
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0001000110",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a004-a.webp",
+            "width": 147,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "0001001110",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a004-b.webp",
+            "width": 147,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "0010001000",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a004-c.webp",
+            "width": 147,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "0011111110",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a004-d.webp",
+            "width": 147,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a005",
+      "number": 5,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2022 サンプル問題セット FE A 問5",
+      "promptText": "問５ 2分探索木になっている2分木はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a005-p06.webp",
+        "width": 548,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a005-p06.webp",
+          "width": 548,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "16 15 19 10 14",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a005-a.webp",
+            "width": 302,
+            "height": 238
+          }
+        },
+        {
+          "id": "b",
+          "text": "17 14 19 10 16 18",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a005-b.webp",
+            "width": 302,
+            "height": 238
+          }
+        },
+        {
+          "id": "c",
+          "text": "18 16 19 15 14 20",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a005-c.webp",
+            "width": 359,
+            "height": 238
+          }
+        },
+        {
+          "id": "d",
+          "text": "20 18 19 10 14 15 16",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a005-d.webp",
+            "width": 358,
+            "height": 238
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a006",
+      "number": 6,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2022 サンプル問題セット FE A 問6",
+      "promptText": "問６ 配列Aが図2の状態のとき，図1の流れ図を実行すると，配列Bが図3の状態にな った。図 1 の a に入れる操作はどれか。ここで，配列 A，B の要素をそれぞれ A (i，j) ，B (i，j) とする。 開始 j j 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 ループ 1 0 ＊＊＊＊＊＊ 0 i：0,1,7（注） 1 ＊ 1 ＊＊＊＊＊＊＊＊ 2 ＊ 2 ＊ ＊ ループ 2 3 ＊＊＊＊ 3 ＊ ＊ j：0,1,7（注） i i 4 ＊ 4 ＊ ＊ 5 ＊ 5 ＊ a 6 ＊ 6 ＊ 7 ＊ 7 ループ 2 図２ 配列Ａの状態 図３ 実行後の配列Ｂ の状態 ループ 1 （注）ループ端の繰返し指定は， 変数名：初期値，増分，終値 を示す。 終了 図１ 流れ図",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a006-p07.webp",
+        "width": 1020,
+        "height": 853
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a006-p07.webp",
+          "width": 1020,
+          "height": 853
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "B (7－i，7－j) ← A (i，j)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a006-a.webp",
+            "width": 357,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "B (7－j，i) ← A (i，j)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a006-b.webp",
+            "width": 319,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "B (i，7－j) ← A (i，j)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a006-c.webp",
+            "width": 319,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "B ( j，7－i) ← A (i，j)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a006-d.webp",
+            "width": 332,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a007",
+      "number": 7,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2022 サンプル問題セット FE A 問7",
+      "promptText": "問７ 10進法で5桁の数a a a a a を，ハッシュ法を用いて配列に格納したい。ハ 1 2 3 4 5 ッシュ関数を mod(a ＋a ＋a ＋a ＋a ，13 )とし，求めたハッシュ値に対応する 1 2 3 4 5 位置の配列要素に格納する場合，54321 は配列のどの位置に入るか。ここで， mod(x，13) は，xを13で割った余りとする。 位置 配列 0 1 2 … … 11 12",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a007-p08.webp",
+        "width": 1020,
+        "height": 583
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a007-p08.webp",
+          "width": 1020,
+          "height": 583
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a007-a.webp",
+            "width": 30,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a007-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "7",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a007-c.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "11",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a007-d.webp",
+            "width": 42,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a008",
+      "number": 8,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2022 サンプル問題セット FE A 問8",
+      "promptText": "問８ 自然数 n に対して，次のとおり再帰的に定義される関数 f(n)を考える。f(5)の 値はどれか。 f(n)： if n≦1 then return 1 else return n＋f(n－1)",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a008-p08.webp",
+        "width": 1020,
+        "height": 197
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a008-p08.webp",
+          "width": 1020,
+          "height": 197
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "6",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a008-a.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "9",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a008-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "15",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a008-c.webp",
+            "width": 46,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a008-d.webp",
+            "width": 48,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a009",
+      "number": 9,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2022 サンプル問題セット FE A 問9",
+      "promptText": "問９ プログラムのコーディング規約に規定する事項のうち，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a009-p09.webp",
+        "width": 955,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a009-p09.webp",
+          "width": 955,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "局所変数は，用途が異なる場合でもデータ型が同じならば，できるだけ同一の変 数を使うようにする。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a009-a.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "処理性能を向上させるために，ループの制御変数には浮動小数点型変数を使用す る。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a009-b.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "同様の計算を何度も繰り返すときは，関数の再帰呼出しを用いる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a009-c.webp",
+            "width": 755,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "領域割付け関数を使用するときは，割付けができなかったときの処理を記述する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a009-d.webp",
+            "width": 931,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a010",
+      "number": 10,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2022 サンプル問題セット FE A 問10",
+      "promptText": "問10 外部割込みの原因となるものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a010-p09.webp",
+        "width": 529,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a010-p09.webp",
+          "width": 529,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ゼロによる除算命令の実行",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a010-a.webp",
+            "width": 320,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "存在しない命令コードの実行",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a010-b.webp",
+            "width": 346,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "タイマーによる時間経過の通知",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a010-c.webp",
+            "width": 369,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "ページフォールトの発生",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a010-d.webp",
+            "width": 296,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a011",
+      "number": 11,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2022 サンプル問題セット FE A 問11",
+      "promptText": "n 問11 メモリのエラー検出及び訂正に ECC を利用している。データバス幅 2 ビットに対 して冗長ビットが n＋2 ビット必要なとき，128 ビットのデータバス幅に必要な冗長 ビットは何ビットか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a011-p09.webp",
+        "width": 1021,
+        "height": 151
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a011-p09.webp",
+          "width": 1021,
+          "height": 151
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "7",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a011-a.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "8",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a011-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a011-c.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "10",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a011-d.webp",
+            "width": 45,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a012",
+      "number": 12,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2022 サンプル問題セット FE A 問12",
+      "promptText": "問12 A～Dを，主記憶の実効アクセス時間が短い順に並べたものはどれか。 キャッシュメモリ 主記憶 アクセス時間 ヒット率 アクセス時間 有無 （ナノ秒） （％） （ナノ秒） A なし － － 15 B なし － － 30 C あり 20 60 70 D あり 10 90 80",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a012-p10.webp",
+        "width": 906,
+        "height": 403
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a012-p10.webp",
+          "width": 906,
+          "height": 403
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A，B，C，D",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a012-a.webp",
+            "width": 148,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "A，D，B，C",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a012-b.webp",
+            "width": 148,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "C，D，A，B",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a012-c.webp",
+            "width": 148,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "D，C，A，B",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a012-d.webp",
+            "width": 148,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a013",
+      "number": 13,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2022 サンプル問題セット FE A 問13",
+      "promptText": "問13 仮想化マシン環境を物理マシン 20 台で運用しているシステムがある。次の運用条 件のとき，物理マシンが最低何台停止すると縮退運転になるか。 〔運用条件〕 (1) 物理マシンが停止すると，そこで稼働していた仮想マシンは他の全ての物理マ シンで均等に稼働させ，使用していた資源も同様に配分する。 (2) 物理マシンが 20 台のときに使用する資源は，全ての物理マシンにおいて 70％ である。 (3) 1 台の物理マシンで使用している資源が 90％を超えた場合，システム全体が縮 退運転となる。 (4) (1) ～(3) 以外の条件は考慮しなくてよい。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a013-p10.webp",
+        "width": 1020,
+        "height": 547
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a013-p10.webp",
+          "width": 1020,
+          "height": 547
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a013-a.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a013-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a013-c.webp",
+            "width": 36,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a013-d.webp",
+            "width": 35,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a014",
+      "number": 14,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "IPA 2022 サンプル問題セット FE A 問14",
+      "promptText": "問14 図のように，1 台のサーバ，3 台のクライアント及び 2 台のプリンタが LAN で接続 されている。このシステムはクライアントからの指示に基づいて，サーバにあるデー タをプリンタに出力する。各装置の稼働率が表のとおりであるとき，このシステムの 稼働率を表す計算式はどれか。ここで，クライアントは3台のうちどれか1台が稼働 していればよく，プリンタは2台のうちどちらかが稼働していればよい。 サーバ プリンタ プリンタ クライアント クライアント クライアント 装置 稼働率 サーバ a クライアント b プリンタ c LAN 1",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a014-p11.webp",
+        "width": 1021,
+        "height": 829
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a014-p11.webp",
+          "width": 1021,
+          "height": 829
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ab3c2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a014-a.webp",
+            "width": 84,
+            "height": 51
+          }
+        },
+        {
+          "id": "b",
+          "text": "a(1－b3)(1－c2)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a014-b.webp",
+            "width": 250,
+            "height": 53
+          }
+        },
+        {
+          "id": "c",
+          "text": "a(1－b)3(1－c)2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a014-c.webp",
+            "width": 240,
+            "height": 53
+          }
+        },
+        {
+          "id": "d",
+          "text": "a(1－(1－b)3)(1－(1－c)2)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a014-d.webp",
+            "width": 400,
+            "height": 53
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a015",
+      "number": 15,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2022 サンプル問題セット FE A 問15",
+      "promptText": "問15 図の送信タスクから受信タスクに T 秒間連続してデータを送信する。1 秒当たりの 送信量を S，1 秒当たりの受信量を R としたとき，バッファがオーバフローしないバ ッファサイズLを表す関係式として適切なものはどれか。ここで，受信タスクよりも 送信タスクの方が転送速度は速く，次の転送開始までの時間間隔は十分にあるものと する。 バッファ 送信タスク 受信タスク S サイズ：L R",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a015-p12.webp",
+        "width": 1020,
+        "height": 377
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a015-p12.webp",
+          "width": 1020,
+          "height": 377
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "L＜（R－S）×T",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a015-a.webp",
+            "width": 235,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "L＜（S－R）×T",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a015-b.webp",
+            "width": 235,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "L≧（R－S）×T",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a015-c.webp",
+            "width": 235,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "L≧（S－R）×T",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a015-d.webp",
+            "width": 235,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a016",
+      "number": 16,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2022 サンプル問題セット FE A 問16",
+      "promptText": "問16 インタプリタの説明として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a016-p12.webp",
+        "width": 655,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a016-p12.webp",
+          "width": 655,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "原始プログラムを，解釈しながら実行するプログラムである。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a016-a.webp",
+            "width": 706,
+            "height": 49
+          }
+        },
+        {
+          "id": "b",
+          "text": "原始プログラムを，推論しながら翻訳するプログラムである。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a016-b.webp",
+            "width": 706,
+            "height": 49
+          }
+        },
+        {
+          "id": "c",
+          "text": "原始プログラムを，目的プログラムに翻訳するプログラムである。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a016-c.webp",
+            "width": 756,
+            "height": 49
+          }
+        },
+        {
+          "id": "d",
+          "text": "実行可能なプログラムを，主記憶装置にロードするプログラムである。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a016-d.webp",
+            "width": 805,
+            "height": 49
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a017",
+      "number": 17,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "IPA 2022 サンプル問題セット FE A 問17",
+      "promptText": "問17 三つの媒体 A ～ C に次の条件でファイル領域を割り当てた場合，割り当てた領域 の総量が大きい順に媒体を並べたものはどれか。 〔条件〕 (1) ファイル領域を割り当てる際の媒体選択アルゴリズムとして，空き領域が最大の 媒体を選択する方式を採用する。 (2) 割当て要求されるファイル領域の大きさは，順に 90，30，40，40，70，30 （Mバイト）であり，割り当てられたファイル領域は，途中で解放されない。 (3) 各媒体は容量が同一であり，割当て要求に対して十分な大きさをもち，初めは全 て空きの状態である。 (4) 空き領域の大きさが等しい場合には，A，B，Cの順に選択する。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a017-p13.webp",
+        "width": 1021,
+        "height": 548
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a017-p13.webp",
+          "width": 1021,
+          "height": 548
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A，B，C",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a017-a.webp",
+            "width": 110,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "A，C，B",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a017-b.webp",
+            "width": 111,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "B，A，C",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a017-c.webp",
+            "width": 109,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "C，B，A",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a017-d.webp",
+            "width": 110,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a018",
+      "number": 18,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "IPA 2022 サンプル問題セット FE A 問18",
+      "promptText": "問18 ファイルシステムの絶対パス名を説明したものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a018-p13.webp",
+        "width": 729,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a018-p13.webp",
+          "width": 729,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "あるディレクトリから対象ファイルに至る幾つかのパス名のうち，最短のパス名",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a018-a.webp",
+            "width": 918,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "カレントディレクトリから対象ファイルに至るパス名",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a018-b.webp",
+            "width": 618,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "ホームディレクトリから対象ファイルに至るパス名",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a018-c.webp",
+            "width": 594,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "ルートディレクトリから対象ファイルに至るパス名",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a018-d.webp",
+            "width": 595,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a019",
+      "number": 19,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "IPA 2022 サンプル問題セット FE A 問19",
+      "promptText": "問19 DRAMの特徴はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a019-p13.webp",
+        "width": 336,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a019-p13.webp",
+          "width": 336,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "書込み及び消去を一括又はブロック単位で行う。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a019-a.webp",
+            "width": 556,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "データを保持するためのリフレッシュ操作又はアクセス操作が不要である。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a019-b.webp",
+            "width": 855,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "電源が遮断された状態でも，記憶した情報を保持することができる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a019-c.webp",
+            "width": 780,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "メモリセル構造が単純なので高集積化することができ，ビット単価を安くできる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a019-d.webp",
+            "width": 928,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a020",
+      "number": 20,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "IPA 2022 サンプル問題セット FE A 問20",
+      "promptText": "問20 次のような注文データが入力されたとき，注文日が入力日以前の営業日かどうかを 検査するチェックはどれか。 注文データ 伝票番号 注文日 商品コード 数量 顧客コード （文字） （文字） （文字） （数値） （文字）",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a020-p14.webp",
+        "width": 1018,
+        "height": 292
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a020-p14.webp",
+          "width": 1018,
+          "height": 292
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "シーケンスチェック",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a020-a.webp",
+            "width": 241,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "重複チェック",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a020-b.webp",
+            "width": 168,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "フォーマットチェック",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a020-c.webp",
+            "width": 266,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "論理チェック",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a020-d.webp",
+            "width": 168,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a021",
+      "number": 21,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "IPA 2022 サンプル問題セット FE A 問21",
+      "promptText": "問21 RDBMSにおけるビューに関する記述のうち，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a021-p14.webp",
+        "width": 823,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a021-p14.webp",
+          "width": 823,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ビューとは，名前を付けた導出表のことである。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a021-a.webp",
+            "width": 552,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "ビューに対して，ビューを定義することはできない。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a021-b.webp",
+            "width": 602,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "ビューの定義を行ってから，必要があれば，その基底表を定義する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a021-c.webp",
+            "width": 776,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "ビューは一つの基底表に対して一つだけ定義できる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a021-d.webp",
+            "width": 602,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a022",
+      "number": 22,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "IPA 2022 サンプル問題セット FE A 問22",
+      "promptText": "問22 UMLを用いて表した図の概念データモデルの解釈として，適切なものはどれか。 所属する 部署 従業員 1..＊ 0..＊",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a022-p14.webp",
+        "width": 973,
+        "height": 170
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a022-p14.webp",
+          "width": 973,
+          "height": 170
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "従業員の総数と部署の総数は一致する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a022-a.webp",
+            "width": 456,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "従業員は，同時に複数の部署に所属してもよい。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a022-b.webp",
+            "width": 556,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "所属する従業員がいない部署の存在は許されない。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a022-c.webp",
+            "width": 581,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "どの部署にも所属しない従業員が存在してもよい。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a022-d.webp",
+            "width": 578,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a023",
+      "number": 23,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 15,
+      "source": "IPA 2022 サンプル問題セット FE A 問23",
+      "promptText": "問23 ビッグデータのデータ貯蔵場所であるデータレイクの特徴として，適切なものはど れか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a023-p15.webp",
+        "width": 1020,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a023-p15.webp",
+          "width": 1020,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "あらゆるデータをそのままの形式や構造で格納しておく。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a023-a.webp",
+            "width": 654,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "データ量を抑えるために，データの記述情報であるメタデータは格納しない。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a023-b.webp",
+            "width": 881,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "データを格納する前にデータ利用方法を設計し，それに沿ってスキーマをあらか じめ定義しておく。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a023-c.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "テキストファイルやバイナリデータなど，格納するデータの形式に応じてリポジ トリを使い分ける。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a023-d.webp",
+            "width": 939,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a024",
+      "number": 24,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 15,
+      "source": "IPA 2022 サンプル問題セット FE A 問24",
+      "promptText": "問24 関係モデルにおいて表Xから表Yを得る関係演算はどれか。 X Y 商品番号 商品名 価格 数量 商品番号 数量 A01 カメラ 13,000 20 A01 20 A02 テレビ 58,000 15 A02 15 B01 冷蔵庫 65,000 8 B01 8 B05 洗濯機 48,000 10 B05 10 B06 乾燥機 35,000 5 B06 5",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a024-p15.webp",
+        "width": 906,
+        "height": 430
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a024-p15.webp",
+          "width": 906,
+          "height": 430
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "結合（join）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a024-a.webp",
+            "width": 157,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "射影（projection）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a024-b.webp",
+            "width": 232,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "選択（selection）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a024-c.webp",
+            "width": 220,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "併合（merge）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a024-d.webp",
+            "width": 170,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a025",
+      "number": 25,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "IPA 2022 サンプル問題セット FE A 問25",
+      "promptText": "問25 IoT で用いられる無線通信技術であり，近距離の IT 機器同士が通信する無線 PAN （Personal Area Network）と呼ばれるネットワークに利用されるものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a025-p16.webp",
+        "width": 1021,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a025-p16.webp",
+          "width": 1021,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BLE（Bluetooth Low Energy）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a025-a.webp",
+            "width": 345,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "LTE（Long Term Evolution）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a025-b.webp",
+            "width": 332,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "PLC（Power Line Communication）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a025-c.webp",
+            "width": 395,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "PPP（Point-to-Point Protocol）",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a025-d.webp",
+            "width": 382,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a026",
+      "number": 26,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "IPA 2022 サンプル問題セット FE A 問26",
+      "promptText": "問26 1.5M ビット／秒の伝送路を用いて 12 M バイトのデータを転送するのに必要な伝送 時間は何秒か。ここで，伝送路の伝送効率を50％とする。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a026-p16.webp",
+        "width": 1020,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a026-p16.webp",
+          "width": 1020,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "16",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a026-a.webp",
+            "width": 46,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "32",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a026-b.webp",
+            "width": 47,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "64",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a026-c.webp",
+            "width": 48,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "128",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a026-d.webp",
+            "width": 59,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a027",
+      "number": 27,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "IPA 2022 サンプル問題セット FE A 問27",
+      "promptText": "問27 TCP/IP を利用している環境で，電子メールに画像データなどを添付するための規 格はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a027-p16.webp",
+        "width": 1020,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a027-p16.webp",
+          "width": 1020,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "JPEG",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a027-a.webp",
+            "width": 73,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "MIME",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a027-b.webp",
+            "width": 72,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "MPEG",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a027-c.webp",
+            "width": 73,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "SMTP",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a027-d.webp",
+            "width": 73,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a028",
+      "number": 28,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "IPA 2022 サンプル問題セット FE A 問28",
+      "promptText": "問28 トランスポート層のプロトコルであり，信頼性よりもリアルタイム性が重視される 場合に用いられるものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a028-p16.webp",
+        "width": 1018,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a028-p16.webp",
+          "width": 1018,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "HTTP",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a028-a.webp",
+            "width": 72,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "IP",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a028-b.webp",
+            "width": 46,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "TCP",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a028-c.webp",
+            "width": 61,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "UDP",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a028-d.webp",
+            "width": 60,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a029",
+      "number": 29,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "IPA 2022 サンプル問題セット FE A 問29",
+      "promptText": "問29 PCとWebサーバがHTTPで通信している。PCからWebサーバ宛てのパケットでは， 送信元ポート番号は PC 側で割り当てた 50001，宛先ポート番号は 80 であった。Web サーバからPCへの戻りのパケットでのポート番号の組合せはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a029-p17.webp",
+        "width": 1021,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a029-p17.webp",
+          "width": 1021,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "80 50001",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a029-a.webp",
+            "width": 904,
+            "height": 146
+          }
+        },
+        {
+          "id": "b",
+          "text": "50001 80",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a029-b.webp",
+            "width": 904,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "80と50001以外からサーバ側で割り当てた番号 80",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a029-c.webp",
+            "width": 904,
+            "height": 146
+          }
+        },
+        {
+          "id": "d",
+          "text": "80と50001以外からサーバ側で割り当てた番号 50001",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a029-d.webp",
+            "width": 904,
+            "height": 147
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a030",
+      "number": 30,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "IPA 2022 サンプル問題セット FE A 問30",
+      "promptText": "問30 緊急事態を装って組織内部の人間からパスワードや機密情報を入手する不正な行為 は，どれに分類されるか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a030-p17.webp",
+        "width": 1020,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a030-p17.webp",
+          "width": 1020,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ソーシャルエンジニアリング",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a030-a.webp",
+            "width": 344,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "トロイの木馬",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a030-b.webp",
+            "width": 164,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "踏み台攻撃",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a030-c.webp",
+            "width": 147,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "ブルートフォース攻撃",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a030-d.webp",
+            "width": 270,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a031",
+      "number": 31,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "IPA 2022 サンプル問題セット FE A 問31",
+      "promptText": "問31 ボットネットにおけるC&Cサーバの役割として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a031-p18.webp",
+        "width": 879,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a031-p18.webp",
+          "width": 879,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Web サイトのコンテンツをキャッシュし，本来のサーバに代わってコンテンツを 利用者に配信することによって，ネットワークやサーバの負荷を軽減する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a031-a.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "外部からインターネットを経由して社内ネットワークにアクセスする際に，CHAP などのプロトコルを中継することによって，利用者認証時のパスワードの盗聴を防 止する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a031-b.webp",
+            "width": 948,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "外部からインターネットを経由して社内ネットワークにアクセスする際に，時刻 同期方式を採用したワンタイムパスワードを発行することによって，利用者認証時 のパスワードの盗聴を防止する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a031-c.webp",
+            "width": 945,
+            "height": 147
+          }
+        },
+        {
+          "id": "d",
+          "text": "侵入して乗っ取ったコンピュータに対して，他のコンピュータへの攻撃などの不 正な操作をするよう，外部から命令を出したり応答を受け取ったりする。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a031-d.webp",
+            "width": 946,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a032",
+      "number": 32,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "IPA 2022 サンプル問題セット FE A 問32",
+      "promptText": "問32 メッセージ認証符号の利用目的に該当するものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a032-p18.webp",
+        "width": 729,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a032-p18.webp",
+          "width": 729,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "メッセージが改ざんされていないことを確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a032-a.webp",
+            "width": 579,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "メッセージの暗号化方式を確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a032-b.webp",
+            "width": 428,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "メッセージの概要を確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a032-c.webp",
+            "width": 353,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "メッセージの秘匿性を確保する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a032-d.webp",
+            "width": 379,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a033",
+      "number": 33,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "IPA 2022 サンプル問題セット FE A 問33",
+      "promptText": "問33 UPSの導入によって期待できる情報セキュリティ対策としての効果はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a033-p18.webp",
+        "width": 948,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a033-p18.webp",
+          "width": 948,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PCが電力線通信（PLC）からマルウェアに感染することを防ぐ。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a033-a.webp",
+            "width": 724,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "サーバと端末間の通信における情報漏えいを防ぐ。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a033-b.webp",
+            "width": 581,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "電源の瞬断に起因するデータの破損を防ぐ。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a033-c.webp",
+            "width": 505,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "電子メールの内容が改ざんされることを防ぐ。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a033-d.webp",
+            "width": 530,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a034",
+      "number": 34,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 19,
+      "source": "IPA 2022 サンプル問題セット FE A 問34",
+      "promptText": "問34 ファジングに該当するものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a034-p19.webp",
+        "width": 504,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a034-p19.webp",
+          "width": 504,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "サーバにFINパケットを送信し，サーバからの応答を観測して，稼働しているサ ービスを見つけ出す。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a034-a.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "サーバの OS やアプリケーションソフトウェアが生成したログやコマンド履歴な どを解析して，ファイルサーバに保存されているファイルの改ざんを検知する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a034-b.webp",
+            "width": 943,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "ソフトウェアに，問題を引き起こしそうな多様なデータを入力し，挙動を監視し ぜい て，脆弱性を見つけ出す。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a034-c.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "ネットワーク上を流れるパケットを収集し，そのプロトコルヘッダやペイロード を解析して，あらかじめ登録された攻撃パターンと一致するものを検出する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a034-d.webp",
+            "width": 943,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a035",
+      "number": 35,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 19,
+      "source": "IPA 2022 サンプル問題セット FE A 問35",
+      "promptText": "問35 マルウェアの動的解析に該当するものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a035-p19.webp",
+        "width": 629,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a035-p19.webp",
+          "width": 629,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "検体のハッシュ値を計算し，オンラインデータベースに登録された既知のマルウ ェアのハッシュ値のリストと照合してマルウェアを特定する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a035-a.webp",
+            "width": 941,
+            "height": 96
+          }
+        },
+        {
+          "id": "b",
+          "text": "検体をサンドボックス上で実行し，その動作や外部との通信を観測する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a035-b.webp",
+            "width": 832,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "検体をネットワーク上の通信データから抽出し，さらに，逆コンパイルして取得 したコードから検体の機能を調べる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a035-c.webp",
+            "width": 941,
+            "height": 96
+          }
+        },
+        {
+          "id": "d",
+          "text": "ハードディスク内のファイルの拡張子とファイルヘッダの内容を基に，拡張子が 偽装された不正なプログラムファイルを検出する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a035-d.webp",
+            "width": 948,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a036",
+      "number": 36,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "IPA 2022 サンプル問題セット FE A 問36",
+      "promptText": "問36 SQLインジェクション攻撃による被害を防ぐ方法はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a036-p20.webp",
+        "width": 748,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a036-p20.webp",
+          "width": 748,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "入力された文字が，データベースへの問合せや操作において，特別な意味をもつ 文字として解釈されないようにする。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a036-a.webp",
+            "width": 944,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "入力に HTML タグが含まれていたら，HTML タグとして解釈されない他の文字列に 置き換える。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a036-b.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "入力に上位ディレクトリを指定する文字列（.. /）が含まれているときは受け 付けない。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a036-c.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "入力の全体の長さが制限を超えているときは受け付けない。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a036-d.webp",
+            "width": 681,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a037",
+      "number": 37,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "IPA 2022 サンプル問題セット FE A 問37",
+      "promptText": "問37 電子メールをドメインAの送信者がドメインBの宛先に送信するとき，送信者をド メインAのメールサーバで認証するためのものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a037-p20.webp",
+        "width": 1019,
+        "height": 96
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a037-p20.webp",
+          "width": 1019,
+          "height": 96
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "APOP",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a037-a.webp",
+            "width": 73,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "POP3S",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a037-b.webp",
+            "width": 85,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "S/MIME",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a037-c.webp",
+            "width": 97,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "SMTP-AUTH",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a037-d.webp",
+            "width": 135,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a038",
+      "number": 38,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "IPA 2022 サンプル問題セット FE A 問38",
+      "promptText": "問38 オブジェクト指向プログラムにおいて，データとメソッドを一つにまとめ，オブジ ェクトの実装の詳細をユーザから見えなくすることを何と呼ぶか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a038-p20.webp",
+        "width": 1020,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a038-p20.webp",
+          "width": 1020,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "インスタンス",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a038-a.webp",
+            "width": 168,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "カプセル化",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a038-b.webp",
+            "width": 145,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "クラスタ化",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a038-c.webp",
+            "width": 144,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "抽象化",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a038-d.webp",
+            "width": 96,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a039",
+      "number": 39,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "IPA 2022 サンプル問題セット FE A 問39",
+      "promptText": "問39 モジュール結合度が最も弱くなるものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a039-p20.webp",
+        "width": 629,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a039-p20.webp",
+          "width": 629,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "一つのモジュールで，できるだけ多くの機能を実現する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a039-a.webp",
+            "width": 655,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "二つのモジュール間で必要なデータ項目だけを引数として渡す。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a039-b.webp",
+            "width": 730,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "他のモジュールとデータ項目を共有するためにグローバルな領域を使用する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a039-c.webp",
+            "width": 882,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "他のモジュールを呼び出すときに，呼び出したモジュールの論理を制御するため の引数を渡す。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a039-d.webp",
+            "width": 944,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a040",
+      "number": 40,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 21,
+      "source": "IPA 2022 サンプル問題セット FE A 問40",
+      "promptText": "問40 モジュールの内部構造を考慮することなく，仕様書どおりに機能するかどうかをテ ストする手法はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a040-p21.webp",
+        "width": 1019,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a040-p21.webp",
+          "width": 1019,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "トップダウンテスト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a040-a.webp",
+            "width": 236,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "ブラックボックステスト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a040-b.webp",
+            "width": 291,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "ボトムアップテスト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a040-c.webp",
+            "width": 242,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "ホワイトボックステスト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a040-d.webp",
+            "width": 292,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a041",
+      "number": 41,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 21,
+      "source": "IPA 2022 サンプル問題セット FE A 問41",
+      "promptText": "問41 アジャイル開発のスクラムにおけるスプリントのルールのうち，適切なものはどれ か。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a041-p21.webp",
+        "width": 1020,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a041-p21.webp",
+          "width": 1020,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "スプリントの期間を決定したら，スプリントの 1 回目には要件定義工程を，2 回 目には設計工程を，3 回目にはコード作成工程を，4 回目にはテスト工程をそれぞ れ割り当てる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a041-a.webp",
+            "width": 946,
+            "height": 148
+          }
+        },
+        {
+          "id": "b",
+          "text": "成果物の内容を確認するスプリントレビューを，スプリントの期間の中間時点で 実施する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a041-b.webp",
+            "width": 946,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "プロジェクトで設定したスプリントの期間でリリース判断が可能なプロダクトイ ンクリメントができるように，スプリントゴールを設定する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a041-c.webp",
+            "width": 939,
+            "height": 100
+          }
+        },
+        {
+          "id": "d",
+          "text": "毎回のスプリントプランニングにおいて，スプリントの期間をゴールの難易度に 応じて，1週間から1か月までの範囲に設定する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a041-d.webp",
+            "width": 945,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a042",
+      "number": 42,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 21,
+      "source": "IPA 2022 サンプル問題セット FE A 問42",
+      "promptText": "問42 プロジェクトライフサイクルの一般的な特性はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a042-p21.webp",
+        "width": 704,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a042-p21.webp",
+          "width": 704,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "開発要員数は，プロジェクト開始時が最多であり，プロジェクトが進むにつれて 減少し，完了に近づくと再度増加する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a042-a.webp",
+            "width": 944,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "ステークホルダがコストを変えずにプロジェクトの成果物に対して及ぼすことが できる影響の度合いは，プロジェクト完了直前が最も大きくなる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a042-b.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "プロジェクトが完了に近づくほど，変更やエラーの修正がプロジェクトに影響す る度合いは小さくなる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a042-c.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "リスクは，プロジェクトが完了に近づくにつれて減少する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a042-d.webp",
+            "width": 676,
+            "height": 49
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a043",
+      "number": 43,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 22,
+      "source": "IPA 2022 サンプル問題セット FE A 問43",
+      "promptText": "問43 ソフトウェア開発の見積方法の一つであるファンクションポイント法の説明として， 適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a043-p22.webp",
+        "width": 1027,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a043-p22.webp",
+          "width": 1027,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "開発規模が分かっていることを前提として，工数と工期を見積もる方法である。 ビジネス分野に限らず，全分野に適用可能である。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a043-a.webp",
+            "width": 926,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "過去に経験した類似のソフトウェアについてのデータを基にして，ソフトウェア の相違点を調べ，同じ部分については過去のデータを使い，異なった部分は経験に 基づいて，規模と工数を見積もる方法である。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a043-b.webp",
+            "width": 945,
+            "height": 148
+          }
+        },
+        {
+          "id": "c",
+          "text": "ソフトウェアの機能を入出力データ数やファイル数などによって定量的に計測し， 複雑さによる調整を行って，ソフトウェア規模を見積もる方法である。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a043-c.webp",
+            "width": 954,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "単位作業項目に適用する作業量の基準値を決めておき，作業項目を単位作業項目 まで分解し，基準値を適用して算出した作業量の積算で全体の作業量を見積もる方 法である。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a043-d.webp",
+            "width": 946,
+            "height": 147
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a044",
+      "number": 44,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 22,
+      "source": "IPA 2022 サンプル問題セット FE A 問44",
+      "promptText": "問44 アローダイアグラムの日程計画をもつプロジェクトの，開始から終了までの最少所 要日数は何日か。 E 2 凡例 B H 作業名 2 2 所要日数 A C F I 2 1 3 1 D J 4 4 G 3",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a044-p22.webp",
+        "width": 1021,
+        "height": 419
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a044-p22.webp",
+          "width": 1021,
+          "height": 419
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "9",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a044-a.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "10",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a044-b.webp",
+            "width": 45,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "11",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a044-c.webp",
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "12",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a044-d.webp",
+            "width": 46,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a045",
+      "number": 45,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 23,
+      "source": "IPA 2022 サンプル問題セット FE A 問45",
+      "promptText": "問45 サービスマネジメントのプロセス改善におけるベンチマーキングはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a045-p23.webp",
+        "width": 929,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a045-p23.webp",
+          "width": 929,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IT サービスのパフォーマンスを財務，顧客，内部プロセス，学習と成長の観点 から測定し，戦略的な活動をサポートする。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a045-a.webp",
+            "width": 944,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "業界内外の優れた業務方法（ベストプラクティス）と比較して，サービス品質及 びパフォーマンスのレベルを評価する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a045-b.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "サービスのレベルで可用性，信頼性，パフォーマンスを測定し，顧客に報告する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a045-c.webp",
+            "width": 931,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "強み，弱み，機会，脅威の観点から IT サービスマネジメントの現状を分析する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a045-d.webp",
+            "width": 931,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a046",
+      "number": 46,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 23,
+      "source": "IPA 2022 サンプル問題セット FE A 問46",
+      "promptText": "問46 ディスク障害時に，フルバックアップを取得してあるテープからディスクにデータ を復元した後，フルバックアップ取得時以降の更新後コピーをログから反映させてデ ータベースを回復する方法はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a046-p23.webp",
+        "width": 1021,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a046-p23.webp",
+          "width": 1021,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "チェックポイントリスタート",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a046-a.webp",
+            "width": 342,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "リブート",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a046-b.webp",
+            "width": 113,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "ロールバック",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a046-c.webp",
+            "width": 165,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "ロールフォワード",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a046-d.webp",
+            "width": 217,
+            "height": 45
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a047",
+      "number": 47,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 23,
+      "source": "IPA 2022 サンプル問題セット FE A 問47",
+      "promptText": "問47 経営者が社内のシステム監査人の外観上の独立性を担保するために講じる措置とし て，最も適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a047-p23.webp",
+        "width": 1018,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a047-p23.webp",
+          "width": 1018,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "システム監査人にITに関する継続的学習を義務付ける。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a047-a.webp",
+            "width": 641,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "システム監査人に必要な知識や経験を定めて公表する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a047-b.webp",
+            "width": 629,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "システム監査人の監査技法研修制度を設ける。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a047-c.webp",
+            "width": 529,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "システム監査人の所属部署を内部監査部門とする。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a047-d.webp",
+            "width": 579,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a048",
+      "number": 48,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 24,
+      "source": "IPA 2022 サンプル問題セット FE A 問48",
+      "promptText": "問48 情報セキュリティ監査において，可用性を確認するチェック項目はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a048-p24.webp",
+        "width": 930,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a048-p24.webp",
+          "width": 930,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "外部記憶媒体の無断持出しが禁止されていること",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a048-a.webp",
+            "width": 568,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "中断時間を定めたSLAの水準が保たれるように管理されていること",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a048-b.webp",
+            "width": 767,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "データ入力時のエラーチェックが適切に行われていること",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a048-c.webp",
+            "width": 668,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "データベースが暗号化されていること",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a048-d.webp",
+            "width": 442,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a049",
+      "number": 49,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 24,
+      "source": "IPA 2022 サンプル問題セット FE A 問49",
+      "promptText": "問49 テレワークで活用しているVDIに関する記述として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a049-p24.webp",
+        "width": 930,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a049-p24.webp",
+          "width": 930,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PC 環境を仮想化してサーバ上に置くことで，社外から端末の種類を選ばず自分 のデスクトップPC環境として利用できるシステム",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a049-a.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "インターネット上に仮想の専用線を設定し，特定の人だけが利用できる専用ネッ トワーク",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a049-b.webp",
+            "width": 936,
+            "height": 96
+          }
+        },
+        {
+          "id": "c",
+          "text": "紙で保管されている資料を，ネットワークを介して遠隔地からでも参照可能な電 子書類に変換・保存することができるツール",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a049-c.webp",
+            "width": 947,
+            "height": 96
+          }
+        },
+        {
+          "id": "d",
+          "text": "対面での会議開催が困難な場合に，ネットワークを介して対面と同じようなコミ ュニケーションができるツール",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a049-d.webp",
+            "width": 940,
+            "height": 96
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a050",
+      "number": 50,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 25,
+      "source": "IPA 2022 サンプル問題セット FE A 問50",
+      "promptText": "問50 投資案件において，5 年間の投資効果を ROI（Return On Investment）で評価した 場合，四つの案件 a～d のうち，最も ROI が高いものはどれか。ここで，割引率は考 慮しなくてもよいものとする。 a 年目 1 2 3 4 5 利益 15 30 45 30 15 投資額 100 b 年目 1 2 3 4 5 利益 105 75 45 15 0 投資額 200 c 年目 1 2 3 4 5 利益 60 75 90 75 60 投資額 300 d 年目 1 2 3 4 5 利益 105 105 105 105 105 投資額 400",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a050-p25.webp",
+        "width": 1021,
+        "height": 893
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a050-p25.webp",
+          "width": 1021,
+          "height": 893
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a050-a.webp",
+            "width": 35,
+            "height": 38
+          }
+        },
+        {
+          "id": "b",
+          "text": "b",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a050-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "c",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a050-c.webp",
+            "width": 34,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "d",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a050-d.webp",
+            "width": 34,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a051",
+      "number": 51,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 25,
+      "source": "IPA 2022 サンプル問題セット FE A 問51",
+      "promptText": "問51 国や地方公共団体が，環境への配慮を積極的に行っていると評価されている製品・ サービスを選んでいる。この取組を何というか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a051-p25.webp",
+        "width": 1011,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a051-p25.webp",
+          "width": 1011,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CSR",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a051-a.webp",
+            "width": 61,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "エコマーク認定",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a051-b.webp",
+            "width": 195,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "環境アセスメント",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a051-c.webp",
+            "width": 218,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "グリーン購入",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a051-d.webp",
+            "width": 169,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a052",
+      "number": 52,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 26,
+      "source": "IPA 2022 サンプル問題セット FE A 問52",
+      "promptText": "問52 コアコンピタンスの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a052-p26.webp",
+        "width": 479,
+        "height": 46
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a052-p26.webp",
+          "width": 479,
+          "height": 46
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "競合他社にはまねのできない自社ならではの卓越した能力",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a052-a.webp",
+            "width": 671,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "経営を行う上で法令や各種規制，社会的規範などを遵守する企業活動",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a052-b.webp",
+            "width": 796,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "市場・技術・商品（サービス）の観点から設定した，事業の展開領域",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a052-c.webp",
+            "width": 797,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "組織活動の目的を達成するために行う，業務とシステムの全体最適化手法",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a052-d.webp",
+            "width": 846,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a053",
+      "number": 53,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 26,
+      "source": "IPA 2022 サンプル問題セット FE A 問53",
+      "promptText": "問53 新しい事業に取り組む際の手法として，E.リースが提唱したリーンスタートアップ の説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a053-p26.webp",
+        "width": 1021,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a053-p26.webp",
+          "width": 1021,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "国・地方公共団体など，公共機関の補助金・助成金の交付を前提とし，事前に詳 細な事業計画を検討・立案した上で，公共性のある事業を立ち上げる手法",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a053-a.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "市場環境の変化によって競争力を喪失した事業分野に対して，経営資源を大規模 に追加投入し，リニューアルすることによって，基幹事業として再出発を期す手法",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a053-b.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "持続可能な事業を迅速に構築し，展開するために，あらかじめ詳細に立案された 事業計画を厳格に遂行して，成果の検証や計画の変更を最小限にとどめる手法",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a053-c.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "実用最小限の製品・サービスを短期間で作り，構築・計測・学習というフィード バックループで改良や方向転換をして，継続的にイノベーションを行う手法",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a053-d.webp",
+            "width": 945,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a054",
+      "number": 54,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 27,
+      "source": "IPA 2022 サンプル問題セット FE A 問54",
+      "promptText": "問54 IoTの応用事例のうち，HEMSの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a054-p27.webp",
+        "width": 605,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a054-p27.webp",
+          "width": 605,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "工場内の機械に取り付けたセンサで振動，温度，音などを常時計測し，収集した データを基に機械の劣化状態を分析して，適切なタイミングで部品を交換する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a054-a.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "自動車に取り付けたセンサで車両の状態，路面状況などのデータを計測し，ネッ トワークを介して保存し分析することによって，効率的な運転を支援する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a054-b.webp",
+            "width": 935,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報通信技術や環境技術を駆使して，街灯などの公共設備や交通システムをはじ めとする都市基盤のエネルギーの可視化と消費の最適制御を行う。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a054-c.webp",
+            "width": 944,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "太陽光発電装置などのエネルギー機器，家電機器，センサ類などを家庭内通信ネ ットワークに接続して，エネルギーの可視化と消費の最適制御を行う。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a054-d.webp",
+            "width": 942,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a055",
+      "number": 55,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 27,
+      "source": "IPA 2022 サンプル問題セット FE A 問55",
+      "promptText": "問55 ロングテールの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a055-p27.webp",
+        "width": 429,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a055-p27.webp",
+          "width": 429,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Web コンテンツを構成するテキストや画像などのデジタルコンテンツに，統合 的・体系的な管理，配信などの必要な処理を行うこと",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a055-a.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "インターネットショッピングで，売上の全体に対して，あまり売れない商品群の 売上合計が無視できない割合になっていること",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a055-b.webp",
+            "width": 944,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "自分のWebサイトやブログに企業へのリンクを掲載し，他者がこれらのリンクを 経由して商品を購入したときに，企業が紹介料を支払うこと",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a055-c.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "メーカや卸売業者から商品を直接発送することによって，在庫リスクを負うこと なく自分のWebサイトで商品が販売できること",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a055-d.webp",
+            "width": 942,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a056",
+      "number": 56,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 28,
+      "source": "IPA 2022 サンプル問題セット FE A 問56",
+      "promptText": "問56 CGM（Consumer Generated Media）の例はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a056-p28.webp",
+        "width": 642,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a056-p28.webp",
+          "width": 642,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "企業が，経営状況や財務状況，業績動向に関する情報を，個人投資家向けに公開 する自社のWebサイト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a056-a.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "企業が，自社の商品の特徴や使用方法に関する情報を，一般消費者向けに発信す る自社のWebサイト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a056-b.webp",
+            "width": 943,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "行政機関が，政策，行政サービスに関する情報を，一般市民向けに公開する自組 織のWebサイト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a056-c.webp",
+            "width": 948,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "個人が，自らが使用した商品などの評価に関する情報を，不特定多数に向けて発 信するブログやSNSなどのWebサイト",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a056-d.webp",
+            "width": 946,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a057",
+      "number": 57,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 28,
+      "source": "IPA 2022 サンプル問題セット FE A 問57",
+      "promptText": "問57 製品X 及びY を生産するために 2 種類の原料 A，B が必要である。製品 1 個の生産 に必要となる原料の量と調達可能量は表に示すとおりである。製品XとYの1個当た りの販売利益が，それぞれ100円，150円であるとき，最大利益は何円か。 製品Xの1個 製品Yの1個 原料 調達可能量 当たりの必要量 当たりの必要量 A 2 1 100 B 1 2 80",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a057-p28.webp",
+        "width": 1021,
+        "height": 382
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a057-p28.webp",
+          "width": 1021,
+          "height": 382
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "5,000",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a057-a.webp",
+            "width": 84,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "6,000",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a057-b.webp",
+            "width": 85,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "7,000",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a057-c.webp",
+            "width": 84,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "8,000",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a057-d.webp",
+            "width": 85,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a058",
+      "number": 58,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 28,
+      "source": "IPA 2022 サンプル問題セット FE A 問58",
+      "promptText": "問58 令和2年4月に30万円で購入したPCを3年後に1万円で売却するとき，固定資産 売却損は何万円か。ここで，耐用年数は4年，減価償却は定額法，定額法の償却率は 0.250，残存価額は0円とする。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a058-p28.webp",
+        "width": 1020,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a058-p28.webp",
+          "width": 1020,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "6.0",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a058-a.webp",
+            "width": 59,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "6.5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a058-b.webp",
+            "width": 60,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "7.0",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a058-c.webp",
+            "width": 59,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "7.5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a058-d.webp",
+            "width": 60,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a059",
+      "number": 59,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 29,
+      "source": "IPA 2022 サンプル問題セット FE A 問59",
+      "promptText": "問59 売上高が100百万円のとき，変動費が60百万円，固定費が30百万円掛かる。変動 費率，固定費は変わらないものとして，目標利益 18 百万円を達成するのに必要な売 上高は何百万円か。",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a059-p29.webp",
+        "width": 1020,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a059-p29.webp",
+          "width": 1020,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "108",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a059-a.webp",
+            "width": 59,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "120",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a059-b.webp",
+            "width": 58,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "156",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a059-c.webp",
+            "width": 59,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "180",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a059-d.webp",
+            "width": 58,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2022-sample-a060",
+      "number": 60,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 29,
+      "source": "IPA 2022 サンプル問題セット FE A 問60",
+      "promptText": "問60 労働者派遣法に基づく，派遣先企業と労働者との関係（図の太線部分）はどれか。 派遣元企業 派遣先企業 労働者",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/a060-p29.webp",
+        "width": 1004,
+        "height": 335
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/a060-p29.webp",
+          "width": 1004,
+          "height": 335
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "請負契約関係",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a060-a.webp",
+            "width": 171,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "雇用契約関係",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a060-b.webp",
+            "width": 171,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "指揮命令関係",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a060-c.webp",
+            "width": 171,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "労働者派遣契約関係",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/a060-d.webp",
+            "width": 245,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b001",
+      "number": 1,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2022 サンプル問題セット FE B 問1",
+      "promptText": "問１ 次の記述中の に入れる正しい答えを，解答群の中から選べ。 プログラムを実行すると，“ ”と出力される。 〔プログラム〕 整数型: x ← 1 整数型: y ← 2 整数型: z ← 3 x ← y y ← z z ← x yの値 と zの値 をこの順にコンマ区切りで出力する 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b001-p04.webp",
+        "width": 897,
+        "height": 600
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b001-p04.webp",
+          "width": 897,
+          "height": 600
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1,2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b001-a.webp",
+            "width": 58,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "1,3",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b001-b.webp",
+            "width": 58,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "2,1",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b001-c.webp",
+            "width": 57,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "2,3",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b001-d.webp",
+            "width": 60,
+            "height": 46
+          }
+        },
+        {
+          "id": "e",
+          "text": "3,1",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b001-e.webp",
+            "width": 56,
+            "height": 46
+          }
+        },
+        {
+          "id": "f",
+          "text": "3,2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b001-f.webp",
+            "width": 60,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b002",
+      "number": 2,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2022 サンプル問題セット FE B 問2",
+      "promptText": "問２ 次のプログラム中の a ～ c に入れる正しい答えの組合せを， 解答群の中から選べ。 関数 fizzBuzz は，引数で与えられた値が，3 で割り切れて 5 で割り切れない場合 は“3 で割り切れる”を，5 で割り切れて 3 で割り切れない場合は“5 で割り切れ る”を，3 と 5 で割り切れる場合は“3 と 5 で割り切れる”を返す。それ以外の場合 は“3でも5でも割り切れない”を返す。 〔プログラム〕 ○文字列型: fizzBuzz(整数型: num) 文字列型: result if (num が a で割り切れる) result ← \" a で割り切れる\" elseif (num が b で割り切れる) result ← \" b で割り切れる\" elseif (num が c で割り切れる) result ← \" c で割り切れる\" else result ← \"3 でも 5 でも割り切れない\" endif return result 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b002-p05.webp",
+        "width": 1022,
+        "height": 1035
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b002-p05.webp",
+          "width": 1022,
+          "height": 1035
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "3 3と5 5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b002-a.webp",
+            "width": 754,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "3 5 3と5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b002-b.webp",
+            "width": 754,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "3と5 3 5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b002-c.webp",
+            "width": 754,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "5 3 3と5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b002-d.webp",
+            "width": 754,
+            "height": 120
+          }
+        },
+        {
+          "id": "e",
+          "text": "5 3と5 3",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b002-e.webp",
+            "width": 754,
+            "height": 121
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b003",
+      "number": 3,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2022 サンプル問題セット FE B 問3",
+      "promptText": "問３ 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 関数 makeNewArray は，要素数 2 以上の整数型の配列を引数にとり，整数型の配列 を返す関数である。関数 makeNewArray を makeNewArray({3, 2, 1, 6, 5, 4})として 呼び出したとき，戻り値の配列の要素番号5の値は となる。 〔プログラム〕 ○整数型の配列: makeNewArray(整数型の配列: in) 整数型の配列: out ← {} // 要素数0の配列 整数型: i, tail outの末尾 に in[1]の値 を追加する for (i を 2 から inの要素数 まで 1 ずつ増やす) tail ← out[outの要素数] outの末尾 に (tail ＋ in[i]) の結果を追加する endfor return out 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b003-p06.webp",
+        "width": 1020,
+        "height": 820
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b003-p06.webp",
+          "width": 1020,
+          "height": 820
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "5",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-a.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "6",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-b.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "9",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-c.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "11",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-d.webp",
+            "width": 42,
+            "height": 42
+          }
+        },
+        {
+          "id": "e",
+          "text": "12",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-e.webp",
+            "width": 45,
+            "height": 42
+          }
+        },
+        {
+          "id": "f",
+          "text": "17",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-f.webp",
+            "width": 45,
+            "height": 42
+          }
+        },
+        {
+          "id": "g",
+          "text": "21",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b003-g.webp",
+            "width": 44,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b004",
+      "number": 4,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2022 サンプル問題セット FE B 問4",
+      "promptText": "問４ 次のプログラム中の a ～ c に入れる正しい答えの組合せを， 解答群の中から選べ。 関数 gcd は，引数で与えられた二つの正の整数 num1 と num2 の最大公約数を，次 の(1)～(3) の性質を利用して求める。 (1) num1とnum2が等しいとき，num1とnum2の最大公約数はnum1である。 (2) num1 が num2 より大きいとき，num1 と num2 の最大公約数は，(num1 － num2) とnum2の最大公約数と等しい。 (3) num2 が num1 より大きいとき，num1 と num2 の最大公約数は，(num2 － num1) とnum1の最大公約数と等しい。 〔プログラム〕 ○整数型: gcd(整数型: num1, 整数型: num2) 整数型: x ← num1 整数型: y ← num2 a if ( b ) x ← x － y else y ← y － x endif c return x 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b004-p07.webp",
+        "width": 1021,
+        "height": 1110
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b004-p07.webp",
+          "width": 1021,
+          "height": 1110
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "if (x ≠ y) x ＜ y endif",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b004-a.webp",
+            "width": 688,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "if (x ≠ y) x ＞ y endif",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b004-b.webp",
+            "width": 688,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "while (x ≠ y) x ＜ y endwhile",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b004-c.webp",
+            "width": 688,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "while (x ≠ y) x ＞ y endwhile",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b004-d.webp",
+            "width": 688,
+            "height": 120
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b005",
+      "number": 5,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2022 サンプル問題セット FE B 問5",
+      "promptText": "問５ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。 関数calc は，正の実数xとy を受け取り， x2＋y2 の計算結果を返す。関数 calc が使う関数 pow は，第 1 引数として正の実数 a を，第 2 引数として実数 b を受け取 り，aのb乗の値を実数型で返す。 〔プログラム〕 ○実数型: calc(実数型: x, 実数型: y) return 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b005-p08.webp",
+        "width": 1022,
+        "height": 535
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b005-p08.webp",
+          "width": 1022,
+          "height": 535
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(pow(x, 2) ＋ pow(y, 2)) ÷ pow(2, 0.5)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-a.webp",
+            "width": 504,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "(pow(x, 2) ＋ pow(y, 2)) ÷ pow(x, y)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-b.webp",
+            "width": 479,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "pow(2, pow(x, 0.5)) ＋ pow(2, pow(y, 0.5))",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-c.webp",
+            "width": 545,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "pow(pow(pow(2, x), y), 0.5)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-d.webp",
+            "width": 357,
+            "height": 48
+          }
+        },
+        {
+          "id": "e",
+          "text": "pow(pow(x, 2) ＋ pow(y, 2), 0.5)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-e.webp",
+            "width": 420,
+            "height": 48
+          }
+        },
+        {
+          "id": "f",
+          "text": "pow(x, 2) × pow(y, 2) ÷ pow(x, y)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-f.webp",
+            "width": 457,
+            "height": 48
+          }
+        },
+        {
+          "id": "g",
+          "text": "pow(x, y) ÷ pow(2, 0.5)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b005-g.webp",
+            "width": 320,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "e"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b006",
+      "number": 6,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2022 サンプル問題セット FE B 問6",
+      "promptText": "問６ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。 関数 rev は 8 ビット型の引数 byte を受け取り，ビットの並びを逆にした値を返す。 例えば，関数revをrev(01001011) として呼び出すと，戻り値は11010010となる。 なお，演算子 ∧ はビット単位の論理積，演算子 ∨ はビット単位の論理和，演算 子 >> は論理右シフト，演算子 << は論理左シフトを表す。例えば，value >> n は value の値を n ビットだけ右に論理シフトし，value << n は value の値を n ビット だけ左に論理シフトする。 〔プログラム〕 ○8ビット型: rev(8ビット型: byte) 8ビット型: rbyte ← byte 8ビット型: r ← 00000000 整数型: i for (i を 1 から 8 まで 1 ずつ増やす) endfor return r 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b006-p09.webp",
+        "width": 1030,
+        "height": 895
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b006-p09.webp",
+          "width": 1030,
+          "height": 895
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "r ← (r << 1) ∨ (rbyte ∧ 00000001) rbyte ← rbyte >> 1",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b006-a.webp",
+            "width": 468,
+            "height": 82
+          }
+        },
+        {
+          "id": "b",
+          "text": "r ← (r << 7) ∨ (rbyte ∧ 00000001) rbyte ← rbyte >> 7",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b006-b.webp",
+            "width": 468,
+            "height": 82
+          }
+        },
+        {
+          "id": "c",
+          "text": "r ← (rbyte << 1) ∨ (rbyte >> 7) rbyte ← r",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b006-c.webp",
+            "width": 431,
+            "height": 82
+          }
+        },
+        {
+          "id": "d",
+          "text": "r ← (rbyte >> 1) ∨ (rbyte << 7) rbyte ← r",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b006-d.webp",
+            "width": 431,
+            "height": 82
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b007",
+      "number": 7,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2022 サンプル問題セット FE B 問7",
+      "promptText": "問７ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。 関数 factorial は非負の整数 n を引数にとり，その階乗を返す関数である。非負 の整数 n の階乗は n が 0 のときに 1 になり，それ以外の場合は 1 から n までの整数 を全て掛け合わせた数となる。 〔プログラム〕 ○整数型: factorial(整数型: n) if (n ＝ 0) return 1 endif return 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b007-p10.webp",
+        "width": 1021,
+        "height": 640
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b007-p10.webp",
+          "width": 1021,
+          "height": 640
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(n － 1) × factorial(n)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b007-a.webp",
+            "width": 317,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "factorial(n － 1)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b007-b.webp",
+            "width": 232,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "n",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b007-c.webp",
+            "width": 34,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "n × (n － 1)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b007-d.webp",
+            "width": 182,
+            "height": 47
+          }
+        },
+        {
+          "id": "e",
+          "text": "n × factorial(1)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b007-e.webp",
+            "width": 232,
+            "height": 47
+          }
+        },
+        {
+          "id": "f",
+          "text": "n × factorial(n － 1)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b007-f.webp",
+            "width": 295,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b008",
+      "number": 8,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2022 サンプル問題セット FE B 問8",
+      "promptText": "問８ 次の記述中の に入れる正しい答えを，解答群の中から選べ。 優先度付きキューを操作するプログラムである。優先度付きキューとは扱う要素 に優先度を付けたキューであり，要素を取り出す際には優先度の高いものから順番 に取り出される。クラス PrioQueue は優先度付きキューを表すクラスである。クラ ス PrioQueue の説明を図に示す。ここで，優先度は整数型の値 1，2，3 のいずれか であり，小さい値ほど優先度が高いものとする。 手続prioSchedを呼び出したとき，出力は の順となる。 コンストラクタ 説明 PrioQueue() 空の優先度付きキューを生成する。 メソッド 戻り値 説明 enqueue(文字列型: s, なし 優先度付きキューに，文字列 s を要素と 整数型: prio) して，優先度prioで追加する。 dequeue() 文字列型 優先度付きキューからキュー内で最も優 先度の高い要素を取り出して返す。最も 優先度の高い要素が複数あるときは，そ のうちの最初に追加された要素を一つ取 り出して返す。 size() 整数型 優先度付きキューに格納されている要素 の個数を返す。 図 クラスPrioQueueの説明\n〔プログラム〕 ○prioSched() PrioQueue: prioQueue ← PrioQueue() prioQueue.enqueue(\"A\", 1) prioQueue.enqueue(\"B\", 2) prioQueue.enqueue(\"C\", 2) prioQueue.enqueue(\"D\", 3) prioQueue.dequeue() /* 戻り値は使用しない */ prioQueue.dequeue() /* 戻り値は使用しない */ prioQueue.enqueue(\"D\", 3) prioQueue.enqueue(\"B\", 2) prioQueue.dequeue() /* 戻り値は使用しない */ prioQueue.dequeue() /* 戻り値は使用しない */ prioQueue.enqueue(\"C\", 2) prioQueue.enqueue(\"A\", 1) while (prioQueue.size() が 0 と等しくない) prioQueue.dequeue() の戻り値を出力 endwhile 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b008-p12.webp",
+        "width": 1022,
+        "height": 1169
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b008-p12.webp",
+          "width": 1022,
+          "height": 1169
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b008-p13.webp",
+          "width": 669,
+          "height": 743
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "“A”，“B”，“C”，“D”",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b008-a.webp",
+            "width": 319,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "“A”，“B”，“D”，“D”",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b008-b.webp",
+            "width": 319,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "“A”，“C”，“C”，“D”",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b008-c.webp",
+            "width": 319,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "“A”，“C”，“D”，“D”",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b008-d.webp",
+            "width": 319,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b009",
+      "number": 9,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "IPA 2022 サンプル問題セット FE B 問9",
+      "promptText": "問９ 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 手続 order は，図の 2 分木の，引数で指定した節を根とする部分木をたどりなが ら，全ての節番号を出力する。大域の配列 tree が図の 2 分木を表している。配列 tree の要素は，対応する節の子の節番号を，左の子，右の子の順に格納した配列で ある。例えば，配列 tree の要素番号 1 の要素は，節番号 1 の子の節番号から成る配 列であり，左の子の節番号2，右の子の節番号3を配列｛2，3｝として格納する。 手続order をorder(1)として呼び出すと， の順に出力される。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 注記1 ○の中の値は節番号である。 注記2 子の節が一つの場合は，左の子の節とする。 図 プログラムが扱う2分木\n〔プログラム〕 大域: 整数型配列の配列: tree ← {{2, 3}, {4, 5}, {6, 7}, {8, 9}, {10, 11}, {12, 13}, {14}, {}, {}, {}, {}, {}, {}, {}} // {}は要素数0の配列 ○order(整数型: n) if (tree[n]の要素数 が 2 と等しい) order(tree[n][1]) nを出力 order(tree[n][2]) elseif (tree[n]の要素数 が 1 と等しい) order(tree[n][1]) nを出力 else nを出力 endif 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b009-p14.webp",
+        "width": 1022,
+        "height": 972
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b009-p14.webp",
+          "width": 1022,
+          "height": 972
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b009-p15.webp",
+          "width": 955,
+          "height": 658
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1，2，3，4，5，6，7，8，9，10，11，12，13，14",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b009-a.webp",
+            "width": 584,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "1，2，4，8，9，5，10，11，3，6，12，13，7，14",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b009-b.webp",
+            "width": 584,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "8，4，9，2，10，5，11，1，12，6，13，3，14，7",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b009-c.webp",
+            "width": 585,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "8，9，4，10，11，5，2，12，13，6，14，7，3，1",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b009-d.webp",
+            "width": 581,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b010",
+      "number": 10,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "IPA 2022 サンプル問題セット FE B 問10",
+      "promptText": "問10 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。 手続 delNode は，単方向リストから，引数 pos で指定された位置の要素を削除す る手続である。引数 pos は，リストの要素数以下の正の整数とする。リストの先頭 の位置を1とする。 クラス ListElement は，単方向リストの要素を表す。クラス ListElement のメン バ変数の説明を表に示す。ListElement 型の変数はクラス ListElement のインスタン スの参照を格納するものとする。大域変数 listHead には，リストの先頭要素の参照 があらかじめ格納されている。 表 クラスListElementのメンバ変数の説明 メンバ変数 型 説明 val 文字型 要素の値 next ListElement 次の要素の参照 次の要素がないときの状態は未定義 〔プログラム〕 大域: ListElement: listHead // リストの先頭要素が格納されている ○delNode(整数型: pos) /* posは，リストの要素数以下の正の整数 */ ListElement: prev 整数型: i if (pos が 1 と等しい) listHead ← listHead.next else prev ← listHead /* posが2と等しいときは繰返し処理を実行しない */ for (i を 2 から pos － 1 まで 1 ずつ増やす) prev ← prev.next endfor prev.next ← endif\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b010-p16.webp",
+        "width": 1021,
+        "height": 1346
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b010-p16.webp",
+          "width": 1021,
+          "height": 1346
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b010-p17.webp",
+          "width": 97,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "listHead",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b010-a.webp",
+            "width": 118,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "listHead.next",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b010-b.webp",
+            "width": 179,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "listHead.next.next",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b010-c.webp",
+            "width": 242,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "prev",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b010-d.webp",
+            "width": 72,
+            "height": 41
+          }
+        },
+        {
+          "id": "e",
+          "text": "prev.next",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b010-e.webp",
+            "width": 134,
+            "height": 44
+          }
+        },
+        {
+          "id": "f",
+          "text": "prev.next.next",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b010-f.webp",
+            "width": 196,
+            "height": 44
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b011",
+      "number": 11,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "IPA 2022 サンプル問題セット FE B 問11",
+      "promptText": "問11 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 関数 binSort を binSort( ) として呼び出すと，戻り値の配列には未定 義の要素は含まれておらず，値は昇順に並んでいる。 〔プログラム〕 ○整数型の配列: binSort(整数型の配列: data) 整数型: n ← dataの要素数 整数型の配列: bins ← {n個の未定義の値} 整数型: i for (i を 1 から n まで 1 ずつ増やす) bins[data[i]] ← data[i] endfor return bins 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b011-p18.webp",
+        "width": 1021,
+        "height": 805
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b011-p18.webp",
+          "width": 1021,
+          "height": 805
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "{2, 6, 3, 1, 4, 5}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b011-a.webp",
+            "width": 242,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "{3, 1, 4, 4, 5, 2}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b011-b.webp",
+            "width": 242,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "{4, 2, 1, 5, 6, 2}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b011-c.webp",
+            "width": 242,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "{5, 3, 4, 3, 2, 6}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b011-d.webp",
+            "width": 242,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b012",
+      "number": 12,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "IPA 2022 サンプル問題セット FE B 問12",
+      "promptText": "問12 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。こ こで，配列の要素番号は1から始まる。 関数 simRatio は，引数として与えられた要素数 1 以上の二つの文字型の配列 s1 と s2 を比較し，要素数が等しい場合は，配列の並びがどの程度似ているかの指標と して，（要素番号が同じ要素の文字同士が一致する要素の組みの個数 ÷ s1の要素 数）を実数型で返す。例えば，配列の全ての要素が一致する場合の戻り値は 1，いず れの要素も一致しない場合の戻り値は0である。 なお，二つの配列の要素数が等しくない場合は，－1を返す。 関数 simRatio に与える s1，s2 及び戻り値の例を表に示す。プログラムでは，配 列の領域外を参照してはならないものとする。 表 関数simRatioに与えるs1，s2及び戻り値の例 s1 s2 戻り値 {\"a\", \"p\", \"p\", \"l\", \"e\"} {\"a\", \"p\", \"p\", \"l\", \"e\"} 1 {\"a\", \"p\", \"p\", \"l\", \"e\"} {\"a\", \"p\", \"r\", \"i\", \"l\"} 0.4 {\"a\", \"p\", \"p\", \"l\", \"e\"} {\"m\", \"e\", \"l\", \"o\", \"n\"} 0 {\"a\", \"p\", \"p\", \"l\", \"e\"} {\"p\", \"e\", \"n\"} －1 〔プログラム〕 ○実数型: simRatio(文字型の配列: s1, 文字型の配列: s2) 整数型: i, cnt ← 0 if (s1の要素数 ≠ s2の要素数) return －1 endif for (i を 1 から s1の要素数 まで 1 ずつ増やす) if ( ) cnt ← cnt ＋ 1 endif endfor return cnt ÷ s1の要素数 /* 実数として計算する */\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b012-p20.webp",
+        "width": 1022,
+        "height": 1380
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b012-p20.webp",
+          "width": 1022,
+          "height": 1380
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b012-p21.webp",
+          "width": 97,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "s1[i] ≠ s2[cnt]",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b012-a.webp",
+            "width": 221,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "s1[i] ≠ s2[i]",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b012-b.webp",
+            "width": 196,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "s1[i] ＝ s2[cnt]",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b012-c.webp",
+            "width": 221,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "s1[i] ＝ s2[i]",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b012-d.webp",
+            "width": 196,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b013",
+      "number": 13,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 22,
+      "source": "IPA 2022 サンプル問題セット FE B 問13",
+      "promptText": "問13 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 関数 search は，引数 data で指定された配列に，引数 target で指定された値が含 まれていればその要素番号を返し，含まれていなければ －1 を返す。data は昇順に 整列されており，値に重複はない。 関数 search には不具合がある。例えば，data の 場合は，無限ループ になる。 〔プログラム〕 ○整数型: search(整数型の配列: data, 整数型: target) 整数型: low, high, middle low ← 1 high ← dataの要素数 while (low ≦ high) middle ← (low ＋ high) ÷ 2 の商 if (data[middle] ＜ target) low ← middle elseif (data[middle] ＞ target) high ← middle else return middle endif endwhile return －1 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b013-p22.webp",
+        "width": 1022,
+        "height": 1220
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b013-p22.webp",
+          "width": 1022,
+          "height": 1220
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "要素数が1で，targetがその要素の値と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b013-a.webp",
+            "width": 552,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "要素数が2で，targetがdataの先頭要素の値と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b013-b.webp",
+            "width": 640,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "要素数が2で，targetがdataの末尾要素の値と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b013-c.webp",
+            "width": 640,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "要素に－1が含まれている",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b013-d.webp",
+            "width": 313,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b014",
+      "number": 14,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 23,
+      "source": "IPA 2022 サンプル問題セット FE B 問14",
+      "promptText": "問14 次の記述中の に入れる正しい答えを，解答群の中から選べ。ここで， 配列の要素番号は1から始まる。 要素数が 1 以上で，昇順に整列済みの配列を基に，配列を特徴づける五つの値を 返すプログラムである。 関数 summarize を summarize({0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1})として呼び出すと，戻り値は である。 〔プログラム〕 ○実数型: findRank(実数型の配列: sortedData, 実数型: p) 整数型: i i ← (p × (sortedDataの要素数 － 1)) の小数点以下を切り上げた値 return sortedData[i ＋ 1] ○実数型の配列: summarize(実数型の配列: sortedData) 実数型の配列: rankData ← {} /* 要素数0の配列 */ 実数型の配列: p ← {0, 0.25, 0.5, 0.75, 1} 整数型: i for (i を 1 から pの要素数 まで 1 ずつ増やす) rankDataの末尾 に findRank(sortedData, p[i])の戻り値 を追加する endfor return rankData 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b014-p23.webp",
+        "width": 1019,
+        "height": 1010
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b014-p23.webp",
+          "width": 1019,
+          "height": 1010
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "{0.1, 0.3, 0.5, 0.7, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-a.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "{0.1, 0.3, 0.5, 0.8, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-b.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "{0.1, 0.3, 0.6, 0.7, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-c.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "{0.1, 0.3, 0.6, 0.8, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-d.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "e",
+          "text": "{0.1, 0.4, 0.5, 0.7, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-e.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "f",
+          "text": "{0.1, 0.4, 0.5, 0.8, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-f.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "g",
+          "text": "{0.1, 0.4, 0.6, 0.7, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-g.webp",
+            "width": 304,
+            "height": 48
+          }
+        },
+        {
+          "id": "h",
+          "text": "{0.1, 0.4, 0.6, 0.8, 1}",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b014-h.webp",
+            "width": 304,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "h"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b015",
+      "number": 15,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 24,
+      "source": "IPA 2022 サンプル問題セット FE B 問15",
+      "promptText": "問15 次の記述中の a と b に入れる正しい答えの組合せを，解答群 の中から選べ。 三目並べにおいて自分が勝利する可能性が最も高い手を決定する。次の手順で， ゲームの状態遷移を木構造として表現し，根以外の各節の評価値を求める。その結 果，根の子の中で最も評価値が高い手を，最も勝利する可能性が高い手とする。自 分が選択した手を○で表し，相手が選択した手を×で表す。 〔手順〕 (1) 現在の盤面の状態を根とし，勝敗がつくか，引き分けとなるまでの考えられる 全ての手を木構造で表現する。 (2) 葉の状態を次のように評価する。 ① 自分が勝ちの場合は10 ② 自分が負けの場合は－10 ③ 引き分けの場合は0 (3) 葉以外の節の評価値は，その節の全ての子の評価値を基に決定する。 ① 自分の手番の節である場合，子の評価値で最大の評価値を節の評価値とする。 ② 相手の手番の節である場合，子の評価値で最小の評価値を節の評価値とする。 ゲームが図の最上部にある根の状態のとき，自分が選択できる手は三つある。そ のうちA が指す子の評価値は a であり，B が指す子の評価値は b である。\n根の状態 × × × 自分の手番 A B × × × × × × × × × 相手の手番 勝ち 評価値 10 × × × × × × × × × × × × 自分の手番 × × × × 負け 評価値 －10 × × × × × × × × × × × × 引き分け 評価値 0 勝ち 評価値 10 引き分け 評価値 0 図 三目並べの状態遷移 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b015-p24.webp",
+        "width": 1030,
+        "height": 1105
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b015-p24.webp",
+          "width": 1030,
+          "height": 1105
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b015-p25.webp",
+          "width": 1002,
+          "height": 998
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0 －10",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b015-a.webp",
+            "width": 480,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "0 0",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b015-b.webp",
+            "width": 480,
+            "height": 122
+          }
+        },
+        {
+          "id": "c",
+          "text": "10 －10",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b015-c.webp",
+            "width": 480,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "10 0",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b015-d.webp",
+            "width": 480,
+            "height": 122
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b016",
+      "number": 16,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 26,
+      "source": "IPA 2022 サンプル問題セット FE B 問16",
+      "promptText": "問16 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。二 つの には，同じ答えが入る。ここで，配列の要素番号は1から始まる。 Unicode の符号位置を，UTF-8 の符号に変換するプログラムである。本問で数値の 後ろに“(16)”と記載した場合は，その数値が16進数であることを表す。 Unicode の各文字には，符号位置と呼ばれる整数値が与えられている。UTF-8 は， Unicode の文字を符号化する方式の一つであり，符号位置が 800(16) 以上 FFFF(16) 以下の文字は，次のように3バイトの値に符号化する。 3 バイトの長さのビットパターンを 1110xxxx 10xxxxxx 10xxxxxx とする。ビット パターンの下線の付いた“x”の箇所に，符号位置を 2 進数で表した値を右詰めで格 納し，余った“x”の箇所に，0 を格納する。この 3 バイトの値が UTF-8 の符号であ る。 例えば，ひらがなの“あ”の符号位置である 3042(16) を 2 進数で表すと 11000001000010 である。これを，上に示したビットパターンの“x”の箇所に右詰め で格納すると，1110xx11 10000001 10000010 となる。余った二つの“x”の箇所に 0 を格納すると，“あ”のUTF-8の符号 11100011 10000001 10000010 が得られる。 関数 encode は，引数で渡された Unicode の符号位置を UTF-8 の符号に変換し，先 頭から順に 1 バイトずつ要素に格納した整数型の配列を返す。encode には，引数と して，800(16) 以上FFFF(16) 以下の整数値だけが渡されるものとする。 〔プログラム〕 ○整数型の配列: encode(整数型: codePoint) /* utf8Bytesの初期値は，ビットパターンの“x”を全て0に置き換え， 8桁ごとに区切って，それぞれを2進数とみなしたときの値 */ 整数型の配列: utf8Bytes ← {224, 128, 128} 整数型: cp ← codePoint 整数型: i for (i を utf8Bytesの要素数 から 1 まで 1 ずつ減らす) utf8Bytes[i] ← utf8Bytes[i] ＋ (cp ÷ の余り) cp ← cp ÷ の商 endfor return utf8Bytes\n解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b016-p26.webp",
+        "width": 1021,
+        "height": 1468
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b016-p26.webp",
+          "width": 1021,
+          "height": 1468
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b016-p27.webp",
+          "width": 97,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "((4 － i) × 2)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-a.webp",
+            "width": 205,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "(2 の (4 － i)乗)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-b.webp",
+            "width": 229,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "(2 の i乗)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-c.webp",
+            "width": 149,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "(i × 2)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-d.webp",
+            "width": 117,
+            "height": 47
+          }
+        },
+        {
+          "id": "e",
+          "text": "2",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-e.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "f",
+          "text": "6",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-f.webp",
+            "width": 35,
+            "height": 42
+          }
+        },
+        {
+          "id": "g",
+          "text": "16",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-g.webp",
+            "width": 45,
+            "height": 42
+          }
+        },
+        {
+          "id": "h",
+          "text": "64",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-h.webp",
+            "width": 48,
+            "height": 42
+          }
+        },
+        {
+          "id": "i",
+          "text": "256",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b016-i.webp",
+            "width": 60,
+            "height": 42
+          }
+        }
+      ],
+      "answerId": "h"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b017",
+      "number": 17,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 28,
+      "source": "IPA 2022 サンプル問題セット FE B 問17",
+      "promptText": "問17 製造業の A 社では，EC サイト（以下，A 社の EC サイトを A サイトという）を使用 し，個人向けの製品販売を行っている。A サイトは，A 社の製品やサービスが検索可 能で，ログイン機能を有しており，あらかじめ A サイトに利用登録した個人（以下， 会員という）の氏名やメールアドレスといった情報（以下，会員情報という）を管 理している。Aサイトは，B社のPaaSで稼働しており，PaaS上のDBMSとアプリケー ションサーバを利用している。 A 社は，A サイトの開発，運用を C 社に委託している。A 社と C 社との間の委託契 ぜい 約では，Web アプリケーションプログラムの脆弱性対策は，C 社が実施するとしてい る。 最近，A 社の同業他社が運営している Web サイトで脆弱性が悪用され，個人情報が 漏えいするという事件が発生した。そこで A 社は，セキュリティ診断サービスを行 っている D 社に，A サイトの脆弱性診断を依頼した。脆弱性診断の結果，対策が必要 なセキュリティ上の脆弱性が複数指摘された。図1にD社からの指摘事項を示す。 項番 1 A サイトで利用しているアプリケーションサーバの OS に既知の脆弱性があり，脆弱性 を悪用した攻撃を受けるおそれがある。 項番2 Aサイトにクロスサイトスクリプティングの脆弱性があり，会員情報を不正に取得され るおそれがある。 項番 3 A サイトで利用している DBMS に既知の脆弱性があり，脆弱性を悪用した攻撃を受ける おそれがある。 図1 D社からの指摘事項\n設問 図 1 中の各項番それぞれに対処する組織の適切な組合せを，解答群の中から選 べ。 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b017-p28.webp",
+        "width": 1034,
+        "height": 998
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b017-p28.webp",
+          "width": 1034,
+          "height": 998
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b017-p29.webp",
+          "width": 997,
+          "height": 197
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A社 A社 A社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-a.webp",
+            "width": 499,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "A社 A社 C社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-b.webp",
+            "width": 499,
+            "height": 112
+          }
+        },
+        {
+          "id": "c",
+          "text": "A社 B社 B社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-c.webp",
+            "width": 499,
+            "height": 111
+          }
+        },
+        {
+          "id": "d",
+          "text": "B社 B社 B社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-d.webp",
+            "width": 499,
+            "height": 112
+          }
+        },
+        {
+          "id": "e",
+          "text": "B社 B社 C社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-e.webp",
+            "width": 499,
+            "height": 111
+          }
+        },
+        {
+          "id": "f",
+          "text": "B社 C社 B社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-f.webp",
+            "width": 499,
+            "height": 112
+          }
+        },
+        {
+          "id": "g",
+          "text": "B社 C社 C社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-g.webp",
+            "width": 499,
+            "height": 112
+          }
+        },
+        {
+          "id": "h",
+          "text": "C社 B社 B社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-h.webp",
+            "width": 499,
+            "height": 111
+          }
+        },
+        {
+          "id": "i",
+          "text": "C社 B社 C社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-i.webp",
+            "width": 499,
+            "height": 112
+          }
+        },
+        {
+          "id": "j",
+          "text": "C社 C社 B社",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b017-j.webp",
+            "width": 499,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b018",
+      "number": 18,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 30,
+      "source": "IPA 2022 サンプル問題セット FE B 問18",
+      "promptText": "問18 A 社は IT 開発を行っている従業員 1,000 名の企業である。総務部 50 名，営業部 50 名で，ほかは開発部に所属している。開発部員の 9 割は客先に常駐している。現 在，A社におけるPCの利用状況は図1のとおりである。 1 A社のPC ・総務部員，営業部員及び A 社オフィスに勤務する開発部員には，会社が用意した PC（以 下，A社PCという）を一人1台ずつ貸与している。 ・客先常駐開発部員には，A社PC を貸与していないが，代わりに客先常駐開発部員がA 社 オフィスに出社したときに利用するための共用PCを用意している。 2 客先常駐開発部員の業務システム利用 ・客先常駐開発部員が休暇申請，経費精算などで業務システムを利用するためには共用 PC を使う必要がある。 3 A社のVPN利用 ・A 社には，VPN サーバが設置されており，営業部員が出張時に A 社 PC からインターネッ ト経由で社内ネットワークに VPN 接続し，業務システムを利用できるようになってい る。規則で，VPN接続にはA社PCを利用すると定められている。 図1 A社におけるPCの利用状況 A 社では，客先常駐開発部員が業務システムを使うためだけに A 社オフィスに出社 するのは非効率的であると考え，客先常駐開発部員に対して個人所有 PC の業務利用 （BYOD）とVPN接続の許可を検討することにした。\n設問 客先常駐開発部員に，個人所有 PC からの VPN 接続を許可した場合に，増加する 又は新たに生じると考えられるリスクを二つ挙げた組合せは，次のうちどれか。 解答群のうち，最も適切なものを選べ。 (一) VPN接続が増加し，可用性が損なわれるリスク (二) 客先常駐開発部員がA社PCを紛失するリスク (三) 客先常駐開発部員がフィッシングメールの URL をクリックして個人所有 PC がマルウェアに感染するリスク (四) 総務部員が個人所有PCをVPN接続するリスク (五) マルウェアに感染した個人所有 PC が社内ネットワークに VPN 接続され，マ ルウェアが社内ネットワークに拡散するリスク 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b018-p30.webp",
+        "width": 1022,
+        "height": 827
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b018-p30.webp",
+          "width": 1022,
+          "height": 827
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b018-p31.webp",
+          "width": 998,
+          "height": 582
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(一)，(二)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-a.webp",
+            "width": 141,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "(一)，(三)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-b.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "(一)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-c.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "(一)，(五)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-d.webp",
+            "width": 141,
+            "height": 48
+          }
+        },
+        {
+          "id": "e",
+          "text": "(二)，(三)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-e.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "f",
+          "text": "(二)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-f.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "g",
+          "text": "(二)，(五)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-g.webp",
+            "width": 141,
+            "height": 48
+          }
+        },
+        {
+          "id": "h",
+          "text": "(三)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-h.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "i",
+          "text": "(三)，(五)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-i.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "j",
+          "text": "(四)，(五)",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b018-j.webp",
+            "width": 141,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b019",
+      "number": 19,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 32,
+      "source": "IPA 2022 サンプル問題セット FE B 問19",
+      "promptText": "問19 A 社は従業員 200 名の通信販売業者である。一般消費者向けに生活雑貨，ギフト商 品などの販売を手掛けている。取扱商品の一つである商品 Z は，Z 販売課が担当して いる。 〔Z販売課の業務〕 現在，Z 販売課の要員は，商品 Z についての受注管理業務及び問合せ対応業務を行 っている。商品Zについての受注管理業務の手順を図1に示す。 商品Zの顧客からの注文は電子メールで届く。 (1) 入力 販売担当者は，届いた注文（変更，キャンセルを含む）の内容を受注管理システム 1）（以 下，Jシステムという）に入力し，販売責任者2）に承認を依頼する。 (2) 承認 販売責任者は，注文の内容と J システムへの入力結果を突き合わせて確認し，問題がなけ れば承認する。問題があれば差し戻す。 注1） A社情報システム部が運用している。利用者は，販売責任者，販売担当者などである。 注2） Z販売課の課長1名だけである。 図1 受注管理業務の手順 〔Jシステムの操作権限〕 Z販売課では，Jシステムについて，次の利用方針を定めている。 ［方針1］ ある利用者が入力した情報は，別の利用者が承認する。 ［方針2］ 販売責任者は，Z販売課の全業務の情報を閲覧できる。 Jシステムでは，業務上必要な操作権限を利用者に与える機能が実装されている。 この度，商品 Z の受注管理業務が受注増によって増えていることから，B 社に一部 を委託することにした（以下，商品 Z の受注管理業務の入力作業を行う B 社従業員 を商品 Z の B 社販売担当者といい，商品 Z の B 社販売担当者の入力結果を閲覧して， 不備があれば A 社に口頭で差戻しを依頼する B 社従業員を商品 Z の B 社販売責任者 という）。\n委託に当たって，Z 販売課は情報システム部に J システムに関する次の要求事項を 伝えた。 ［要求1］ B社が入力した場合は，A社が承認する。 ［要求 2］ A 社の販売担当者が入力した場合は，現状どおりに A 社の販売責任者 が承認する。 上記を踏まえ，情報システム部は今後の各利用者に付与される操作権限を表 1 に まとめ，Z販売課の情報セキュリティリーダーであるCさんに確認をしてもらった。 表1 操作権限案 付与される操作権限 Jシステム 利用者 閲覧 入力 承認 （省略） ○ ○ Z販売課の販売担当者 （省略） （省略） （省略） a 1 〇 a 2 〇 〇 注記 ○は，操作権限が付与されることを示す。 設問 表 1 中の a1 ，， a2 に入れる字句の適切な組合せを，a に関す る解答群の中から選べ。 aに関する解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b019-p32.webp",
+        "width": 1058,
+        "height": 1353
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b019-p32.webp",
+          "width": 1058,
+          "height": 1353
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b019-p33.webp",
+          "width": 1023,
+          "height": 1023
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Z販売課の販売責任者 商品ZのB社販売責任者",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b019-a.webp",
+            "width": 774,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "Z販売課の販売責任者 商品ZのB社販売担当者",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b019-b.webp",
+            "width": 774,
+            "height": 110
+          }
+        },
+        {
+          "id": "c",
+          "text": "商品ZのB社販売責任者 Z販売課の販売責任者",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b019-c.webp",
+            "width": 774,
+            "height": 111
+          }
+        },
+        {
+          "id": "d",
+          "text": "商品ZのB社販売責任者 商品ZのB社販売担当者",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b019-d.webp",
+            "width": 774,
+            "height": 110
+          }
+        },
+        {
+          "id": "e",
+          "text": "商品ZのB社販売担当者 商品ZのB社販売責任者",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b019-e.webp",
+            "width": 774,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2022-sample-b020",
+      "number": 20,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 34,
+      "source": "IPA 2022 サンプル問題セット FE B 問20",
+      "promptText": "問20 A 社は栄養補助食品を扱う従業員 500 名の企業である。A 社のサーバ及びファイア ウォール（以下，FW という）を含む情報システムの運用は情報システム部が担当し ている。 ある日，内部監査部の監査があり，FW の運用状況について情報システム部の B 部 長が図1のとおり説明したところ，表1に示す指摘を受けた。 ・FWを含め，情報システムの運用は，情報システム部の運用チームに所属する6名の運用担 当者が担当している。 ・FW の運用には，FW ルールの編集，操作ログの確認，並びに編集後の FW ルールの確認及び 操作の承認（以下，編集後の FW ルールの確認及び操作の承認を操作承認という）の三つ がある。 ・FWルールの編集は事前に作成された操作指示書に従って行う。 ・FWの機能には，FWルールの編集，操作ログの確認，及び操作承認の三つがある。 ・FW ルールの変更には，FW ルールの編集と操作承認の両方が必要である。操作承認の前に 操作ログの確認を行う。 ・FWの利用者IDは各運用担当者に個別に発行されており，利用者IDの共用はしていない。 ・FWでは，機能を利用する権限を運用担当者の利用者IDごとに付与できる。 ・現在は，6名の運用担当者とも全権限を付与されており，運用担当者はFWのルールの編集 後，編集を行った運用担当者が操作に誤りがないことを確認し，操作承認をしている。 ・FWへのログインにはパスワードを利用している。パスワードは8文字の英数字である。 ・FW の運用では，運用担当者の利用者 ID ごとに，ネットワークを経由せずコンソールでロ グインできるかどうか，ネットワークを経由してリモートからログインできるかどうかを 設定できる。 ・FW は，ネットワークを経由せずコンソールでログインした場合でも，ネットワークを経由 してリモートからログインした場合でも，同一の機能を利用できる。 ・FW はサーバルームに設置されており，サーバルームにはほかに数種類のサーバも設置され ている。 ・運用担当者だけがサーバルームへの入退室を許可されている。 図1 FWの運用状況 表1 内部監査部からの指摘 指摘 指摘内容 指摘1 FWの運用の作業の中で，職務が適切に分離されていない。 指摘2 （省略） 指摘3 （省略） 指摘4 （省略） B部長は表1の指摘に対する改善策を検討することにした。\n設問 表 1 中の指摘 1 について，FW ルールの誤った変更を防ぐための改善策はどれか。 解答群のうち，最も適切なものを選べ。 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2022-sample/b020-p34.webp",
+        "width": 1023,
+        "height": 1372
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2022-sample/b020-p34.webp",
+          "width": 1023,
+          "height": 1372
+        },
+        {
+          "src": "exams/ipa-fe-2022-sample/b020-p35.webp",
+          "width": 1006,
+          "height": 197
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Endpoint Detection and Response（EDR）をコンソールに導入し，監視を強 化する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-a.webp",
+            "width": 922,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "FW での運用担当者のログインにはパスワード認証の代わりに多要素認証を導 入する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-b.webp",
+            "width": 921,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "FW のアクセス制御機能を使って，運用担当者をコンソールからログインでき る者，リモートからログインできる者に分ける。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-c.webp",
+            "width": 916,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "FWの運用担当者を1人に限定する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-d.webp",
+            "width": 412,
+            "height": 47
+          }
+        },
+        {
+          "id": "e",
+          "text": "運用担当者の一部を操作ログの確認だけをする者とし，それらの者には操作 ログの確認権限だけを付与する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-e.webp",
+            "width": 919,
+            "height": 96
+          }
+        },
+        {
+          "id": "f",
+          "text": "運用担当者を，FW ルールの編集を行う者，操作ログを確認し，操作承認をす る者に分け，それぞれに必要最小限の権限を付与する。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-f.webp",
+            "width": 919,
+            "height": 99
+          }
+        },
+        {
+          "id": "g",
+          "text": "作業を行う運用担当者を，曜日ごとに割り当てる。",
+          "image": {
+            "src": "exams/ipa-fe-2022-sample/b020-g.webp",
+            "width": 581,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "f"
+    }
+  ]
+}

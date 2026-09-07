@@ -52,12 +52,15 @@ def clean_bbox(mask):
             boxes.append((min(xs),min(ys),max(xs)+1,max(ys)+1))
     return (min(b[0] for b in boxes),min(b[1] for b in boxes),max(b[2] for b in boxes),max(b[3] for b in boxes)) if boxes else mask.getbbox()
 
-def import_subject(level,part,count):
-    pack=f'ipa-{level.lower()}-2026-public'
+def import_subject(level,part,count,year=2026,sample=False):
+    pack=f'ipa-{level.lower()}-{year}-'+('sample' if sample else 'public')
     stem='2026r08_'+('ip' if level=='IP' else f'fe_kamoku_{part.lower()}')
     out=ROOT/'public/exams'/pack
     out.mkdir(parents=True,exist_ok=True)
     question=SOURCE/(stem+'_qs.pdf'); answer=SOURCE/(stem+'_ans.pdf')
+    if year!=2026:
+        question=ROOT/f'work/release-import/ipa-fe-{year}/{part.lower()}-qs.pdf'
+        answer=question.with_name(f'{part.lower()}-ans.pdf')
     prefix=part.lower() if part else 'q'
     qp=f'{part.lower()}-questions.pdf' if part else 'questions.pdf'
     ap=f'{part.lower()}-answers.pdf' if part else 'answers.pdf'
@@ -87,7 +90,7 @@ def import_subject(level,part,count):
                             if len(w['symbols'])>1 and w['text'][0] in LETTERS and (w['symbols'][1]['bbox']['x0']-w['symbols'][0]['bbox']['x1']>10 or w['text']=='イィ') and any(abs(b['x0']/2.5-x)<6 for x in [76,171,266,360,66]):
                                 sb=w['symbols'][0]['bbox'];words.append(dict(text=w['text'][0],x0=sb['x0']/2.5,x1=sb['x1']/2.5,top=sb['y0']/2.5,bottom=sb['y1']/2.5))
         pages.append(words)
-        if level=='IP' or pi<3:continue
+        if level=='IP' or pi<1:continue
         for wi,w in enumerate(words):
             txt=norm(w['text']); m=re.fullmatch(r'問\s*(\d+)',txt)
             if not m and txt=='問' and wi+1<len(words):m=re.fullmatch(r'(\d+)',norm(words[wi+1]['text']))
@@ -104,7 +107,12 @@ def import_subject(level,part,count):
             x0,y0,x1,y1=remove_label
             ImageDraw.Draw(im).rectangle(((x0-box[0])*sx,(y0-box[1])*sy,(x1-box[0])*sx,(y1-box[1])*sy),fill='white')
         if header:
-            h=cut(header);merged=Image.new('RGB',(im.width,h.height+im.height),'white');merged.paste(h);merged.paste(im,(0,h.height));im=merged
+            h=cut(header)
+            # Header cells can start after the separate source-label column.
+            # Preserve their original x alignment when repeating the header.
+            offset=round((header[0]-box[0])*sx)
+            merged=Image.new('RGB',(im.width,h.height+im.height),'white')
+            merged.paste(h,(offset,0));merged.paste(im,(0,h.height));im=merged
         # Near-white scan noise must not enlarge a crop to the entire page margin.
         mask=ImageChops.difference(im,Image.new('RGB',im.size,'white')).convert('L').point(lambda v:255 if v>60 else 0)
         # Remove isolated scan specks only from the bounding-box mask, never artwork.
@@ -117,7 +125,7 @@ def import_subject(level,part,count):
         end=starts[i+1] if i+1<len(starts) else (0,len(pdf.pages),0)
         last=end[1] if end[1]==pi else end[1]-1
         # Memo pages between questions are not part of the question.
-        active=[j for j in range(pi,last+1) if j==pi or any(w['text']=='解答群' or 'プログラム' in w['text'] for w in pages[j])]
+        active=[j for j in range(pi,last+1) if j==pi or len(''.join(w['text'] for w in pages[j] if 45<w['top']<pdf.pages[j].height-48))>15]
         bounds={j:(top if j==pi else 45,end[2]-8 if end[1]==j else pdf.pages[j].height-48) for j in active}
         markers=[]
         for j in active:
@@ -143,11 +151,17 @@ def import_subject(level,part,count):
         if not (''.join(m['text'] for m in markers)==LETTERS[:len(markers)] and 4<=len(markers)<=10):
             errors.append((number,pi+1,[(m['text'],round(m['x0'],1),round(m['top'],1)) for m in markers]));continue
         op=markers[0]['page']; option_top=min(m['top'] for m in markers)-5
+        answer_table=None
+        if year!=2026 and all(m['page']==op for m in markers):
+            for table in pdf.pages[op].find_tables():
+                if len(table.rows)==len(markers)+1 and all(table.rows[k+1].bbox[1]<=m['top']<table.rows[k+1].bbox[3] for k,m in enumerate(markers)):
+                    answer_table=table;break
         # FE B4/B5 have column headers immediately above the answer rows.
-        header_top=option_top-22 if part=='B' and number in (4,5) else None
+        header_top=option_top-22 if year==2026 and part=='B' and number in (4,5) else None
         prompt_end=header_top if header_top else option_top
         if level=='IP' and number in IP_TABLES:prompt_end=IP_TABLES[number][2]-2
-        if part=='B' and number==5:prompt_end=488
+        if year==2026 and part=='B' and number==5:prompt_end=488
+        if answer_table:prompt_end=answer_table.bbox[1]-2
         prompts=[];texts=[]
         for j in active:
             if j>op:break
@@ -165,12 +179,17 @@ def import_subject(level,part,count):
             remove_label=(m['x0']-1,m['top']-1,m['x1']+0.4,m.get('bottom',m['top']+11)+1)
             if level=='IP':box=(*box[:3],min(box[3],m['top']+(25 if len(same)>1 else 80)))
             oid=chr(97+LETTERS.index(m['text']));header=(box[0],header_top,box[2],option_top) if header_top else None
+            if answer_table:
+                k=LETTERS.index(m['text'])
+                box=answer_table.rows[k+1].bbox
+                header=answer_table.rows[0].bbox
+                remove_label=None
             if level=='IP' and number in IP_TABLES:
                 left,right,ht,first,rh=IP_TABLES[number];k=LETTERS.index(m['text'])
                 box=(left,first+k*rh,right,first+(k+1)*rh)
                 header=(left,ht,right,first)
                 remove_label=None
-            if part=='B' and number==5:
+            if year==2026 and part=='B' and number==5:
                 rows=[509.3,544.4,565.4,600.3,622.3];k=LETTERS.index(m['text'])
                 box=(104.4,rows[k],448.3,rows[k+1]);header=(104.4,488.5,448.3,509.3);remove_label=None
             try:image=crop(j,box,f'{prefix}{number:03}-{oid}.webp',header,remove_label)
@@ -180,7 +199,8 @@ def import_subject(level,part,count):
             options.append(dict(id=oid,text=text or f'図 {m["text"]}',image=image))
         records.append(dict(id=f'{pack}-{prefix}{number:03}',number=number,**({'part':part} if part else {}),domain=('strategy' if number<=34 else 'management' if number<=54 else 'technology') if level=='IP' else 'technology',sourcePage=pi+1,source=f'IPA 2026 公開問題 {level} {part or ""} 問{number}',promptText='\n'.join(texts),prompt=prompts[0],promptPages=prompts,options=options,answerId=key[number]))
     assert not errors,errors
-    return records,dict(id=part,durationSeconds=1800,questionCount=count,questionPdf=f'exams/{pack}/{qp}',answerPdf=f'exams/{pack}/{ap}',sourceSha256=hashlib.sha256(question.read_bytes()).hexdigest(),answerSha256=hashlib.sha256(answer.read_bytes()).hexdigest())
+    for record in records:record['source']=f'IPA {year} '+('サンプル問題セット' if sample else '公開問題')+f' {level} {part or ""} 問{record["number"]}'
+    return records,dict(id=part,durationSeconds=count*(90 if part=='A' else 300),questionCount=count,questionPdf=f'exams/{pack}/{qp}',answerPdf=f'exams/{pack}/{ap}',sourceSha256=hashlib.sha256(question.read_bytes()).hexdigest(),answerSha256=hashlib.sha256(answer.read_bytes()).hexdigest())
 
 def main():
     import sys

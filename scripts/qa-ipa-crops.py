@@ -1,11 +1,12 @@
 """Generate local visual review sheets, not production assets."""
 import json
+import sys
 from pathlib import Path
 from PIL import Image, ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
 out=ROOT/'work/release-import/ipa-2026/qa';out.mkdir(exist_ok=True)
-for level in ['ip','fe']:
-    bank=json.loads((ROOT/f'data/exams/ipa-{level}-2026-public.json').read_text(encoding='utf8'))
+for level in sys.argv[1:] or ['ipa-ip-2026-public','ipa-fe-2026-public']:
+    bank=json.loads((ROOT/f'data/exams/{level}.json').read_text(encoding='utf8'))
     for offset in range(0,len(bank['questions']),4):
         cards=[]
         for q in bank['questions'][offset:offset+4]:

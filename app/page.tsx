@@ -3,7 +3,7 @@ import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
 import { ArrowRight, BookOpenCheck, Check, ShieldCheck, Trophy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { uiCopy, type UiLanguage } from './kiso-i18n';
-import { loadExam } from '@/lib/exam-catalog';
+import { examCatalog, loadExam } from '@/lib/exam-catalog';
 import { lessonCoverage } from '@/lib/lesson-coverage';
 import { readStorage, storageKey, summarize, type ExamMode, type ExamPack, type ExamStorage } from '@/lib/exam-session';
 import type { OfficialEntry } from './official-exams';
@@ -16,6 +16,7 @@ export default function Page(){
   const [mode,setMode]=useState<ExamMode>('learn');
   const [profilePack,setProfilePack]=useState<ExamPack|null>(null);
   const [storage,setStorage]=useState<ExamStorage>(emptyStorage);
+  const [yearStats,setYearStats]=useState<Record<number,ReturnType<typeof summarize>[]>>({});
   const [loaded,setLoaded]=useState(false),[loadError,setLoadError]=useState(false),[storageError,setStorageError]=useState(false),[retry,setRetry]=useState(0);
   const [entry,setEntry]=useState<(OfficialEntry&{pack:ExamPack})|null>(null);
   const t=uiCopy[language];
@@ -24,17 +25,33 @@ export default function Page(){
   const pack=profileMatches&&profilePack?.year===year?profilePack:null;
   const modeName=(m:ExamMode)=>m==='learn'?t.learn:m==='mock'?t.mock:t.exam;
   const count=pack?.questions.length??0;
-  const paperLabel=system==='IPA'?label('Опубликованные задания 2026','Published questions 2026','2026年度公開問題'):label('Апрель 2026','April 2026','2026年4月');
-  const format=level==='IP'?label('100 вопросов · 120 минут · одна часть','100 questions · 120 minutes · one section','100問・120分・1科目'):system==='IPA'?label('Опубликованный комплект: A 20 вопросов / 30 минут · B 6 вопросов / 30 минут. Настоящий FE: A 60 / 90 минут, B 20 / 100 минут.','Published set: A 20 questions / 30 min · B 6 questions / 30 min. Actual FE: A 60 / 90 min, B 20 / 100 min.','公開問題：A 20問・30分／B 6問・30分。本試験：A 60問・90分／B 20問・100分。'):label('A: 60 вопросов / 90 минут · B: 20 вопросов / 100 минут','A: 60 questions / 90 minutes · B: 20 questions / 100 minutes','A：60問・90分／B：20問・100分');
+  const years=examCatalog.filter(p=>p.system===system&&p.level===level).map(p=>p.year).sort((a,b)=>b-a);
+  const yearLabel=(y:number)=>y===2022?label('Демонстрационный · 2022','Demonstration · 2022','サンプル・2022'):String(y);
+  const paperLabel=system==='IPA'?year===2022?yearLabel(year):label(`Архивная подборка ${year}`,`Published collection ${year}`,`${year}年度公開問題`):label(`Апрель ${year}`,`April ${year}`,`${year}年4月`);
+  const format=pack?.parts?pack.parts.map(p=>`${p.id}: ${p.questionCount} ${label('вопросов','questions','問')} / ${p.durationSeconds/60} ${label('минут','minutes','分')}`).join(' · ')+` · ${label('Всего','Total','合計')}: ${pack.durationSeconds/60} ${label('минут','minutes','分')}`:level==='IP'?label('100 вопросов · 120 минут · одна часть','100 questions · 120 minutes · one section','100問・120分・1科目'):'';
   useEffect(()=>{try{const s=localStorage.getItem('kiso-language');if(s==='ru'||s==='en'||s==='ja')setLanguage(s);}catch{}},[]);
   function changeLanguage(v:UiLanguage){setLanguage(v);try{localStorage.setItem('kiso-language',v);}catch{}}
   function refresh(p:ExamPack){try{setStorage(readStorage(localStorage.getItem(storageKey(p)),p));setStorageError(false);}catch{setStorage(emptyStorage);setStorageError(true);}}
   useEffect(()=>{
     let alive=true;setLoaded(false);setLoadError(false);setProfilePack(null);setStorage(emptyStorage);
-    loadExam(system,level,2026).then(p=>{if(!alive)return;setProfilePack(p);if(p)refresh(p);setLoaded(true);}).catch(()=>{if(alive){setLoadError(true);setLoaded(true);}});
+    loadExam(system,level,year).then(p=>{if(!alive)return;setProfilePack(p);if(p)refresh(p);setLoaded(true);}).catch(()=>{if(alive){setLoadError(true);setLoaded(true);}});
     return()=>{alive=false;};
-  },[system,level,retry]);
+  },[system,level,year,retry]);
+  useEffect(()=>{if(!years.includes(year))setYear(2026);},[system,level,year]);
   useEffect(()=>{function sync(){if(profilePack)refresh(profilePack);}window.addEventListener('storage',sync);return()=>window.removeEventListener('storage',sync);},[profilePack]);
+  useEffect(()=>{
+    let alive=true;
+    setYearStats({});
+    async function updateStats(){
+      const rows=await Promise.all(examCatalog.filter(p=>p.system===system&&p.level===level).map(async item=>{
+        try {const p=(await item.load()).default as ExamPack;return [p.year,readStorage(localStorage.getItem(storageKey(p)),p).history.filter(a=>a.mode!=='learn').map(a=>summarize(p,a))] as const;}
+        catch{return [item.year,[]] as const;}
+      }));
+      if(alive)setYearStats(Object.fromEntries(rows));
+    }
+    void updateStats();window.addEventListener('storage',updateStats);
+    return()=>{alive=false;window.removeEventListener('storage',updateStats);};
+  },[system,level,storage]);
   const completed=profileMatches?storage.history:[];
   const progress=profilePack?completed.reduce((s,a)=>{const r=summarize(profilePack,a);return {answered:s.answered+r.answered,correct:s.correct+r.correct};},{answered:0,correct:0}):{answered:0,correct:0};
   if(entry)return <Suspense fallback={<p className="p-8" role="status">{label('Загрузка экзамена…','Loading exam…','試験を読み込み中…')}</p>}><OfficialExams key={entry.pack.id} pack={entry.pack} language={language} onLanguage={changeLanguage} entry={entry} onExit={()=>{setEntry(null);refresh(entry.pack);}}/></Suspense>;
@@ -45,17 +62,18 @@ export default function Page(){
         <div className="mt-10 space-y-8">
           <ChoiceSection number="01" title={t.system}><div className="grid gap-3 sm:grid-cols-2">{['ITPEC','IPA'].map(s=><ChoiceCard key={s} active={system===s} onClick={()=>setSystem(s)} title={s} description={s==='ITPEC'?'ITPEC Common Examination':'IPA Japan Examination'}/>)}</div><p className="mt-3 text-sm text-primary">{t.examLanguage}: {system==='ITPEC'?t.english:t.japanese}</p></ChoiceSection>
           <ChoiceSection number="02" title={t.level}><div className="grid gap-3 sm:grid-cols-2">{['IP','FE'].map(l=><ChoiceCard key={l} active={level===l} onClick={()=>setLevel(l)} title={l} description={l==='IP'?'IT Passport · Level 1':'Fundamental Engineer · Level 2'}/>)}</div><p className="mt-3 text-sm text-muted-foreground">{format}</p></ChoiceSection>
-          <ChoiceSection number="03" title={t.year}><div className="grid grid-cols-3 gap-3">{[2026,2025,2024].map(y=><button key={y} className={'choice-card '+(year===y?'choice-card-active':'')} aria-pressed={year===y} onClick={()=>setYear(y)}><strong>{y}</strong></button>)}</div>
+          <ChoiceSection number="03" title={t.year}><div className="grid grid-cols-3 gap-3">{years.map(y=><button key={y} className={'choice-card '+(year===y?'choice-card-active':'')} aria-pressed={year===y} onClick={()=>setYear(y)}><strong>{yearLabel(y)}</strong></button>)}</div>
+            {system==='IPA'&&level==='FE'&&<p className="mt-3 text-sm leading-6 text-muted-foreground">{label('Демонстрационный комплект опубликован 26 декабря 2022 года: один полный образец A60 + B20. Ежегодные архивы — отдельные реальные вопросы, а не полные экзамены. Их таймер расчётный учебный: 1,5 минуты на вопрос A и 5 минут на вопрос B.','The demonstration set was published on 26 December 2022: one complete A60 + B20 sample. Annual archives contain selected real questions, not complete exams. Their calculated practice timer allows 1.5 minutes per A question and 5 minutes per B question.','2022年12月26日公開のサンプルはA60問＋B20問の完全な見本です。年度別公開問題は実際に出題した問題の一部で、完全な試験ではありません。練習時間はA1問1.5分、B1問5分で計算しています。')}</p>}
             <div className="mt-4 rounded-xl border p-4 text-sm leading-6" role="status">{!loaded?label('Загрузка…','Loading…','読み込み中…'):loadError?<>{label('Не удалось загрузить вопросы.','Could not load questions.','問題を読み込めませんでした。')} <button className="text-primary underline" onClick={()=>setRetry(v=>v+1)}>{label('Повторить','Retry','再試行')}</button></>:pack?<><strong>{paperLabel} · {count} {label('вопросов','questions','問')}</strong><p>{label('Оригинальные задания и официальный ключ.','Original questions and official answer key.','原文の問題と公式正解。')}</p>{pack.publishedSubset&&<p>{label('Все задания из публикации IPA, не весь банк CBT. В FE таймеры учебные, пропорциональны числу опубликованных вопросов.','All questions from the IPA publication, not the entire CBT bank. FE practice timers are proportional to the published question count.','IPA公開分をすべて収録。CBTの全問題ではありません。FEの制限時間は公開問題数に比例した練習用です。')}</p>}<p>{label('Готовых разборов','Lessons ready','解説あり')}: {lessonCoverage[pack.id]??0}/{count}</p></>:label('Полные вопросы ещё не перенесены. Учебных подмен нет.','Full questions have not been imported yet. No sample is substituted.','全問題は未収録です。短いサンプルへの置換はありません。')}</div>
           </ChoiceSection>
           <ChoiceSection number="04" title={t.mode}><div className="grid gap-3 sm:grid-cols-3">{(['learn','mock','exam'] as ExamMode[]).map(m=><ChoiceCard key={m} active={mode===m} onClick={()=>setMode(m)} title={modeName(m)} description={m==='learn'?t.learnDesc:m==='mock'?t.mockDesc:t.examDesc}/>)}</div></ChoiceSection>
         </div>
       </div>
-      <aside className="lg:pt-20"><div className="sticky top-28 overflow-hidden rounded-3xl border bg-card shadow-[0_25px_70px_rgba(15,35,42,.09)]"><div className="bg-[var(--ink)] p-6 text-white"><p className="text-sm">{t.session}</p><p className="mt-6 text-3xl font-bold">{system} / {level}</p><p className="mt-2 text-white/70">{year} · {modeName(mode)}</p></div><div className="space-y-5 p-6">
+      <aside className="lg:pt-20"><div className="sticky top-28 overflow-hidden rounded-3xl border bg-card shadow-[0_25px_70px_rgba(15,35,42,.09)]"><div className="bg-[var(--ink)] p-6 text-white"><p className="text-sm">{t.session}</p><p className="mt-6 text-3xl font-bold">{system} / {level}</p><p className="mt-2 text-white/70">{yearLabel(year)} · {modeName(mode)}</p></div><div className="space-y-5 p-6">
         <div className="flex gap-3"><ShieldCheck className="size-5 shrink-0 text-primary"/><p className="text-sm leading-6">{format}{level==='FE'&&<span className="mt-2 block">{label('Между A и B — пауза. Таймер B начнётся только после подтверждения.','Pause between A and B. B’s timer starts only after confirmation.','AとBの間は休憩。確認後にBの時計が始まります。')}</span>}</p></div>
         <div className="rounded-2xl bg-[var(--mint)] p-4"><p className="text-xs font-semibold">{t.localProgress}</p><strong className="mt-1 block text-2xl">{progress.answered}</strong><p className="text-xs">{t.answers} · {progress.answered?Math.round(progress.correct/progress.answered*100):0}% {t.correctShort}</p></div>
         {storageError&&<p role="alert" className="text-sm text-destructive">{label('Сохранение в браузере недоступно.','Browser storage is unavailable.','ブラウザに保存できません。')}</p>}
-        <div><p className="mb-3 text-sm font-semibold">{t.examsByYear}</p>{[2026,2025,2024].map(y=>{const results=profilePack&&profilePack.year===y?completed.filter(a=>a.mode!=='learn').map(a=>summarize(profilePack,a)):[];return <div key={y} className="mb-2 flex justify-between rounded-xl border p-3"><div><strong>{y}</strong><p className="text-xs text-muted-foreground">{results.length?results.length+' '+t.attempts+' · '+t.best+' '+Math.max(...results.map(r=>r.percent))+'%':t.notTaken}</p></div>{results.some(r=>r.passed)&&<span className="flex gap-1 text-xs text-primary"><Trophy className="size-4"/>{t.passed}</span>}</div>;})}</div>
+        <div><p className="mb-3 text-sm font-semibold">{t.examsByYear}</p>{years.map(y=>{const results=yearStats[y]??[];return <button type="button" key={y} onClick={()=>setYear(y)} className="mb-2 flex w-full justify-between rounded-xl border p-3 text-left"><div><strong>{yearLabel(y)}</strong><p className="text-xs text-muted-foreground">{results.length?results.length+' '+t.attempts+' · '+t.best+' '+Math.max(...results.map(r=>r.percent))+'%':t.notTaken}</p></div>{results.some(r=>r.passed)&&<span className="flex gap-1 text-xs text-primary"><Trophy className="size-4"/>{t.passed}</span>}</button>;})}</div>
         <Button className="h-12 w-full" disabled={!loaded||!pack||!!storage.active} onClick={()=>{if(pack)setEntry({pack,mode});}}>{t.start}<ArrowRight/></Button>
         {pack&&storage.active&&<div className="rounded-xl border p-4"><p className="text-sm">{label('Сохранённая попытка','Saved attempt','保存済みの受験')} · {modeName(storage.active.mode)} · {Object.keys(storage.active.answers).length}/{count}{storage.active.stage&&' · '+(storage.active.stage==='break'?label('пауза','pause','休憩'):storage.active.stage)}</p><Button className="mt-3 w-full" variant="outline" onClick={()=>setEntry({pack,attemptId:storage.active!.id})}>{label('Продолжить','Resume','再開')}</Button></div>}
         {pack&&storage.history.length>0&&<details><summary className="cursor-pointer text-sm font-semibold">{label('История экзамена','Exam history','受験履歴')}</summary><div className="mt-3 space-y-2">{storage.history.map(a=><button key={a.id} className="w-full rounded-xl border p-3 text-left text-sm" onClick={()=>setEntry({pack,attemptId:a.id})}><strong>{paperLabel}</strong><span className="block">{modeName(a.mode)} · {summarize(pack,a).correct}/{count}</span><span className="text-xs text-muted-foreground">{new Date(a.finishedAt!).toLocaleString(language)}</span></button>)}</div></details>}
