@@ -1,29 +1,77 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import {DatabaseSync} from 'node:sqlite';
 import {feLessonEntries,feLesson} from '../app/fe-lessons.ts';
 import {lessonCoverage} from '../lib/lesson-coverage.ts';
 import {makeAttempt,answerQuestion,summarize} from '../lib/exam-session.ts';
 const pack=JSON.parse(readFileSync(new URL('../data/exams/itpec-fe-2026-spring.json',import.meta.url),'utf8'));
 const langs=['ru','en','ja'];
 
-test('FE coverage is honest: A1–A20, all three languages, exact official keys',()=>{
-  assert.deepEqual(feLessonEntries.map(e=>e[0]),Array.from({length:20},(_,i)=>i+1));
+test('A21 exhaustively derives exactly three minimal candidate keys',()=>{
+  const attributes=[...'PQRSTY'];
+  const dependencies=[['P','Q'],['QR','S'],['T','R'],['S','P']];
+  function closure(seed){const result=new Set(seed);let size;do{size=result.size;for(const [left,right] of dependencies)if([...left].every(a=>result.has(a)))for(const a of right)result.add(a);}while(result.size!==size);return result;}
+  const keys=[];
+  for(let mask=0;mask<64;mask++){
+    const set=attributes.filter((_,i)=>mask&(1<<i));
+    if(closure(set).size===6&&set.every((_,i)=>closure(set.filter((_,j)=>j!==i)).size<6))keys.push(set.join(''));
+  }
+  assert.deepEqual(keys.sort(),['PTY','QTY','STY']);assert.equal(closure('QRY').has('T'),false);
+  for(const l of langs)for(const key of keys)assert.ok(feLesson('A',21,l).core.includes(key));
+});
+
+test('A22 runs the real SQL options on an isolated in-memory fixture',()=>{
+  const db=new DatabaseSync(':memory:');
+  try{
+    db.exec("CREATE TABLE Student (id INTEGER, name TEXT, classId INTEGER); INSERT INTO Student VALUES (1,'A',1),(2,'Al',1),(3,'Anna',2),(4,'BA',2),(5,'BAC',2),(6,'Bob',1);");
+    const matches=pack.questions[21].options.map(o=>[o.id,db.prepare(o.text.replace(/[‘’]/g,"'")).all().map(r=>r.name)]);
+    assert.deepEqual(matches.find(([id])=>id==='d')[1],['A','Al','Anna']);
+    assert.deepEqual(matches.find(([id])=>id==='c')[1],['Al']);
+    assert.ok(matches.filter(([,names])=>JSON.stringify(names)===JSON.stringify(['A','Al','Anna'])).length===1);
+  }finally{db.close();}
+});
+
+test('A34 statement semantics are verified only on a disposable memory database',()=>{
+  const db=new DatabaseSync(':memory:');
+  try{
+    db.exec("CREATE TABLE accounts (username TEXT); INSERT INTO accounts VALUES ('1'),('Alice'),('Bob');");
+    const statement=pack.questions[33].promptText.match(/SELECT \* FROM accounts[\s\S]*$/)[0];
+    const [select,drop]=statement.split(';').map(s=>s.trim());
+    assert.equal(db.prepare(select).all().length,3);
+    db.exec(drop);
+    assert.equal(db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name='accounts'").get(),undefined);
+    for(const l of langs){const d=feLesson('A',34,l).detail;assert.ok(d.includes('DROP TABLE'));assert.match(d,/параметр|arameter|パラメータ/i);}
+  }finally{db.close();}
+});
+
+test('A27 and A28 teach the distinctions instead of misleading absolute rules',()=>{
+  for(const l of langs){
+    assert.ok(feLesson('A',27,l).detail.includes('Wi-Fi'));assert.ok(feLesson('A',27,l).detail.includes('802.11'));
+    assert.match(feLesson('A',28,l).detail,/фишинг|phish|フィッシング/);
+    assert.ok(feLesson('A',40,l).core.includes('5'));
+    assert.ok(feLesson('A',40,l).detail.includes('4'));
+  }
+});
+
+test('FE coverage is honest: A1–A40, all three languages, exact official keys',()=>{
+  assert.deepEqual(feLessonEntries.map(e=>e[0]),Array.from({length:40},(_,i)=>i+1));
   assert.equal(lessonCoverage[pack.id],feLessonEntries.length);
   for(const [n,key] of feLessonEntries){
     assert.equal(key,pack.questions[n-1].answerId);
     for(const lang of langs){
       const lesson=feLesson('A',n,lang);
       for(const [field,min] of [['core',15],['detail',120],['search',8],['next',15]])assert.ok(lesson[field].length>=min,`${n} ${lang} ${field}`);
+      if(lang==='ru')for(const field of ['core','detail','next'])assert.match(lesson[field],/[а-яё]/i,`${n}: Russian ${field}`);
       for(const source of lesson.sources??[])assert.ok(new URL(source.url).protocol==='https:');
     }
   }
-  assert.equal(new Set(feLessonEntries.flatMap(e=>e.slice(2).map(t=>t[1]))).size,60);
-  assert.equal(feLesson('B',1,'ru'),null);assert.equal(feLesson('A',21,'en'),null);assert.equal(feLesson(undefined,1,'ja'),null);
+  assert.equal(new Set(feLessonEntries.flatMap(e=>e.slice(2).map(t=>t[1]))).size,120);
+  assert.equal(feLesson('B',1,'ru'),null);assert.equal(feLesson('A',41,'en'),null);assert.equal(feLesson(undefined,1,'ja'),null);
 });
 
 test('every wrong FE answer stays wrong after shuffle and selects the same question lesson',()=>{
-  for(const q of pack.questions.slice(0,20))for(const option of q.options.filter(o=>o.id!==q.answerId)){
+  for(const q of pack.questions.slice(0,40))for(const option of q.options.filter(o=>o.id!==q.answerId)){
     const attempt=makeAttempt(pack,'learn',1000);
     const answered=answerQuestion(pack,attempt,q.id,option.id,2000);
     assert.equal(summarize(pack,answered).correct,0);
