@@ -131,7 +131,7 @@ def main():
     manifest = {'schemaVersion': 1, 'id': PACK, 'system': 'ITPEC', 'level': 'FE', 'year': 2026,
                 'season': 'spring', 'title': 'April 2026', 'originalLanguage': 'en', 'durationSeconds': 5400,
                 'sourceUrl': 'https://itpec.org/pastexamqa/fe.html', 'archiveUrl': 'https://itpec.org/pastexamqa/fe/2026S_FE.zip',
-                'parts': subjects, 'translations': [], 'lessonsReady': False, 'questions': records,
+                'parts': subjects, 'translations': [], 'lessonsReady': True, 'questions': records,
                 'editorialNotes': ['Original multi-page prompts remain in reading order.', 'Answer table headers are repeated for each independently shuffled option.', 'Source A Q11 has a spaced a ) label; normalized to a).', 'A free preparation pause separates subjects; B starts only on explicit confirmation.', 'Scores are practice percentages, not official marks.']}
     (ROOT / 'data/exams' / f'{PACK}.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     # Contact sheets show every crop boundary; inspect special table/multi-page cases at full size too.

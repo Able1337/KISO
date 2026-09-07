@@ -1,6 +1,8 @@
 // Editorial lessons for ITPEC FE April 2026 Subject A. Original keys never change.
 type Translation = [core:string, detail:string, search:string, next:string];
-type Entry = [number:number, answerId:string, ru:Translation, en:Translation, ja:Translation];
+export type Entry = [number:number, answerId:string, ru:Translation, en:Translation, ja:Translation];
+import {feRemainingA,feBLessonEntries} from './fe-lessons-final.ts';
+export {feBLessonEntries};
 export const feLessonEntries:Entry[] = [
   [1,'c',
     ['Префиксная запись: ^/−ab+cde. Сначала записывают оператор, затем его левое и правое подвыражения.',
@@ -524,7 +526,9 @@ export const feLessonEntries:Entry[] = [
      '標準化・定量管理・継続的改善を比較し、効果を測定できる工程改善実験を考えましょう。']],
 ];
 
+feLessonEntries.push(...feRemainingA);
 const sources:Record<number,{title:string;url:string}[]>={
+  60:[{title:'WTO · GPA Article X',url:'https://www.wto.org/english/docs_e/legal_e/gpa_e.htm'}],
   22:[{title:'PostgreSQL · LIKE patterns',url:'https://www.postgresql.org/docs/current/functions-matching.html'}],
   24:[{title:'RFC 3022 · NAT / NAPT',url:'https://www.rfc-editor.org/rfc/rfc3022'}],
   26:[{title:'RFC 1034 · Domain names',url:'https://www.rfc-editor.org/rfc/rfc1034'}],
@@ -541,9 +545,9 @@ const sources:Record<number,{title:string;url:string}[]>={
   20:[{title:'Microsoft · Database normalization',url:'https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description'}],
 };
 export function feLesson(part:string|undefined,number:number,language:'ru'|'en'|'ja'){
-  if(part!=='A')return null;
-  const entry=feLessonEntries.find(item=>item[0]===number);
+  if(part!=='A'&&part!=='B')return null;
+  const entry=(part==='A'?feLessonEntries:feBLessonEntries).find(item=>item[0]===number);
   if(!entry)return null;
   const [core,detail,search,next]=entry[language==='ru'?2:language==='en'?3:4];
-  return {core,detail,search,next,sources:sources[number]};
+  return {core,detail,search,next,sources:part==='A'?sources[number]:number>=17?[{title:'OWASP · '+(number===17?'Credential stuffing':number===19?'SQL injection prevention':'Authorization'),url:'https://cheatsheetseries.owasp.org/cheatsheets/'+(number===17?'Credential_Stuffing_Prevention':number===19?'SQL_Injection_Prevention':'Authorization')+'_Cheat_Sheet.html'}]:undefined};
 }

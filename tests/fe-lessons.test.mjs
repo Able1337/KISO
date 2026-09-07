@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {DatabaseSync} from 'node:sqlite';
-import {feLessonEntries,feLesson} from '../app/fe-lessons.ts';
+import {feLessonEntries,feBLessonEntries,feLesson} from '../app/fe-lessons.ts';
 import {lessonCoverage} from '../lib/lesson-coverage.ts';
 import {makeAttempt,answerQuestion,summarize} from '../lib/exam-session.ts';
 const pack=JSON.parse(readFileSync(new URL('../data/exams/itpec-fe-2026-spring.json',import.meta.url),'utf8'));
@@ -54,9 +54,9 @@ test('A27 and A28 teach the distinctions instead of misleading absolute rules',(
   }
 });
 
-test('FE coverage is honest: A1–A40, all three languages, exact official keys',()=>{
-  assert.deepEqual(feLessonEntries.map(e=>e[0]),Array.from({length:40},(_,i)=>i+1));
-  assert.equal(lessonCoverage[pack.id],feLessonEntries.length);
+test('FE coverage is honest: A1–A60, all three languages, exact official keys',()=>{
+  assert.deepEqual(feLessonEntries.map(e=>e[0]),Array.from({length:60},(_,i)=>i+1));
+  assert.equal(lessonCoverage[pack.id],feLessonEntries.length+feBLessonEntries.length);
   for(const [n,key] of feLessonEntries){
     assert.equal(key,pack.questions[n-1].answerId);
     for(const lang of langs){
@@ -66,12 +66,12 @@ test('FE coverage is honest: A1–A40, all three languages, exact official keys'
       for(const source of lesson.sources??[])assert.ok(new URL(source.url).protocol==='https:');
     }
   }
-  assert.equal(new Set(feLessonEntries.flatMap(e=>e.slice(2).map(t=>t[1]))).size,120);
-  assert.equal(feLesson('B',1,'ru'),null);assert.equal(feLesson('A',41,'en'),null);assert.equal(feLesson(undefined,1,'ja'),null);
+  assert.equal(new Set(feLessonEntries.flatMap(e=>e.slice(2).map(t=>t[1]))).size,180);
+  assert.equal(feLesson('B',21,'ru'),null);assert.equal(feLesson('A',61,'en'),null);assert.equal(feLesson(undefined,1,'ja'),null);
 });
 
 test('every wrong FE answer stays wrong after shuffle and selects the same question lesson',()=>{
-  for(const q of pack.questions.slice(0,40))for(const option of q.options.filter(o=>o.id!==q.answerId)){
+  for(const q of pack.questions.slice(0,60))for(const option of q.options.filter(o=>o.id!==q.answerId)){
     const attempt=makeAttempt(pack,'learn',1000);
     const answered=answerQuestion(pack,attempt,q.id,option.id,2000);
     assert.equal(summarize(pack,answered).correct,0);
