@@ -65,6 +65,8 @@ test('IPA lesson coverage is honest and keys match all reviewed translations',()
  assert.equal(ipaLesson('IP',undefined,1,'ru'),null);
 });
 test('IPA IP calculations and algorithms independently verified',()=>{
+ const payoff=[[20,-15],[5,0]], worst=payoff.map(row=>Math.min(...row));
+ const selected=worst.indexOf(Math.max(...worst));assert.equal(selected,1);assert.equal(payoff[selected][0],5);
  assert.equal(300/(730+270)*100,30);
  assert.equal((2000-(900*.05*4+100*2))/2000*100,81);
  const a=[3,5,1,2,4];for(let j=0;j<3;j++){let m=j;for(let k=j+1;k<a.length;k++)if(a[k]<a[m])m=k;[a[j],a[m]]=[a[m],a[j]];}assert.deepEqual(a,[1,2,3,5,4]);
@@ -75,6 +77,17 @@ test('IPA IP calculations and algorithms independently verified',()=>{
  // Resource-feasible schedule A/B/(C+D)/E/F: five three-day slots.
  const tasks=[['A',0,1],['B',1,2],['C',2,2],['D',2,1],['E',3,2],['F',4,1]];
  for(let slot=0;slot<5;slot++)assert.ok(tasks.filter(t=>t[1]===slot).reduce((s,t)=>s+t[2],0)<=3);
+});
+test('IPA IP new lessons: unique numbers and every incorrect option in three languages',()=>{
+ assert.equal(new Set(ipaIp.map(e=>e[0])).size,ipaIp.length);
+ for(const number of [2,3,4,6,8,10,14,16,18,20]){
+  const q=ip.questions.find(q=>q.number===number);
+  for(const wrong of q.options.filter(o=>o.id!==q.answerId)){
+   const a=answerQuestion(ip,makeAttempt(ip,'learn',1000),q.id,wrong.id,1001);
+   assert.equal(summarize(ip,a).correct,0);
+   for(const lang of ['ru','en','ja'])assert.ok(ipaLesson('IP',undefined,number,lang).detail.length>120);
+  }
+ }
 });
 test('IPA FE truth table, availability, retention and SQL constraints',()=>{
  for(const a of [0,1])for(const b of [0,1]){const nand=(x,y)=>Number(!(x&&y));assert.equal(nand(nand(nand(a,a),nand(b,b)),nand(nand(a,a),nand(b,b))),Number(!(a||b)));}
