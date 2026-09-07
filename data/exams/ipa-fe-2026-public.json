@@ -1,0 +1,1725 @@
+{
+  "schemaVersion": 1,
+  "id": "ipa-fe-2026-public",
+  "system": "IPA",
+  "level": "FE",
+  "year": 2026,
+  "season": "public",
+  "originalLanguage": "ja",
+  "title": "2026 公開問題",
+  "durationSeconds": 3600,
+  "sourceUrl": "https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2026r08.html",
+  "publishedSubset": true,
+  "translations": [],
+  "lessonsReady": true,
+  "questions": [
+    {
+      "id": "ipa-fe-2026-public-a001",
+      "number": 1,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2026 公開問題 FE A 問1",
+      "promptText": "問１ 入力されたビットに対して出力されるビットが0か1のいずれかである確率を遷移 確率という。遷移確率を表にしたとき，a，b，c，dの関係はどれか。 出力 0 1 入力 0 a b 1 c d",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a001-p04.webp",
+        "width": 1020,
+        "height": 323
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a001-p04.webp",
+          "width": 1020,
+          "height": 323
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a ＋b ＋c ＋ d ＝1",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a001-a.webp",
+            "width": 241,
+            "height": 44
+          }
+        },
+        {
+          "id": "b",
+          "text": "a ＋b ＝1，c ＋ d ＝ 1",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a001-b.webp",
+            "width": 286,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "a ＋c ＝1， b ＋d ＝ 1",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a001-c.webp",
+            "width": 286,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "a ＋d ＝1，b ＋ c ＝ 1",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a001-d.webp",
+            "width": 286,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-a002",
+      "number": 2,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2026 公開問題 FE A 問2",
+      "promptText": "問２ クイックソートの処理方法を説明したものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a002-p04.webp",
+        "width": 679,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a002-p04.webp",
+          "width": 679,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "既に整列済みのデータ列の正しい位置に，データを追加する操作を繰り返してい く方法である。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a002-a.webp",
+            "width": 941,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "データ中の最小値を求め，次にそれを除いた部分の中から最小値を求める。この 操作を繰り返していく方法である。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a002-b.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "適当な基準値を選び，それよりも小さな値のグループと大きな値のグループにデ ータを分割する。同様にして，グループの中で基準値を選び，それぞれのグループ を分割する。この操作を繰り返していく方法である。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a002-c.webp",
+            "width": 946,
+            "height": 148
+          }
+        },
+        {
+          "id": "d",
+          "text": "隣り合ったデータの比較と入替えを繰り返すことによって，小さな値のデータを 次第に端の方に移していく方法である。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a002-d.webp",
+            "width": 944,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2026-public-a003",
+      "number": 3,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2026 公開問題 FE A 問3",
+      "promptText": "問３ プロセッサの一つであるGPUの特徴として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a003-p05.webp",
+        "width": 830,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a003-p05.webp",
+          "width": 830,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "OS 及び他のハードウェアから独立して機能し，暗号キーなどの情報を安全に管 理する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a003-a.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "並列に動作する多数の浮動小数点演算ユニットによって，高速な 3D 演算ができ る。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a003-b.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "目的に応じて半導体デバイス内部の論理回路を再構成できる。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a003-c.webp",
+            "width": 717,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "量子ビットによって 0と1を重ね合わせた状態を計算に使うことができる。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a003-d.webp",
+            "width": 888,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-a004",
+      "number": 4,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2026 公開問題 FE A 問4",
+      "promptText": "問４ クラウドコンピューティングのサービスモデルとしてのPaaSの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a004-p05.webp",
+        "width": 967,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a004-p05.webp",
+          "width": 967,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "OS やアプリケーションを含む任意のソフトウェアを実行可能にするリソースが， 利用者に提供される。OS などのプラットフォームへの限定的な設定や制御を行う ことができる。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a004-a.webp",
+            "width": 953,
+            "height": 149
+          }
+        },
+        {
+          "id": "b",
+          "text": "アプリケーションの開発や運用に必要となるミドルウェアなどが利用者に提供さ れるので，これらを利用して，アプリケーションを開発して運用することができる。 利用者は，プラットフォームを直接変更することはできない。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a004-b.webp",
+            "width": 955,
+            "height": 150
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用者は，ハードウェア，OS などのプラットフォームとアプリケーションを自 ら準備して，それらの運用を依頼する。利用者は，プラットフォームの構成を決め ることができるなど，環境構築の自由度が高い。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a004-c.webp",
+            "width": 943,
+            "height": 150
+          }
+        },
+        {
+          "id": "d",
+          "text": "利用者は，用意されたアプリケーションをそのまま又はカスタマイズして利用す るが，OS などのプラットフォームからアプリケーションまで全てを自ら準備する 必要はない。利用者は，プラットフォームを直接変更することはできない。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a004-d.webp",
+            "width": 945,
+            "height": 149
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-a005",
+      "number": 5,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2026 公開問題 FE A 問5",
+      "promptText": "問５ 仮想記憶方式のコンピュータシステムにおいて，処理の多重度を増やしたところ， ページイン，ページアウトが多発して，システムの応答速度が急激に遅くなった。こ のような現象を何というか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a005-p06.webp",
+        "width": 1017,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a005-p06.webp",
+          "width": 1017,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "オーバレイ",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a005-a.webp",
+            "width": 141,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "スラッシング",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a005-b.webp",
+            "width": 171,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "メモリコンパクション",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a005-c.webp",
+            "width": 268,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "ロールアウト",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a005-d.webp",
+            "width": 165,
+            "height": 45
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-a006",
+      "number": 6,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2026 公開問題 FE A 問6",
+      "promptText": "問６ 図の回路の A 及び B に信号を入力したときに，Y に出力される信号のタイミングチ ャートとして，適切なものはどれか。 A Y B",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a006-p06.webp",
+        "width": 1020,
+        "height": 343
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a006-p06.webp",
+          "width": 1020,
+          "height": 343
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1 A 0 1 B 0 1 Y 0",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a006-a.webp",
+            "width": 440,
+            "height": 224
+          }
+        },
+        {
+          "id": "b",
+          "text": "1 A 0 1 B 0 Y 1 0",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a006-b.webp",
+            "width": 440,
+            "height": 223
+          }
+        },
+        {
+          "id": "c",
+          "text": "1 A 0 1 B 0 1 Y 0",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a006-c.webp",
+            "width": 440,
+            "height": 224
+          }
+        },
+        {
+          "id": "d",
+          "text": "1 A 0 1 B 0 1 Y 0",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a006-d.webp",
+            "width": 440,
+            "height": 226
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-a007",
+      "number": 7,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2026 公開問題 FE A 問7",
+      "promptText": "問７ 次のSQL文によって定義され，値が格納されている“商品”表に対して，制約違反 で実行エラーとなるSQL文はどれか。 〔SQL文〕 CREATE TABLE 商品 (商品コード CHAR(4) PRIMARY KEY, 商品名 VARCHAR(21), 仕入先コード CHAR(4), 仕入単価 INT, 在庫数 INT) 商品 商品コード 商品名 仕入先コード 仕入単価 在庫数 A111 テレビ S001 75,000 0 A222 デジタルカメラ S002 50,000 50 A333 DVDプレーヤ NULL NULL NULL A444 洗濯機 S004 45,000 20",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a007-p07.webp",
+        "width": 1019,
+        "height": 653
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a007-p07.webp",
+          "width": 1019,
+          "height": 653
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "DELETE FROM 商品 WHERE 仕入先コード IS NULL",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a007-a.webp",
+            "width": 573,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "INSERT INTO 商品 VALUES ('A555', '空気清浄機', 'S005', 60000, 50)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a007-b.webp",
+            "width": 844,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "UPDATE 商品 SET 商品コード = 'A666' WHERE 商品コード = 'A444'",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a007-c.webp",
+            "width": 795,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "UPDATE 商品 SET 商品コード = 'A777' WHERE 在庫数 >= 20",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a007-d.webp",
+            "width": 716,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2026-public-a008",
+      "number": 8,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "IPA 2026 公開問題 FE A 問8",
+      "promptText": "問８ 無線LANでは，複数の端末から送信された同じ周波数の電波が衝突した場合，電波 が干渉するのでそれらを受信すると信号を復調できないことがある。この問題を回避 するためのものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a008-p07.webp",
+        "width": 1021,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a008-p07.webp",
+          "width": 1021,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CSMA/CA",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a008-a.webp",
+            "width": 111,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "SSID",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a008-b.webp",
+            "width": 72,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "キャリアアグリゲーション",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a008-c.webp",
+            "width": 319,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "テザリング",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a008-d.webp",
+            "width": 147,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-a009",
+      "number": 9,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 FE A 問9",
+      "promptText": "問９ 2要素認証に該当する組みはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a009-p08.webp",
+        "width": 498,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a009-p08.webp",
+          "width": 498,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "クライアント証明書，ハードウェアトークン",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a009-a.webp",
+            "width": 517,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "静脈認証，指紋認証",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a009-b.webp",
+            "width": 248,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "パスワード認証，静脈認証",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a009-c.webp",
+            "width": 322,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "パスワード認証，秘密の質問の答え",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a009-d.webp",
+            "width": 420,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2026-public-a010",
+      "number": 10,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 FE A 問10",
+      "promptText": "問10 情報セキュリティに関する専門組織の説明のうち，CSIRT の説明として，最も適切 なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a010-p08.webp",
+        "width": 1020,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a010-p08.webp",
+          "width": 1020,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "自社が顧客に提供する製品又はサービスの脆弱性に起因するリスクに対応する組 織",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a010-a.webp",
+            "width": 948,
+            "height": 103
+          }
+        },
+        {
+          "id": "b",
+          "text": "セキュリティインシデント検知のために，システム監視，ログ分析などのセキュ リティ運用を担う組織",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a010-b.webp",
+            "width": 939,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "発生したセキュリティインシデントに対し，インシデント対応を行う組織",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a010-c.webp",
+            "width": 847,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "標的型サイバー攻撃特別相談窓口をもち，相談をもち込んだ組織の被害の低減と 攻撃の連鎖の遮断を支援する組織",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a010-d.webp",
+            "width": 943,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2026-public-a011",
+      "number": 11,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 FE A 問11",
+      "promptText": "問11 あるシステムにおいて，“プログラムの記述方法が統一されていないので保守がし づらい”という問題が発生している。今後の新規開発プロジェクトにおけるこの問題 の低減策として，最も適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a011-p08.webp",
+        "width": 1020,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a011-p08.webp",
+          "width": 1020,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "コーディング規約を見直し，教育する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a011-a.webp",
+            "width": 454,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "セキュアプログラミングを採用する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a011-b.webp",
+            "width": 429,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "単体テストでの命令網羅度を上げる。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a011-c.webp",
+            "width": 430,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "プロジェクト管理レビューに全プログラマーが参加する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a011-d.webp",
+            "width": 654,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-a012",
+      "number": 12,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2026 公開問題 FE A 問12",
+      "promptText": "問12 バーンダウンチャートの使い方として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a012-p09.webp",
+        "width": 779,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a012-p09.webp",
+          "width": 779,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "縦軸を完成した成果物の総量，横軸を時間とし，プロジェクトが進むに従って完 成した成果物の総量が増加する様子を確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a012-a.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "縦軸を残課題の総数，横軸を時間とし，プロジェクトが進むに従って残課題の総 量が増減する様子を確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a012-b.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "縦軸を残作業の量，横軸を時間とし，プロジェクトが進むに従って残作業の量が 減少する様子を確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a012-c.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "縦軸を延べ工数，横軸を時間とし，プロジェクトが進むに従って延べ工数が増加 する様子を確認する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a012-d.webp",
+            "width": 945,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2026-public-a013",
+      "number": 13,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "IPA 2026 公開問題 FE A 問13",
+      "promptText": "問13 あるシステム開発プロジェクトの進捗が遅延したので，クリティカルパス上の作業 への投入工数を増やすことによって遅延の解消を図った。このとき適用した，所要期 間を短縮するための手法を何と呼ぶか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a013-p09.webp",
+        "width": 1020,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a013-p09.webp",
+          "width": 1020,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "クラッシング",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a013-a.webp",
+            "width": 170,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "コーチング",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a013-b.webp",
+            "width": 145,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "ファストトラッキング",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a013-c.webp",
+            "width": 270,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "メンタリング",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a013-d.webp",
+            "width": 170,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-a014",
+      "number": 14,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2026 公開問題 FE A 問14",
+      "promptText": "問14 A 社は，自社のデータセンタでアプリケーションシステムを運用し，顧客にサービ スを提供している。現在，アプリケーションシステムの実行環境をクラウドサービス に移行して，サービス可用性を向上させることを検討している。次の条件のとき，サ ービス可用性は移行後に何パーセントポイント向上するか。ここで，サービス可用性 （％）は小数第3位を切り捨てるものとする。 〔条件〕 ・サービス提供時間は，移行前も移行後も同じで，計画された保守の時間を除き，年 間5,000時間である。 ・移行前は，サービス提供時間内の停止時間が，年間100時間である。 ・移行後は，サービス提供時間内の停止時間が，年間30分となる。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a014-p10.webp",
+        "width": 1020,
+        "height": 549
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a014-p10.webp",
+          "width": 1020,
+          "height": 549
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.01",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a014-a.webp",
+            "width": 68,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.19",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a014-b.webp",
+            "width": 73,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "1.40",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a014-c.webp",
+            "width": 71,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "1.99",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a014-d.webp",
+            "width": 71,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2026-public-a015",
+      "number": 15,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2026 公開問題 FE A 問15",
+      "promptText": "問15 内部監査部門が，情報システム部門に対するシステム監査を経営者から指示された とき，システム監査人の行為として，適切なものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a015-p10.webp",
+        "width": 1019,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a015-p10.webp",
+          "width": 1019,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "監査報告書に記載した改善提案に対して改善計画を策定した上で，実行する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a015-a.webp",
+            "width": 881,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "基幹システムを開発し，保守を行っている外部事業者に，当該システム監査を委 託する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a015-b.webp",
+            "width": 946,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "経営者がどのようなニーズを有しているかを十分に把握した上で，システム監査 の目的と対象範囲を決定する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a015-c.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "情報システム部門の在籍者を監査メンバとして選定する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a015-d.webp",
+            "width": 656,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-fe-2026-public-a016",
+      "number": 16,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "IPA 2026 公開問題 FE A 問16",
+      "promptText": "問16 小売事業者が，オムニチャネル戦略を実現するためのIT活用事例はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a016-p11.webp",
+        "width": 942,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a016-p11.webp",
+          "width": 942,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "実店舗，オンライン店舗，コールセンタなど複数の顧客接点で，顧客情報や在庫 情報などを一元的に管理・共有して接客することによって，顧客の利便性を高める。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a016-a.webp",
+            "width": 956,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "複数店舗からネットワークを経由して，受発注，出荷，請求，支払などの取引情 報を電子的に交換することによって，卸売業者とメーカとの間の受発注業務の効率 を高める。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a016-b.webp",
+            "width": 948,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "複数店舗に設置した監視カメラの画像データを本部に集め，本部が各店舗の状況 をリアルタイムに把握することによって，店舗運営業務の効率を高める。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a016-c.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "複数店舗のPOSデータを本部に集め，本部が日次で売れ筋商品の抽出，複数の商 品の併売率の分析を行うことによって，商品計画や棚割計画を最適化する。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a016-d.webp",
+            "width": 946,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-a017",
+      "number": 17,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "IPA 2026 公開問題 FE A 問17",
+      "promptText": "問17 サービスA～Dの中で会員のリテンション率が最も高いものはどれか。 なお，リテンションの対象は前月末から当月末まで継続して在籍した会員とし，当 月新規会員は月末までの退会はないものとする。 単位 人 サービス 前月末会員数 当月新規会員数 当月末会員数 A 1,000 500 800 B 1,000 200 800 C 1,500 500 1,100 D 1,500 1,000 1,800",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a017-p11.webp",
+        "width": 1018,
+        "height": 521
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a017-p11.webp",
+          "width": 1018,
+          "height": 521
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "サービスA",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a017-a.webp",
+            "width": 140,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "サービスB",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a017-b.webp",
+            "width": 140,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "サービスC",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a017-c.webp",
+            "width": 141,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "サービスD",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a017-d.webp",
+            "width": 140,
+            "height": 45
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-a018",
+      "number": 18,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2026 公開問題 FE A 問18",
+      "promptText": "問18 AIの事例として，適切でないものはどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a018-p12.webp",
+        "width": 586,
+        "height": 52
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a018-p12.webp",
+          "width": 586,
+          "height": 52
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "制御量を目標値側へフィードバックすることによって両者を比較し，その差によ って両者を一致させるような修正動作を行うPID制御のモーターコントローラー",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a018-a.webp",
+            "width": 940,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "部屋の広さや形，家具の位置などを学習し，移動のルートを決めて掃除をするロ ボット",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a018-b.webp",
+            "width": 942,
+            "height": 96
+          }
+        },
+        {
+          "id": "c",
+          "text": "ヘルプデスク及びコールセンターに代わって，自然言語による質問の意味を推測 して返事をするチャットボット",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a018-c.webp",
+            "width": 941,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "ボードゲームでプロの人間に勝つような，多数の統計データを処理することによ って人間に勝るソフトウェア",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a018-d.webp",
+            "width": 940,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-a019",
+      "number": 19,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2026 公開問題 FE A 問19",
+      "promptText": "問19 ブレーンストーミングの説明はどれか。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a019-p12.webp",
+        "width": 530,
+        "height": 47
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a019-p12.webp",
+          "width": 530,
+          "height": 47
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "あるテーマの検討において，複数のメンバーで，各自が思いつくままに自由奔放 にできるだけ多くのアイディアを出し合うことによって，創造的思考を喚起し，ア イディアを開発しようとする会議方法",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a019-a.webp",
+            "width": 945,
+            "height": 147
+          }
+        },
+        {
+          "id": "b",
+          "text": "研修を始める前に行う簡単なゲームや，商談や面接の本題に入る前に行う雑談な ど，参加者の緊張をほぐすためのコミュニケーション方法",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a019-b.webp",
+            "width": 943,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報を，決められた枠組みに従って整理・分析するスキルや方法を利用し，複雑 なものごとを明快に把握したり，問題に対する解決策を導き出したりするような思 考方法",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a019-c.webp",
+            "width": 948,
+            "height": 147
+          }
+        },
+        {
+          "id": "d",
+          "text": "ポイントを繰り返したり，言い換えたりすることによって，お互いの理解する意 味合いが一致していることを確認したり，意見・評価を伝えたりする方法",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a019-d.webp",
+            "width": 946,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-a020",
+      "number": 20,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "IPA 2026 公開問題 FE A 問20",
+      "promptText": "問20 A 社は，自社の業務可視化を B 社に委託しその成果物として納品された業務フロー 図をC社に提示することによって，業務システムの開発をC社に委託することを検討 している。A 社がこの業務フロー図を使用する上で生じる制約として，適切なものは どれか。 なお，B 社への委託に当たって締結された契約には，著作権は全て A 社に譲渡する 旨の記述があり，著作者人格権については特段の記述はない。",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/a020-p13.webp",
+        "width": 1021,
+        "height": 298
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/a020-p13.webp",
+          "width": 1021,
+          "height": 298
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "C 社と守秘義務契約を締結したとしても，C 社に対して，納品された業務フロー 図の電子データを提供することはできない。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a020-a.webp",
+            "width": 945,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "納品された業務フロー図の各ページに作成者名として記されているB社の企業名 をA社の企業名に変更し，C社に提示することはできない。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a020-b.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "納品された業務フロー図を印刷し，社内資料としてA社の社員に配布することは できない。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a020-c.webp",
+            "width": 945,
+            "height": 96
+          }
+        },
+        {
+          "id": "d",
+          "text": "バックアップの目的で，納品された業務フロー図の電子データを複製し，A 社だ けがアクセス可能なクラウドストレージに保管することはできない。",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/a020-d.webp",
+            "width": 944,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-b001",
+      "number": 1,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "IPA 2026 公開問題 FE B 問1",
+      "promptText": "問１ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。こ こで，配列の要素番号は1から始まる。 次のプログラムは，整数型の配列 data の末尾の要素の値を先頭の要素に移動する。 この際，末尾以外の各要素の値は，一つずつ後ろの要素に移動する。 〔プログラム〕 整数型の配列: data ← {1, 2, 3, 4, 5, 6, 7, 8, 9} 整数型: top, i 整数型: len ← dataの要素数 top ← data[len] for (i を ) data[i] ← data[i － 1] endfor data[1] ← top 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/b001-p04.webp",
+        "width": 1031,
+        "height": 752
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/b001-p04.webp",
+          "width": 1031,
+          "height": 752
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 から len － 1 まで 1 ずつ増やす",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b001-a.webp",
+            "width": 434,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "2 から len まで 1 ずつ増やす",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b001-b.webp",
+            "width": 371,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "len － 1 から 2 まで 1 ずつ減らす",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b001-c.webp",
+            "width": 430,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "len から 2 まで 1 ずつ減らす",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b001-d.webp",
+            "width": 367,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2026-public-b002",
+      "number": 2,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "IPA 2026 公開問題 FE B 問2",
+      "promptText": "問２ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。 関数 complement は，引数として渡された 8 ビット型の値 x について，x に加算す ると 00000000 になる値を返す。8 ビット型の加算は，値を符号なし 2 進数とみなし たときの加算とし，桁あふれが発生したときのあふれた桁は無視する。演算子∧，∨， ▽は，それぞれビット単位の論理積，論理和，排他的論理和を表す。 〔プログラム〕 ○8ビット型: complement(8ビット型: x) 8ビット型: y y ← y ← y ＋ 00000001 return y 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/b002-p05.webp",
+        "width": 1029,
+        "height": 690
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/b002-p05.webp",
+          "width": 1029,
+          "height": 690
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "x ∧ 01111111",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b002-a.webp",
+            "width": 182,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "x ∧ 11111111",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b002-b.webp",
+            "width": 182,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "x ∨ 01111111",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b002-c.webp",
+            "width": 181,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "x ∨ 11111111",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b002-d.webp",
+            "width": 182,
+            "height": 45
+          }
+        },
+        {
+          "id": "e",
+          "text": "x ▽ 01111111",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b002-e.webp",
+            "width": 182,
+            "height": 43
+          }
+        },
+        {
+          "id": "f",
+          "text": "x ▽ 11111111",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b002-f.webp",
+            "width": 181,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "ipa-fe-2026-public-b003",
+      "number": 3,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "IPA 2026 公開問題 FE B 問3",
+      "promptText": "問３ 次のプログラム中の に入れる正しい答えを，解答群の中から選べ。こ こで，配列の要素番号は1から始まる。 関数func1に与える引数と，関数func2に与える引数とが同じとき，二つの関数は 同じ値を返す。プログラムでは，配列の領域外を参照してはならないものとする。 〔プログラム〕 ○整数型: func1(整数型: n) if (nが2以下) return 1 endif return 2 × func1(n － 2) ＋ func1(n － 1) ○整数型: func2(整数型: n) 整数型の配列: data ← {1, 1, 1} 整数型: i /* nが3より小さいときは繰返し処理を実行しない */ for (iを3からnまで1ずつ増やす) data[1] ← data[2] data[2] ← data[3] data[3] ← endfor return data[3] 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/b003-p06.webp",
+        "width": 1021,
+        "height": 1060
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/b003-p06.webp",
+          "width": 1021,
+          "height": 1060
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 × data[1] ＋ data[2]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-a.webp",
+            "width": 309,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "2 × data[2] ＋ data[1]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-b.webp",
+            "width": 309,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "2 × data[i － 1] ＋ data[i － 2]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-c.webp",
+            "width": 434,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "2 × data[i － 2] ＋ data[i － 1]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-d.webp",
+            "width": 434,
+            "height": 47
+          }
+        },
+        {
+          "id": "e",
+          "text": "data[3] ＋ 2 × data[1] ＋ data[2]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-e.webp",
+            "width": 446,
+            "height": 47
+          }
+        },
+        {
+          "id": "f",
+          "text": "data[3] ＋ 2 × data[2] ＋ data[1]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-f.webp",
+            "width": 446,
+            "height": 47
+          }
+        },
+        {
+          "id": "g",
+          "text": "data[3] ＋ 2 × data[i － 1] ＋ data[i － 2]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-g.webp",
+            "width": 571,
+            "height": 47
+          }
+        },
+        {
+          "id": "h",
+          "text": "data[3] ＋ 2 × data[i － 2] ＋ data[i － 1]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b003-h.webp",
+            "width": 571,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-fe-2026-public-b004",
+      "number": 4,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 FE B 問4",
+      "promptText": "問４ 次のプログラム中の a と b に入れる正しい答えの組合せを， 解答群の中から選べ。ここで，配列の要素番号は1から始まる。 単方向リストを，配列 dataList と配列 pointerList の二つの配列で表現する。 dataListにリストの要素の値を格納し，pointerListにリストの次の要素に対応する dataList の要素番号を格納する。単方向リストの先頭は，dataList[1] 及び pointerList[1] の組みである。単方向リストの末尾に対応する pointerList の要素 は未定義である。dataList のうち単方向リストの要素の値を格納していない要素と， 対応するpointerListの要素は未定義である。 プログラムが扱う dataList 及び pointerList の内容を図 1 に示す。先頭の次の要 素の要素番号は，pointerList[1] に格納された 3 であり，値は dataList[3] に格納 された20である。その次の要素の要素番号はpointerList[3] に格納された2であり， 値はdataList[2] に格納された30である。 要素番号 1 2 3 4 5 dataList 10 30 20 40 要素番号 1 2 3 4 5 pointerList 3 4 2 注記 網掛けはその要素が未定義であることを示す。 図1 dataList及びpointerListの内容 関数 orderList は，図 1 の dataList 及び pointerList で表現した単方向リストの 値を，単方向リストの先頭からたどって順番に格納した配列を返す。関数 orderList が返す配列を図2に示す。 要素番号 1 2 3 4 10 20 30 40 図2 関数orderListが返す配列\n〔プログラム〕 大域: 整数型の配列: dataList ← {10, 30, 20, 40, 未定義の値} 大域: 整数型の配列: pointerList ← {3, 4, 2, 未定義の値, 未定義の値} ○整数型の配列: orderList() 整数型: i, p ← 1 整数型の配列: linearList ← {} // 要素数0の配列 for (i を 1 から dataListの要素数 まで 1 ずつ増やす) linearListの末尾 に dataList[p]の値 を追加する if ( a が 未定義) 繰返し処理を終了する endif p ← b endfor return linearList 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/b004-p08.webp",
+        "width": 1028,
+        "height": 1459
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/b004-p08.webp",
+          "width": 1028,
+          "height": 1459
+        },
+        {
+          "src": "exams/ipa-fe-2026-public/b004-p09.webp",
+          "width": 929,
+          "height": 643
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "dataList[p] i",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b004-a.webp",
+            "width": 570,
+            "height": 120
+          }
+        },
+        {
+          "id": "b",
+          "text": "dataList[p] pointerList[p]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b004-b.webp",
+            "width": 570,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "pointerList[p] i",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b004-c.webp",
+            "width": 570,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "pointerList[p] pointerList[p]",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b004-d.webp",
+            "width": 570,
+            "height": 126
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-fe-2026-public-b005",
+      "number": 5,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "IPA 2026 公開問題 FE B 問5",
+      "promptText": "問５ 次のプログラム中の a と b に入れる正しい答えの組合せを， 解答群の中から選べ。ここで，配列の要素番号は1から始まる。 一つの要素だけが1で他の要素が0であるような整数型の配列による表現を，本問 では One-Hot 表現という。関数 oneHotEncoding は，図のように，色の名前が格納さ れている要素数1以上の文字列型の配列を引数として受け取り，配列に含まれる色の 名前（図の例では3種類）に基づいて，各要素をOne-Hot表現に変換し，整数型配列 の配列に格納して返す。関数oneHotEncodingにおける変換の例を図に示す。 引数の例： {\"Red\", \"Green\", \"Blue\", \"Red\"} ↓ \"Red\"のOne-Hot表現 ： {1, 0, 0} \"Green\"のOne-Hot表現： {0, 1, 0} \"Blue\"のOne-Hot表現 ： {0, 0, 1} ↓ 引数の例に対応する戻り値： {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}, {1, 0, 0}} 図 関数oneHotEncodingにおける変換の例\n〔プログラム〕 ○整数型配列の配列: oneHotEncoding(文字列型の配列: colors) 整数型: i, j, k 文字列型の配列: colorVector ← {} // 要素数0の配列 整数型の配列: tempVector 整数型配列の配列: oneHotVector ← {} // 要素数0の配列 /* 名前一覧の作成 */ for (i を 1 から colorsの要素数 まで 1 ずつ増やす) if (colorVector の要素のいずれにも colors[i]の値 が格納されていない) colorVectorの末尾 に a を追加する endif endfor /* One-Hot表現への変換 */ for (j を 1 から colorsの要素数 まで 1 ずつ増やす) tempVector ← {} // 要素数0の配列 for (k を 1 から colorVectorの要素数 まで 1 ずつ増やす) if ( b ) tempVectorの末尾 に 1 を追加する else tempVectorの末尾 に 0 を追加する endif endfor oneHotVectorの末尾 に tempVector を追加する endfor return oneHotVector 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/b005-p10.webp",
+        "width": 1020,
+        "height": 856
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/b005-p10.webp",
+          "width": 1020,
+          "height": 856
+        },
+        {
+          "src": "exams/ipa-fe-2026-public/b005-p11.webp",
+          "width": 979,
+          "height": 1063
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "colors の要素のいずれかに colorVector[k]の値 が格 colors[i]の値 納されている",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b005-a.webp",
+            "width": 876,
+            "height": 156
+          }
+        },
+        {
+          "id": "b",
+          "text": "colors[i]の値 colors[j] が colorVector[k] と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b005-b.webp",
+            "width": 876,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "colors の要素のいずれかに colorVector[k]の値 が格 未定義の値 納されている",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b005-c.webp",
+            "width": 876,
+            "height": 155
+          }
+        },
+        {
+          "id": "d",
+          "text": "未定義の値 colors[j] が colorVector[k] と等しい",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b005-d.webp",
+            "width": 876,
+            "height": 123
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-fe-2026-public-b006",
+      "number": 6,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "IPA 2026 公開問題 FE B 問6",
+      "promptText": "問６ A 社は，従業員 1,000 名の広告代理店である。A 社では，各部署が A 社の社内ネッ トワークに設置したファイルサーバを，設置した部署の運用担当者が管理している。 各部署で新たなクラウドサービスを利用する場合，各部署の責任者の承認のもと契約 し，各部署の運用担当者が管理している。 営業部では，営業部がA社の社内ネットワークに設置したファイルサーバ（以下， Y サーバという）及び顧客管理のためのクラウドサービス（以下，Z サービスという） を利用している。営業部の各従業員にはYサーバの一般利用者アカウントが割り当て られ，Y サーバ上の全てのファイルが編集可能である。また，営業部の各従業員には， Z サービスの一般利用者アカウントが割り当てられ，営業部の運用担当者には，Y サ ーバとZサービスの管理者アカウントが割り当てられている。 情報セキュリティ部門では，クラウドサービスに関連した情報セキュリティインシ デントの発生に備えて，各部署で利用しているクラウドサービスのログ管理に関する ルールを図1のとおりに整備した。 1. ログの取得 次のログを取得すること ・ログイン及びログアウトのログ（以下，ログインログという） ・クラウドサービスでの重要な操作及びその成否に関するログ 2. ログの項目 少なくとも次が記録されること ・対象のアカウント名，日本標準時での日時，操作内容 3. ログのアクセス管理 ・運用担当者だけがログにアクセスできるようにすること ・クラウドサービスからログをエクスポートして保管する場合は，社内ネットワークに設置 した自部署のファイルサーバにログを保管し，運用担当者だけがアクセスできるようにす ること ・運用担当者は複数名にすること ・クラウドサービスへの運用担当者のログインには，2要素認証を必要とすること 4. ログの保存期間 ・少なくとも過去1年間のログが参照できるようにすること 5. 改ざんへの対策 ・ログは運用担当者でも書込み及び消去ができないようにすること 図1 各部署で利用しているクラウドサービスのログ管理に関するルール 営業部の情報セキュリティリーダーであるB課長は，運用担当者のC主任及び情報 セキュリティ部門の協力を得て，図1のルールが順守されているかどうかを調査した。\nB課長は，Zサービスでの現在の運用の中で，図1のルールに違反しているものを表1 のとおりまとめた。 表1 図1のルールに違反している現在の運用 項番 現在の運用 Z サービスのログは，空き容量が一定値以下になった場合，古いログから上書 (一) きされる。 Zサービスの運用は，営業部のC主任とD主任の2名で担当していたが，D主 (二) 任が先月退職したので，現在はC主任だけである。 (三) Zサービスのログの日時は，UTCで記録されている。 Z サービスのログは，毎月末に全てエクスポートし，Y サーバに保管してい (四) る。 設問 表1中の運用のうち，図1のルール3に違反しているものの項番だけを全て挙げ た組合せを，解答群の中から選べ。 解答群",
+      "prompt": {
+        "src": "exams/ipa-fe-2026-public/b006-p12.webp",
+        "width": 1034,
+        "height": 1489
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-fe-2026-public/b006-p12.webp",
+          "width": 1034,
+          "height": 1489
+        },
+        {
+          "src": "exams/ipa-fe-2026-public/b006-p13.webp",
+          "width": 998,
+          "height": 729
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(一)，(二)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-a.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "(一)，(二)，(三)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-b.webp",
+            "width": 217,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "(一)，(二)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-c.webp",
+            "width": 217,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "(一)，(三)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-d.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "e",
+          "text": "(一)，(三)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-e.webp",
+            "width": 217,
+            "height": 48
+          }
+        },
+        {
+          "id": "f",
+          "text": "(一)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-f.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "g",
+          "text": "(二)，(三)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-g.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "h",
+          "text": "(二)，(三)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-h.webp",
+            "width": 217,
+            "height": 48
+          }
+        },
+        {
+          "id": "i",
+          "text": "(二)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-i.webp",
+            "width": 142,
+            "height": 48
+          }
+        },
+        {
+          "id": "j",
+          "text": "(三)，(四)",
+          "image": {
+            "src": "exams/ipa-fe-2026-public/b006-j.webp",
+            "width": 142,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "i"
+    }
+  ],
+  "editorialNotes": [
+    "Original Japanese answer labels mapped in order to stable Latin IDs; options shuffled.",
+    "Published CBT questions, not an entire CBT bank.",
+    "FE practice timing proportional to published question count: A 30 min, B 30 min; real FE A 90 min, B 100 min."
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "durationSeconds": 1800,
+      "questionCount": 20,
+      "questionPdf": "exams/ipa-fe-2026-public/a-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2026-public/a-answers.pdf",
+      "sourceSha256": "7fb3984bb494cad928232823e224b7e58f3eaef59ea523deaa4bae2085c8fba3",
+      "answerSha256": "02976cdb5d2c14ec3c5304a1dc89d1db77ca04f0d62fe78fc4c2448dcf0ea6a7"
+    },
+    {
+      "id": "B",
+      "durationSeconds": 1800,
+      "questionCount": 6,
+      "questionPdf": "exams/ipa-fe-2026-public/b-questions.pdf",
+      "answerPdf": "exams/ipa-fe-2026-public/b-answers.pdf",
+      "sourceSha256": "3995e35d9ca102e9363ac049303e65b936a860ef6377ffbbcbc0620484a6bbb2",
+      "answerSha256": "ca47fecabfcb67745b339522f75f907a3d29217a63e0c1efb38cff4c7aaac2af"
+    }
+  ]
+}

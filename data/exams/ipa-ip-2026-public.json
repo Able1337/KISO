@@ -1,0 +1,5924 @@
+{
+  "schemaVersion": 1,
+  "id": "ipa-ip-2026-public",
+  "system": "IPA",
+  "level": "IP",
+  "year": 2026,
+  "season": "public",
+  "originalLanguage": "ja",
+  "title": "2026 公開問題",
+  "durationSeconds": 7200,
+  "sourceUrl": "https://www3.jitec.ipa.go.jp/JitesCbt/html/openinfo/questions.html",
+  "publishedSubset": true,
+  "translations": [],
+  "lessonsReady": false,
+  "questions": [
+    {
+      "id": "ipa-ip-2026-public-q001",
+      "number": 1,
+      "domain": "strategy",
+      "sourcePage": 2,
+      "source": "IPA 2026 公開問題 IP  問1",
+      "promptText": "問 1 生成 Al を 用 いた 生成 物 の 取扱 い に 関 し て , 既存 の 著作 物 の 著作 権 者 か ら 許 諾 を 得 る こと が 必要 と な る 可能 性 の ある も の だ け を , 全て 挙げ た も の は どれ か 。 a 好み の アー ティ スト の 楽曲 に 似 た 音楽 が 得 ら れる よう に 生成 AI を 用 いて 楽曲 を 生成 し , その 楽曲 を イン ター ネッ ト 上 に アッ プロ ー ド し , 無料 で 公開 し た 。 b 好み の アー ティ スト の 楽曲 に 似 た 音楽 が 得 ら れる よう に 生成 AI を 用 いて 楽曲 を 生成 し , その 楽曲 を 自分 の PC 上 に 保管 し , 個人 で 視聴 し た 。 c 生成 AI で 音楽 を 生成 し た と ころ , 偶然 好み の アー ティ スト の 楽曲 に 似 た 音楽 が 生成 で きた の で , 自分 の PC 上 に 保管 し , 個人 で 視聴 し た 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q001-p02.webp",
+        "width": 1008,
+        "height": 449
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q001-p02.webp",
+          "width": 1008,
+          "height": 449
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q001-a.webp",
+            "width": 35,
+            "height": 38
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q001-b.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "ab, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q001-c.webp",
+            "width": 108,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q001-d.webp",
+            "width": 72,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q002",
+      "number": 2,
+      "domain": "strategy",
+      "sourcePage": 2,
+      "source": "IPA 2026 公開問題 IP  問2",
+      "promptText": "問 2 BYOD に 関す る 記述 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q002-p02.webp",
+        "width": 635,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q002-p02.webp",
+          "width": 635,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "企業 の 業務 に , 従業 員 が 私 物 の 携帯 情報 端末 を 許可 を 得 た 上 で 利用 する こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q002-a.webp",
+            "width": 868,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "企業 の 業務 の 定型 的 な 作業 を ソフ トウ ェ ア の ロボ ッ ト で 効率 化す る こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q002-b.webp",
+            "width": 817,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "企業 の 業務 の 流れ を 分 析 し , 継続 的 に 改善 , 最適 化し て いく こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q002-c.webp",
+            "width": 742,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "企業 の 業務 の 流れ を 見 直し , 抜本 的 に デザ イン し 直す こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q002-d.webp",
+            "width": 667,
+            "height": 49
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q003",
+      "number": 3,
+      "domain": "strategy",
+      "sourcePage": 3,
+      "source": "IPA 2026 公開問題 IP  問3",
+      "promptText": "問 3 投資 会 社 で ある A 社 が , それ ぞ れ の 投資 戦略 を 採る 場合 の 利益 は , 表 の よう に 予想 され る 。A 社 が マク シミ ン 戦 略 を 採り , か つ , 市 況 が 好転 し た 場合 の 利益 は どれ か 。 マク シミ ン 戦 略 と は , 戦略 ご と に 予想 され る 利益 の 最小 値 が 最も 大 きく な る よう に 戦 略 を 採用 する 理論 で ある 。 [7 誤 mms | | 5 | mm | 5 | 0 |",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q003-p03.webp",
+        "width": 1022,
+        "height": 397
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q003-p03.webp",
+          "width": 1022,
+          "height": 397
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ーー15",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q003-a.webp",
+            "width": 70,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "イィ 9",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q003-b.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "5",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q003-c.webp",
+            "width": 34,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "20",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q003-d.webp",
+            "width": 47,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q004",
+      "number": 4,
+      "domain": "strategy",
+      "sourcePage": 3,
+      "source": "IPA 2026 公開問題 IP  問4",
+      "promptText": "問 4 特定 の 目的 の 達成 や 課題 の 解決 を テー マ と し て , ソフ トウ ェ ア の 開発 者 や 企画 者 な ど が 短期 集中 的 に アイ ディ ア を 出し 合い , ソフ トウ ェ ア の 開発 な どの 共同 作業 を 行い , 成果 を 競い 合う イベ ント は どれ か 。 ド フ ェ ア",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q004-p03.webp",
+        "width": 1028,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q004-p03.webp",
+          "width": 1028,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アト レー",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q004-a.webp",
+            "width": 242,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "イハ ッ カ ソン",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q004-b.webp",
+            "width": 143,
+            "height": 44
+          }
+        },
+        {
+          "id": "c",
+          "text": "パネ ルディ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q004-c.webp",
+            "width": 294,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "レセ プシ ョ ン",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q004-d.webp",
+            "width": 164,
+            "height": 44
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q005",
+      "number": 5,
+      "domain": "strategy",
+      "sourcePage": 3,
+      "source": "IPA 2026 公開問題 IP  問5",
+      "promptText": "問 5 イン ター ネッ ト を 利用 し た 企業 広告 に 関す る 新た な ビジ ネス モデ ル を 知 的 財産 と し て 出願 し , コン ピュ ー タ シス テム と し て 実現 し た 。 こ の ビジ ネス モデ ル を 知 的 財産 と し て , 保護 する 法律 は どれ か 。 上",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q005-p03.webp",
+        "width": 1018,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q005-p03.webp",
+          "width": 1018,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "意匠 法",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q005-a.webp",
+            "width": 97,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "実用 新案 法",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q005-b.webp",
+            "width": 147,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "著作 権 法",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q005-c.webp",
+            "width": 121,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "特許 法",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q005-d.webp",
+            "width": 97,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q006",
+      "number": 6,
+      "domain": "strategy",
+      "sourcePage": 4,
+      "source": "IPA 2026 公開問題 IP  問6",
+      "promptText": "問 6 デジ タル トラ ンス フォ ー メ ーション に 関す る 説明 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q006-p04.webp",
+        "width": 1030,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q006-p04.webp",
+          "width": 1030,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PC や スマ ー ト フォ ン な どの デジ タル 製品 を 使い こなせ る 人 と , 使い こなせ な い 人 の 間 で 様々 な 機会 に 差 が 生じ て , 社会 的 な 格差 に つなが る こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q006-a.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "生ま れ た 時 か ら イ ンタ ーネット , PC や スマ ー ト フォ ン な どの デジ タル 製品 が 身 近 に あり , それ ら を 利用 し な が ら 育 っ た 世代 の こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q006-b.webp",
+            "width": 946,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "音声 を 収集 する マイ クロ フォ ン な どか ら の アナ ログ 信号 を , 電子 ファ イル と し て 保存 する た め に デジ タル 信号 に 変換 する こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q006-c.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "デジ タル 技術 が , 人 間 の 生活 や ビジ ネス な どの あら ゆる 面 に 影響 を 与え , 変革 を も た らし て いく こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q006-d.webp",
+            "width": 942,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q007",
+      "number": 7,
+      "domain": "strategy",
+      "sourcePage": 4,
+      "source": "IPA 2026 公開問題 IP  問7",
+      "promptText": "問 7 製品 や サー ビス の 価値 を 機能 と コス ト の 関係 で 把握 し , 価値 の 向上 を は か る “バリ ュー エン ジニ アリ ング \"と いう 手法 が ある 。 バ リュ ー エ ンジ ニア リン グ に お ける 価値 , 機能 , コス ト の 関係 性 を 示す も の と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q007-p04.webp",
+        "width": 1027,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q007-p04.webp",
+          "width": 1027,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "価値 = 機能 ノ (コス ト + 機 能 )",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q007-a.webp",
+            "width": 356,
+            "height": 49
+          }
+        },
+        {
+          "id": "b",
+          "text": "価値 = 機能 ノコ スト",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q007-b.webp",
+            "width": 242,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "価値 = 機能 x メ コス ト",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q007-c.webp",
+            "width": 243,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "価値 = コス ト / 機 能",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q007-d.webp",
+            "width": 246,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q008",
+      "number": 8,
+      "domain": "strategy",
+      "sourcePage": 5,
+      "source": "IPA 2026 公開問題 IP  問8",
+      "promptText": "問 8 IoT を 利用 し た シス テム の 事例 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q008-p05.webp",
+        "width": 823,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q008-p05.webp",
+          "width": 823,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "資金 調達 に お いて , 不 特 定 多数 の 借り 手 と 貸し 手 を イン ター ネッ ト 上 で 仲介 する サー ビス を 行う 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q008-a.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "ソー シャ ル メ ディ ア へ の 書込み や , コー ル セ ン ター の 通話 内 容 な どか ら , 商品 や サー ビス に 対す る 利用 者 の 感情 を 分 析 す る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q008-b.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "店 舗 や 工場 な どの 設備 に 設置 し た セン サー の 情報 を イン ター ネッ ト 経 由 で 集め , 設備 の 状況 に つい て , 従業 員 が スマ ー ト フォ ン を 用 いて 監視 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q008-c.webp",
+            "width": 929,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "文書 や 画像 な どの 電子 ファ イル を 保存 する た め の イ ンタ ーネット 上 の スト レー ジ を , サー ビス と し て 提供 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q008-d.webp",
+            "width": 944,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q009",
+      "number": 9,
+      "domain": "strategy",
+      "sourcePage": 5,
+      "source": "IPA 2026 公開問題 IP  問9",
+      "promptText": "問 9 製品 の 製造 に 関連 し て 発生 する 次 の 費用 の うち , 間接 費 だ け を 全て 挙げ た も の は ど れ か 。 a 完成 し た 製品 を 検査 する 労務 費 b 工場 の 電気 供給 設備 を 保守 する 労務 費 c 製品 の 外注 加工 費",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q009-p05.webp",
+        "width": 1019,
+        "height": 291
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q009-p05.webp",
+          "width": 1019,
+          "height": 291
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a,b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q009-a.webp",
+            "width": 72,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q009-b.webp",
+            "width": 35,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "Dc",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q009-c.webp",
+            "width": 70,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q009-d.webp",
+            "width": 34,
+            "height": 38
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q010",
+      "number": 10,
+      "domain": "strategy",
+      "sourcePage": 6,
+      "source": "IPA 2026 公開問題 IP  問10",
+      "promptText": "問 19 会議 に 関す る 記述 の うち , ブレ ー ン スト ー ミ ング の 進め 方 と し て , 適切 な も の だ け を 全て 挙げ た も の は どれ か 。 a 自由 春 放 な アイ ディ ア は 控え , 実現 可能 な アイ ディ ア の 提出 を 求め る 。 b ほか の メン バー の アイ ディ ア に 便乗 し た 案 で あっ て も , と が め ず に 進め る 。 c メン バー か ら 出 され る アイ ディ ア の 中 で , テー マ に 適し た も の を 選択 し な が ら 進め る 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q010-p06.webp",
+        "width": 1020,
+        "height": 356
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q010-p06.webp",
+          "width": 1020,
+          "height": 356
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q010-a.webp",
+            "width": 34,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "a,b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q010-b.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "a, b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q010-c.webp",
+            "width": 108,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q010-d.webp",
+            "width": 34,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q011",
+      "number": 11,
+      "domain": "strategy",
+      "sourcePage": 6,
+      "source": "IPA 2026 公開問題 IP  問11",
+      "promptText": "問 11 プロ サッ カー チー ム の ファ ン の 集い で , 人 気 の あ る 選手 が 背広 姿 で サイ ン を し て いる 姿 を 撮影 し , プリ ント し て フリ ー マ ー ケ ッ ト で 販売 し た 。 こ の 行為 に よっ て 侵 害さ れる お それ が ある 選手 が 有する 権利 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q011-p06.webp",
+        "width": 1007,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q011-p06.webp",
+          "width": 1007,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "意匠 権",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q011-a.webp",
+            "width": 96,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "商標 権",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q011-b.webp",
+            "width": 96,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "著作 権",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q011-c.webp",
+            "width": 96,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "パブ リ シ テ ィ 権",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q011-d.webp",
+            "width": 197,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q012",
+      "number": 12,
+      "domain": "strategy",
+      "sourcePage": 6,
+      "source": "IPA 2026 公開問題 IP  問12",
+      "promptText": "問 12 A 社 は , 自社 の 業務 プロ セス の 課題 を 抽出 し , 見 直し を する た め に 流れ 図 を 用 い て 業務 プロ セス を 可視 化す る こと に し た 。A 社 が 流れ 図 の 作成 に お いて 利用 する 記 述 様 式 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q012-p06.webp",
+        "width": 1007,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q012-p06.webp",
+          "width": 1007,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CRUD 図",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q012-a.webp",
+            "width": 102,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "DMM (Diamond Mandala Matrix)",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q012-b.webp",
+            "width": 370,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "E-R 図",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q012-c.webp",
+            "width": 89,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "WFA (Work FLlow Architecture)",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q012-d.webp",
+            "width": 370,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q013",
+      "number": 13,
+      "domain": "strategy",
+      "sourcePage": 7,
+      "source": "IPA 2026 公開問題 IP  問13",
+      "promptText": "問 13 個人 情報 保護 法 に 規定 され た 匿名 加工 情報 の 説明 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q013-p07.webp",
+        "width": 1032,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q013-p07.webp",
+          "width": 1032,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "厚生 労働 省 や 総務 省 統計 局 な ど が 公開 し て いる 統計 情報 を 自社 向け に 加工 し , 自 社 の 保有 する 情報 と ひも 付け て 新た な 価値 を も た せ た 情 報",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q013-a.webp",
+            "width": 944,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ 個人 情報 の うち 氏名 を 一 定 の 規則 に 基づい て 匿名 化す る が , 元 の 個人 情報 へ の 復 元 を 担保 し た 情報",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q013-b.webp",
+            "width": 947,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "個人 情報 を 法令 に 定め る 方 法 で 匿名 化し , 復元 で き な い よう に し た も の で , 一 定 の ルー ル の 下 で 本 人 の 同意 な く 利 活用 で きる 情報",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q013-c.webp",
+            "width": 946,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "利用 者 か ら 個 人 情報 を 収集 する 際 に , 氏名 を 取得 せ ず 個人 番号 な ど ほ か の 情報 で 個人 を 識別 で きる よう に し て 収集 し た 情報",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q013-d.webp",
+            "width": 946,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q014",
+      "number": 14,
+      "domain": "strategy",
+      "sourcePage": 7,
+      "source": "IPA 2026 公開問題 IP  問14",
+      "promptText": "問 14 IS0 26000 と は , 組織 の 社会 的 責任 に つい て の 国際 規格 で ある 。TS0 26000 で 定め ら れ て いる , 企業 が 果たす べき 社会 的 責任 を 表す 用 語 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q014-p07.webp",
+        "width": 1030,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q014-p07.webp",
+          "width": 1030,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CSR",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q014-a.webp",
+            "width": 60,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "SDGs",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q014-b.webp",
+            "width": 72,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "コーポレート ガバ ナン ス",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q014-c.webp",
+            "width": 292,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "エニ ソー シャ ル メ ディ アポ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q014-d.webp",
+            "width": 341,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q015",
+      "number": 15,
+      "domain": "strategy",
+      "sourcePage": 7,
+      "source": "IPA 2026 公開問題 IP  問15",
+      "promptText": "問 15 マー ケティング に お ける イノ ベー ター 理論 で は , 新しい 製品 や サー ビス が 普及 し て いく 過程 に 沿っ て , 消費 者 を , イノ ベー ター, アー リー アダ プター, アー リー マジ ョ リティ , レイ トマ ジョ リティ , ラガ ー ド と いう 五 つ の グル ー プ に 分 ける 。 こ の と き , アー リー アダ プター か ら ア ー リ ー マ ジ ョ リティ へ の 普及 に お いて 生じ る , 越え る こと が 困難 な 隔たり を 表す 用 語 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q015-p07.webp",
+        "width": 1019,
+        "height": 248
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q015-p07.webp",
+          "width": 1019,
+          "height": 248
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "カニ バリ ゼー ショ ン の 谷",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q015-a.webp",
+            "width": 242,
+            "height": 59
+          }
+        },
+        {
+          "id": "b",
+          "text": "キャ ズム",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q015-b.webp",
+            "width": 118,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "死",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q015-c.webp",
+            "width": 97,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "レッド オー シャ ン",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q015-d.webp",
+            "width": 215,
+            "height": 45
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q016",
+      "number": 16,
+      "domain": "strategy",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 IP  問16",
+      "promptText": "問 16 教師 あり 学習 に お いて , 正解 と な る 情報 を 付与 する 作業 を 表す 用 語 と し て , 最も 適 切な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q016-p08.webp",
+        "width": 1020,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q016-p08.webp",
+          "width": 1020,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アノ テー ジョ ン",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q016-a.webp",
+            "width": 192,
+            "height": 44
+          }
+        },
+        {
+          "id": "b",
+          "text": "エン コー ド",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q016-b.webp",
+            "width": 141,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウー デー タレ ンジ ング",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q016-c.webp",
+            "width": 246,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "エエ プラ ォ ィ ル タリ シグ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q016-d.webp",
+            "width": 195,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q017",
+      "number": 17,
+      "domain": "strategy",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 IP  問17",
+      "promptText": "問 17 AI を 利 活用 する 上 で 留意 すべ き 事 項 と し て , 適切 な も の だ け を 全て 挙げ た も の は どれ か 。 a AI の 意図 し な い 動作 に よっ て , 人 間 の 生命 や 身体 な ど に 危害 を 及ぼ す 可 能 性 b AI の 判断 に 差別 的 な 内 容 が 含ま れる 可能 性 c_ AI の 判断 に プラ イバシー の 侵害 と な る 内 容 が 含ま れる 可能 性",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q017-p08.webp",
+        "width": 1018,
+        "height": 306
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q017-p08.webp",
+          "width": 1018,
+          "height": 306
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a,b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q017-a.webp",
+            "width": 72,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q017-b.webp",
+            "width": 109,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "a, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q017-c.webp",
+            "width": 70,
+            "height": 40
+          }
+        },
+        {
+          "id": "d",
+          "text": "b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q017-d.webp",
+            "width": 72,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q018",
+      "number": 18,
+      "domain": "strategy",
+      "sourcePage": 8,
+      "source": "IPA 2026 公開問題 IP  問18",
+      "promptText": "問 18_ コン カレ ント エン ジニ アリ ング を 採用 する 目的 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q018-p08.webp",
+        "width": 1016,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q018-p08.webp",
+          "width": 1016,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "開発 期間 や 納期 の 短縮",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q018-a.webp",
+            "width": 270,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ 開発 製品 に お ける セキ ュ リ ティ の 確保",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q018-b.webp",
+            "width": 445,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "開発 製品 の 省エネ ルギー 性 能 の 確保",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q018-c.webp",
+            "width": 421,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "開発 製品 へ の 最新 技術 の 活用",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q018-d.webp",
+            "width": 343,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q019",
+      "number": 19,
+      "domain": "strategy",
+      "sourcePage": 9,
+      "source": "IPA 2026 公開問題 IP  問19",
+      "promptText": "問 19 サー パ 上 に イン ヌス トール され た アプ リタ ケー ジョ ン ツ フト ウエ アア を , イン ター ネッ ト 経 由 で 利用 者 に 提供 する 事業 者 , 又は その サー ビス 形態 と し て , 適切 な も の は ど れ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q019-p09.webp",
+        "width": 1009,
+        "height": 149
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q019-p09.webp",
+          "width": 1009,
+          "height": 149
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ASP",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q019-a.webp",
+            "width": 61,
+            "height": 44
+          }
+        },
+        {
+          "id": "b",
+          "text": "ISP",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q019-b.webp",
+            "width": 58,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "翌 の ター シダ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q019-c.webp",
+            "width": 220,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "腔 一 ウェ ア ん か 上 以",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q019-d.webp",
+            "width": 243,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q020",
+      "number": 20,
+      "domain": "strategy",
+      "sourcePage": 9,
+      "source": "IPA 2026 公開問題 IP  問20",
+      "promptText": "問 26 シス テム 開発 に お ける RFP の 説明 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q020-p09.webp",
+        "width": 805,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q020-p09.webp",
+          "width": 805,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IT ベン ダー が , 情報 シス テム 開発 の 必要 性 を ユー ザー に 提案 する た め に 作成 し た 提案 文書",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q020-a.webp",
+            "width": 943,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "発注 者 側が , 開発 すべ き 情 報 シ ステ ム の 調達 条件 な ど を IT ベン ダー に 示す た め に 作成 し た 文書",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q020-b.webp",
+            "width": 943,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "発注 者 と 受注 し た IT ベン ダー が , 開発 する シス テム の 仕様 を 明確 に する た め に 共同 で 作成 し た 設計 文書",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q020-c.webp",
+            "width": 945,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "ユー ザー 部 門 が , 情報 シス テム 部 門 に 情報 シス テム 開発 の 必要 性 と 開発 要件 を 明 確 に する よう に 求め た 文書",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q020-d.webp",
+            "width": 946,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q021",
+      "number": 21,
+      "domain": "strategy",
+      "sourcePage": 10,
+      "source": "IPA 2026 公開問題 IP  問21",
+      "promptText": "問 21 サイ バー セキ ュ リ ティ 基本 法 の 立法 趣旨 を 説明 し た も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q021-p10.webp",
+        "width": 828,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q021-p10.webp",
+          "width": 828,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "コ ンピュータ へ の 不正 セス 行為 定義 し その 行為 を 禁止 と も に 罰則 を 定め , ネッ トワ ー ク 通信 秩序 の 維持 を 図る こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q021-a.webp",
+            "width": 942,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "情報 セキ ュ リ ティ に 関す る 適切 な コン トロ ー ル を 整備 , 運用 する た め の 実 践 的 な 規範 を 定め , 企業 な ど で 効 果 的 な 情報 セキ ュ リ ティ 対策 の 推進 を 促す こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q021-b.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報 通信 ネッ トワ ー ク を 通じ た コン ピュ ー タ へ の 不正 侵入 な どの 行為 に 対す る 防 御 施策 に 関し , 基本 理念 を 定め , 国 及 び 地方 公共 団体 の 責務 な ど を 明らか に し て , 施策 の 総合 的 か つ 効 果 的 な 推進 を 図る こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q021-c.webp",
+            "width": 945,
+            "height": 148
+          }
+        },
+        {
+          "id": "d",
+          "text": "デジ タル コン テン ツ の 複製 防止 の た め の 技 術 的 制限 手段 を 無効 化す る 行為 な ど を 規制 する こと に よっ て , 企業 な どの 営業 上 の 利益 を 確保 する こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q021-d.webp",
+            "width": 943,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q022",
+      "number": 22,
+      "domain": "strategy",
+      "sourcePage": 10,
+      "source": "IPA 2026 公開問題 IP  問22",
+      "promptText": "問 22 伝票 入力 処理 な どの 定型 的 な 事務 作業 を , ソフ トウ ェ ア ロ ボッ ト に 代替 させ る こと に よっ て , 自動 化 や 効率 化 を 図る 手段 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q022-p10.webp",
+        "width": 1016,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q022-p10.webp",
+          "width": 1016,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BPO",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q022-a.webp",
+            "width": 59,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "イー EUC",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q022-b.webp",
+            "width": 59,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウード FA",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q022-c.webp",
+            "width": 47,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "エニ RPA",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q022-d.webp",
+            "width": 60,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q023",
+      "number": 23,
+      "domain": "strategy",
+      "sourcePage": 10,
+      "source": "IPA 2026 公開問題 IP  問23",
+      "promptText": "問 23 イン ター ネッ ト 広 告 の 手法 の 一 つ で ある , リス ティ ング 広告 に 関す る 記述 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q023-p10.webp",
+        "width": 1002,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q023-p10.webp",
+          "width": 1002,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Web サイ ト の 閲覧 履歴 や オン ライ ン シ ョ ッ ピン グ の 購買 履歴 な どの 利用 者 の 行動 履歴 を 基 に し て , 広告 を 表示 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q023-a.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ 検索 エン ジン の 利用 者 が 検索 ボッ クス に 入力 し た キー ワー ド に 連動 し て , 広告 を 表示 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q023-b.webp",
+            "width": 943,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "事前 に 広告 メー ル の 受信 を 許諾 し た 利用 者 に 対し て , 広告 メー ル を 配信 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q023-c.webp",
+            "width": 880,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "定期 的 に 発行 する メー ル マ ガ ジン に , 広告 を 掲載 し て 配信 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q023-d.webp",
+            "width": 729,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q024",
+      "number": 24,
+      "domain": "strategy",
+      "sourcePage": 11,
+      "source": "IPA 2026 公開問題 IP  問24",
+      "promptText": "問 コー ー ト ガバ ナン ス の 説明 し て , 適切 主 を と よる へ し 活",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q024-p11.webp",
+        "width": 779,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q024-p11.webp",
+          "width": 779,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "株 始め し た 利害 関係 者 に 経営 者 の 監視 や 監督 を 中 心 と た , 企業 動 を 律する 枠組 み の こ と 上 資本 こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q024-a.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "企業 が 活動 を 行う で 必要 な の 調達 の の や を , 信 , の",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q024-b.webp",
+            "width": 543,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "企業 理念 特性 統一 され た イメ ー ジ や デザ イン な ど で 発 し 企業 ブラ ンド 価値 の 向上 を 図る こと な",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q024-c.webp",
+            "width": 942,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "競合 他社 で は 提供 が 不可 能 価値 を も た ら す , 企業 が 有する 独自 の スキ ル や 技術 の を を と",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q024-d.webp",
+            "width": 946,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q025",
+      "number": 25,
+      "domain": "strategy",
+      "sourcePage": 11,
+      "source": "IPA 2026 公開問題 IP  問25",
+      "promptText": "問 大 容量 頻繁 更新 多種 多様 と いう 三 の 要素 を つ 情 報 資 産 “ビッグ デー タ \" と 定義 する 考え 方 が ある 。 こ の ビッ グ デ ー タ を 特徴 づけ る 三 つ の 要素 を 総称 し て 何と いう か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q025-p11.webp",
+        "width": 1020,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q025-p11.webp",
+          "width": 1020,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "3C",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q025-a.webp",
+            "width": 47,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "イィ 3D",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q025-b.webp",
+            "width": 47,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウー 36",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q025-c.webp",
+            "width": 48,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "ェ 3V",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q025-d.webp",
+            "width": 47,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q026",
+      "number": 26,
+      "domain": "strategy",
+      "sourcePage": 11,
+      "source": "IPA 2026 公開問題 IP  問26",
+      "promptText": "問 表 は A 社 の 貸借 対照 表 で 。A 社 の 自己 資本 比率 は 何 か 。 単位 百 万 円 負債 の 部 流動 資産 736 流動 負債 269 固定 負債 569 。 純資産 の 部 生 癌 ェ",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q026-p11.webp",
+        "width": 913,
+        "height": 333
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q026-p11.webp",
+          "width": 913,
+          "height": 333
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "30",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q026-a.webp",
+            "width": 48,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "イー54",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q026-b.webp",
+            "width": 47,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウー76",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q026-c.webp",
+            "width": 47,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "99",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q026-d.webp",
+            "width": 47,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q027",
+      "number": 27,
+      "domain": "strategy",
+      "sourcePage": 12,
+      "source": "IPA 2026 公開問題 IP  問27",
+      "promptText": "問 27 AI を , 様々 な 課題 に 対し て 判断 で きる “強い AI\" と , 特定 の 課題 だ け を 判断 で き る “弱い AI” に 分 類 し た 場合 , “弱い AI\" の 記述 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q027-p12.webp",
+        "width": 1018,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q027-p12.webp",
+          "width": 1018,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "人 間 と 同等 の 知能 が コン ピュ ー タ 上 で 再現 され , 人 間 の よう に 判断 する こと が で きる が , 人 間 と 同じ よう な 判断 ミス を する こと も ある 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q027-a.webp",
+            "width": 942,
+            "height": 100
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ 人間 の よう に 質問 その も の の 意味 を 理解 し た り , 考え た り し て いる わけ で は な い が , 判断 の 結果 を 示す こと は で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q027-b.webp",
+            "width": 943,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "人 間 よ り も 賢く , 人 間 の 手助け が な く て も 自ら の 判断 力 を 高め る こと が で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q027-c.webp",
+            "width": 904,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "自ら が も つ 知 識 や 能力 を 自律 的 に 適用 する こと に よっ て , 柔軟 に 判断 で きる 能力 が ある 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q027-d.webp",
+            "width": 943,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q028",
+      "number": 28,
+      "domain": "strategy",
+      "sourcePage": 12,
+      "source": "IPA 2026 公開問題 IP  問28",
+      "promptText": "問 28 イン ター ネッ ト 上 の 商取引 に 関連 し た リス ク の うち , エス クロ ー サ ービス を 利用 す る こと に よっ て 低減 で きる リス ク と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q028-p12.webp",
+        "width": 1020,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q028-p12.webp",
+          "width": 1020,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "オー クシ ョ ン サ イト イ に 誤っ た 購入 金額 を 入力 し た と き に , 取引 を 取り 消せ な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q028-a.webp",
+            "width": 904,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "商品 の 代金 を 支払 っ た に も か か わら ず , 商品 が 配送 され な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q028-b.webp",
+            "width": 705,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "ショ ッ ピ ング サイ ト で 使用 し て いる パス ワー ド が 漏えい する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q028-c.webp",
+            "width": 703,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "発注 し た 商品 を 一 旦 受け 取る と , 自己 都合 で は 解約 で き な い 。 .",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q028-d.webp",
+            "width": 705,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q029",
+      "number": 29,
+      "domain": "strategy",
+      "sourcePage": 13,
+      "source": "IPA 2026 公開問題 IP  問29",
+      "promptText": "問 29 プロ グラ ム 開 発 業 務 の 委託 に 当たり , 請負 契約 に お ける 注文 者 及び 請負 業者 の 権 利 や 義務 に つい て 特段 の 取決め が な い 場 合 の 説明 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q029-p13.webp",
+        "width": 1009,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q029-p13.webp",
+          "width": 1009,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "請負 業者 が , 更に 別 の 業者 に 仕事 の 一 部 を 請け 負わ せる 場合 は , 事前 に 注文 者 の 承諾 を 得 な けれ ば な ら な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q029-a.webp",
+            "width": 934,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "完成 し た プロ グラ ム に 欠陥 が ある と き は , 注文 者 は いつ で も 欠陥 の 改修 を 請求 する こと が で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q029-b.webp",
+            "width": 933,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "注文 者 に は , プロ グラ ム の 引渡 し を 受け た 時 点 で , 報酬 を 支払 う 義 務 が 生じ る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q029-c.webp",
+            "width": 917,
+            "height": 49
+          }
+        },
+        {
+          "id": "d",
+          "text": "注文 者 は , プロ グラ ム の 完成 前 で あれ ば いつ で も 請負 業者 に 対し て 損害 を 賠償 する こと な く 請 負 契 約 を 解除 する こと が で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q029-d.webp",
+            "width": 934,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q030",
+      "number": 30,
+      "domain": "strategy",
+      "sourcePage": 13,
+      "source": "IPA 2026 公開問題 IP  問30",
+      "promptText": "問 39 事業 部 制 組 織 の 事例 は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q030-p13.webp",
+        "width": 431,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q030-p13.webp",
+          "width": 431,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A さん は X 事業 を 実施 し て いる 部 門 の 購買 組織 に 所 属し て いる 。Y 事業 の 購買 は Y 事業 を 実施 し て いる 部 門 の 購買 組織 が 担当 し て いる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q030-a.webp",
+            "width": 946,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "B さん は 複数 の 事業 の 人 事 機 能 を 担当 する 組織 に 所 属し て いる 。 開 発 , 生産 , 販 売 機能 も 同様 に , それ ぞ れ 専門 の 組織 が 担当 し て いる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q030-b.webp",
+            "width": 946,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "C さ ん は 地域 M で 製品 X の 販売 を 担当 し て お り , 地域 M の 販売 に 責任 を も つ 上 司 と 製品 X の 販売 に 責任 を も つ 上 司 の , 2 人 の 上 司 の 指示 を 受け て いる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q030-c.webp",
+            "width": 942,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "D さん は 新規 事業 の 企画 開発 を 目的 と し て 関係 部 署 か ら 横 断 的 に 人 材 を 集め た 組 織 に 所 属し て いる 。 こ の 組織 は 企画 開発 が 終わ り 次 第 解散 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q030-d.webp",
+            "width": 948,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q031",
+      "number": 31,
+      "domain": "strategy",
+      "sourcePage": 14,
+      "source": "IPA 2026 公開問題 IP  問31",
+      "promptText": "問 31 リー ン 生 産 方 式 に よる 業務 改善 の 観点 で ある ムリ , ムラ , ムダ の うち , ムダ に 当 た る も の と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q031-p14.webp",
+        "width": 1006,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q031-p14.webp",
+          "width": 1006,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "属 人 化し て いて , 担当 者 に よっ て 作成 物 の 品質 が 異な る 作業",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q031-a.webp",
+            "width": 696,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "組織 の 能力 以上 に 負荷 を か ける 無謀 な 計画 や 作業 標準",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q031-b.webp",
+            "width": 621,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "待機 や 必要 以上 の 加工 な ど , 付加 価値 を 生ま な い 動 作",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q031-c.webp",
+            "width": 620,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "長 時 間 , 身体 の 一 部 に 負担 が か か り , 健康 を 害する お それ の ある 作業",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q031-d.webp",
+            "width": 794,
+            "height": 49
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q032",
+      "number": 32,
+      "domain": "strategy",
+      "sourcePage": 14,
+      "source": "IPA 2026 公開問題 IP  問32",
+      "promptText": "問 32 _ ニ ッ チ 戦略 の 事例 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q032-p14.webp",
+        "width": 679,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q032-p14.webp",
+          "width": 679,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アパ レル メー カーA 社 は , 生産 コス ト を 下げ る た め に , 生産 拠点 を 海外 に 移し た 。 また , 大 量 に 販売 が 見 込め る カジ ュ ア ルウ ェ ア を 中 心 に , 安価 な 商品 を 全国 で 販売 する こと に し た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q032-a.webp",
+            "width": 953,
+            "height": 148
+          }
+        },
+        {
+          "id": "b",
+          "text": "業界 2 位 の 食品 メー カーB 社 は , トッ プシ ェ ア を 獲得 する た め に , 業界 3 位 の C 社 と 経営 統合 する こと に し た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q032-b.webp",
+            "width": 942,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "金属 加工 メー カーD 社 は , 自社 固有 の 加工 技術 を 生か し て , 密閉 度 の 極め て 高い 高価 な 無水 調理 鍋 を 高級 レス トラ ン 向 け に 販売 する こと に し た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q032-c.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "電機 メー カーE 社 は , 販売 量 が 減っ て きた 中 型 テ レビ 事業 を 売却 し , 完全 撤退 す る こと に し た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q032-d.webp",
+            "width": 941,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q033",
+      "number": 33,
+      "domain": "strategy",
+      "sourcePage": 14,
+      "source": "IPA 2026 公開問題 IP  問33",
+      "promptText": "問 33 購買 , 製造 , 販売 と いう 供給 者 か ら 消 費 者 まで を 結ぶ ー 連 の 業務 の つなが り を 総合 的 に 管理 し , 資材 の 調達 か ら 願 客 へ の 販売 に 至る 在庫 な どの 無駄 を な くし て , プロ セ ス 全 体 の 最適 化 を 図る も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q033-p14.webp",
+        "width": 1019,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q033-p14.webp",
+          "width": 1019,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CRM",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q033-a.webp",
+            "width": 60,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "POS",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q033-b.webp",
+            "width": 59,
+            "height": 44
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウー SCM",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q033-c.webp",
+            "width": 60,
+            "height": 44
+          }
+        },
+        {
+          "id": "d",
+          "text": "SFA",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q033-d.webp",
+            "width": 60,
+            "height": 44
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q034",
+      "number": 34,
+      "domain": "strategy",
+      "sourcePage": 15,
+      "source": "IPA 2026 公開問題 IP  問34",
+      "promptText": "問 34 IT 基本 計画 の 策定 の 際 , 明確 に すべ き 事 項 だ け を 全て 挙げ た も の は どれ か 。 a IT シス テム の 利 活用 に 関わ る ステ ー ク ホル ダ 』 b 組織 体 の 現在 及び 将来 的 な ニー ズ へ の 対応 c 発生 し た イン シ デ ン ト に 関す る 管理 手順 d 利用 者 及び 関係 者 と の 合意 に 基づい た 業務 要件 と その 優先 順位",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q034-p15.webp",
+        "width": 937,
+        "height": 301
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q034-p15.webp",
+          "width": 937,
+          "height": 301
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a, b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q034-a.webp",
+            "width": 73,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q034-b.webp",
+            "width": 109,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "ab, d",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q034-c.webp",
+            "width": 107,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "5b, c, d",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q034-d.webp",
+            "width": 110,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q035",
+      "number": 35,
+      "domain": "management",
+      "sourcePage": 16,
+      "source": "IPA 2026 公開問題 IP  問35",
+      "promptText": "問 35 情報 シス テム の 企画 , 開発 , 運用 , 保守 に 関わ る マネ ジメント と プロ セス に 対し て , IT ガバ ナン ス に お ける 経営 陣 の 活動 と し て , 評価 , 指示 , モニ ター を 実施 する 必要 が ある 。IT ガバ ナン ス に お ける 経営 陣 の 活動 に 関す る 記述 と し て , 適切 な も の だ け を 全て 挙げ た も の は どれ か 。 a 外部 の コン サル タン ト に 責任 と 権限 を 委譲 し , 戦略 立案 か ら モ ニタ リン グ ま で 全面 的 に 任せ る 。 b 情報 シス テム 戦略 で 想定 し た 効果 が , どの 程度 達成 され て いる か 確認 する た め の 情 報 を 収集 する 。 c 情報 シス テム 戦略 を 実現 する た め に , 必要 な 責任 と 要員 を 組織 に 割り 当て る 。 d 情報 シス テム の 複数 の 将来 像 を 想定 し , 外部 の 情報 シス テム の 専門 家 に 比較 分 析 を 依頼 し て 評価 する 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q035-p16.webp",
+        "width": 1017,
+        "height": 600
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q035-p16.webp",
+          "width": 1017,
+          "height": 600
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a,b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q035-a.webp",
+            "width": 109,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q035-b.webp",
+            "width": 70,
+            "height": 41
+          }
+        },
+        {
+          "id": "c",
+          "text": "b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q035-c.webp",
+            "width": 72,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "5b,c, d",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q035-d.webp",
+            "width": 109,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q036",
+      "number": 36,
+      "domain": "management",
+      "sourcePage": 17,
+      "source": "IPA 2026 公開問題 IP  問36",
+      "promptText": "問 86 クラ イア ント PC へ の ソフ トウ ェ ア の 導入 作業 が 契約 に 含ま れる シス テム 開発 プロ ジェ クト が ある 。 導 入 作業 の 行動 に 関す る 記述 の うち , 適切 な も の だ け を 全て 挙げ た も の は どれ か 。 a 導入 作業 中 に 契約 外 の PC が 見 つか っ た 。 そ の PC を 導入 対象 外 と し た 。 b 導入 作業 中 に 契約 外 の PC へ の 導入 を 依頼 され た 。 依 頼 に 基づい て , その 対応 を 無償 で 行っ た 。 c 導入 作業 の 続行 が 困難 な 状態 と な っ た 。 発 注 者 と 合意 し , 導入 前 の 状態 に 復旧 し た 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q036-p17.webp",
+        "width": 1021,
+        "height": 450
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q036-p17.webp",
+          "width": 1021,
+          "height": 450
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q036-a.webp",
+            "width": 35,
+            "height": 38
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q036-b.webp",
+            "width": 72,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "a, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q036-c.webp",
+            "width": 71,
+            "height": 40
+          }
+        },
+        {
+          "id": "d",
+          "text": "b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q036-d.webp",
+            "width": 227,
+            "height": 72
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q037",
+      "number": 37,
+      "domain": "management",
+      "sourcePage": 17,
+      "source": "IPA 2026 公開問題 IP  問37",
+      "promptText": "問 37 A さん は 新規 プロ ジェ クト の 計画 段階 の 作業 を し て お り , 開発 コス ト の 見 積 り に 着手 し た 。 こ の 段階 で 短期 的 に 概算 費用 を 見 積もる 方 法 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q037-p17.webp",
+        "width": 1008,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q037-p17.webp",
+          "width": 1008,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "FP 法 を 用 いて 見 積もる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q037-a.webp",
+            "width": 287,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "作業 単位 の コス ト を 見 積もり , 合算 し て 全体 を 見 積もる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q037-b.webp",
+            "width": 655,
+            "height": 49
+          }
+        },
+        {
+          "id": "c",
+          "text": "予想 され る ソフ トウ ェ ア の コー ド 行 数 を 基 に 見 積もる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q037-c.webp",
+            "width": 630,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "類似 プロ ジェ クト を 参考 に 見 積もる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q037-d.webp",
+            "width": 432,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q038",
+      "number": 38,
+      "domain": "management",
+      "sourcePage": 17,
+      "source": "IPA 2026 公開問題 IP  問38",
+      "promptText": "問 38 要求 事項 が 明確 で あり 仕様 変更 が 少な いこ と が 見 込ま れる ソフ トウ ェ ア の 開発 に 用 いる 開発 モデ ル ・ 手 法 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q038-p17.webp",
+        "width": 1019,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q038-p17.webp",
+          "width": 1019,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アジ ャ イル 開発",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q038-a.webp",
+            "width": 195,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ ウォー ター フォ ー ル モデ ル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q038-b.webp",
+            "width": 317,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウス パイ ラル モデ ル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q038-c.webp",
+            "width": 219,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "プロ ト タ イ ピン グモ デル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q038-d.webp",
+            "width": 294,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q039",
+      "number": 39,
+      "domain": "management",
+      "sourcePage": 18,
+      "source": "IPA 2026 公開問題 IP  問39",
+      "promptText": "問 39 シス テム 開発 の プロ ジェ クト マネ ジメント に お ける WVBS の 説明 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q039-p18.webp",
+        "width": 1007,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q039-p18.webp",
+          "width": 1007,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "クリ ティ カル パス 上 の 作業 を 記載 し た も の で ある 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q039-a.webp",
+            "width": 578,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "主要 な 成果 物 に 関す る 予定 開始 日 と 予定 終了 日 を 記載 し た も の で ある 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q039-b.webp",
+            "width": 804,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "全て の 成果 物 を 作成 する た め の 作 業 を 階層 的 に 分 解 し て 記載 し た も の で ある 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q039-c.webp",
+            "width": 880,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "プロ ジェ クト で 使用 する ツー ル を 記載 し た も の で ある 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q039-d.webp",
+            "width": 628,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q040",
+      "number": 40,
+      "domain": "management",
+      "sourcePage": 18,
+      "source": "IPA 2026 公開問題 IP  問40",
+      "promptText": "問 46 企業 の 活動 に 関す る 記述 の うち , 内 部 統制 の 活動 内 容 と し て , 最も 適切 な も の は ど れ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q040-p18.webp",
+        "width": 1019,
+        "height": 90
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q040-p18.webp",
+          "width": 1019,
+          "height": 90
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "決算 発表 の 内 容 に 重大 な 誤り が あっ た 場合 は , 速やか に 外部 に 公表 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q040-a.webp",
+            "width": 829,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "支払 伝票 を 起 球 し た 際 は , 起 票 者 が 責任 を も っ て 確認 し 最終 承認 を 行う 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q040-b.webp",
+            "width": 829,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "定期 的 に リス ク を 評価 し , 洗い 出さ れ た リス ク の 全て を “回避” で 対応 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q040-c.webp",
+            "width": 880,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "内 部 通報 は 必ず 直属 の 上 司 を 通じ て 行う こと を , ルー ル と し て 徹底 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q040-d.webp",
+            "width": 828,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q041",
+      "number": 41,
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "IPA 2026 公開問題 IP  問41",
+      "promptText": "問 41_IT ガバナンス の 活動 に お いて , 取締 役 会 等 の リー ダー シッ プ に 関す る リス ク の 記 述 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q041-p19.webp",
+        "width": 1009,
+        "height": 100
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q041-p19.webp",
+          "width": 1009,
+          "height": 100
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "権限 委譲 し て 策定 させ た 成果 物 で ある IT 戦略 は , 担当 部 門 に 最終 的 な 責任 を も た せな いと , 取締 役 会 等 の 説明 責任 が 果たせ な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q041-a.webp",
+            "width": 930,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "組織 体 と し て の パフ ォ ー マ ンス の 期待 値 は , 取締 役 会 等 が 設定 に 関与 する と , 現状 路 襲 型 と な り 組 織 体 の 目的 を 達成 で き な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q041-b.webp",
+            "width": 917,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "取締 役 会 等 が 規範 を 策定 し , 率先 し て 遵守 し な いと , 組織 体 に その 倫理 的 な 行 動 が 徹底 され な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q041-c.webp",
+            "width": 935,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "エエ 取締役 会 等 が 組織 体 の IT ガバ ナン ス 方 針 を 明示 する と , 情報 シス テム 部 門主 導 の 活動 に 偏重 し て し まう 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q041-d.webp",
+            "width": 934,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q042",
+      "number": 42,
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "IPA 2026 公開問題 IP  問42",
+      "promptText": "問 42_ サー ビス デス ク に 関す る 記述 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q042-p19.webp",
+        "width": 805,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q042-p19.webp",
+          "width": 805,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "受入 テス ト の 段階 で , 利用 者 か ら の 不具 合 の 報告 を 受け 付け る 窓口",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q042-a.webp",
+            "width": 767,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "シス テム 衝 働 後 の 段 階 で , 利用 者 か ら の 問合せ を 受け 付け る 窓口",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q042-b.webp",
+            "width": 741,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "プロ グラ ム 開 発 の 段階 で , 利用 者 か ら の 質問 を 受け 付け る 窓口",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q042-c.webp",
+            "width": 716,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "要件 定義 の 段階 で , 利用 者 か ら の 要求 を 受け 付け る 窓口",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q042-d.webp",
+            "width": 644,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q043",
+      "number": 43,
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "IPA 2026 公開問題 IP  問43",
+      "promptText": "問 43 ある 企業 で スマ ー ト フォ ン 向 け の アプ リケーション ソフ トウ ェ ア の 開発 を 計画 し て お り , 2 週間 ご と に 新 機 能 や 不具 合 の 修正 を 含め た 新しい バー ジョ ン を 繰り 返し リリ ー ス する こと に し た 。 新 機能 の 候補 や 不具 合 は 一 覧 表 で 管理 し , 優先 順位 を つけ て 開 発し , 逐次 リリ ー ス する 方 針 に し た 。 こ の 開発 に 採用 する ソフ トウ ェ ア 開 発 モ デル と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q043-p19.webp",
+        "width": 1020,
+        "height": 249
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q043-p19.webp",
+          "width": 1020,
+          "height": 249
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "DevOps",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q043-a.webp",
+            "width": 98,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "アジ ャ イル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q043-b.webp",
+            "width": 145,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウー ター ラオ ォ オール",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q043-c.webp",
+            "width": 243,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "リバ ー ス エン ジニ アリ ング",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q043-d.webp",
+            "width": 316,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q044",
+      "number": 44,
+      "domain": "management",
+      "sourcePage": 20,
+      "source": "IPA 2026 公開問題 IP  問44",
+      "promptText": "問 44 ある サー ビス デス ク で は , 電子 メー ル に よる 問合せ に 対応 し て お り , 受付 担当 者 が メー ル の 内 容 を 確認 し , 回 答 担当 者 の 割当 て を し て いた 。 こ の た び , 割当 て 業務 の 効 率 化 を 目的 に , 自動 割当 て ツー ル を 導入 し た 。 自 動 割当 て ツー ル は , メー ル の 内 容 を 基 に 自動 で 回 答 担当 者 の 割当 て を 行う が , 割当 て が で き な い こと や 割当 て ミス を する こと が あり , それ ら に つい て は , 人 手 で 対応 し て いる 。 導 入 前 及び 導入 半年 後 の 状 況 が 次 の と き , 割当 て の 時 間 は サー ビス デス ク 全 体 で 何 % 削 減 で きた か 。 こ こ で , 割当 て の 時 間 の 削減 率 (%) は 小数 第 1 位 を 四捨五入 する も の と する 。 | 導入 前 | 問合せ 件 数 1,909 件 / 日 割当 て の 時 間 2 分 / 件 導入 半年 後 | 問合せ 件 数 1,099 件 / 日 自動 割当 て が で きた 割合 909% | 割当 て の 時 間 9 分 / 件 うち , 割当 て ミス の 割合 5% | 割当 て の 時 間 4 分 / 件 自動 割当 て が で き な か っ た 割合 10% | 割当 て の 時 間 2 分 / 件",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q044-p20.webp",
+        "width": 1021,
+        "height": 597
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q044-p20.webp",
+          "width": 1021,
+          "height": 597
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "89",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q044-a.webp",
+            "width": 47,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "81",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q044-b.webp",
+            "width": 44,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "85",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q044-c.webp",
+            "width": 47,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "86",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q044-d.webp",
+            "width": 47,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q045",
+      "number": 45,
+      "domain": "management",
+      "sourcePage": 20,
+      "source": "IPA 2026 公開問題 IP  問45",
+      "promptText": "問 45 プロ ジェ クト に お いて , 新規 プロ ジェ クト を 正式 に 認可 する 文書 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q045-p20.webp",
+        "width": 1006,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q045-p20.webp",
+          "width": 1006,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ステ ー ク ホル ダ 登 録 簿",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q045-a.webp",
+            "width": 271,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "プロ ジェ クト 一 章",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q045-b.webp",
+            "width": 219,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "プロ ジェ クト スコ ー プ 記述 書",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q045-c.webp",
+            "width": 345,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "リス ク 登 録 簿",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q045-d.webp",
+            "width": 167,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q046",
+      "number": 46,
+      "domain": "management",
+      "sourcePage": 21,
+      "source": "IPA 2026 公開問題 IP  問46",
+      "promptText": "問 46_ IT サー ビス マネ ジメント の プロ セス で ある 問題 管理 の 説明 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q046-p21.webp",
+        "width": 1021,
+        "height": 114
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q046-p21.webp",
+          "width": 1021,
+          "height": 114
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IT サー ビス を 提供 する た め の ハ ー ド ウェ ア , ソフ トウ ェ ア , ドキ ュ メ ント な どの 構成 情報 を 維持 管理 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q046-a.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "計画 外 の IT サー ビス の 中 断 に 対し て , 迅速 に サー ビス を 復旧 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q046-b.webp",
+            "width": 755,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "障害 の 根本 原因 を 調査 し , 問題 の 解決 策 を 提示 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q046-c.webp",
+            "width": 606,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "プロ グラ ム 修 正 を 実施 する た め の 計 画 を 立て , 確実 に 修正 され る よう に 管理 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q046-d.webp",
+            "width": 928,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q047",
+      "number": 47,
+      "domain": "management",
+      "sourcePage": 21,
+      "source": "IPA 2026 公開問題 IP  問47",
+      "promptText": "問 47 監査 を 会 計 監 査 , 業務 監査 , 情報 セキ ュ リ ティ 監査 , シス テム 監査 に 分 けた と き , シス テム 監査 に 関す る 記述 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q047-p21.webp",
+        "width": 1016,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q047-p21.webp",
+          "width": 1016,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "業務 で 使用 し て いる 情報 の 漏えい に 関す る リス クマ ネジ メン ト が 効果 的 に 実施 され て いる こと の 検証",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q047-a.webp",
+            "width": 932,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "財務 諸表 の 作成 に 至る 業務 全般 に 関し て , 不正 や 誤り が な く 処 理 さ れ て いる こ と の 検証",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q047-b.webp",
+            "width": 928,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報 シス テム に 係る リス ク に 対し て , 組織 に お いて 適切 に 対応 し て いる こと の 検証",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q047-c.webp",
+            "width": 933,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "情報 シス テム の 利用 を 含め た 組織 内 の 諸 業 務 が 組織 の 方 針 に 従っ て , 合理 的 か つ 効 率 的 に 運用 され て いる こと の 検証",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q047-d.webp",
+            "width": 932,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q048",
+      "number": 48,
+      "domain": "management",
+      "sourcePage": 22,
+      "source": "IPA 2026 公開問題 IP  問48",
+      "promptText": "問 ある 組織 で は , IT 資産 を 管理 し て いる グル ー プ が , 共有 ディ スク の 使用 で チェ ッ ク し , 容量 が 不足 し そう な と き は , 不要 な ファ イル を 消す よう 呼び 掛け た り , すぐ に 使わ な い フ ァイル を 別 の メデ ィ ア に 退避 し た り し て , 容量 が 不足 する こ と を 回 避 す る 対応 を 行っ て いる 。 共 有 デ ィ ス ク の 増設 の 対応 は , 年 単位 で 計画 し て 実施 し て いる 。 あ る 日 , 共有 ディ スク の 使用 量 が 上 限 に 達し , 組織 の 業務 に 支障 が 出る 事象 が 発生 し た 。 こ の 事象 へ の 対応 を , イン シ デ ン ト 管 理 , 問題 管理 , サー ビ スマ ネジ メン トシ ステ ム の 改善 に 分 け て 考え る と き , サー ビス マネ ジメント シス テ ム の 改善 と し て , 適切 な も の だ け を 全て 挙げ た も の は どれ か 。 a 共有 ディ スク の 使用 量 が 大 きい ファ イル を 調べ , 当面 の 業務 に 使用 し な いも の を 一 時 的 に 別 の スト レー ジ に 移動 する 。 b 共有 ディ スク の 使用 量 が 上 限 に 達し た 原因 を 特定 し , 再発 防止 策 を 検討 する 。 c 共有 ディ スク の 使用 量 を タイ ムリ ー に 把握 し , 容量 不足 の 兆候 を 早期 に 検知 で きる よう に する 。 d すぐ に 共有 ディ スク の 増設 の 手続 を 進め る 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q048-p22.webp",
+        "width": 1018,
+        "height": 749
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q048-p22.webp",
+          "width": 1018,
+          "height": 749
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ad",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q048-a.webp",
+            "width": 72,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "b, d",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q048-b.webp",
+            "width": 71,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "疲 5",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q048-c.webp",
+            "width": 33,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "二名 す",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q048-d.webp",
+            "width": 71,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q049",
+      "number": 49,
+      "domain": "management",
+      "sourcePage": 23,
+      "source": "IPA 2026 公開問題 IP  問49",
+      "promptText": "問 49 シス テム 開発 プロ ジェ クト で 開催 する プロ ジェ クト 会 議 に 関す る 記述 の うち , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q049-p23.webp",
+        "width": 1017,
+        "height": 91
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q049-p23.webp",
+          "width": 1017,
+          "height": 91
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "会 議 で 決ま っ た 内 容 を 周知 徹底 する た め に , 議事 録 を 作成 し て 必要 な 関係 者 と 共 有する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q049-a.webp",
+            "width": 946,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "議論 が 中 途 半 端 に な ら な いよ うに , 会 議 の 終了 時 刻 は 決め ず に 実施 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q049-b.webp",
+            "width": 830,
+            "height": 49
+          }
+        },
+        {
+          "id": "c",
+          "text": "効率 よく シス テム 開発 プロ ジェ クト を 遂行 する た め に , 全て の 会 議 に ステ ー ク ホ ル ダ 全 員 が 常に 参加 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q049-c.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "様々 な 内 容 を 会 議 で 議論 で きる よう に , 会 議 の 開始 直後 に 会 議 の 議題 を 参加 メン バー か ら 募 っ て 確定 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q049-d.webp",
+            "width": 943,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q050",
+      "number": 50,
+      "domain": "management",
+      "sourcePage": 23,
+      "source": "IPA 2026 公開問題 IP  問50",
+      "promptText": "問 50 次 の 表 の 作業 を 3 名 で 実施 する と き , 全て の 作業 を 終わ ら せ る の に 必要 な 最短 の 日 数 は 何 日 か 。 ここ で , 複数 要員 が 必要 な 作業 は 全員 が そろ わな いと 着手 で きず , 指定 され た 要員 数 以上 の 要員 を 充て て も 所 要 日 数 は 短縮 で き な い 。 ま た , 着手 し た 作業 は 作業 が 完了 する まで 中 断 で き な い も の と する 。 | 引合 | | 門 呈 」",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q050-p23.webp",
+        "width": 1020,
+        "height": 607
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q050-p23.webp",
+          "width": 1020,
+          "height": 607
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "9 日",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q050-a.webp",
+            "width": 56,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "12 日",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q050-b.webp",
+            "width": 67,
+            "height": 45
+          }
+        },
+        {
+          "id": "c",
+          "text": "195 日",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q050-c.webp",
+            "width": 67,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "18 日",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q050-d.webp",
+            "width": 68,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q051",
+      "number": 51,
+      "domain": "management",
+      "sourcePage": 24,
+      "source": "IPA 2026 公開問題 IP  問51",
+      "promptText": "問 51 シス テム 監査 に お いて , 各部 署 の 外部 媒体 の 管理 状況 に つい て 調査 する こと に し た 。 シス テム 監査 を , 監査 計画 , 予備 調査 , 本 調査 , 評価 ・ 結 論 の プロ セス に 分 け て 実施 する と き , 収集 し た 結果 に 基づき , 外部 媒体 の 管理 状況 に つい て の 監査 意見 を 検討 す る プロ セス は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q051-p24.webp",
+        "width": 1030,
+        "height": 198
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q051-p24.webp",
+          "width": 1030,
+          "height": 198
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "監査 計画",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q051-a.webp",
+            "width": 122,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "予備 調査",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q051-b.webp",
+            "width": 121,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "本 調査",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q051-c.webp",
+            "width": 96,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "評価 ・ 結 論",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q051-d.webp",
+            "width": 147,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q052",
+      "number": 52,
+      "domain": "management",
+      "sourcePage": 24,
+      "source": "IPA 2026 公開問題 IP  問52",
+      "promptText": "問 52 業務 シス テム の 開発 に お いて , 開発 者 が シス テム 要件 定義 を 実施 する 場合 , 利用 者 の 関わ り 方 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q052-p24.webp",
+        "width": 1021,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q052-p24.webp",
+          "width": 1021,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "開発 者 が 行う シス テム 要件 の レビ ュー に 参加 し , 妥当 性 を 確認 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q052-a.webp",
+            "width": 778,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ 開発 者 に 全て 任せ , その 決定 に 従う 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q052-b.webp",
+            "width": 430,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "シス テム の 保守 が 可能 か どう か を 見 極め る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q052-c.webp",
+            "width": 503,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "シス テム 要件 の 技術 的 な 実現 性 を 検証 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q052-d.webp",
+            "width": 503,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q053",
+      "number": 53,
+      "domain": "management",
+      "sourcePage": 24,
+      "source": "IPA 2026 公開問題 IP  問53",
+      "promptText": "問 53 SLA の 計画 立案 , サー ビス 内 容 の 交渉 , 草案 作成 , 合意 , 導入 , 測定 な どの 活動 を 行う も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q053-p24.webp",
+        "width": 1019,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q053-p24.webp",
+          "width": 1019,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "_ アウトソーシング",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q053-a.webp",
+            "width": 220,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "サー ビス レベ ル 人 管理",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q053-b.webp",
+            "width": 246,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "サー ビス レベ ル 契 約",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q053-c.webp",
+            "width": 245,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": ". ジジ ニア リッ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q053-d.webp",
+            "width": 242,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q054",
+      "number": 54,
+      "domain": "management",
+      "sourcePage": 25,
+      "source": "IPA 2026 公開問題 IP  問54",
+      "promptText": "問 54 ある 組織 で は 過去 に は 全員 出社 し て 業務 を 遂行 し て いた が , 現在 は 出社 と テレ ワ ー ク の 両方 を 使い 分 け て 業務 を 遂行 し て いる 。 こ の 組織 に お いて , ファ シリ ティ マ ネジ メン ト の 観点 で 改善 を 図っ て いる 事例 と し て , 適切 な も の だ け を 全て 挙げ た も の は どれ か 。 a 従業 員 の PC に イン スト ー ル され た Web 会 議 用 の ソフ トウ ェ ア を 常に 最新 に し , Web 会 議 に お ける 利便 性 及び セキ ュ リ ティ を 向上 させ る 。 b 執務 室 の レイ アウ ト 変 更 や 大 画面 の TV 会 議 室 の 設置 を 行い , 従業 員 間 の コミ ュ ニ ケー ショ ン を 取り や すく する 。 c 出社 率 を 踏ま えて フリ ー ア ドレ スエ リア の 割合 を 増加 し , オフ ィ ス を 縮小 さ せる 。 d 短 時 間 勤 務 や 自宅 外 で の 業務 を 可能 と する 制度 を 導入 し , 様々 な 従業 員 が 業 務 に 参画 し や すく する 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q054-p25.webp",
+        "width": 1016,
+        "height": 650
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q054-p25.webp",
+          "width": 1016,
+          "height": 650
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a, d",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q054-a.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "5b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q054-b.webp",
+            "width": 34,
+            "height": 43
+          }
+        },
+        {
+          "id": "c",
+          "text": "b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q054-c.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "b, d",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q054-d.webp",
+            "width": 71,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q055",
+      "number": 55,
+      "domain": "technology",
+      "sourcePage": 26,
+      "source": "IPA 2026 公開問題 IP  問55",
+      "promptText": "問 55_ IoT の セキ ュ リ ティ に 関す る 次 の 記述 中 の a, b に 入れ る 字句 の 適切 な 組合 せ は ど れ か 。 ネッ トワ ー ク カメ ラ の 画像 を 盗み と 見 され る 脅威 の うち , ネッ トワ ー ク カメ ラ へ の [asa_] 誠 業 と し て , 第 三 者 が カメ ラ に アク セス し て 映像 を 閲覧 で き な い よう に す る た め に は , [ __b__ | で 利用 し な い 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q055-p26.webp",
+        "width": 1021,
+        "height": 308
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q055-p26.webp",
+          "width": 1021,
+          "height": 308
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "球 |e 記 2",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q055-a.webp",
+            "width": 527,
+            "height": 122
+          }
+        },
+        {
+          "id": "b",
+          "text": "ms。 awmm",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q055-b.webp",
+            "width": 527,
+            "height": 122
+          }
+        },
+        {
+          "id": "c",
+          "text": "私 セー",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q055-c.webp",
+            "width": 527,
+            "height": 122
+          }
+        },
+        {
+          "id": "d",
+          "text": "eg",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q055-d.webp",
+            "width": 527,
+            "height": 121
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q056",
+      "number": 56,
+      "domain": "technology",
+      "sourcePage": 26,
+      "source": "IPA 2026 公開問題 IP  問56",
+      "promptText": "問 56 DBMNS に お ける チェ ッ ク ポ イン ト の 説明 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q056-p26.webp",
+        "width": 862,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q056-p26.webp",
+          "width": 862,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "トラ ン ザ クシ ョ ン が 正常 に 処理 され た と き に , トラ ン ザ クシ ョ ン の 一 連 の 処理 を 確定 させ る こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q056-a.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "トラ ン ザ クシ ョ ン が 何ら か の 理由 で 正常 に 処理 され な か っ た と き に , デー タ ベ ー ス を トラ ン ザ クシ ョ ン の 処理 開始 前 の 状態 に 戻す こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q056-b.webp",
+            "width": 943,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "複数 の トラ ン ザ クシ ョ ン を 並列 に 処理 し て いる と き に , ロッ ク の 有 影 響 に よっ て ト ラン ザク ショ ン 同 士 が 互い に 相手 の ロッ ク の 解放 を 待つ 状態 に な る こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q056-c.webp",
+            "width": 940,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "複数 の トラ ン ザ クシ ョ ン に よる メモ リ 上 の デー タ 更 新 の 結果 を , 一 度 に まとめ て HDD な どの 外部 記憶 装置 に 書き 込む 操作 や , 操作 が 行わ れ た 時 点 の こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q056-d.webp",
+            "width": 944,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q057",
+      "number": 57,
+      "domain": "technology",
+      "sourcePage": 27,
+      "source": "IPA 2026 公開問題 IP  問57",
+      "promptText": "問 57 関係 デー タベース で 管理 し て いる “学生” 表 , “科目 ” 表 , “成績 ” 表 が ある 。1 人 の 学生 は 複数 の 科目 を 履修 する も の と し , \"学生\" 表 に 登録 され て いな い 学 生 や , “ 科 目 ” 表 に 登録 され て いな い 科 目 は “成績” 表 に 登録 で き な い も の と する と き , 外部 キ ー と し て 設定 する の が 適切 な も の は どれ か 。 こ こ で , 表 中 の 下線 は 主 キ ー を 表す 。 学生 科目 | 末 器 | 吾 & | | 頭 k| る m | 味 知 | 本 | た か っ | mg um 和 | eg | ョ ga | 成績 | 吾 顎 | 融 3 こ | 80",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q057-p27.webp",
+        "width": 1021,
+        "height": 863
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q057-p27.webp",
+          "width": 1021,
+          "height": 863
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "\"学生\" 表 の 学生 番号 , “成績 ” 表 の 学生 番号",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q057-a.webp",
+            "width": 519,
+            "height": 49
+          }
+        },
+        {
+          "id": "b",
+          "text": "\"学生\" 表 の 学生 名 , “科目 ” 表 の 科目 名",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q057-b.webp",
+            "width": 468,
+            "height": 49
+          }
+        },
+        {
+          "id": "c",
+          "text": "成績” 表 の 学生 番号 と 科目 コー ド",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q057-c.webp",
+            "width": 403,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "\"成績 ” 表 の 成績",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q057-d.webp",
+            "width": 208,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q058",
+      "number": 58,
+      "domain": "technology",
+      "sourcePage": 28,
+      "source": "IPA 2026 公開問題 IP  問58",
+      "promptText": "問 58 _UX デザ イン で 用 いら れる こと が ある 構造 化 シ ナリ オ 法 に お ける , 三 つ の シナ リオ は どれ か 。 。 , イン",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q058-p28.webp",
+        "width": 1007,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q058-p28.webp",
+          "width": 1007,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "タラ クシ ョ ン , バリ ュー",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q058-a.webp",
+            "width": 543,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "アク テオ ピ ビ テ ゴ ぎ 。 イシ ツタ ラグ クション ラン, ペル ツ ヂ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q058-b.webp",
+            "width": 543,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "アクティビティ, バリュー, ペル ソナ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q058-c.webp",
+            "width": 442,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "エエ, イタ ラン 和 過 党 )」 が リュ ユー, ペル タツ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q058-d.webp",
+            "width": 468,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q059",
+      "number": 59,
+      "domain": "technology",
+      "sourcePage": 28,
+      "source": "IPA 2026 公開問題 IP  問59",
+      "promptText": "問 59 無線 LAN で 使用 する WPA2 の 機能 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q059-p28.webp",
+        "width": 786,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q059-p28.webp",
+          "width": 786,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 本 の アン テ ナ を 用 いる こと に よっ て デー タ の 送受 信 を 高速 化す る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q059-a.webp",
+            "width": 767,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "アク セス ポイ ント を ステ ルス 化す る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q059-b.webp",
+            "width": 429,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "通信 デー タ を 暗号 化す る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q059-c.webp",
+            "width": 307,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "登録 され た MAC アド レス を も っ つ 機 器 以 外 か ら の アク セス を 拒否 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q059-d.webp",
+            "width": 780,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q060",
+      "number": 60,
+      "domain": "technology",
+      "sourcePage": 29,
+      "source": "IPA 2026 公開問題 IP  問60",
+      "promptText": "問 669 レス ポン シブ Web デザ イン に 関す る 記述 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q060-p29.webp",
+        "width": 877,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q060-p29.webp",
+          "width": 877,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PC, スマ ー ト フォ ン な ど , 多く の 種類 の 端末 で , 見 や すく , か つ 操 作 し や すく な る よう に , 表示 する 端末 の 画面 サイ ズ な ど に 応じ て Web サイ ト の 画面 レイ アウ ト が 変化 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q060-a.webp",
+            "width": 928,
+            "height": 148
+          }
+        },
+        {
+          "id": "b",
+          "text": "Web ブラ ウザ で 動画 コン テン ツ を スト リー ミン グ 再 生 す る と き , サー バ や ネッ トワ ー ク の 負荷 が 軽減 され る よう に , 複数 の コン テン ツ 配 信 サ ー バ の うち , 利用 者 に 適し た サー バ に 接続 させ て デー タ を 取得 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q060-b.webp",
+            "width": 931,
+            "height": 148
+          }
+        },
+        {
+          "id": "c",
+          "text": "スマートフォン Web アプ リケーション 歩数 移動 速度 な ど を 計測 で きる よう に , 端末 に 内 蔵 さ れ た 加速 度 セ ン サ ー や ジャ イロ セン サー の デー タ を 使用 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q060-c.webp",
+            "width": 933,
+            "height": 148
+          }
+        },
+        {
+          "id": "d",
+          "text": "操作 説明 書 を 読ま な く て も Web サイ ト の 使用 方 法 を 理解 で きる よう に , Web ブ ラウ ザ の 利用 者 が マウ スポ イン タ を Web コン テン ツ に 重ね た と き , ポッ プア ッ プ を 用 いて 機能 の 説明 , 対象 の 状態 な ど を 表示 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q060-d.webp",
+            "width": 932,
+            "height": 148
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q061",
+      "number": 61,
+      "domain": "technology",
+      "sourcePage": 29,
+      "source": "IPA 2026 公開問題 IP  問61",
+      "promptText": "問 61 PC の 画面 表示 に 必要 な デー タ を 保持 する の に 使わ れる , 画面 表示 専用 メモ リ は ど れ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q061-p29.webp",
+        "width": 1018,
+        "height": 99
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q061-p29.webp",
+          "width": 1018,
+          "height": 99
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "EEPROM メモ リ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q061-a.webp",
+            "width": 97,
+            "height": 43
+          }
+        },
+        {
+          "id": "b",
+          "text": "イー VRAM",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q061-b.webp",
+            "width": 73,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウキ ャ ッシュ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q061-c.webp",
+            "width": 215,
+            "height": 45
+          }
+        },
+        {
+          "id": "d",
+          "text": "フラ ッシュ メモ リ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q061-d.webp",
+            "width": 214,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q062",
+      "number": 62,
+      "domain": "technology",
+      "sourcePage": 30,
+      "source": "IPA 2026 公開問題 IP  問62",
+      "promptText": "問 シス テム の 性 能 評価 に お ベンチマーク ト に 関す 記述 と て , 適切 は どれ か 。 の シス も デー プロ グラ ム を ,",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q062-p30.webp",
+        "width": 1021,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q062-p30.webp",
+          "width": 1021,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "評価 対象 テム で 使わ れる の と 同じ タ , 同じ ほか の 疑 似 シ ステ ム 上 で 実行 させ て 性 能 を 評価 する 。 テム , い も",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q062-a.webp",
+            "width": 947,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "評価 対象 の シス の 動作 特性 を 取扱 の 容易 な 形 に モデ ル 化 し た の を 用 い て , ほか の 疑似 シス テム 上 で 実行 させ て 性 能 を 評価 する 。 テム 数 ェ ア 性 能 , 数 の 机",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q062-b.webp",
+            "width": 945,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "評価 対象 の シス の プロ グラ ム ス テ ッ プ , ハー ドウ {/0 回 上 計算 値 な ど を 基 に 処理 時 間 を 積算 し て 性 能 を 評価 する 。 的 な 処理 を 設定 し , する グラ シス",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q062-c.webp",
+            "width": 948,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "標準 それ を 実行 評価 用 プロ ム を , 評価 対象 の テ ム 上 で 実際 に 実行 させ て 性 能 を 評価 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q062-d.webp",
+            "width": 944,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q063",
+      "number": 63,
+      "domain": "technology",
+      "sourcePage": 30,
+      "source": "IPA 2026 公開問題 IP  問63",
+      "promptText": "問 PC に 保存 され た イル を 使用 で き な く ラン サム ウェ ア に よる を 低減 せる た め の 対 策 と し て , 適切 な も の は どれ か 。 _ の 化",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q063-p30.webp",
+        "width": 1018,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q063-p30.webp",
+          "width": 1018,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "UPS の 導入",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q063-a.webp",
+            "width": 140,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "イン",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q063-b.webp",
+            "width": 196,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウデ ー タ の バッ クア ッ プ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q063-c.webp",
+            "width": 273,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "エニ ログ パス ワー ド の 変更",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q063-d.webp",
+            "width": 317,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q064",
+      "number": 64,
+      "domain": "technology",
+      "sourcePage": 30,
+      "source": "IPA 2026 公開問題 IP  問64",
+      "promptText": "問 キャ リア アグ リ ゲ ー シ ョ ン の 説明 し て , 適切 携帯 する 替え",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q064-p30.webp",
+        "width": 805,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q064-p30.webp",
+          "width": 805,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "移動 中 に 電話 が 接続 基地 局 を 切り る 技術 携帯 セキ 高め",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q064-a.webp",
+            "width": 622,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "電話 の 通信 の ュ リ ティ 機能 を る 技術 異な の こと 化す",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q064-b.webp",
+            "width": 572,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "複数 の る 周波 数 電波 を 束ね る に よっ て , 無線 通信 を 高速 る 技術 , アク れる し",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q064-c.webp",
+            "width": 897,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "無線 LAN に お いて セス ポイ ント と 呼ば 基地 局 を 経由 て 端末 同士 が 通 信 を 行う 技術",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q064-d.webp",
+            "width": 946,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q065",
+      "number": 65,
+      "domain": "technology",
+      "sourcePage": 31,
+      "source": "IPA 2026 公開問題 IP  問65",
+      "promptText": "問 65 DNS サー バ の 役割 に 関す る 記述 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q065-p31.webp",
+        "width": 772,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q065-p31.webp",
+          "width": 772,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "LAN 上 の PC か ら イ ンタ ーネット 上 の Web サー バ へ の リク エス ト を 中 継 す る も の で あり , PC の 代理 と し て イン ター ネッ ト 上 の Web サー バ ヘ アク セス し て , その 応 答 を PC に 返す 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q065-a.webp",
+            "width": 946,
+            "height": 148
+          }
+        },
+        {
+          "id": "b",
+          "text": "PC か ら サ ー バ へ の ファ イル の 送受 信 の 要求 を 受け 付け , ファ イル を 転送 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q065-b.webp",
+            "width": 886,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "PC に 対し て IP アド レス を 自動 で 割り 当て , サブ ネッ トマ スク と デフ ォ ル トゲ ー トウ ェ イ の IP アド レス の 通知 を 行う 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q065-c.webp",
+            "width": 937,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "ドメイン 名 を IP アド レス に 変換 する , 又は IP アド レス を ドメイン 名 に 変換 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q065-d.webp",
+            "width": 921,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q066",
+      "number": 66,
+      "domain": "technology",
+      "sourcePage": 31,
+      "source": "IPA 2026 公開問題 IP  問66",
+      "promptText": "問 66 アプ リケーション ソフ トウ ェ ア の 操作 を 行う と き , 質問 に 答え て いく 対話 形式 に よ っ て , 上 雑 な 操作 を 簡単 に 行え る よう に する 機能 は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q066-p31.webp",
+        "width": 1016,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q066-p31.webp",
+          "width": 1016,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アー カイ ブ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q066-a.webp",
+            "width": 144,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "ウィ ザー ド",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q066-b.webp",
+            "width": 142,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウー 計 三 ド ヨッ デリ 三 ト",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q066-c.webp",
+            "width": 241,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "ポッ プア ッ プ ウィ ンド ウ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q066-d.webp",
+            "width": 291,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q067",
+      "number": 67,
+      "domain": "technology",
+      "sourcePage": 32,
+      "source": "IPA 2026 公開問題 IP  問67",
+      "promptText": "問 67 手続 sort は , 要素 数 が 2 以上 の 整数 型 の 配列 を 引数 numberArray で 受け 取り , その 要素 を 昇順 に 並べ 替え た 結果 を 出力 する 。 手続 sort の 動作 確認 の た め に , 処理 の 途 中 で 」 の 値 と workArray の 全て の 要素 を 出力 する 。 配列 numberArray を {3, 5, 1, 2, 4) と し, 手続 sort を sort(numberArray) と し て 呼び 出し た と き , 」 の 値 が 3 と 出力 さ れ た 直後 の workArray の 全て の 要素 の 出力 は どれ か 。 こ こ で , 配列 の 要素 番号 は 1 か ら 始 まる 。 【〔 プ ログ ラム 〕 Osort( 整 数 型 の 配列 : numberArray) 整数 型 : minIndex, 」, k . 整数 型 の 配列 : workArray 一 numberArray // 配列 の 複製 を 作る for (」 を 1 か ら (workArray の 要素 数 一 1) まで 1 ずつ 増やす ) // j 番目 か ら 末 尾 ま で の 要素 の 中 で 最も 小さ い 値 を も つ 要 素 の 要素 番号 を // 一 つ 求 め る | minIndex 一 」j for (k を (j 土 1) か ら workArray の 要素 数 まで 1 ずつ 増やす ) if (workArray[k] が workArray[minIndex] より 小さ い ) minIndex 一 k endif endfor workArray[j] と workArray[minIndex] の 値 を 入れ 替え る // 動作 確認 の た め に , 」 の 値 と workArray の 全て の 要素 を 出力 する j の 値 を 出力 する workArray の 全て の 要素 を 先頭 か ら 順 に コン マ 区 切り で 出力 する endfor workArray の 全て の 要素 を 先頭 か ら 順 に コン マ 区 切り で 出力 する",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q067-p32.webp",
+        "width": 1022,
+        "height": 1341
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q067-p32.webp",
+          "width": 1022,
+          "height": 1341
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "アァ 23,4.5",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q067-a.webp",
+            "width": 134,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "イィ 23.5.4",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q067-b.webp",
+            "width": 134,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウツ 汗 58:21",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q067-c.webp",
+            "width": 132,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "下 548j21",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q067-d.webp",
+            "width": 131,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q068",
+      "number": 68,
+      "domain": "technology",
+      "sourcePage": 33,
+      "source": "IPA 2026 公開問題 IP  問68",
+      "promptText": "問 メー ト が 電子 メー ル の 送受 信 に 用 プロ トコ ル の 組合 し て , 適切 の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q068-p33.webp",
+        "width": 1017,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q068-p33.webp",
+          "width": 1017,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "図 ア",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q068-a.webp",
+            "width": 547,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "図 イ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q068-b.webp",
+            "width": 547,
+            "height": 121
+          }
+        },
+        {
+          "id": "c",
+          "text": "図 ウ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q068-c.webp",
+            "width": 547,
+            "height": 120
+          }
+        },
+        {
+          "id": "d",
+          "text": "図 エ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q068-d.webp",
+            "width": 547,
+            "height": 121
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q069",
+      "number": 69,
+      "domain": "technology",
+      "sourcePage": 33,
+      "source": "IPA 2026 公開問題 IP  問69",
+      "promptText": "問 関係 デー に お ける デー タ の 正規 化 に る 次 の 記述 中 b に 入れ 句 の 適切 な 組合 せ は どれ か 。 正規 化 の 主 な 目的 と し て , デー タ の 重複 を 排除 し , [__a_ | こと が 挙げ られ る 。 正規 化 に は 複数 の 段階 が あり , これ を 進め て いく と , [bp_ |。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q069-p33.webp",
+        "width": 1007,
+        "height": 257
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q069-p33.webp",
+          "width": 1007,
+          "height": 257
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "圧縮 ー つ の 表 が 複数 表 に 分 割 さ させ ー され",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q069-a.webp",
+            "width": 843,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "圧 弟 率 を 向上 る 複数 の 表 が つ の 表 に 統合 る 性 つ の れる",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q069-b.webp",
+            "width": 843,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "一 綱 を 保っ ー っ の 表 が 複数 表 に 分 割 さ 性 を ーー され",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q069-c.webp",
+            "width": 843,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "一貫 保っ 複数 の 表 が つ の 表 に 統合 る",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q069-d.webp",
+            "width": 843,
+            "height": 120
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q070",
+      "number": 70,
+      "domain": "technology",
+      "sourcePage": 34,
+      "source": "IPA 2026 公開問題 IP  問70",
+      "promptText": "問 79 ISMS に お ける 情報 セキ ュ リ ティ イン シ デ ン ト の 管理 に 関す る 記述 の うち , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q070-p34.webp",
+        "width": 1007,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q070-p34.webp",
+          "width": 1007,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "情報 セキ ュ リ ティ イン シ デ ン ト に は 了 臨機 応変 な 対応 が 求め られ る の で , あら か じ め 対 応 手順 を 文書 化し て お く の で は な く , 実際 の 対応 内 容 を 記録 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q070-a.webp",
+            "width": 929,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "情報 セキ ュ リ ティ イン シ デ ン ト か ら 得 られ た 知識 は , 模 信 を 防ぐ た め に 情報 セ キュ リティ の 管理 策 の 強化 に は 用 いな い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q070-b.webp",
+            "width": 930,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報 セキ ュ リ ティ 事象 は , その 評価 を 待つ こと な く , 報告 され た 時 点 で 情報 セ キュ リティ イン シ デ ン ト に 分 類 さ れる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q070-c.webp",
+            "width": 930,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "情報 セキ ュ リ ティ 事象 は , 適切 な 管理 者 へ 速やか に 報告 する た め に , あら か じ めそ の 連絡 経路 と 仕組 み を 用 意 し て お く 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q070-d.webp",
+            "width": 930,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q071",
+      "number": 71,
+      "domain": "technology",
+      "sourcePage": 34,
+      "source": "IPA 2026 公開問題 IP  問71",
+      "promptText": "問 71 イン ター ネッ トバ ン キ ング な どの Web サイ ト で 利用 され て いる リス クベ ー ス 認証 の 例 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q071-p34.webp",
+        "width": 1020,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q071-p34.webp",
+          "width": 1020,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "利用 者 が いつ も ログ イン に 使っ て いる PC と は 異な る PC か ら の ログ イン で あっ た の で , 本 人 し か 知ら な い 秘 密 の 質問 に よる 追加 の 認証 を 行っ た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q071-a.webp",
+            "width": 944,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "_ 利用 者 が ログ イン し た 後 , 画面 操作 が 一 定時 間 な か っ た の で , 自動 的 に ログ アウ ト し て , 再度 ログ イン を 求め た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q071-b.webp",
+            "width": 936,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "利用 者 が ログ イン する と き に パス ワー ド を 連続 し て 複数 回 間違っ て 入力 し た の で , アカ ウン ト を ロッ ク し た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q071-c.webp",
+            "width": 951,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "利用 者 が ログ に 使っ て いる パス ワー ド が 長期 間 変 更 さ れ て いな か っ た の で , パス ワー ド の 変更 を 促し た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q071-d.webp",
+            "width": 927,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q072",
+      "number": 72,
+      "domain": "technology",
+      "sourcePage": 35,
+      "source": "IPA 2026 公開問題 IP  問72",
+      "promptText": "問 72 関係 デー タベース で 管理 し て いる “口座 ” 表 , “顧客 ” 表 及 び “取引 明細 ” 表 が あ る 。 新 た な 顧客 が 口座 の 開設 と 同時 に 1 万 円 を 入金 する と き , 表 に デー タ を 追加 する 順序 と し て , 適切 な も の は どれ か 。 こ こ で , 下線 の うち 実線 は 主 キ ー を , 破線 は 外部 キー を 表す 。 ロロ 座 EiPL は 回 顧客 取引 明細",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q072-p35.webp",
+        "width": 1020,
+        "height": 553
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q072-p35.webp",
+          "width": 1020,
+          "height": 553
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "口座 顧客 ご 取引 明細",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q072-a.webp",
+            "width": 318,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "顧客 ご 口座 つ 取引 明細",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q072-b.webp",
+            "width": 321,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "顧客 ご 取引 明細 口座",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q072-c.webp",
+            "width": 322,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "取引 明細 つ ロロ 座 つ 顧客",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q072-d.webp",
+            "width": 322,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q073",
+      "number": 73,
+      "domain": "technology",
+      "sourcePage": 35,
+      "source": "IPA 2026 公開問題 IP  問73",
+      "promptText": "問 73 OSS (Open Source Software) の ライ セン ス に お ける コピ ー レ フト に 関す る 記述 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q073-p35.webp",
+        "width": 1003,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q073-p35.webp",
+          "width": 1003,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "OSS の 作成 者 が , ソフ トウ ェ ア の 著作 権 を 放棄 し て いる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q073-a.webp",
+            "width": 650,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "OSS の 著作 権 者 は , 利用 者 が ソフ トウ ェ ア を 利用 する こと に 対し て 金銭 的 な 対 価 を 要求 し な けれ ば な ら な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q073-b.webp",
+            "width": 933,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "OSS の 利用 者 が 改変 し て 作成 し た 派生 ソフ トウ ェ ア は , 改変 部 分 の ソー スコ ー ド を 非 公 開 と し た まま , 配布 する こと が で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q073-c.webp",
+            "width": 924,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "OSS の 利用 者 が 改変 し て 作成 し た 派生 ソフ トウ ェ ア を 配布 する 場合 に は , 元 の OSS の ライ セン ス と 同じ ライ セン ス を 適用 し な けれ ば な ら な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q073-d.webp",
+            "width": 932,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q074",
+      "number": 74,
+      "domain": "technology",
+      "sourcePage": 36,
+      "source": "IPA 2026 公開問題 IP  問74",
+      "promptText": "問 74 _ 表 計算 ソフ ト を 用 いて , 二 つ っ つの 2 進数 &, 8 の 和 を 求め る 。6&, 8 の 桁 数 は 2 桁 に 限 定 し , 2 の 位 , 1 の 位 の 順に 各 桁 の 値 が セル B3, セル C3 と セル B4, セル C4 に 入力 され て いる 。 ワ ー ク シー ト は 2 進数 〆& 三 106, 8 三 11 の 例 で ある 。 結果 は , 4 の 位 , 2 の 位 , 1 の 位 の 順に セル A5, セル B5, セル C5 に 表示 し た い 。 セ ル B2 は 1 の 位 か ら の 繰り 上 が り の 情報 を 格納 する た め に 用 いら れ , 式 IF(C3 エ C4 三 2, 1, 9) が 入力 され て いる 。 セ ル B5 に 入力 する 式 は どれ か 。 着脱 天 間 鐘 靖史 oe | 2 | ee | | ay em | em | 四 且 還 天 各 還 症 】 間 症 語 I 計 と 間 症 間 合 計",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q074-p36.webp",
+        "width": 1023,
+        "height": 636
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q074-p36.webp",
+          "width": 1023,
+          "height": 636
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IF( (B2:B4) ぐ 2, 合計 (B2:B4), IF( 合 計 (B2:B4)=2, 0, 1))",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q074-a.webp",
+            "width": 718,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "IF( 合 計 (B2:B4) ぐ 2, 合計 (B2:B4), IF( 合 計 (B2:B4) 三 2, 1, 0)",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q074-b.webp",
+            "width": 718,
+            "height": 49
+          }
+        },
+        {
+          "id": "c",
+          "text": "IF( 合 計 (B2:B4) 用 2, 合計 (B2:B4), IF( 合 計 (B2:B4)=2, 0 1))",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q074-c.webp",
+            "width": 719,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "IF( 合 計 (B2:B4) 用 2, 合計 (B2:B4), IF( 合 計 (B2:B4) 三 2, 1, 0))",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q074-d.webp",
+            "width": 719,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q075",
+      "number": 75,
+      "domain": "technology",
+      "sourcePage": 37,
+      "source": "IPA 2026 公開問題 IP  問75",
+      "promptText": "問 電子 メー ル の 宛先 入力 に お ける Bcc 欄 に る 記述 の , 適切",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q075-p37.webp",
+        "width": 1005,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q075-p37.webp",
+          "width": 1005,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bcc 欄 に 入力 し た メー ル ア ド レス に は , To 欄 や Cc 欄 に 入力 し た メー ル ア ド レス は 通知 され な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q075-a.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "Bcc 欄 入力 し た メー ド レス 自動 的 暗号 化 さ た 電子 メー ル が 送信 され る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q075-b.webp",
+            "width": 944,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "Bcc 欄 に 入力 し た メー ル ア ド レス に は , 添付 ファ イル が 削除 され た 電子 メー ル が 送信 され る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q075-c.webp",
+            "width": 946,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "To 欄 や Cc 欄 に 入力 し た メー ル ア ド レス に は , Bcc 欄 に 入力 し た メー ル ア ド レス は 通知 され な い 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q075-d.webp",
+            "width": 942,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q076",
+      "number": 76,
+      "domain": "technology",
+      "sourcePage": 37,
+      "source": "IPA 2026 公開問題 IP  問76",
+      "promptText": "問 76_ IoT デバ イス で 用 いら れる LPWA に 関す る 次 の 記述 中 の a, b に 入れ る 字句 の 適切 な 組合 ぜ は どれ か 。 LPWA に 分 類 され る 無線 通信 方 式 の 特徴 は , 通信 可能 な 範囲 が 無線 LAN に 比べ て ビュ 潜 す る 電力 が 第 4 世代 移動 通信 規格 (46) に 比べ て [| _b_ |。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q076-p37.webp",
+        "width": 1019,
+        "height": 258
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q076-p37.webp",
+          "width": 1019,
+          "height": 258
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "図 ア",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q076-a.webp",
+            "width": 303,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "図 イ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q076-b.webp",
+            "width": 303,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "図 ウ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q076-c.webp",
+            "width": 303,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "図 エ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q076-d.webp",
+            "width": 303,
+            "height": 120
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q077",
+      "number": 77,
+      "domain": "technology",
+      "sourcePage": 38,
+      "source": "IPA 2026 公開問題 IP  問77",
+      "promptText": "問 77 ある 企業 で は , サー バ 室 へ の 入室 管理 を 暗証 番号 で 行っ て いた が , 虹彩 認証 装置 に よる 本 人 確認 を 加え る こと に よっ て , 無 許 可 の 者 の 入室 を より 確実 に 防止 する 対 策 と し た 。 こ れ は , サー バ 室 に お ける 情報 セキ ュ リ ティ 要素 の うち , どれ を 高め る 対策 に 該当 する か 。 性 性",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q077-p38.webp",
+        "width": 1009,
+        "height": 215
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q077-p38.webp",
+          "width": 1009,
+          "height": 215
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "可用性",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q077-a.webp",
+            "width": 98,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "完全",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q077-b.webp",
+            "width": 96,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "機密",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q077-c.webp",
+            "width": 97,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "否認 防止",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q077-d.webp",
+            "width": 121,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q078",
+      "number": 78,
+      "domain": "technology",
+      "sourcePage": 38,
+      "source": "IPA 2026 公開問題 IP  問78",
+      "promptText": "問 78_IoT デバ イス と IoT サー バ で 構成 され , IloT デバ イス が 計測 し た 外気 温 を IoT サー バ へ 送り , IloT サー バ か ら の 指示 で IoT デバ イス が 窓 を 開閉 する シス テム が ある 。 この シス テム の IoT デバ イス に 搭載 され た , 外気 温 を 電気 信号 に 変換 する 役割 を も つも の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q078-p38.webp",
+        "width": 1008,
+        "height": 198
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q078-p38.webp",
+          "width": 1008,
+          "height": 198
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ポア の チョ エー ター",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q078-a.webp",
+            "width": 219,
+            "height": 45
+          }
+        },
+        {
+          "id": "b",
+          "text": "エッ ジコ ン ピ ュ ー テ ィング",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q078-b.webp",
+            "width": 321,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "キャ リア アグ リ ゲ ー シ ョ ン",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q078-c.webp",
+            "width": 318,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "セン サー",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q078-d.webp",
+            "width": 120,
+            "height": 45
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q079",
+      "number": 79,
+      "domain": "technology",
+      "sourcePage": 38,
+      "source": "IPA 2026 公開問題 IP  問79",
+      "promptText": "問 79 企業 の リス クマ ネジ メン ト の 一 環 と し て 行わ れる サイ バー セキ ュ リ ティ リス ク 対 築 の 推進 に お いて , 経営 者 に 求め られ る 役割 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q079-p38.webp",
+        "width": 1008,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q079-p38.webp",
+          "width": 1008,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IT 部 門 の セキ ュ リ ティ 担当 者 に , 部 門 ご と の サイ バー セキ ュ リ ティ リス ク 対 応 方 針 の 策定 と 実行 を 全て 任せ る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q079-a.webp",
+            "width": 934,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "サイ バー セキ ュ リ ティ 対策 を 実施 する 上 で の 責任 者 と な る CIS0 を 任命 し , 実行 や 判断 を 全て 任せ る 。 方 針 の 検討 , や 人 材 の 割当 て , と 対応",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q079-b.webp",
+            "width": 933,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "実施 予算 実施 状況 の 確認 や 問題 の 把握 を 通じ て 自ら リー ダー シッ プ を 発揮 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q079-c.webp",
+            "width": 932,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "専門 家 で ある 外部 の 経営 コン サル タン ト に , 自社 の 組織 や 事業 に お ける リス ク の 分 析 と 対策 の 推進 に 関す る 権限 と 責任 を 委譲 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q079-d.webp",
+            "width": 929,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q080",
+      "number": 80,
+      "domain": "technology",
+      "sourcePage": 39,
+      "source": "IPA 2026 公開問題 IP  問80",
+      "promptText": "問 オメ トリ クス 認証 に 関す る 次 の 記述 中 a, b に る 字句 の 適切 な せ は どれ か 。 パイ オメ トリ クス 認証 を 利用 し た シス テム の 設計 を 始め る と き に は , シス テム の 目 的 と 認証 の 用 途 を 明らか に し , 認証 精度 の 設定 方 針 を 策定 する こと が 必要 で ある 。 他人 受入 率 が [| __a_ | な る よう に 設定 し た 場合 は , 安全 性 を 重視 し た 認証 に な り , 本 人 拒否 率 が [| __b_ | な る よう に 設定 し た 場合 は , 本 人 の 利便 性 を 重視 し た 認証 に な る と いえ る 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q080-p39.webp",
+        "width": 1014,
+        "height": 397
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q080-p39.webp",
+          "width": 1014,
+          "height": 397
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "図 ア",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q080-a.webp",
+            "width": 300,
+            "height": 121
+          }
+        },
+        {
+          "id": "b",
+          "text": "図 イ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q080-b.webp",
+            "width": 300,
+            "height": 120
+          }
+        },
+        {
+          "id": "c",
+          "text": "図 ウ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q080-c.webp",
+            "width": 300,
+            "height": 121
+          }
+        },
+        {
+          "id": "d",
+          "text": "図 エ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q080-d.webp",
+            "width": 300,
+            "height": 120
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q081",
+      "number": 81,
+      "domain": "technology",
+      "sourcePage": 39,
+      "source": "IPA 2026 公開問題 IP  問81",
+      "promptText": "問 BLluetooth の 規格 含ま デバ 問 の 省 電 力 を 実現 させ る の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q081-p39.webp",
+        "width": 997,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q081-p39.webp",
+          "width": 997,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BLE",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q081-a.webp",
+            "width": 59,
+            "height": 42
+          }
+        },
+        {
+          "id": "b",
+          "text": "イー LPWA",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q081-b.webp",
+            "width": 72,
+            "height": 42
+          }
+        },
+        {
+          "id": "c",
+          "text": "LTE",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q081-c.webp",
+            "width": 59,
+            "height": 42
+          }
+        },
+        {
+          "id": "d",
+          "text": "PLC",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q081-d.webp",
+            "width": 59,
+            "height": 43
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q082",
+      "number": 82,
+      "domain": "technology",
+      "sourcePage": 39,
+      "source": "IPA 2026 公開問題 IP  問82",
+      "promptText": "問 ニュ ルネ の 学習 に 用 いら れる バッ ク プ ロ パ ゲー ショ ン で 行わ て いる こと は どれ か 。 ノ 重み , を 小さ くす る 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q082-p39.webp",
+        "width": 1004,
+        "height": 97
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q082-p39.webp",
+          "width": 1004,
+          "height": 97
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "各 ー ド の を 調整 し て 誤差 | 重み て を する",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q082-a.webp",
+            "width": 555,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "各 ノ ー ド の を 調整 し , 最適 な 活性 化 関数 選択 。 し て , を 小さ くす る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q082-b.webp",
+            "width": 680,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "ウノ ー ド の 数 を 変更 誤差 数 を て 高め",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q082-c.webp",
+            "width": 502,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "ノー ド の 変更 し , 処理 速度 を る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q082-d.webp",
+            "width": 502,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q083",
+      "number": 83,
+      "domain": "technology",
+      "sourcePage": 40,
+      "source": "IPA 2026 公開問題 IP  問83",
+      "promptText": "問 83 職場 の PC に 適用 する 情報 セキ ュ リ ティ 対策 a& ーc の うち , マル ウェ ア 対 策 ソ フト の 導入 の ほか に , マル ウェ ア 感 染 を 防止 する た め の 対 策 と し て , 適切 な も の だ け を 全 て 挙げ た も の は どれ か 。 a OS の セキ ュ リ ティ パッ チ (修正 モジ ュー ル ) の 適用 b 起動 ドラ イブ と な っ て いる ハー ド デ ィ スク に 対す る パス ワー ド 設 定 c 複雑 か つ 十 分 な 長 さ を も つ ロ グイ ン パ スワ ー ド の 導入 で",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q083-p40.webp",
+        "width": 1022,
+        "height": 348
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q083-p40.webp",
+          "width": 1022,
+          "height": 348
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q083-a.webp",
+            "width": 35,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q083-b.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "b",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q083-c.webp",
+            "width": 33,
+            "height": 43
+          }
+        },
+        {
+          "id": "d",
+          "text": "図 エ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q083-d.webp",
+            "width": 33,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q084",
+      "number": 84,
+      "domain": "technology",
+      "sourcePage": 40,
+      "source": "IPA 2026 公開問題 IP  問84",
+      "promptText": "問 84 ある 推論 シス テム は , 演 繰 推 論 , 帰納 推論 , 仮説 形成 な どの 推論 が 実行 で きる 。 こ の 推論 シス テム へ の 入力 と 得 ら れ た 出力 に 関す る 記述 の うち , 演 紹 推論 を 実行 し た 例 と し て , 適切 な も の は どれ か 。 ある 入力 , 増やす",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q084-p40.webp",
+        "width": 1021,
+        "height": 155
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q084-p40.webp",
+          "width": 1021,
+          "height": 155
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": " \"HDD と SSD は 記憶 装置 で \"と し た 後に “HDD の 台数 を と 記憶 容 量 が 増え る ” と 入力 し た 。 出力 は , “SSD の 台数 を 増やす と 記憶 容量 が 増え る \"と な っ た 。 . 増やす し , は",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q084-a.webp",
+            "width": 947,
+            "height": 148
+          }
+        },
+        {
+          "id": "b",
+          "text": " \"HDD は 台数 を と 記憶 容量 が 増え る \"と 入力 た 後に “記憶 装置 台数 を 増やす と 記憶 容量 が 増え る \"と 入力 し た 。 出 力 は , “HDD は 記憶 装置 で ある \"と な っ た 。  ' ある も し , に ある",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q084-b.webp",
+            "width": 945,
+            "height": 149
+          }
+        },
+        {
+          "id": "c",
+          "text": "記 憶 装 置 で HDD は 記憶 容量 を つ \" と 入力 同時 “記憶 装置 で SSD は 記憶 容量 を も つ ” と 入力 し た 。 出 力 は , “全て の 記憶 装置 は 記憶 容量 を も つ \"” と な っ た 。 も し た , で",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q084-c.webp",
+            "width": 944,
+            "height": 148
+          }
+        },
+        {
+          "id": "d",
+          "text": "“全て の 記憶 装置 は 記憶 容量 を つ ” と 入力 後に “HDD は 記憶 装置 あ る ” と 入力 し た 。 出 力 は , “HDD は 記憶 容量 を も つ ” と な っ た 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q084-d.webp",
+            "width": 943,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q085",
+      "number": 85,
+      "domain": "technology",
+      "sourcePage": 41,
+      "source": "IPA 2026 公開問題 IP  問85",
+      "promptText": "問 85 関数 isPrime は , 引数 と し て 与え られ た 正 の 整数 が , 素数 で あれ ば true を , 素数 で な けれ ば false を 戻り 値 と する 。 例 えば , 関数 isPrime を isPrime(2) と し て 呼び 出し た と き の 戻 り 値 は true で ある 。 プ ログ ラム 中 の a, b に 入れ る 字句 の 適切 な 組合 せ は どれ か 。 〔 プ ログ ラム 〕 〇 論理 型 : isPrime( 整 数 型 : num) 整数 型 : div < 2 if mm が 2[ as |) return false else , while (num が div じじ 5) if (num 二 div の 余り が 0 と 等 し い ) return false else div div 土 1 endif endwhiLe return true endif",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q085-p41.webp",
+        "width": 1020,
+        "height": 1004
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q085-p41.webp",
+          "width": 1020,
+          "height": 1004
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "| きい 庫 F | ま 5 5 に",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q085-a.webp",
+            "width": 363,
+            "height": 122
+          }
+        },
+        {
+          "id": "b",
+          "text": "二",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q085-b.webp",
+            "width": 363,
+            "height": 121
+          }
+        },
+        {
+          "id": "c",
+          "text": "っ lsu ま |",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q085-c.webp",
+            "width": 363,
+            "height": 122
+          }
+        },
+        {
+          "id": "d",
+          "text": "図 エ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q085-d.webp",
+            "width": 363,
+            "height": 121
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q086",
+      "number": 86,
+      "domain": "technology",
+      "sourcePage": 42,
+      "source": "IPA 2026 公開問題 IP  問86",
+      "promptText": "問 86 デー タベース の 障害 に 備え て , 毎日 業務 終了 後に バッ クア ッ プ ファ イル を 取得 し て いる 。 毎週 土曜 日 に は フル バッ クア ッ プ ファ イル を 取得 し , 日 曜日 か ら 金曜 日 は 差分 バッ クア ッ プ ファ イル を 取得 する 。 差 分 バッ クア ッ プ ファ イル と は , 最後 の フル バッ クア ッ プ ファ イル か ら , 差分 バッ クア ッ プ ファ イル を 取得 する 当日 まで の , 全て の 差 分 デー タ の バッ クア ッ プ ファ イル で ある 。 水 曜日 に デー タベース が 破損 し た の で , 前 日 の 火曜 日 の 業務 終了 時 点 の デー タベース に 復旧 する こと に し た 。 こ の と き , デー タ ベー ス を 復旧 させ る た め に 最低 限 必 要 な バッ クア ッ プ ファ イル は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q086-p42.webp",
+        "width": 1022,
+        "height": 348
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q086-p42.webp",
+          "width": 1022,
+          "height": 348
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "日 曜日 , 月 曜日 及び 火曜 日 の 差分 バッ クア ッ プ ファ イル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q086-a.webp",
+            "width": 642,
+            "height": 49
+          }
+        },
+        {
+          "id": "b",
+          "text": "火曜 日 の 差分 バッ クア ッ プ ファ イル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q086-b.webp",
+            "width": 420,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "土曜 日 の フル バッ クア ッ プ ファ イル と , 日 曜日 , 月 曜日 及び 火曜 日 の 差分 バッ ク アッ プ フ ァ イ ル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q086-c.webp",
+            "width": 941,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "土曜 日 の フル バッ クア ッ プ ファ イル と , 火曜 日 の 差分 バッ クア ッ プ ファ イル",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q086-d.webp",
+            "width": 871,
+            "height": 49
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "ipa-ip-2026-public-q087",
+      "number": 87,
+      "domain": "technology",
+      "sourcePage": 42,
+      "source": "IPA 2026 公開問題 IP  問87",
+      "promptText": "問 87 NAS の 説明 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q087-p42.webp",
+        "width": 550,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q087-p42.webp",
+          "width": 550,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PC や スマ ー ト フォ ン な どか ら ネ ットワーク 経由 で 利用 で きる よう に , ネッ トワ ー ク に 直接 接続 し て 使用 する 外部 記憶 装置",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q087-a.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "記憶 媒体 上 の デー タ の 位置 や 書込み 順序 に 関係 な く , 求め る デー タ に 直接 アク セ ス で きる ファ イル 形式",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q087-b.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "複数 の 記憶 装置 を 1 台 の 装置 と し て 管理 し , デー タ を 分 散 し て 格納 する こと に よ っ て アク セス の 高速 化 や 耐 障害 性 の 向上 を 図る 技術",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q087-c.webp",
+            "width": 940,
+            "height": 97
+          }
+        },
+        {
+          "id": "d",
+          "text": "無線 LAN の ネッ トワ ー ク を 識別 する た め に 用 いら れる 文字 列",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q087-d.webp",
+            "width": 695,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q088",
+      "number": 88,
+      "domain": "technology",
+      "sourcePage": 43,
+      "source": "IPA 2026 公開問題 IP  問88",
+      "promptText": "問 88 プロ グ ラミ ング する こと に よっ て , ペン の 上 げ 下 げ , 直進 及び 右 回 り の 方 向 転換 が 可能 な ロボ ッ ト が ある 。 こ の ロボ ッ ト に 1 辺 が 1m の 正六 角形 を 描画 させ る プロ グラ ム を 作成 し た 。 次 の 正六 角形 描画 プロ グラ ム の a, b に 入れ る 字句 の 適切 な 組合 せ は ど れ か 。 【 正 大角 形 描画 プロ グラ ム 】〕 | (1) ペン を 下ろ す 。 (2) 処理 回 数 の カウ ンタ に | _a __ | を 設定 する 。 (3) 次 の 処理 を 順に 実行 する 。 ・1m 直 進 す る 。 ・ 右 回 り に | __b __ | 度 方 向 転換 する 。 ・ 処 理 回 数 の カウ ンタ に 1 を 加え る 。 (4) 処理 回 数 の カウ ンタ が 6 未満 の 場合 は , (3) に 戻る 。 (5) ペン を 上 げ る 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q088-p43.webp",
+        "width": 1021,
+        "height": 703
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q088-p43.webp",
+          "width": 1021,
+          "height": 703
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "| (| |",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q088-a.webp",
+            "width": 266,
+            "height": 133
+          }
+        },
+        {
+          "id": "b",
+          "text": "の | の |",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q088-b.webp",
+            "width": 266,
+            "height": 132
+          }
+        },
+        {
+          "id": "c",
+          "text": "図 ウ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q088-c.webp",
+            "width": 266,
+            "height": 132
+          }
+        },
+        {
+          "id": "d",
+          "text": "| |",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q088-d.webp",
+            "width": 266,
+            "height": 132
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q089",
+      "number": 89,
+      "domain": "technology",
+      "sourcePage": 44,
+      "source": "IPA 2026 公開問題 IP  問89",
+      "promptText": "問 89 情報 セキ ュ リ ティ に 関す る 次 の 記述 中 の a, b に 入れ る 字句 の 適切 な 組合 せ は どれ か 。 守る べき 情報 資産 に 対し て 望ま し く な い 有 影響 を 及ぼ す 可 能 性 の ある 原因 の こと を [as_ | と いい , 情報 資産 自身 の 価値 を 損なう 可能 性 を も つ 弱 点 の こと を に コロ",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q089-p44.webp",
+        "width": 1021,
+        "height": 307
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q089-p44.webp",
+          "width": 1021,
+          "height": 307
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "図 ア",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q089-a.webp",
+            "width": 407,
+            "height": 133
+          }
+        },
+        {
+          "id": "b",
+          "text": "図 イ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q089-b.webp",
+            "width": 407,
+            "height": 132
+          }
+        },
+        {
+          "id": "c",
+          "text": "sw |",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q089-c.webp",
+            "width": 407,
+            "height": 133
+          }
+        },
+        {
+          "id": "d",
+          "text": "図 エ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q089-d.webp",
+            "width": 407,
+            "height": 132
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q090",
+      "number": 90,
+      "domain": "technology",
+      "sourcePage": 44,
+      "source": "IPA 2026 公開問題 IP  問90",
+      "promptText": "問 99 _PKI( 公 開 鍵 基 盤 ) の 特徴 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q090-p44.webp",
+        "width": 691,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q090-p44.webp",
+          "width": 691,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "共通 鍵 の 所 有 者 を 確認 する 方 法 が 提供 され て いる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q090-a.webp",
+            "width": 580,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "知人 が 署名 し た 鍵 は 信頼 する と いう “信頼 の 輪 ” に よっ て , 公開 鍵 が 正当 で ある こと を 確認 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q090-b.webp",
+            "width": 940,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "電子 証明 書 の 正当 性 を 認証 局 が 保証 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q090-c.webp",
+            "width": 481,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "秘密 鍵 を 安全 に 公開 する 方 法 が 提供 され て いる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q090-d.webp",
+            "width": 557,
+            "height": 48
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q091",
+      "number": 91,
+      "domain": "technology",
+      "sourcePage": 45,
+      "source": "IPA 2026 公開問題 IP  問91",
+      "promptText": "問 91 デジ タル 署名 や ブロ ッ ク チ ェ ー ン で 用 いら れる ハッ シュ 関数 に は , SHA-256, SHA- 512 な ど が ある 。 こ の よう な ハッ シュ 関数 に 関す る 記述 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q091-p45.webp",
+        "width": 1030,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q091-p45.webp",
+          "width": 1030,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ある ハッ シュ 関数 を 用 いて 得 た ハッ シュ 値 を , その ハッ シュ 関数 に 入力 する こと に よっ て , 元 の デー タ を 復元 する こと が で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q091-a.webp",
+            "width": 941,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "同じ デー タ を 異な る ハッ シュ 関数 に それ ぞ れ 入力 し た と き , 得 ら れる ハッ シュ 値 は 全て 同じ に な る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q091-b.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "同じ ハッ シュ 関数 を 用 いる 場合 , 入力 し た デー タ が 同じ で あれ ば , 得 ら れる ハッ シュ 値 は 常に 同じ に な る 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q091-c.webp",
+            "width": 940,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "どの ハッ シュ 関数 に も それ ぞ れ の 逆 関 数 が 存在 し , ハッ シュ 値 か ら 元 の デー タ を 復元 する こと が で きる 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q091-d.webp",
+            "width": 944,
+            "height": 99
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q092",
+      "number": 92,
+      "domain": "technology",
+      "sourcePage": 45,
+      "source": "IPA 2026 公開問題 IP  問92",
+      "promptText": "問 92 ゼロ トラ スト セキ ュ リ ティ の 考え 方 に 基づい た 情報 セキ ュ リ ティ 対策 の 例 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q092-p45.webp",
+        "width": 1003,
+        "height": 98
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q092-p45.webp",
+          "width": 1003,
+          "height": 98
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "イン ター ネッ ト と 内 部 ネッ トワ ー ク の 境界 に ファ イア ウォ ー ル を 配置 し , イン タ ーネット か ら の 箇 威 を 境界 で 遮断 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q092-a.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "b",
+          "text": "内 部 ネッ トワ ー ク か ら で あ っ て も 外部 ネッ トワ ー ク か ら で あ っ て も , ネッ トワ ー ク 上 の 情報 資源 へ の アク セス に は 二 要 素 認証 を 利用 する 。 脆弱",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q092-b.webp",
+            "width": 942,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "内 部 ネッ トワ ー ク に 接続 する PC に イン スト ー ル され た ソフ トウ ェ ア に 性 が 発見 され た と き に , その セキ ュ リ ティ パッ チ は 公開 後 直 ち に 適用 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q092-c.webp",
+            "width": 946,
+            "height": 101
+          }
+        },
+        {
+          "id": "d",
+          "text": "内 部 ネッ トワ ー ク に 接続 する PC の うち , イン ター ネッ ト に アク セス する PC だ け に マル ウェ ア 対 策 ソ フト を イン スト ー ル する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q092-d.webp",
+            "width": 942,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q093",
+      "number": 93,
+      "domain": "technology",
+      "sourcePage": 46,
+      "source": "IPA 2026 公開問題 IP  問93",
+      "promptText": "問 93 次 の ISMS に お ける 実施 項目 の うち , 最初 に 行う も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q093-p46.webp",
+        "width": 792,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q093-p46.webp",
+          "width": 792,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "TSMS の 適用 範囲 の 決定",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q093-a.webp",
+            "width": 276,
+            "height": 47
+          }
+        },
+        {
+          "id": "b",
+          "text": "情報 セキ ュ リ ティ リス クア セス メン ト セキ ュ リ ティ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q093-b.webp",
+            "width": 443,
+            "height": 48
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報 リス ク 対 応 監査",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q093-c.webp",
+            "width": 347,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "内 部",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q093-d.webp",
+            "width": 121,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q094",
+      "number": 94,
+      "domain": "technology",
+      "sourcePage": 46,
+      "source": "IPA 2026 公開問題 IP  問94",
+      "promptText": "間 94 情報 \"技術 “人 的 セキ ュ リ ティ 対策 ” 及び “物理 的 セキ ュ リ ティ 対策 \"に 分 類 し た と き , “物理 的 セキ ュ リ ティ 対策 \"の 例 と し て , 適切 な も の は どれ か 。 の 関し , させ",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q094-p46.webp",
+        "width": 1020,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q094-p46.webp",
+          "width": 1020,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "機密 情報 取扱 い に て , 罰則 を 含め た 規則 を 制定 し これ を 遵守 る た め に , 関係 者 に 定期 的 な 教育 を 実施 する 。 よる サー よう 地 に バ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q094-a.webp",
+            "width": 944,
+            "height": 99
+          }
+        },
+        {
+          "id": "b",
+          "text": "被災 に シス テム 障害 が 発生 し て も ビス を 継続 で きる に , 遠隔 ッ ク ア ッ プ シス テム を 用 意 す る 。 。 サイ よる を 防ぐ た め に ,",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q094-b.webp",
+            "width": 942,
+            "height": 97
+          }
+        },
+        {
+          "id": "c",
+          "text": "ま すま す 方法 が 巧妙 化 され る バー 攻撃 に 被害 サイ バー 攻 撃 の 方 法 や 対策 に 関す る 情報 を 従業 員 に 周知 する 。 た , フト し , ファ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q094-c.webp",
+            "width": 946,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "エマ ルウ ェ ア に よる 被害 を 防ぐ め に マル ウェ ア 対 策 ソ を 導入 定義 イル を 常に 最新 に 保つ 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q094-d.webp",
+            "width": 941,
+            "height": 98
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q095",
+      "number": 95,
+      "domain": "technology",
+      "sourcePage": 47,
+      "source": "IPA 2026 公開問題 IP  問95",
+      "promptText": "問 95 SGL イン ジェ クシ ョ ン の 対策 な ど で 用 いら れ , 処理 の 誤動作 を 招 か な いよ うに , 利 用 者 が Web サイ ト に 入力 し た 内 容 に 含ま れる 有害 な 文字 列 を 無害 な 文字 列 に 置き 換え る こと を 何と 呼ぶ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q095-p47.webp",
+        "width": 1019,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q095-p47.webp",
+          "width": 1019,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MAC アド レス フィ ル タ リ ング",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q095-a.webp",
+            "width": 341,
+            "height": 46
+          }
+        },
+        {
+          "id": "b",
+          "text": "六 三 タイ ジッ ダグ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q095-b.webp",
+            "width": 196,
+            "height": 46
+          }
+        },
+        {
+          "id": "c",
+          "text": "スズ ス ド ラ イ ビ ジ シグ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q095-c.webp",
+            "width": 196,
+            "height": 47
+          }
+        },
+        {
+          "id": "d",
+          "text": "エエ 一 用 ネル エル シ 己 アリ シダ",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q095-d.webp",
+            "width": 344,
+            "height": 46
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q096",
+      "number": 96,
+      "domain": "technology",
+      "sourcePage": 47,
+      "source": "IPA 2026 公開問題 IP  問96",
+      "promptText": "問 96 機密 情報 の 取得 な ど を 目的 と し て , 特定 の 組織 や 個人 に 対し て , 複数 の 攻撃 手法 を 使う な ど し て 長期 間 に わ た り 継 続 的 に 攻撃 を 行う と いう 特徴 を も つ , サイ バー 攻撃 は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q096-p47.webp",
+        "width": 1020,
+        "height": 147
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q096-p47.webp",
+          "width": 1020,
+          "height": 147
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "APT 攻 撃",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q096-a.webp",
+            "width": 117,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "DDosS 攻撃",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q096-b.webp",
+            "width": 129,
+            "height": 47
+          }
+        },
+        {
+          "id": "c",
+          "text": "ゼロ デイ 攻撃",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q096-c.webp",
+            "width": 171,
+            "height": 48
+          }
+        },
+        {
+          "id": "d",
+          "text": "パス ワー ドリ スト 攻撃",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q096-d.webp",
+            "width": 270,
+            "height": 47
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "ipa-ip-2026-public-q097",
+      "number": 97,
+      "domain": "technology",
+      "sourcePage": 47,
+      "source": "IPA 2026 公開問題 IP  問97",
+      "promptText": "問 97 OSS (Open Source Software) の 取扱 い に 関 する 記述 の うち , 適切 な も の だ け を 全 て 挙げ た も の は どれ か 。 a OSS を 集め た 記録 媒体 を , 顧客 に 有償 で 提供 する 。 b 改変 し た OSS を , 特定 の 利用 分 野 に 制限 し て OSS と し て 提供 する 。 c 不具 合 を 発見 し て 修正 し た OSS の ソー スコ ー ド を , 自分 の Web サイ ト で 提供 す る 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q097-p47.webp",
+        "width": 1020,
+        "height": 347
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q097-p47.webp",
+          "width": 1020,
+          "height": 347
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q097-a.webp",
+            "width": 35,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "a, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q097-b.webp",
+            "width": 71,
+            "height": 41
+          }
+        },
+        {
+          "id": "c",
+          "text": "b, c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q097-c.webp",
+            "width": 71,
+            "height": 46
+          }
+        },
+        {
+          "id": "d",
+          "text": "c",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q097-d.webp",
+            "width": 34,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q098",
+      "number": 98,
+      "domain": "technology",
+      "sourcePage": 48,
+      "source": "IPA 2026 公開問題 IP  問98",
+      "promptText": "問 98 Al に お ける プロ ンプ ト エ ンジ ニア リン グ の 説明 と し て , 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q098-p48.webp",
+        "width": 961,
+        "height": 49
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q098-p48.webp",
+          "width": 961,
+          "height": 49
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "AI が , 多数 の 事象 や デー タ か ら 普 遍 的 な ルー ル や 知識 を 獲得 する こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q098-a.webp",
+            "width": 800,
+            "height": 48
+          }
+        },
+        {
+          "id": "b",
+          "text": "AI に 対す る 質問 や 指示 な ど が 入力 で きる 状態 で ある こと を , 画面 上 に 記号 や 文 字 列 で 示す こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q098-b.webp",
+            "width": 934,
+            "height": 99
+          }
+        },
+        {
+          "id": "c",
+          "text": "意図 し た 回 答 を 得る た め に AI に 対す る 質問 や 指示 の 内 容 , 情報 の 提供 , 出力 形 式 の 指定 な ど を 工夫 する こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q098-c.webp",
+            "width": 935,
+            "height": 99
+          }
+        },
+        {
+          "id": "d",
+          "text": "神経 細胞 が 作る ネッ トワ ー ク を コン ピュ ー タ で 模 し た , AI で 用 いら れる 計算 モ デル の こと",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q098-d.webp",
+            "width": 932,
+            "height": 97
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "ipa-ip-2026-public-q099",
+      "number": 99,
+      "domain": "technology",
+      "sourcePage": 48,
+      "source": "IPA 2026 公開問題 IP  問99",
+      "promptText": "問 99 入力 装置 に 関す る 次 の 記述 中 の a, b に 入れ る 字句 の 適切 な 組合 せ は どれ か 。 [La_ | は, 紙 な ど に 光 を 当て , 反射 光 を 読み 取り , 文字 や 図形 を デジ タル デー タ に 変換 し て PC に 取り 込む 。[__a__ | が 文字 や 図形 を どの 程度 細か く 読 み 取 れる か の 性 能 を 示す 単位 と し て [| __b__| が 使わ れる 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q099-p48.webp",
+        "width": 1019,
+        "height": 257
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q099-p48.webp",
+          "width": 1019,
+          "height": 257
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 誠 症 誠",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q099-a.webp",
+            "width": 558,
+            "height": 124
+          }
+        },
+        {
+          "id": "b",
+          "text": "語 症 た |",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q099-b.webp",
+            "width": 558,
+            "height": 124
+          }
+        },
+        {
+          "id": "c",
+          "text": "ロ 誠 誠 症 間 衣",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q099-c.webp",
+            "width": 558,
+            "height": 124
+          }
+        },
+        {
+          "id": "d",
+          "text": "E2 且 5",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q099-d.webp",
+            "width": 558,
+            "height": 124
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "ipa-ip-2026-public-q100",
+      "number": 100,
+      "domain": "technology",
+      "sourcePage": 49,
+      "source": "IPA 2026 公開問題 IP  問100",
+      "promptText": "問 109 ISMS の 活動 に 関す る 記述 と し て , 最も 適切 な も の は どれ か 。",
+      "prompt": {
+        "src": "exams/ipa-ip-2026-public/q100-p49.webp",
+        "width": 773,
+        "height": 48
+      },
+      "promptPages": [
+        {
+          "src": "exams/ipa-ip-2026-public/q100-p49.webp",
+          "width": 773,
+          "height": 48
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "企業 の コス ト 削 減 や 製品 の 品質 , サー ビス の 改善 な どの た め に , 業務 プロ セス を 改善 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q100-a.webp",
+            "width": 944,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "顧客 の 満足 度 を 高め る た め に , IT サー ビス の 品質 を 継続 的 に 改善 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q100-b.webp",
+            "width": 811,
+            "height": 49
+          }
+        },
+        {
+          "id": "c",
+          "text": "情報 資産 を 洗い 出し , リス ク の 特定 と 分 析 及 び 評 価 を 行い , 情報 資産 を 管理 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q100-c.webp",
+            "width": 930,
+            "height": 49
+          }
+        },
+        {
+          "id": "d",
+          "text": "製品 と サー ビス の 開発 プロ セス の 成熟 度 を 評価 し , 改善 する 。",
+          "image": {
+            "src": "exams/ipa-ip-2026-public/q100-d.webp",
+            "width": 705,
+            "height": 49
+          }
+        }
+      ],
+      "answerId": "c"
+    }
+  ],
+  "editorialNotes": [
+    "Original Japanese answer labels mapped in order to stable Latin IDs; options shuffled.",
+    "100 published CBT questions, not an entire CBT bank.",
+    "OCR is diagnostic only. Original scans are displayed."
+  ],
+  "sourceSha256": "16934af1ab515dac8756da05c7d80dec7d25afbe26bd1a20ebdf4b545922ab2e",
+  "answerSha256": "d90ff38528d7911b94a207e5a2ba31a51d8f206b827377f1f5c8cd5b76a6f4f0"
+}
