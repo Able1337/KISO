@@ -1,5 +1,13 @@
 // Lightweight catalogue metadata. Tests require exact agreement with the banks.
 export const lessonCoverage:Record<string,number>={
+ 'itpec-fe-2024-autumn':80,
+ 'itpec-fe-2024-spring':80,
+ 'itpec-fe-2025-spring':80,
+ 'itpec-ip-2024-spring':100,
+ 'itpec-ip-2024-autumn':100,
+ 'itpec-fe-2025-autumn':80,
+ 'itpec-ip-2025-spring':100,
+ 'itpec-ip-2025-autumn':100,
  'ipa-fe-2022-sample':80,
  'ipa-fe-2023-public':26,
  'ipa-fe-2024-public':26,

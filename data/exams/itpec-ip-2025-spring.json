@@ -1,0 +1,5924 @@
+{
+  "schemaVersion": 1,
+  "id": "itpec-ip-2025-spring",
+  "system": "ITPEC",
+  "level": "IP",
+  "year": 2025,
+  "season": "spring",
+  "title": "April 2025",
+  "originalLanguage": "en",
+  "durationSeconds": 7200,
+  "sourceUrl": "https://itpec.org/pastexamqa/ip.html",
+  "archiveUrl": "https://itpec.org/pastexamqa/ip/2025S_IP.zip",
+  "translations": [],
+  "lessonsReady": true,
+  "questions": [
+    {
+      "id": "itpec-ip-2025-spring-q001",
+      "number": 1,
+      "domain": "technology",
+      "sourcePage": 3,
+      "source": "(2025S, IP, Q1)",
+      "promptText": "Q1. As shown in Figure 1, there is a box that generates a single output for two (2) inputs. The\ninput in this box is either “Agree” or “Disagree,” and the output of “Agree” is generated only\nwhen both inputs are “Agree,” while in other cases the output of “Disagree” is generated.\nWhen three (3) inputs are entered into two (2) boxes as shown in Figure 2, which of the\nfollowing is the correct description concerning the output?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q001-p03.webp",
+        "width": 947,
+        "height": 529
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q001-p03.webp",
+          "width": 947,
+          "height": 529
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The output of “Agree” is generated at all times when one (1) or more inputs are “Agree.”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q001-a.webp",
+            "width": 872,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "The output of “Agree” is generated at all times when two (2) or more inputs are\n“Agree.”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q001-b.webp",
+            "width": 781,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The output of “Disagree” is generated only when two (2) or more inputs are “Disagree.”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q001-c.webp",
+            "width": 864,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "The output of “Agree” is generated only when all three (3) inputs are “Agree.”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q001-d.webp",
+            "width": 771,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q002",
+      "number": 2,
+      "domain": "technology",
+      "sourcePage": 3,
+      "source": "(2025S, IP, Q2)",
+      "promptText": "Q2. Which of the following is the binary result of the multiplication of binary 1011 and binary\n101?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q002-p03.webp",
+        "width": 947,
+        "height": 71
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q002-p03.webp",
+          "width": 947,
+          "height": 71
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1111",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q002-a.webp",
+            "width": 60,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "10000",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q002-b.webp",
+            "width": 74,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "101111",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q002-c.webp",
+            "width": 84,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "110111",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q002-d.webp",
+            "width": 84,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q003",
+      "number": 3,
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, IP, Q3)",
+      "promptText": "Q3. The automation of the inspections performed by a quality controller is considered. By\nproviding as training data 10,000 product images and the results of judgments by the quality\ncontroller about whether each product is defective or not, a machine learning model is created\nto judge whether a product is defective or not. The results of a test judgement by a machine\nlearning model on 100 product images are as shown in the table. When the ratio of the number\nof images that product is judged to be defective by the machine learning model out of the\nimages that product is judged to be defective by the quality controller is deemed to be the\nrecall rate, what is the recall rate in this test judgement?\nUnit: Images\nJudgment by the machine learning model\nDefective Not defective\nJudgment by the Defective 5 5\nquality controller Not defective 15 75",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q003-p04.webp",
+        "width": 947,
+        "height": 516
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q003-p04.webp",
+          "width": 947,
+          "height": 516
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.05",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q003-a.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.25",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q003-b.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "0.50",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q003-c.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "0.80",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q003-d.webp",
+            "width": 58,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q004",
+      "number": 4,
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, IP, Q4)",
+      "promptText": "Q4. When a six (6)-sided dice with the numbers 1 to 6 is thrown three (3) times, what is the\nprobability of not getting any 1?\n1 5 91 125",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q004-p04.webp",
+        "width": 947,
+        "height": 130
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q004-p04.webp",
+          "width": 947,
+          "height": 130
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1\n216",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q004-a.webp",
+            "width": 67,
+            "height": 56
+          }
+        },
+        {
+          "id": "b",
+          "text": "5\n72",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q004-b.webp",
+            "width": 54,
+            "height": 56
+          }
+        },
+        {
+          "id": "c",
+          "text": "91\n216",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q004-c.webp",
+            "width": 66,
+            "height": 56
+          }
+        },
+        {
+          "id": "d",
+          "text": "125\n216",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q004-d.webp",
+            "width": 66,
+            "height": 56
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q005",
+      "number": 5,
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, IP, Q5)",
+      "promptText": "Q5. Which of the following is a term for a list of instructions to a computer that are written in\na human-readable programming language?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q005-p04.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q005-p04.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PIN code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q005-a.webp",
+            "width": 106,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Source code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q005-b.webp",
+            "width": 134,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Binary code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q005-c.webp",
+            "width": 133,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Character code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q005-d.webp",
+            "width": 161,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q006",
+      "number": 6,
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "(2025S, IP, Q6)",
+      "promptText": "Q6. The procedure calculateElectricBill receives electricity usage that accepts the units\n(non-negative value) and returns the amount of electricity bills. The pricing structure is given\nas: For the first 100 units, the cost is $10 per unit. Any units exceeding 100 are charged at\n$15 per unit. Which of the following is an appropriate piece of code to be inserted into\n_______ in the program?\n[Program]\n○ integer: calculateElectricBill(integer: units)\ninteger: payAmount ← 0\nif (units ≤ 100)\npayAmount ← units × 10\nelse\npayAmount ← ____ __\nendif\nreturn payAmount",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q006-p05.webp",
+        "width": 947,
+        "height": 548
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q006-p05.webp",
+          "width": 947,
+          "height": 548
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(units - 100) × 10 + 100 × 15",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q006-a.webp",
+            "width": 364,
+            "height": 38
+          }
+        },
+        {
+          "id": "b",
+          "text": "(units - 100) × 15 + 100 × 10",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q006-b.webp",
+            "width": 365,
+            "height": 38
+          }
+        },
+        {
+          "id": "c",
+          "text": "units × 15",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q006-c.webp",
+            "width": 135,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "units × 15 + 100 × 10",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q006-d.webp",
+            "width": 269,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q007",
+      "number": 7,
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "(2025S, IP, Q7)",
+      "promptText": "Q7. A program uses loops to display results based on whether the cycle numbers are odd or\neven. The execution result of the program is shown below.\n0+0+0+0\n+++++++\n2+2+2+2\n+++++++\n4+4+4+4\n+++++++\n6+6+6+6\nWhich of the following is an appropriate combination of pieces of code to be inserted into\n___A___ through ___C___ in the program?\n[Program]\ninteger: i, j\nfor (increase i from 0 to 6 by 1)\nfor (increase j from 0 to 6 by 1)\nif (____A____)\noutput ____B____\nelse\noutput ____C____\nendif\nendfor\noutput a new line\nendfor",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q007-p06.webp",
+        "width": 947,
+        "height": 892
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q007-p06.webp",
+          "width": 947,
+          "height": 892
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(i mod 2 ≠ 0) and (j mod 2 ≠ 0) \"+\" i",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q007-a.webp",
+            "width": 668,
+            "height": 89
+          }
+        },
+        {
+          "id": "b",
+          "text": "(i mod 2 ≠ 0) and (j mod 2 ≠ 0) i \"+\"",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q007-b.webp",
+            "width": 668,
+            "height": 90
+          }
+        },
+        {
+          "id": "c",
+          "text": "(i mod 2 = 0) and (j mod 2 = 0) \"+\" i",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q007-c.webp",
+            "width": 668,
+            "height": 90
+          }
+        },
+        {
+          "id": "d",
+          "text": "(i mod 2 = 0) and (j mod 2 = 0) i \"+\"",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q007-d.webp",
+            "width": 668,
+            "height": 89
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q008",
+      "number": 8,
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "(2025S, IP, Q8)",
+      "promptText": "Q8. In the data structure called a queue that is suitable for performing first-in first-out (FIFO)\nprocessing, values are stored in the order of “8”, “1”, “6”, and “3”, and then two (2) values\nare removed consecutively. Which of the following is the last value that is removed?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q008-p06.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q008-p06.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q008-a.webp",
+            "width": 24,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q008-b.webp",
+            "width": 27,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "6",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q008-c.webp",
+            "width": 28,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "8",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q008-d.webp",
+            "width": 27,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q009",
+      "number": 9,
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "(2025S, IP, Q9)",
+      "promptText": "Q9. As shown in Figure 1, there is a box that generates two (2) numerical values B1 and B2\nwhen two (2) positive integers A1 and A2 are entered. B1 has the same value as A2, and B2\nis the remainder of A1 divided by A2. In Figure 2, when two (2) boxes are connected, and 49\nis entered as A1 and 11 is entered as A2 in the left box, what is the value of B2 generated\nfrom the right box?\nA1 B1\nA2 B2\nFigure 1\n49 B1\n11 B2\nFigure 2",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q009-p07.webp",
+        "width": 947,
+        "height": 493
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q009-p07.webp",
+          "width": 947,
+          "height": 493
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q009-a.webp",
+            "width": 24,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q009-b.webp",
+            "width": 28,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "4",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q009-c.webp",
+            "width": 28,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "5",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q009-d.webp",
+            "width": 27,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q010",
+      "number": 10,
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "(2025S, IP, Q10)",
+      "promptText": "Q10. Which of the following is an appropriate combination of words that are inserted into\nand in the description below concerning the execution sequence of\ninstructions in a computer?\nIn a computer, the instructions are executed in the sequence shown below.\n(1) Refer to the program counter.\n(2) the instruction.\n(3) Set the program counter to the main memory address of the next instruction.\n(4) the instruction.\n(5) Execute processing according to the instruction.\n(6) Return to (1).",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q010-p07.webp",
+        "width": 950,
+        "height": 400
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q010-p07.webp",
+          "width": 950,
+          "height": 400
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Decode Read",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q010-a.webp",
+            "width": 356,
+            "height": 107
+          }
+        },
+        {
+          "id": "b",
+          "text": "Read Decode",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q010-b.webp",
+            "width": 260,
+            "height": 106
+          }
+        },
+        {
+          "id": "c",
+          "text": "Read Write",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q010-c.webp",
+            "width": 356,
+            "height": 106
+          }
+        },
+        {
+          "id": "d",
+          "text": "Write Decode",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q010-d.webp",
+            "width": 356,
+            "height": 107
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q011",
+      "number": 11,
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, IP, Q11)",
+      "promptText": "Q11. Which of the following is an appropriate description concerning the primary and\nsecondary cache memory that a CPU is equipped with?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q011-p08.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q011-p08.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The primary cache memory has larger capacity than the secondary cache memory.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q011-a.webp",
+            "width": 806,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "The secondary cache memory is slower than the main memory in writing and reading.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q011-b.webp",
+            "width": 842,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "When the CPU reads data, it first accesses the primary cache memory, and then it\naccesses the secondary cache memory if the data is not available.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q011-c.webp",
+            "width": 800,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "All of the data that is required for a process needs to be present on the primary or\nsecondary cache memory when a program starts.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q011-d.webp",
+            "width": 796,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q012",
+      "number": 12,
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, IP, Q12)",
+      "promptText": "Q12. Which of the following is a type of device that is also used as a memory device in IoT\ndevices, and has a lower power consumption and higher impact resistance than an HDD as it\nhas memory media that is made of semiconductors and does not have any moving\ncomponents?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q012-p08.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q012-p08.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "DRM",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q012-a.webp",
+            "width": 71,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "DVD",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q012-b.webp",
+            "width": 68,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "HDMI",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q012-c.webp",
+            "width": 81,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "SSD",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q012-d.webp",
+            "width": 60,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q013",
+      "number": 13,
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, IP, Q13)",
+      "promptText": "Q13. Which of the following is the appropriate description concerning the performance of a\nCPU?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q013-p08.webp",
+        "width": 947,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q013-p08.webp",
+          "width": 947,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Between a 32-bit CPU and a 64-bit CPU, the length of data that a 64-bit CPU can\nprocess at once can be greater.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q013-a.webp",
+            "width": 801,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "The smaller the amount of cache memory in a CPU, the higher the processing speed of\nthe CPU.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q013-b.webp",
+            "width": 853,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "In CPUs with the same structure, when the clock frequency is decreased, the processing\nspeed increases.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q013-c.webp",
+            "width": 860,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Between a dual core CPU and a quad core CPU, a dual core CPU can execute a greater\nnumber of processes simultaneously.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q013-d.webp",
+            "width": 854,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q014",
+      "number": 14,
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "(2025S, IP, Q14)",
+      "promptText": "Q14. Which of the following is an appropriate characteristic of a dual system?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q014-p09.webp",
+        "width": 798,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q014-p09.webp",
+          "width": 798,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It provides two (2) sets of systems that perform the same processing and checks the\ncorrectness of the processing by comparing the results. If one of the systems fails, it\nisolates the failed system and continues the processing.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q014-a.webp",
+            "width": 822,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "The same two (2) devices are used, so that the processing capability can be increased to\ndouble that of a simplex system.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q014-b.webp",
+            "width": 857,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "It provides a currently used system for performing online processing and also a backup\nsystem that is made on standby while performing batch processing. In the event of a\nfailure in the currently used system, it switches to the backup system, starts the online\nprocessing on it, and continues the service.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q014-c.webp",
+            "width": 852,
+            "height": 147
+          }
+        },
+        {
+          "id": "d",
+          "text": "It connects multiple devices in series and configures them in such a way that the load of\neach function is distributed among them, so that processing capability is high. But if any\none of the devices fails, it becomes unable to provide the service.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q014-d.webp",
+            "width": 867,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q015",
+      "number": 15,
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "(2025S, IP, Q15)",
+      "promptText": "Q15. Among the changes A through D in a client/server system, which of the following is the\nlist that contains all and only the appropriate changes for reducing the response time?\nA: Establishing a high-speed line between the client and the server, and reducing the time\ntaken to transmit data\nB: Increasing the number of clients, and reducing the waiting time for users before using\nclients\nC: Reducing the time taken for data entry by users on the client’s input screen\nD: Making the server high-performance, and reducing the server’s processing time",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q015-p09.webp",
+        "width": 947,
+        "height": 328
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q015-p09.webp",
+          "width": 947,
+          "height": 328
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A, B, C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q015-a.webp",
+            "width": 89,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "A, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q015-b.webp",
+            "width": 62,
+            "height": 37
+          }
+        },
+        {
+          "id": "c",
+          "text": "B, C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q015-c.webp",
+            "width": 62,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "C, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q015-d.webp",
+            "width": 61,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q016",
+      "number": 16,
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, IP, Q16)",
+      "promptText": "Q16. There is a web system that is composed of two (2) web servers and one (1) database\nserver as shown in the figure. When the availability of each Web server is 0.8 and the\navailability of the Database server is 0.9, which of the following is the availability of this\nsystem rounded off to two (2) decimal places? Here, if at least one (1) of the two (2) Web\nservers are operating and the Database server is operating, it is considered that the system is\noperating. Also, a fault occurs randomly on each server.\nWeb\nserver\nDatabase\nserver\nWeb\nserver",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q016-p10.webp",
+        "width": 947,
+        "height": 421
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q016-p10.webp",
+          "width": 947,
+          "height": 421
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.04",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q016-a.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.58",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q016-b.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "0.86",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q016-c.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "0.96",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q016-d.webp",
+            "width": 58,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q017",
+      "number": 17,
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, IP, Q17)",
+      "promptText": "Q17. Which of the following is an appropriate explanation of multitasking?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q017-p10.webp",
+        "width": 775,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q017-p10.webp",
+          "width": 775,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Several computers connected via a network work together to achieve a high-\nperformance system.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q017-a.webp",
+            "width": 752,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Several processor cores composed of arithmetic circuits and other control circuits are\nimplemented in a single CPU.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q017-b.webp",
+            "width": 835,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The CPU processing time is allocated to several processes in turn so that the processes\ncan be executed concurrently.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q017-c.webp",
+            "width": 847,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The same processing is performed for multiple data items by executing a single\ninstruction.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q017-d.webp",
+            "width": 779,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q018",
+      "number": 18,
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, IP, Q18)",
+      "promptText": "Q18. The types of programs that are running when a PC is started are broadly classified into\nthree (3) categories, namely BIOS (Basic Input Output System), OS, and resident application\nprograms. Which of the following is the order of execution of the programs?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q018-p10.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q018-p10.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BIOS, OS, resident application programs",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q018-a.webp",
+            "width": 411,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "OS, BIOS, resident application programs",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q018-b.webp",
+            "width": 411,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "OS, resident application programs, BIOS",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q018-c.webp",
+            "width": 410,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Resident application programs, BIOS, OS",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q018-d.webp",
+            "width": 419,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q019",
+      "number": 19,
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "(2025S, IP, Q19)",
+      "promptText": "Q19. Multiple files stored on a hard disk are used in work, from Monday to Friday. In order to\nhandle failure of the hard disk, the data is backed up to another hard disk after the end of each\nday’s work. When the backup has following conditions, what is the total time required (in\nminutes) to perform backups of data from Monday to Friday?\n[Conditions for backups]\n(1) There are 6,000 files used in work, each with a size of 3 Mbytes.\n(2) In each day’s work, 1,000 files are modified. Modifications do not change the size of\nthe files.\n(3) Files are copied to the other hard disk at a speed of 10 Mbytes/second. One (1) file is\nbacked up at a time; backup continues without interruption.\n(4) From Monday to Thursday, only files modified that day are backed up. On Friday, all\nfiles are backed up, whether or not they have been modified.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q019-p11.webp",
+        "width": 950,
+        "height": 472
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q019-p11.webp",
+          "width": 950,
+          "height": 472
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "25",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q019-a.webp",
+            "width": 40,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "35",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q019-b.webp",
+            "width": 40,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "50",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q019-c.webp",
+            "width": 39,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "150",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q019-d.webp",
+            "width": 50,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q020",
+      "number": 20,
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "(2025S, IP, Q20)",
+      "promptText": "Q20. Spreadsheet software is to be used to perform a calculation with the monthly sales data\nfor each product shown in the worksheet below. When the expression\n“COUNTIF(B2:D2,>15000)” is entered in cell E2 and then copied to cell E3 and cell E4,\nwhich of the following is the value that is displayed in cell E4?\nA B C D E\nProduct January February March Conditional\n1\nname sales sales sales count\n2 Product A 10,000 15,000 20,000\n3 Product B 5,000 10,000 5,000\n4 Product C 10,000 20,000 30,000",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q020-p11.webp",
+        "width": 936,
+        "height": 410
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q020-p11.webp",
+          "width": 936,
+          "height": 410
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q020-a.webp",
+            "width": 28,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q020-b.webp",
+            "width": 24,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q020-c.webp",
+            "width": 28,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q020-d.webp",
+            "width": 27,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q021",
+      "number": 21,
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "(2025S, IP, Q21)",
+      "promptText": "Q21. Which of the following is an Open Source Software (OSS) OS that is used in mobile\ndevices such as smartphones and tablets?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q021-p11.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q021-p11.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Android",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q021-a.webp",
+            "width": 97,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "iOS",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q021-b.webp",
+            "width": 53,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Safari",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q021-c.webp",
+            "width": 73,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Windows",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q021-d.webp",
+            "width": 110,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q022",
+      "number": 22,
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, IP, Q22)",
+      "promptText": "Q22. In document creation software, spreadsheet software, and other such software, which of\nthe following is a function that predefines and executes a series of operation procedures?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q022-p12.webp",
+        "width": 950,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q022-p12.webp",
+          "width": 950,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Autocomplete",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q022-a.webp",
+            "width": 152,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Source code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q022-b.webp",
+            "width": 134,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Plug and play",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q022-c.webp",
+            "width": 149,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Macro",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q022-d.webp",
+            "width": 79,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q023",
+      "number": 23,
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, IP, Q23)",
+      "promptText": "Q23. Which of the following is a space-saving server where computer components including\nthe CPU, main memory, and storage are installed on a single circuit board and multiple circuit\nboards are mounted in racks?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q023-p12.webp",
+        "width": 947,
+        "height": 106
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q023-p12.webp",
+          "width": 947,
+          "height": 106
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "DNS server",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q023-a.webp",
+            "width": 130,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "FTP server",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q023-b.webp",
+            "width": 124,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Web server",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q023-c.webp",
+            "width": 127,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Blade server",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q023-d.webp",
+            "width": 139,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q024",
+      "number": 24,
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, IP, Q24)",
+      "promptText": "Q24. Which of the following is a technology that projects things such as video made with\ncomputer graphics on to buildings, objects, and other such three-dimensional things, and\nproduces a variety of visual effects?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q024-p12.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q024-p12.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Digital signage",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q024-a.webp",
+            "width": 162,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Virtual reality",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q024-b.webp",
+            "width": 152,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Projection mapping",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q024-c.webp",
+            "width": 206,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Polygon",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q024-d.webp",
+            "width": 98,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q025",
+      "number": 25,
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, IP, Q25)",
+      "promptText": "Q25. Which of the following is a data format that can be used to compress both video and\naudio data?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q025-p12.webp",
+        "width": 947,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q025-p12.webp",
+          "width": 947,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BMP",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q025-a.webp",
+            "width": 67,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "GIF",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q025-b.webp",
+            "width": 55,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "JPEG",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q025-c.webp",
+            "width": 72,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "MPEG",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q025-d.webp",
+            "width": 83,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q026",
+      "number": 26,
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "(2025S, IP, Q26)",
+      "promptText": "Q26. By joining tables “Employees in charge”, “Regions”, and “Customers” that are managed\nin a relational database, the table A that is shown below is obtained. Which of the following\nis the table “Customers” that is used for the joining? Here, a solid underline indicates a\nprimary key and a dotted underline indicates a foreign key.\nEmployees in charge\nEmployee code Employee name\nRegions\nRegion code Region name\nA\nCustomer code Customer name Employee name Region name Representative name",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q026-p13.webp",
+        "width": 947,
+        "height": 511
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q026-p13.webp",
+          "width": 947,
+          "height": 511
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Customer code Customer name Representative name",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q026-a.webp",
+            "width": 655,
+            "height": 98
+          }
+        },
+        {
+          "id": "b",
+          "text": "Customer code Customer name Representative name Employee code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q026-b.webp",
+            "width": 655,
+            "height": 98
+          }
+        },
+        {
+          "id": "c",
+          "text": "Customer code Customer name Representative name Region code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q026-c.webp",
+            "width": 779,
+            "height": 98
+          }
+        },
+        {
+          "id": "d",
+          "text": "Customer code Customer name Representative name Employee code Region code",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q026-d.webp",
+            "width": 778,
+            "height": 52
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q027",
+      "number": 27,
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "(2025S, IP, Q27)",
+      "promptText": "Q27. Which of the following is an appropriate purpose of conducting data normalization when\na relational database is constructed?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q027-p13.webp",
+        "width": 947,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q027-p13.webp",
+          "width": 947,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Providing redundancy to data in order to detect data errors",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q027-a.webp",
+            "width": 577,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Eliminating data inconsistencies and duplications in order to make it easy to maintain\nand manage the data",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q027-b.webp",
+            "width": 839,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "Unifying the character code of data in order to improve data reliability and storage\nefficiency",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q027-c.webp",
+            "width": 809,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Losslessly compressing data in order to improve access efficiency",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q027-d.webp",
+            "width": 652,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q028",
+      "number": 28,
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "(2025S, IP, Q28)",
+      "promptText": "Q28. An “Employee” table and a “Department” table that are to be managed with a relational\ndatabase were created on the basis of the conditions (i) through (v). Which of the following\nis the most appropriate primary key for the “Employee” table?\n[Conditions]\n(i) Each employee has one (1) employee number that is not duplicated.\n(ii) There can be employees with the same first name and family name.\n(iii) Each department has one (1) department code that is not duplicated.\n(iv) Each department has multiple employees.\n(v) Each employee belongs to only one (1) department.\nEmployee\nEmployeeNumber EmployeeName DepartmentCode DateOfBirth Address\nDepartment\nDepartmentCode DepartmentName Location",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q028-p14.webp",
+        "width": 947,
+        "height": 565
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q028-p14.webp",
+          "width": 947,
+          "height": 565
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "“EmployeeNumber”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q028-a.webp",
+            "width": 214,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "“EmployeeNumber” and “DepartmentCode”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q028-b.webp",
+            "width": 445,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "“EmployeeName”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q028-c.webp",
+            "width": 192,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "“DepartmentCode”",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q028-d.webp",
+            "width": 201,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q029",
+      "number": 29,
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "(2025S, IP, Q29)",
+      "promptText": "Q29. Which of the following is the appropriate description concerning transaction processing?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q029-p14.webp",
+        "width": 947,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q029-p14.webp",
+          "width": 947,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Commit is the reversion of a database to the status prior to the start of the transaction\nwhen a transaction is not processed successfully.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q029-a.webp",
+            "width": 833,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Exclusive control is the confirmation of the content of a database when a transaction is\nprocessed successfully.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q029-b.webp",
+            "width": 851,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "Rollback ensures that there are no inconsistencies in data when multiple transactions\nattempt to update data simultaneously.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q029-c.webp",
+            "width": 831,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Log is a file that records transaction history of a database.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q029-d.webp",
+            "width": 570,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q030",
+      "number": 30,
+      "domain": "technology",
+      "sourcePage": 15,
+      "source": "(2025S, IP, Q30)",
+      "promptText": "Q30. Three (3) PCs and an Internet-capable TV (television) set are to be connected to the\nInternet by using a hub and a router that has a firewall function. Which of the following is an\nappropriate connection that enables the firewall function of the router to be used for all the\ntraffic between the devices and the Internet? Here, “FW” in each figure indicates the firewall\nfunction.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q030-p15.webp",
+        "width": 947,
+        "height": 178
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q030-p15.webp",
+          "width": 947,
+          "height": 178
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q030-a.webp",
+            "width": 748,
+            "height": 209
+          }
+        },
+        {
+          "id": "b",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q030-b.webp",
+            "width": 686,
+            "height": 224
+          }
+        },
+        {
+          "id": "c",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q030-c.webp",
+            "width": 685,
+            "height": 209
+          }
+        },
+        {
+          "id": "d",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q030-d.webp",
+            "width": 658,
+            "height": 235
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q031",
+      "number": 31,
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, IP, Q31)",
+      "promptText": "Q31. Which of the following is the appropriate role of a DNS in a network?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q031-p16.webp",
+        "width": 774,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q031-p16.webp",
+          "width": 774,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "In response to a request from a client for the allocation of an IP address, it allocates an\nunused IP address from a pool of IP addresses.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q031-a.webp",
+            "width": 847,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "It receives a requests for file transfers from clients and transfers files to clients, and\nstores files that it receives from clients.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q031-b.webp",
+            "width": 816,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "It links domain names to IP addresses.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q031-c.webp",
+            "width": 384,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "It receives a request for retrieval from an e-mail recipient and transfers e-mail received\nby a mail server.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q031-d.webp",
+            "width": 852,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q032",
+      "number": 32,
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, IP, Q32)",
+      "promptText": "Q32. Which of the following is an appropriate example of an IPv4 IP address that is assigned\nto a PC?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q032-p16.webp",
+        "width": 947,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q032-p16.webp",
+          "width": 947,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "00.00.11.aa.bb.cc",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q032-a.webp",
+            "width": 185,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "050-1234-5678",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q032-b.webp",
+            "width": 164,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "10.123.45.67",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q032-c.webp",
+            "width": 140,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "http://www.example.co.jp/",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q032-d.webp",
+            "width": 275,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q033",
+      "number": 33,
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, IP, Q33)",
+      "promptText": "Q33. Mr. A sent an e-mail to the three (3) people Mr. P, Mr. Q, and Mr. R. He entered Mr. P’s\ne-mail address in the To field, Mr. Q’s e-mail address in the CC field, and Mr. R’s e-mail\naddress in the BCC field. Which of the following is the appropriate description concerning\nthe three (3) recipients of the e-mail?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q033-p16.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q033-p16.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mr. P and Mr. Q can see that the same e-mail was also sent to Mr. R.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q033-a.webp",
+            "width": 678,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Mr. P cannot see that the same e-mail was also sent to Mr. Q.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q033-b.webp",
+            "width": 607,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Mr. Q can see that the same e-mail was also sent to Mr. P.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q033-c.webp",
+            "width": 575,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Mr. R cannot see that the same e-mail was also sent to Mr. P and Mr. Q.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q033-d.webp",
+            "width": 709,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q034",
+      "number": 34,
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, IP, Q34)",
+      "promptText": "Q34. Which of the following is a technology that is used to make voice calls over the Internet\nby two (2) parties using the same application on their smartphones or other devices?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q034-p16.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q034-p16.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MVNO",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q034-a.webp",
+            "width": 90,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "NFC",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q034-b.webp",
+            "width": 64,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "NTP",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q034-c.webp",
+            "width": 63,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "VoIP",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q034-d.webp",
+            "width": 67,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q035",
+      "number": 35,
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "(2025S, IP, Q35)",
+      "promptText": "Q35. Among descriptions A through D concerning how to conduct information security\neducation to employees, which of the following contains all and only the appropriate\ndescriptions?\nA The re-education of one who has committed an information security breach includes\npreventive actions to avoid the same fault being repeated.\nB One way to conduct it is to incorporate it in a training program for new employees.\nC It is restricted to employees in the information systems department.\nD It is conducted after an incident or an accident concerning information security as\nwell as on a regular basis.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q035-p17.webp",
+        "width": 947,
+        "height": 364
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q035-p17.webp",
+          "width": 947,
+          "height": 364
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A, B, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q035-a.webp",
+            "width": 89,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "A, C, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q035-b.webp",
+            "width": 90,
+            "height": 37
+          }
+        },
+        {
+          "id": "c",
+          "text": "A, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q035-c.webp",
+            "width": 63,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "B, C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q035-d.webp",
+            "width": 62,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q036",
+      "number": 36,
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "(2025S, IP, Q36)",
+      "promptText": "Q36. Among the descriptions A through D of how to handle a contact list that includes\ncustomer names, addresses, and other information, which of the following contains all and\nonly the appropriate descriptions in terms of personal information protection?\nA Even if a customer asks to check his/her own registration information, this cannot be\ndisclosed on the grounds of information protection.\nB A list of all names and addresses is extracted from the contact list and is sent to all the\ncustomers to have them check for errors.\nC A CD-ROM that includes contact list data is to be shredded before it is discarded.\nD Contact list data is to be encrypted when it is stored in a file.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q036-p17.webp",
+        "width": 947,
+        "height": 364
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q036-p17.webp",
+          "width": 947,
+          "height": 364
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A, C, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q036-a.webp",
+            "width": 90,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "A, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q036-b.webp",
+            "width": 63,
+            "height": 37
+          }
+        },
+        {
+          "id": "c",
+          "text": "B, C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q036-c.webp",
+            "width": 62,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "C, D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q036-d.webp",
+            "width": 61,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q037",
+      "number": 37,
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "(2025S, IP, Q37)",
+      "promptText": "Q37. Among the threats and vulnerabilities in information security, which of the following is a\nvulnerability?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q037-p17.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q037-p17.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Computer virus",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q037-a.webp",
+            "width": 167,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Social engineering",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q037-b.webp",
+            "width": 195,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Tapping of communications data",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q037-c.webp",
+            "width": 334,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Inappropriate password management",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q037-d.webp",
+            "width": 371,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q038",
+      "number": 38,
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, IP, Q38)",
+      "promptText": "Q38. Which of the following is an appropriate disposal method for media that stores\nconfidential information to ensure that information leakage does not occur?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q038-p18.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q038-p18.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CDs and DVDs are destroyed and then are disposed of.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q038-a.webp",
+            "width": 545,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "A PC is disposed of with its CPU being destroyed.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q038-b.webp",
+            "width": 501,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "USB memory is disposed of with its files and folders being deleted.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q038-c.webp",
+            "width": 664,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Paper documentation is not reused as memo paper and is sealed in a confidential\nenvelope and then is disposed of together with general trash.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q038-d.webp",
+            "width": 790,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q039",
+      "number": 39,
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, IP, Q39)",
+      "promptText": "Q39. Which of the following is a term for software that encrypts files on a computer in order\nto make them unusable, and demands money or other valuables in exchange for the\ndecryption key?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q039-p18.webp",
+        "width": 939,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q039-p18.webp",
+          "width": 939,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Keylogger",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q039-a.webp",
+            "width": 118,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Ransomware",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q039-b.webp",
+            "width": 142,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Rootkit",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q039-c.webp",
+            "width": 89,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Worm",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q039-d.webp",
+            "width": 79,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q040",
+      "number": 40,
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, IP, Q40)",
+      "promptText": "Q40. Which of the following is an appropriate example of biometric authentication?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q040-p18.webp",
+        "width": 855,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q040-p18.webp",
+          "width": 855,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Authentication with a fingerprint",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q040-a.webp",
+            "width": 334,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Authentication with a digital certificate",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q040-b.webp",
+            "width": 395,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Authentication with a personal ID card",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q040-c.webp",
+            "width": 392,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Authentication with a one-time password",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q040-d.webp",
+            "width": 414,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q041",
+      "number": 41,
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, IP, Q41)",
+      "promptText": "Q41. During the use of a PC in workplace, a message was displayed stating that antivirus\nsoftware had detected a virus. Which of the following is an appropriate action that should be\ntaken immediately?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q041-p18.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q041-p18.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Reboot of the PC",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q041-a.webp",
+            "width": 182,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Notification to the workplace by e-mail from the PC",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q041-b.webp",
+            "width": 520,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Disconnection of the PC from networks",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q041-c.webp",
+            "width": 399,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Backup of files on the PC",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q041-d.webp",
+            "width": 264,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q042",
+      "number": 42,
+      "domain": "technology",
+      "sourcePage": 19,
+      "source": "(2025S, IP, Q42)",
+      "promptText": "Q42. There is an IoT system that is composed of IoT devices and an IoT server that manages\nthem. Which of the following is the appropriate combination of information security incidents\n(i) through (iii) in this system, and confidentiality, integrity, and availability that are\ncompromised because of the incidents?\n[Incident]\n(i) An IoT device stopped working because its battery ran out.\n(ii) Communication between the IoT devices and the IoT server was not encrypted, so an\ninformation leakage occurred.\n(iii) Incorrect data was recorded because of a system fault.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q042-p19.webp",
+        "width": 947,
+        "height": 364
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q042-p19.webp",
+          "width": 947,
+          "height": 364
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Availability Integrity Confidentiality",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q042-a.webp",
+            "width": 696,
+            "height": 90
+          }
+        },
+        {
+          "id": "b",
+          "text": "Availability Confidentiality Integrity",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q042-b.webp",
+            "width": 696,
+            "height": 90
+          }
+        },
+        {
+          "id": "c",
+          "text": "Integrity Availability Confidentiality",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q042-c.webp",
+            "width": 696,
+            "height": 90
+          }
+        },
+        {
+          "id": "d",
+          "text": "Confidentiality Availability Integrity",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q042-d.webp",
+            "width": 696,
+            "height": 90
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q043",
+      "number": 43,
+      "domain": "technology",
+      "sourcePage": 19,
+      "source": "(2025S, IP, Q43)",
+      "promptText": "Q43. In the activities of an organization that runs an ISMS on the basis of the PDCA cycle,\nimprovements and corrective measures are decided from the results of monitoring of the risk\nmanagement activities and other such information. In which process of the PDCA cycle is\nthis activity performed?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q043-p19.webp",
+        "width": 948,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q043-p19.webp",
+          "width": 948,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "P",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q043-a.webp",
+            "width": 33,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "D",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q043-b.webp",
+            "width": 35,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q043-c.webp",
+            "width": 33,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "A",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q043-d.webp",
+            "width": 32,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q044",
+      "number": 44,
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "(2025S, IP, Q44)",
+      "promptText": "Q44. When risk treatment in risk management for information security is divided into the four\n(4) categories of risk avoidance, risk sharing, risk mitigation, and risk retention, which of the\nfollowing is the appropriate explanation of risk sharing?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q044-p20.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q044-p20.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Halting activities that involve risk and fundamentally eliminating risk factors, for\nexample, by not handling personal information",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q044-a.webp",
+            "width": 798,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Implementing measures to reduce the probability of risk occurrence and reduce damage,\nsuch as distributing a data center over multiple locations that are geographically far\naway from each other in preparation for a disaster",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q044-b.webp",
+            "width": 864,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "Reducing damage that may occur when a risk materializes by transferring or distributing\nrisk to a separate organization on the basis of an agreement, such as the purchasing of an\ninsurance policy",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q044-c.webp",
+            "width": 868,
+            "height": 111
+          }
+        },
+        {
+          "id": "d",
+          "text": "If the probability of risk occurrence or the damage in the event of occurrence is\nconsidered to be small, recognizing the risk, and then accepting it without taking any\nparticular measures",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q044-d.webp",
+            "width": 834,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q045",
+      "number": 45,
+      "domain": "technology",
+      "sourcePage": 20,
+      "source": "(2025S, IP, Q45)",
+      "promptText": "Q45. Which of the following is an appropriate description concerning user authentication of a\nsystem?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q045-p20.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q045-p20.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A mechanism that achieves login to multiple servers, applications, and other such things\nwith a single authentication is called challenge-response authentication.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q045-a.webp",
+            "width": 866,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "A mechanism that authenticates a user by using fingerprints, voice prints, and other\ncharacteristics of a body is called single sign-on.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q045-b.webp",
+            "width": 819,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "A code number that is used in order to authenticate a user of an information system is\ncalled a PIN.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q045-c.webp",
+            "width": 838,
+            "height": 69
+          }
+        },
+        {
+          "id": "d",
+          "text": "A method where, instead of the order of specific numbers or characters, the positions in\na grid are memorized, and during authentication, a person enters the numbers and\ncharacters in the positions that he/she remembers in a grid that is displayed on the screen\nis called multi-factor authentication.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q045-d.webp",
+            "width": 871,
+            "height": 141
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q046",
+      "number": 46,
+      "domain": "management",
+      "sourcePage": 20,
+      "source": "(2025S, IP, Q46)",
+      "promptText": "Q46. Mr. A, a participant in system testing, has no access to the design of the internal structure\nof the system or software and prepares input data and output data to be used in verification\nof the transaction functions commonly used in the department. Which of the following is the\ntesting technique that Mr. A is going to implement?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q046-p20.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q046-p20.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Inspection",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q046-a.webp",
+            "width": 117,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Walk-through",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q046-b.webp",
+            "width": 152,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Black-box testing",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q046-c.webp",
+            "width": 187,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "White-box testing",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q046-d.webp",
+            "width": 190,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q047",
+      "number": 47,
+      "domain": "management",
+      "sourcePage": 21,
+      "source": "(2025S, IP, Q47)",
+      "promptText": "Q47. The processes of system development include system requirements definition, systems\narchitecture design, system integration testing, and software acceptance. Which of the\nfollowing is an activity that is performed in system requirements definition?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q047-p21.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q047-p21.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The party to which development is outsourced uses the software under the same\nconditions as the actual production environment in order to determine if it runs correctly.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q047-a.webp",
+            "width": 869,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "A system test plan is created, and a test environment is prepared.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q047-b.webp",
+            "width": 638,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "The functions and performance required of the system are clarified.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q047-c.webp",
+            "width": 663,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "A program is created and test results are reviewed according to the evaluation criteria.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q047-d.webp",
+            "width": 843,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q048",
+      "number": 48,
+      "domain": "management",
+      "sourcePage": 21,
+      "source": "(2025S, IP, Q48)",
+      "promptText": "Q48. What is the term for revising and changing programs after system development?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q048-p21.webp",
+        "width": 872,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q048-p21.webp",
+          "width": 872,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Computerization planning",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q048-a.webp",
+            "width": 268,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "System operation",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q048-b.webp",
+            "width": 184,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Software maintenance",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q048-c.webp",
+            "width": 229,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Requirements definition",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q048-d.webp",
+            "width": 250,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q049",
+      "number": 49,
+      "domain": "management",
+      "sourcePage": 21,
+      "source": "(2025S, IP, Q49)",
+      "promptText": "Q49. Which of the following is the most appropriate description concerning the usability of\nRPA software when the quality characteristics of software are classified into portability,\nfunctional suitability, compatibility, usability, reliability, performance efficiency, security,\nand maintainability?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q049-p21.webp",
+        "width": 950,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q049-p21.webp",
+          "width": 950,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It operates even if the OS of the PC that RPA runs on changes.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q049-a.webp",
+            "width": 618,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Automatic processing is executed at the time and on the conditions that are specified\nwith RPA.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q049-b.webp",
+            "width": 831,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "Even if the version of the application software that is the subject of operation by RPA is\nupgraded, RPA will work with a simple change of the settings.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q049-c.webp",
+            "width": 863,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "People who have never used RPA can use it with only simple education.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q049-d.webp",
+            "width": 711,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q050",
+      "number": 50,
+      "domain": "management",
+      "sourcePage": 22,
+      "source": "(2025S, IP, Q50)",
+      "promptText": "Q50. Which of the following is the most appropriate case example of DevOps in software\ndevelopment?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q050-p22.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q050-p22.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The developer prepares a prototype of important functions, and evaluates its adequacy\nby measuring the performance together with the customer.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q050-a.webp",
+            "width": 846,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "The developer moves on to the next development phase only after it is judged that the\ncurrent phase is complete, and handovers the system to the operation side only after the\nsystem test where users participating in a system test confirm the operability.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q050-b.webp",
+            "width": 855,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "The developer and the operator work in close cooperation and quickly proceed with the\nimplementation and update of functions, etc., by using automation tools and other such\ntools.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q050-c.webp",
+            "width": 855,
+            "height": 105
+          }
+        },
+        {
+          "id": "d",
+          "text": "The programs are added one by one while fixed short-period cycles are repeated in order\nto expand the functions in the development of a system.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q050-d.webp",
+            "width": 869,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q051",
+      "number": 51,
+      "domain": "management",
+      "sourcePage": 22,
+      "source": "(2025S, IP, Q51)",
+      "promptText": "Q51. A system development project has more defects than the quality targets. In order to clarify\nthe issues to prioritize for resolution, the number of defects for each cause is to be\ninvestigated and shown with a chart. Which of the following is an appropriate chart to use?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q051-p22.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q051-p22.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q051-a.webp",
+            "width": 316,
+            "height": 239
+          }
+        },
+        {
+          "id": "b",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q051-b.webp",
+            "width": 260,
+            "height": 226
+          }
+        },
+        {
+          "id": "c",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q051-c.webp",
+            "width": 293,
+            "height": 183
+          }
+        },
+        {
+          "id": "d",
+          "text": "",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q051-d.webp",
+            "width": 172,
+            "height": 304
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q052",
+      "number": 52,
+      "domain": "management",
+      "sourcePage": 23,
+      "source": "(2025S, IP, Q52)",
+      "promptText": "Q52. A system development project at a company is becoming delayed. In order to resolve the\ndelay, the project leader proposes to project members that part of the planned work procedure\nbe omitted. The project members are divided into those who think that this cannot be avoided\nand those who are opposed because the quality will decrease. From the perspective of\nensuring quality in a project, which of the following is the most appropriate action for a\nproject leader to take?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q052-p23.webp",
+        "width": 950,
+        "height": 220
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q052-p23.webp",
+          "width": 950,
+          "height": 220
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Discussing detailed measures against decrease in quality within the project, and building\nconsensus as a project",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q052-a.webp",
+            "width": 868,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Deciding whether to accept or reject a proposal with a majority decision by highly\nskilled people from among the project members",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q052-b.webp",
+            "width": 808,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "Proceeding as he/she proposed because he/she has the most experience",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q052-c.webp",
+            "width": 697,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Replacing project members who cannot agree with his/her proposal",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q052-d.webp",
+            "width": 665,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q053",
+      "number": 53,
+      "domain": "management",
+      "sourcePage": 23,
+      "source": "(2025S, IP, Q53)",
+      "promptText": "Q53. In an arrow diagram that shows system development, if activities A and D are delayed\nfor three (3) days in total, what is the delay in the entire project?\nA D\n2 4\nB E Legend\n4 3 Activity\nC F name\n7 1\nRequired\ndays",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q053-p23.webp",
+        "width": 947,
+        "height": 396
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q053-p23.webp",
+          "width": 947,
+          "height": 396
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q053-a.webp",
+            "width": 24,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "2",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q053-b.webp",
+            "width": 28,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q053-c.webp",
+            "width": 27,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "4",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q053-d.webp",
+            "width": 28,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q054",
+      "number": 54,
+      "domain": "management",
+      "sourcePage": 23,
+      "source": "(2025S, IP, Q54)",
+      "promptText": "Q54. In a project team that is required to communicate information on a one-to-one basis, when\nthe members increase from six (6) people to ten (10) people, by how many times does the\nnumber of paths that are required for communicating information increase?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q054-p23.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q054-p23.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1.5",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q054-a.webp",
+            "width": 44,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "2.5",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q054-b.webp",
+            "width": 46,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "3",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q054-c.webp",
+            "width": 27,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "6",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q054-d.webp",
+            "width": 28,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q055",
+      "number": 55,
+      "domain": "management",
+      "sourcePage": 24,
+      "source": "(2025S, IP, Q55)",
+      "promptText": "Q55. Which of the following is a method that organizes all of the activities to be performed in\nthe project in a hierarchical structure?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q055-p24.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q055-p24.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CRM",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q055-a.webp",
+            "width": 70,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "ERP",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q055-b.webp",
+            "width": 61,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "PPM",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q055-c.webp",
+            "width": 65,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "WBS",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q055-d.webp",
+            "width": 68,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q056",
+      "number": 56,
+      "domain": "management",
+      "sourcePage": 24,
+      "source": "(2025S, IP, Q56)",
+      "promptText": "Q56. When a system development project is started, it is foreseen that the progress of the\nproject may be affected by a large number of change requests for specification that come from\nusers during the course of development. Which of the following is the most appropriate\nmeasure for ensuring that there is no deterioration in quality or delay in delivery date?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q056-p24.webp",
+        "width": 948,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q056-p24.webp",
+          "width": 948,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Declaring to the customer that change requests cannot be accepted after the completion\nof design",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q056-a.webp",
+            "width": 854,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Shortening the test period by skipping tests when a delay occurs during the course of the\nproject",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q056-b.webp",
+            "width": 867,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "Including in the plan that the implementation of a function will be called off if there are\na large number of change requests",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q056-c.webp",
+            "width": 858,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Reaching an agreement with the customer on what can be accepted as change requests\nand how to determine the priority of the accepted change requests",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q056-d.webp",
+            "width": 846,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q057",
+      "number": 57,
+      "domain": "management",
+      "sourcePage": 24,
+      "source": "(2025S, IP, Q57)",
+      "promptText": "Q57. The processes of project management include project cost management, project\ncommunications management, project resources management, project schedule management,\nand the like. In a system development project, which of the following is the most appropriate\nactivity in project cost management when members are added for implementing a test?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q057-p24.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q057-p24.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Updating the mailing list, etc. so that information can be efficiently transmitted to the\nnewly participating members",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q057-a.webp",
+            "width": 837,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Requesting a vendor to provide training on the testing tool to the newly participating\nmembers",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q057-b.webp",
+            "width": 830,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "Adding tasks to be handled by the newly participating members, and changing the\nschedule",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q057-c.webp",
+            "width": 805,
+            "height": 69
+          }
+        },
+        {
+          "id": "d",
+          "text": "Estimating the personnel expenses of the newly participating members, and changing the\nplan",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q057-d.webp",
+            "width": 872,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q058",
+      "number": 58,
+      "domain": "management",
+      "sourcePage": 25,
+      "source": "(2025S, IP, Q58)",
+      "promptText": "Q58. Which of the following is an appropriate purpose for facility management concerning IT\nsystems?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q058-p25.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q058-p25.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Optimization of IT service cost",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q058-a.webp",
+            "width": 317,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Continuation of a company’s business in the event of a disaster, etc.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q058-b.webp",
+            "width": 668,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Ensuring appropriate security for information assets",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q058-c.webp",
+            "width": 516,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Overall maintenance of facilities and the environment for information processing",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q058-d.webp",
+            "width": 796,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q059",
+      "number": 59,
+      "domain": "management",
+      "sourcePage": 25,
+      "source": "(2025S, IP, Q59)",
+      "promptText": "Q59. Which of the following is the most appropriate activities of a service desk?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q059-p25.webp",
+        "width": 821,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q059-p25.webp",
+          "width": 821,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Eliminating the root cause of an incident and preventing the recurrence of the incident",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q059-a.webp",
+            "width": 844,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Installing updated software in order to prevent the recurrence of an incident",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q059-b.webp",
+            "width": 743,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Performing centralized management of changes in a service",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q059-c.webp",
+            "width": 590,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Handling and recording inquiries from users",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q059-d.webp",
+            "width": 444,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q060",
+      "number": 60,
+      "domain": "management",
+      "sourcePage": 25,
+      "source": "(2025S, IP, Q60)",
+      "promptText": "Q60. Which of the following is the most appropriate interface that responds to the query from\na user in an interactive and automated manner?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q060-p25.webp",
+        "width": 947,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q060-p25.webp",
+          "width": 947,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Recommendation",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q060-a.webp",
+            "width": 186,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Chatbot",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q060-b.webp",
+            "width": 93,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Escalation",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q060-c.webp",
+            "width": 117,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "FAQs",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q060-d.webp",
+            "width": 75,
+            "height": 38
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q061",
+      "number": 61,
+      "domain": "management",
+      "sourcePage": 25,
+      "source": "(2025S, IP, Q61)",
+      "promptText": "Q61. In the PDCA cycle of service level management, which of the following is implemented\nas C (Check)?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q061-p25.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q061-p25.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Providing services on the basis of the SLA",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q061-a.webp",
+            "width": 427,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Preparing a service improvement plan on the basis of the service report and its review\nresults",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q061-b.webp",
+            "width": 842,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "Agreeing upon the desired service quality on the basis of the service requirements and\nthe service improvement plan, and preparing an SLA",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q061-c.webp",
+            "width": 844,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Monitoring and measuring the provided services, and preparing a service report",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q061-d.webp",
+            "width": 783,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q062",
+      "number": 62,
+      "domain": "management",
+      "sourcePage": 26,
+      "source": "(2025S, IP, Q62)",
+      "promptText": "Q62. Which of the following is the appropriate combination of IT service management and the\ncontent of the SLA for a hosting service A through C below?\nA: The time that a server is operational\nB: The time taken until a specified member of staff is notified after it is detected that the\namount of free space on a disk has reached a set threshold\nC: The time taken until a specified member of staff is notified after an unauthorized\naccess is detected",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q062-p26.webp",
+        "width": 947,
+        "height": 286
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q062-p26.webp",
+          "width": 947,
+          "height": 286
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A B C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q062-a.webp",
+            "width": 697,
+            "height": 126
+          }
+        },
+        {
+          "id": "b",
+          "text": "A C B",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q062-b.webp",
+            "width": 697,
+            "height": 126
+          }
+        },
+        {
+          "id": "c",
+          "text": "B A C",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q062-c.webp",
+            "width": 697,
+            "height": 126
+          }
+        },
+        {
+          "id": "d",
+          "text": "C B A",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q062-d.webp",
+            "width": 697,
+            "height": 126
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q063",
+      "number": 63,
+      "domain": "management",
+      "sourcePage": 26,
+      "source": "(2025S, IP, Q63)",
+      "promptText": "Q63. In a company, which of the following is responsible for the establishment of IT\ngovernance?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q063-p26.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q063-p26.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Shareholders",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q063-a.webp",
+            "width": 141,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Management",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q063-b.webp",
+            "width": 143,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "System auditor",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q063-c.webp",
+            "width": 160,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Head of the systems department",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q063-d.webp",
+            "width": 326,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q064",
+      "number": 64,
+      "domain": "management",
+      "sourcePage": 26,
+      "source": "(2025S, IP, Q64)",
+      "promptText": "Q64. A food manufacturer is conducting business in accordance with food industry safety\nstandards. As the safety standards are revised, the internal standards of the company are also\nrevised accordingly. Which of the following objectives of internal control corresponds to this\naction?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q064-p26.webp",
+        "width": 947,
+        "height": 142
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q064-p26.webp",
+          "width": 947,
+          "height": 142
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Effectiveness and efficiency of business",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q064-a.webp",
+            "width": 402,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Reliability of financial reporting",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q064-b.webp",
+            "width": 329,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Compliance with laws and regulations that are related to business operations",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q064-c.webp",
+            "width": 751,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Protection of assets",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q064-d.webp",
+            "width": 204,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q065",
+      "number": 65,
+      "domain": "management",
+      "sourcePage": 27,
+      "source": "(2025S, IP, Q65)",
+      "promptText": "Q65. Which of the following is the most appropriate objective of an accounting audit?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q065-p27.webp",
+        "width": 875,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q065-p27.webp",
+          "width": 875,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "To check that risks are controlled concerning the accounting system and other such IT,\nand IT governance is implemented",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q065-a.webp",
+            "width": 849,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "To check that risk management is implemented effectively concerning information\nsecurity, including the method of use of the PCs that the accounting department\npossesses",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q065-b.webp",
+            "width": 813,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "To check that various kinds of work including accounting service within an organization\nare implemented rationally and efficiently according to the policy of the organization",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q065-c.webp",
+            "width": 868,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "To check that processing is performed without impropriety or errors, from the\noccurrence of various everyday transactions to aggregation into a financial report",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q065-d.webp",
+            "width": 797,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q066",
+      "number": 66,
+      "domain": "strategy",
+      "sourcePage": 27,
+      "source": "(2025S, IP, Q66)",
+      "promptText": "Q66. Which of the following is an appropriate way to brainstorm?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q066-p27.webp",
+        "width": 682,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q066-p27.webp",
+          "width": 682,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Asking participants to present feasible ideas and refrain from generating unrestrained\nideas",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q066-a.webp",
+            "width": 836,
+            "height": 69
+          }
+        },
+        {
+          "id": "b",
+          "text": "Proceeding with the session without blaming any member who creates an improved idea\nthat takes advantage of another member’s idea",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q066-b.webp",
+            "width": 868,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "Proceeding with the session while selecting the ideas that are suitable to the theme",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q066-c.webp",
+            "width": 808,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Encouraging the criticism of ideas to pursue quality rather than quantity of ideas",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q066-d.webp",
+            "width": 789,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q067",
+      "number": 67,
+      "domain": "strategy",
+      "sourcePage": 27,
+      "source": "(2025S, IP, Q67)",
+      "promptText": "Q67. A certain product’s sales plan and sales result are shown in the table below. What is the\nratio in percentage of the profit result to the profit plan? Here, the decimal fractions of the\nratio are truncated.\nSales result /\nSales plan Sales result\nsales plan\n(X) (Y)\n(Y/X)\nPurchase price (p) 1,000 yen 1,000 yen 100%\nNumber of purchases (q) 1,000 pieces 1,100 pieces 110%\nSale price (r) 1,500 yen 1,350 yen 90%\nNumber of sales (s) 1,000 pieces 1,100 pieces 110%\nProfit (t = r × s - p × q) 500,000 yen\nNote: The shaded section is not shown.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q067-p27.webp",
+        "width": 947,
+        "height": 428
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q067-p27.webp",
+          "width": 947,
+          "height": 428
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "77",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q067-a.webp",
+            "width": 40,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "99",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q067-b.webp",
+            "width": 40,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "110",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q067-c.webp",
+            "width": 50,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "129",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q067-d.webp",
+            "width": 50,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q068",
+      "number": 68,
+      "domain": "strategy",
+      "sourcePage": 28,
+      "source": "(2025S, IP, Q68)",
+      "promptText": "Q68. If risk assessment is divided into three (3) processes, which of the following is the third\nprocess besides risk identification and risk evaluation?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q068-p28.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q068-p28.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Risk transfer",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q068-a.webp",
+            "width": 140,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Risk avoidance",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q068-b.webp",
+            "width": 165,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Risk reduction",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q068-c.webp",
+            "width": 158,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Risk analysis",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q068-d.webp",
+            "width": 145,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q069",
+      "number": 69,
+      "domain": "strategy",
+      "sourcePage": 28,
+      "source": "(2025S, IP, Q69)",
+      "promptText": "Q69. Which of the following is the most appropriate term that describes the case below?\n“In order to achieve continuous growth, a company withdraws from business area A with\nstagnant sales, and puts the management resources into strengthening business area B.”",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q069-p28.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q069-p28.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Business environment",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q069-a.webp",
+            "width": 230,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Business strategy",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q069-b.webp",
+            "width": 185,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Management vision",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q069-c.webp",
+            "width": 207,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Management philosophy",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q069-d.webp",
+            "width": 256,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q070",
+      "number": 70,
+      "domain": "strategy",
+      "sourcePage": 28,
+      "source": "(2025S, IP, Q70)",
+      "promptText": "Q70. Which of the following is an expression that calculates operating profit?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q070-p28.webp",
+        "width": 794,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q070-p28.webp",
+          "width": 794,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(Gross profit) − (Selling, general, and administrative expense)",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q070-a.webp",
+            "width": 613,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "(Sales) − (Cost of sales)",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q070-b.webp",
+            "width": 247,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "(Current profits) + (Extraordinary profit) − (Extraordinary loss)",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q070-c.webp",
+            "width": 626,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "(Current net profit before tax) − (Corporate tax, residential tax, and business tax)",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q070-d.webp",
+            "width": 792,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q071",
+      "number": 71,
+      "domain": "strategy",
+      "sourcePage": 28,
+      "source": "(2025S, IP, Q71)",
+      "promptText": "Q71. In order to improve the customer service level of a call center, the complaints received\nfrom customers concerning the response of the call center are classified and tabulated. Which\nof the following is a chart suitable for displaying the number of complaints in a bar chart and\nthe cumulative percentage in a line chart, in descending order of complaints, for determining\nthe priority of improvement?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q071-p28.webp",
+        "width": 948,
+        "height": 184
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q071-p28.webp",
+          "width": 948,
+          "height": 184
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "PERT chart",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q071-a.webp",
+            "width": 130,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Control chart",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q071-b.webp",
+            "width": 144,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Cause and effect diagram",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q071-c.webp",
+            "width": 262,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Pareto chart",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q071-d.webp",
+            "width": 133,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q072",
+      "number": 72,
+      "domain": "strategy",
+      "sourcePage": 28,
+      "source": "(2025S, IP, Q72)",
+      "promptText": "Q72. Which of the following is a role that has direct responsibility for technology management,\nsuch as the creation of a technology strategy and the promotion of technology development?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q072-p28.webp",
+        "width": 946,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q072-p28.webp",
+          "width": 946,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CEO",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q072-a.webp",
+            "width": 64,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "CFO",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q072-b.webp",
+            "width": 63,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "COO",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q072-c.webp",
+            "width": 66,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "CTO",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q072-d.webp",
+            "width": 64,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q073",
+      "number": 73,
+      "domain": "strategy",
+      "sourcePage": 29,
+      "source": "(2025S, IP, Q73)",
+      "promptText": "Q73. Which of the following is a corporate activity of compliance promotion?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q073-p29.webp",
+        "width": 798,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q073-p29.webp",
+          "width": 798,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A mechanism for sharing sales people’s sales know-how, customer information, and\nnegotiation information in the sales department is implemented to improve sales\nproductivity.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q073-a.webp",
+            "width": 829,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "A mechanism for sharing customer information and purchasing history among all\ndepartments that come into contact with customers is implemented to increase customer\nsatisfaction.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q073-b.webp",
+            "width": 863,
+            "height": 105
+          }
+        },
+        {
+          "id": "c",
+          "text": "Schedules, documents, messages, and meeting room reservation status are shared with\ngroups such as departments and projects in order to prevent loss of communication.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q073-c.webp",
+            "width": 846,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "A code of conduct or a conduct manual based on corporate ethics that aims to follow the\nlaw is created, and ethical education is implemented to ensure that employees\nunderstand them.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q073-d.webp",
+            "width": 867,
+            "height": 105
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q074",
+      "number": 74,
+      "domain": "strategy",
+      "sourcePage": 29,
+      "source": "(2025S, IP, Q74)",
+      "promptText": "Q74. Among information processing standards, which of the following is defined for\ninformation security management?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q074-p29.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q074-p29.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "IEEE 802.3",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q074-a.webp",
+            "width": 127,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "ISO/IEC 27001",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q074-b.webp",
+            "width": 164,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "JPEG 2000",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q074-c.webp",
+            "width": 125,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "MPEG 1",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q074-d.webp",
+            "width": 99,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q075",
+      "number": 75,
+      "domain": "strategy",
+      "sourcePage": 29,
+      "source": "(2025S, IP, Q75)",
+      "promptText": "Q75. Which of the following is the most appropriate example of standardization in the\nmanufacturing industry?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q075-p29.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q075-p29.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daily workload is balanced, and the types and volume of components taken daily in\nfrom the previous process are equalized.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q075-a.webp",
+            "width": 822,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "In order to streamline the production process, common components and procedures are\nused for manufacturing.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q075-b.webp",
+            "width": 853,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "In order to improve the speed of a production management program, the optimum\nalgorithm is selected.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q075-c.webp",
+            "width": 804,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Production planning, production processes, and working methods are simplified through\na reduction in product types and a review of work details.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q075-d.webp",
+            "width": 867,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q076",
+      "number": 76,
+      "domain": "strategy",
+      "sourcePage": 30,
+      "source": "(2025S, IP, Q76)",
+      "promptText": "Q76. According to the ISO 9000 family, quality is defined as the “degree to which a set of\ninherent characteristics fulfills requirements.” When products are evaluated on the basis of\nthis definition, which of the following is most appropriate as a product with good quality?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q076-p30.webp",
+        "width": 950,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q076-p30.webp",
+          "width": 950,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A product having no customer complaints and a high level of customer satisfaction",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q076-a.webp",
+            "width": 814,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "A product that a company produces in-house without outsourcing",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q076-b.webp",
+            "width": 647,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "A product designed and manufactured using CAD and CAM",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q076-c.webp",
+            "width": 599,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "A product utilizing materials and components of high quality",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q076-d.webp",
+            "width": 605,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q077",
+      "number": 77,
+      "domain": "strategy",
+      "sourcePage": 30,
+      "source": "(2025S, IP, Q77)",
+      "promptText": "Q77. Which of the following is the most appropriate example of enhanced corporate\ngovernance?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q077-p30.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q077-p30.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Enhancing the labor system in order to empower women",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q077-a.webp",
+            "width": 561,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Purchasing another company in order to swiftly deploy business",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q077-b.webp",
+            "width": 634,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Increasing the number of highly-independent outside directors",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q077-c.webp",
+            "width": 615,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Withdrawing from a business where it is hard to obtain profit",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q077-d.webp",
+            "width": 606,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q078",
+      "number": 78,
+      "domain": "strategy",
+      "sourcePage": 30,
+      "source": "(2025S, IP, Q78)",
+      "promptText": "Q78. A piece of software is provided in a form that enables use at a set fee or for a certain\nperiod of time. Which of the following is the most appropriate term to express this form of\nuse?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q078-p30.webp",
+        "width": 950,
+        "height": 106
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q078-p30.webp",
+          "width": 950,
+          "height": 106
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Activation",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q078-a.webp",
+            "width": 118,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Adware",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q078-b.webp",
+            "width": 93,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Subscription",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q078-c.webp",
+            "width": 137,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Volume license",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q078-d.webp",
+            "width": 167,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q079",
+      "number": 79,
+      "domain": "strategy",
+      "sourcePage": 31,
+      "source": "(2025S, IP, Q79)",
+      "promptText": "Q79. In order to consider near-term strategies, automobile manufacturer Company A\nidentified its strengths and weaknesses, as well as the opportunities and threats it faces in\nthe external environment. On the basis of the results, which of the following is appropriate\nas measures to leverage the company's strengths and overcome the threats?\nStrengths Weaknesses\n• Strong brand image • Large-scale retirement of\nInternal\n• Accumulation of multi- skilled workers\nenvironment\ndirectional research and\ndevelopment\nOpportunities Threats\nExternal • Monetary easing under interest • Sharp rise in oil prices\nenvironment rate decline • Spread of environmental\nconservation consciousness",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q079-p31.webp",
+        "width": 927,
+        "height": 556
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q079-p31.webp",
+          "width": 927,
+          "height": 556
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Extend the retirement age of skilled workers or implement rehiring",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q079-a.webp",
+            "width": 660,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Procure funds at low interest and stockpile large reserves of oil",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q079-b.webp",
+            "width": 622,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Conduct research and development and commercialize electric automobiles",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q079-c.webp",
+            "width": 743,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Take advantage of brand image to strengthen sales capabilities",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q079-d.webp",
+            "width": 618,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q080",
+      "number": 80,
+      "domain": "strategy",
+      "sourcePage": 31,
+      "source": "(2025S, IP, Q80)",
+      "promptText": "Q80. Which of the following is an appropriate description concerning M&A?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q080-p31.webp",
+        "width": 791,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q080-p31.webp",
+          "width": 791,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The analysis of the flow of business and the chain of value for creating value of products\nand services provided by a company",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q080-a.webp",
+            "width": 870,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "The increase in autonomy in business strategy making by dividing a company by\nbusiness or region",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q080-b.webp",
+            "width": 795,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The drastic reform of business processes, and using IT to increase business throughput\nand cost efficiency",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q080-c.webp",
+            "width": 848,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The acceleration of business deployment by fulfilling the functions that the company is\nlacking from other companies through corporate acquisition, etc.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q080-d.webp",
+            "width": 854,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q081",
+      "number": 81,
+      "domain": "strategy",
+      "sourcePage": 32,
+      "source": "(2025S, IP, Q81)",
+      "promptText": "Q81. Which of the following is an appropriate explanation of 3C analysis that is used to\nanalyze a business environment?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q081-p32.webp",
+        "width": 946,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q081-p32.webp",
+          "width": 946,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The analysis is performed from the three (3) perspectives of the customers, the\ncompetitors, and the company.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q081-a.webp",
+            "width": 772,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "The analysis is performed from the three (3) perspectives of last purchase date, purchase\nfrequency, and purchase amount.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q081-b.webp",
+            "width": 865,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The analysis is performed by decomposition into the three (3) elements of era, age, and\ngeneration.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q081-c.webp",
+            "width": 854,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The analysis is performed by categorization into three (3) groups in descending order of\ntotal sales.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q081-d.webp",
+            "width": 864,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q082",
+      "number": 82,
+      "domain": "strategy",
+      "sourcePage": 32,
+      "source": "(2025S, IP, Q82)",
+      "promptText": "Q82. Which of the following is an appropriate description concerning a balanced scorecard\n(BSC)?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q082-p32.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q082-p32.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a business management technique that converts a company or organization’s vision\nand strategy into specific actions from four (4) viewpoints (“financial viewpoint,”\n“customer viewpoint,” “business process viewpoint,” and “growth and learning\nviewpoint”).",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q082-a.webp",
+            "width": 860,
+            "height": 147
+          }
+        },
+        {
+          "id": "b",
+          "text": "It is an approach where the corporate activities of providing a product or service to\ncustomers are viewed as a chain of activities of procurement, development,\nmanufacturing, sales, and service that adds and builds up value and costs in a sequential\nmanner and produces the final “value” for the customer.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q082-b.webp",
+            "width": 861,
+            "height": 147
+          }
+        },
+        {
+          "id": "c",
+          "text": "It is a business analysis technique for a company that produces and sells a wide variety\nof products and is involved in several businesses to determine the products and\nbusinesses’ combination that has the most efficient and effective distribution of\nmanagement resources from a strategic perspective.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q082-c.webp",
+            "width": 852,
+            "height": 147
+          }
+        },
+        {
+          "id": "d",
+          "text": "It is a business strategy technique for use in the evaluation of strengths, weaknesses,\nopportunities, and threats in projects, venture businesses, and other such activities by\norganizations and individuals that perform decision making in order to achieve a target.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q082-d.webp",
+            "width": 856,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q083",
+      "number": 83,
+      "domain": "strategy",
+      "sourcePage": 32,
+      "source": "(2025S, IP, Q83)",
+      "promptText": "Q83. Several companies want to collaborate on research and development to develop a new\nbusiness. Which of the following is an appropriate organization that is formed through\ncollaborative investment?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q083-p32.webp",
+        "width": 947,
+        "height": 106
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q083-p32.webp",
+          "width": 947,
+          "height": 106
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "M&A",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q083-a.webp",
+            "width": 74,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Cross-license",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q083-b.webp",
+            "width": 146,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Joint venture",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q083-c.webp",
+            "width": 141,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Spin-off",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q083-d.webp",
+            "width": 99,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q084",
+      "number": 84,
+      "domain": "strategy",
+      "sourcePage": 33,
+      "source": "(2025S, IP, Q84)",
+      "promptText": "Q84. Which of the following is the most appropriate example of business improvement\nthrough the implementation of SCM?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q084-p33.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q084-p33.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Products are now sold over the Internet as well, so increased sales on the basis of\nexpanded sales channels can be anticipated.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q084-a.webp",
+            "width": 798,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "The sales information and sales know-how possessed by sales representatives is now\nmanaged with a database, so it is possible to share these with the sales department as a\nwhole.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q084-b.webp",
+            "width": 847,
+            "height": 105
+          }
+        },
+        {
+          "id": "c",
+          "text": "Sales information is now sent to a manufacturer over a network, so the manufacturer can\nproduce and supply products in a timely way.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q084-c.webp",
+            "width": 869,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Sales data from stores are now gathered on a server at headquarters, so sales trends can\nbe analyzed by age and by gender.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q084-d.webp",
+            "width": 854,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q085",
+      "number": 85,
+      "domain": "strategy",
+      "sourcePage": 33,
+      "source": "(2025S, IP, Q85)",
+      "promptText": "Q85. A certain bank makes the deployment of highly convenient and advanced services easier\nby publishing the interface specifications for its systems and permitting access from external\nparties who have concluded a contract in advance. Which of the following is the most\nappropriate term to express this initiative?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q085-p33.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q085-p33.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "BPO",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q085-a.webp",
+            "width": 63,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "RPA",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q085-b.webp",
+            "width": 63,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Open API",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q085-c.webp",
+            "width": 113,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Technology management",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q085-d.webp",
+            "width": 260,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q086",
+      "number": 86,
+      "domain": "strategy",
+      "sourcePage": 33,
+      "source": "(2025S, IP, Q86)",
+      "promptText": "Q86. Which of the following is a system that collects information that is required for sales\nmanagement or inventory control by reading or keying in a product code or a buyer’s\nattribute at the time of a sale?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q086-p33.webp",
+        "width": 947,
+        "height": 106
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q086-p33.webp",
+          "width": 947,
+          "height": 106
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ETC",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q086-a.webp",
+            "width": 61,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "GPS",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q086-b.webp",
+            "width": 60,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "POS",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q086-c.webp",
+            "width": 60,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "SCM",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q086-d.webp",
+            "width": 67,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q087",
+      "number": 87,
+      "domain": "strategy",
+      "sourcePage": 34,
+      "source": "(2025S, IP, Q87)",
+      "promptText": "Q87. Which of the following is the most appropriate description concerning deep learning?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q087-p34.webp",
+        "width": 923,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q087-p34.webp",
+          "width": 923,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a mechanism that integrates information and the workflow between departments that\nare involved with customers, such as sales, marketing, and after-sales service.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q087-a.webp",
+            "width": 873,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "It is a form of education, learning, and training that is implemented by using digital\ndevices such as computers, and communication networks.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q087-b.webp",
+            "width": 816,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "It is a mechanism for the knowledge and knowhow possessed by each individual in an\norganization to be shared and effectively utilized by the organization as a whole.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q087-c.webp",
+            "width": 845,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It is a technology where a computer itself identifies and learns the characteristics of data\nby analyzing a large volume of data with a model that imitates the neural circuits of a\nhuman being.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q087-d.webp",
+            "width": 866,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q088",
+      "number": 88,
+      "domain": "strategy",
+      "sourcePage": 34,
+      "source": "(2025S, IP, Q88)",
+      "promptText": "Q88. Which of the following is an appropriate effect of CAD?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q088-p34.webp",
+        "width": 645,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q088-p34.webp",
+          "width": 645,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Identifying the required volume of material, and placing the optimum order",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q088-a.webp",
+            "width": 742,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Automating production processes and removing the need for human work",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q088-b.webp",
+            "width": 727,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Managing the series of production processes in an integrated manner",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q088-c.webp",
+            "width": 678,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Reusing design data and simplifying the streamlining of work",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q088-d.webp",
+            "width": 611,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q089",
+      "number": 89,
+      "domain": "strategy",
+      "sourcePage": 34,
+      "source": "(2025S, IP, Q89)",
+      "promptText": "Q89. Which of the following is the most appropriate term for referring to an automobile that\nhas a function for connecting to the Internet, sends information captured by onboard sensors\nto a server and receives the driving-related information from the server for purposes such as\nsupport for driving?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q089-p34.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q089-p34.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Car sharing",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q089-a.webp",
+            "width": 128,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Car navigation system",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q089-b.webp",
+            "width": 232,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Connected car",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q089-c.webp",
+            "width": 155,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Electric automobile",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q089-d.webp",
+            "width": 205,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q090",
+      "number": 90,
+      "domain": "strategy",
+      "sourcePage": 35,
+      "source": "(2025S, IP, Q90)",
+      "promptText": "Q90. In a manufacturing company, a production system uses electronic tags containing\ninformation such as the part number of a component. The tags are used as a production order\nfrom a post-process to a pre-process and a delivery note from a pre-process to a post-process.\nA system such as this is used in a just in time production system in a supply chain or in-house\nmanufacturing. Which of the following is the appropriate name for a system such as this?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q090-p35.webp",
+        "width": 947,
+        "height": 184
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q090-p35.webp",
+          "width": 947,
+          "height": 184
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Kanban system",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q090-a.webp",
+            "width": 164,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Craft production system",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q090-b.webp",
+            "width": 249,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Cell production system",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q090-c.webp",
+            "width": 240,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Build-to-stock production system",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q090-d.webp",
+            "width": 340,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q091",
+      "number": 91,
+      "domain": "strategy",
+      "sourcePage": 35,
+      "source": "(2025S, IP, Q91)",
+      "promptText": "Q91. Crowdfunding can be classified into loan-based, donation-based, purchase-based, or\ninvestment-based types, depending on the form of funding and the way the compensation is\npaid. In order to start a new business, Company A has decided to raise funds through\ncrowdfunding and pay a part of the profits to the funders as dividends. Which of the following\nis the most appropriate type of crowdfunding used by Company A?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q091-p35.webp",
+        "width": 947,
+        "height": 184
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q091-p35.webp",
+          "width": 947,
+          "height": 184
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loan-based crowdfunding",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q091-a.webp",
+            "width": 269,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Donation-based crowdfunding",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q091-b.webp",
+            "width": 311,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Purchase-based crowdfunding",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q091-c.webp",
+            "width": 307,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Investment-based crowdfunding",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q091-d.webp",
+            "width": 327,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q092",
+      "number": 92,
+      "domain": "strategy",
+      "sourcePage": 35,
+      "source": "(2025S, IP, Q92)",
+      "promptText": "Q92. As sightseeing guidance, images of buildings from the past and explanatory information\nare displayed on top of the current actual scenery when a smartphone is pointed at a historic\nsite or other such site. Which of the following is the most appropriate term to describe the\nmechanism that is utilized?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q092-p35.webp",
+        "width": 947,
+        "height": 142
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q092-p35.webp",
+          "width": 947,
+          "height": 142
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "AR",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q092-a.webp",
+            "width": 50,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "GUI",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q092-b.webp",
+            "width": 59,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "VR",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q092-c.webp",
+            "width": 50,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Metaverse",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q092-d.webp",
+            "width": 117,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q093",
+      "number": 93,
+      "domain": "strategy",
+      "sourcePage": 35,
+      "source": "(2025S, IP, Q93)",
+      "promptText": "Q93. Which of the following is the most appropriate description concerning DFD?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q093-p35.webp",
+        "width": 840,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q093-p35.webp",
+          "width": 840,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It represents transitions of the state of a system as time passes and the condition changes.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q093-a.webp",
+            "width": 870,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "It represents the relationship and data structure of the entities handled by a system.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q093-b.webp",
+            "width": 808,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "It represents the attributes of, operations for and relations between the components that a\nsystem is composed of.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q093-c.webp",
+            "width": 869,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It focuses on the flow of data, and represents the relations between the flow and the\nprocessing of data.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q093-d.webp",
+            "width": 819,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q094",
+      "number": 94,
+      "domain": "strategy",
+      "sourcePage": 36,
+      "source": "(2025S, IP, Q94)",
+      "promptText": "Q94. Which of the following is the most appropriate term for information in large quantities\nand in diverse forms that grows rapidly and is expected to help obtain knowledge useful for\ndecision-making?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q094-p36.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q094-p36.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Big data",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q094-a.webp",
+            "width": 98,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Diversity",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q094-b.webp",
+            "width": 107,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Core competence",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q094-c.webp",
+            "width": 184,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Crowdfunding",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q094-d.webp",
+            "width": 157,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q095",
+      "number": 95,
+      "domain": "strategy",
+      "sourcePage": 36,
+      "source": "(2025S, IP, Q95)",
+      "promptText": "Q95. Which of the following is the most appropriate explanation of the relation between\nbusiness strategy and information systems strategy?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q095-p36.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q095-p36.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A business strategy and information systems strategy are created independently of each\nother.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q095-a.webp",
+            "width": 856,
+            "height": 69
+          }
+        },
+        {
+          "id": "b",
+          "text": "An information systems strategy is created on the basis of a business strategy.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q095-b.webp",
+            "width": 763,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "A business strategy is created on the basis of an information systems strategy.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q095-c.webp",
+            "width": 762,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "An information systems strategy is the strategy of an IT department, and a business\nstrategy is the strategy of a business planning department.",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q095-d.webp",
+            "width": 818,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q096",
+      "number": 96,
+      "domain": "strategy",
+      "sourcePage": 36,
+      "source": "(2025S, IP, Q96)",
+      "promptText": "Q96. Which of the following is a term that represents the practical verification of a new\nconcept or idea before development?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q096-p36.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q096-p36.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "CRM",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q096-a.webp",
+            "width": 70,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "KPI",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q096-b.webp",
+            "width": 55,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "PoC",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q096-c.webp",
+            "width": 58,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "SLA",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q096-d.webp",
+            "width": 61,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q097",
+      "number": 97,
+      "domain": "strategy",
+      "sourcePage": 37,
+      "source": "(2025S, IP, Q97)",
+      "promptText": "Q97. Which of the following is the appropriate combination of terms or phrases to be inserted\ninto A through C in the description below concerning a request for\nproposal?\nA request for proposal concerning system development is a document by which generally\nA presents to B the C , procurement conditions, etc.",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q097-p37.webp",
+        "width": 947,
+        "height": 200
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q097-p37.webp",
+          "width": 947,
+          "height": 200
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "an information system\nvendors system requirements\ndepartment",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q097-a.webp",
+            "width": 810,
+            "height": 118
+          }
+        },
+        {
+          "id": "b",
+          "text": "an information system\nuser departments system requirements\ndepartment",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q097-b.webp",
+            "width": 810,
+            "height": 118
+          }
+        },
+        {
+          "id": "c",
+          "text": "an information system\na vendor system installation result\ndepartment",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q097-c.webp",
+            "width": 810,
+            "height": 118
+          }
+        },
+        {
+          "id": "d",
+          "text": "a vendor a user department system installation result",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q097-d.webp",
+            "width": 810,
+            "height": 90
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q098",
+      "number": 98,
+      "domain": "strategy",
+      "sourcePage": 37,
+      "source": "(2025S, IP, Q98)",
+      "promptText": "Q98. Which of the following is the most appropriate term that refers to the goals for\ndevelopment that must be achieved by 2030 adopted by the United Nations in order to achieve\na sustainable world?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q098-p37.webp",
+        "width": 947,
+        "height": 106
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q098-p37.webp",
+          "width": 947,
+          "height": 106
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "SDGs",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q098-a.webp",
+            "width": 73,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "SDK",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q098-b.webp",
+            "width": 64,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "SGA",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q098-c.webp",
+            "width": 64,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "SGML",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q098-d.webp",
+            "width": 82,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q099",
+      "number": 99,
+      "domain": "strategy",
+      "sourcePage": 37,
+      "source": "(2025S, IP, Q99)",
+      "promptText": "Q99. When the software lifecycle is divided into the planning process, the requirements\ndefinition process, the development process, and the operation process, which of the\nfollowing is the process where the system functions that users and stakeholders require are\nclarified and consensus is built on the basis of a computerization plan?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q099-p37.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q099-p37.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Planning process",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q099-a.webp",
+            "width": 180,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Requirements definition process",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q099-b.webp",
+            "width": 328,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Development process",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q099-c.webp",
+            "width": 224,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Operation process",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q099-d.webp",
+            "width": 190,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-ip-2025-spring-q100",
+      "number": 100,
+      "domain": "strategy",
+      "sourcePage": 37,
+      "source": "(2025S, IP, Q100)",
+      "promptText": "Q100. Which of the following is the most appropriate term to express the change where by using\ndigital technology, a company creates a user experience (UX) and a business model that\nattract customers, expels conventional services in the industry, and as a result destroys the\nexisting structure of an industry?",
+      "prompt": {
+        "src": "exams/itpec-ip-2025-spring/q100-p37.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-ip-2025-spring/q100-p37.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Digital signage",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q100-a.webp",
+            "width": 162,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Digital disruption",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q100-b.webp",
+            "width": 187,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Digital divide",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q100-c.webp",
+            "width": 149,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Digital transformation",
+          "image": {
+            "src": "exams/itpec-ip-2025-spring/q100-d.webp",
+            "width": 232,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    }
+  ],
+  "editorialNotes": [
+    "Original PDF question numbering and wording are preserved.",
+    "Options are cropped and shuffled; table headers are repeated.",
+    "Domain assignments are editorial syllabus classifications."
+  ],
+  "sourceSha256": "f1083f6a46ef93f903ef2c30a17e2b1a0e3387b2eafb8e5d87d21cd74a015583",
+  "answerSha256": "014dd6dd2ed428f2bcbd8a2984465a535f2da60f323cf35eb3b42d307f1aaf4f"
+}

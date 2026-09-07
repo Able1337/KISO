@@ -129,7 +129,7 @@ def main():
                          'sourceSha256': hashlib.sha256(source.read_bytes()).hexdigest(), 'answerSha256': hashlib.sha256(keyfile.read_bytes()).hexdigest()})
         pdf.close(); render.close()
     manifest = {'schemaVersion': 1, 'id': PACK, 'system': 'ITPEC', 'level': 'FE', 'year': 2026,
-                'season': 'spring', 'title': 'April 2026', 'originalLanguage': 'en', 'durationSeconds': 5400,
+                'season': 'spring', 'title': 'April 2026', 'originalLanguage': 'en', 'durationSeconds': sum(p['durationSeconds'] for p in subjects),
                 'sourceUrl': 'https://itpec.org/pastexamqa/fe.html', 'archiveUrl': 'https://itpec.org/pastexamqa/fe/2026S_FE.zip',
                 'parts': subjects, 'translations': [], 'lessonsReady': True, 'questions': records,
                 'editorialNotes': ['Original multi-page prompts remain in reading order.', 'Answer table headers are repeated for each independently shuffled option.', 'Source A Q11 has a spaced a ) label; normalized to a).', 'A free preparation pause separates subjects; B starts only on explicit confirmation.', 'Scores are practice percentages, not official marks.']}

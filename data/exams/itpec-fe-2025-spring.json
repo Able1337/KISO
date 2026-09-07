@@ -1,0 +1,5450 @@
+{
+  "schemaVersion": 1,
+  "id": "itpec-fe-2025-spring",
+  "system": "ITPEC",
+  "level": "FE",
+  "year": 2025,
+  "season": "spring",
+  "title": "April 2025",
+  "originalLanguage": "en",
+  "durationSeconds": 11400,
+  "sourceUrl": "https://itpec.org/pastexamqa/fe.html",
+  "archiveUrl": "https://itpec.org/pastexamqa/fe/2025S_FE.zip",
+  "translations": [],
+  "lessonsReady": true,
+  "questions": [
+    {
+      "id": "itpec-fe-2025-spring-a001",
+      "number": 1,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, FE, Subject-A, Q1)",
+      "promptText": "Q1. For an 8-bit binary integer, which of the following is the operation that extracts the most\nsignificant 4-bits while making the other bits zero?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a001-p04.webp",
+        "width": 929,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a001-p04.webp",
+          "width": 929,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Bitwise AND operation with 11110000.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a001-a.webp",
+            "width": 400,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Bitwise NAND operation with 11110000.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a001-b.webp",
+            "width": 418,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Bitwise OR operation with 00001111.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a001-c.webp",
+            "width": 381,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Bitwise XOR operation with 00001111.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a001-d.webp",
+            "width": 399,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a002",
+      "number": 2,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, FE, Subject-A, Q2)",
+      "promptText": "Q2. Which of the following is the binary fraction that is the nearest equivalent to the decimal\nfraction 23.375?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a002-p04.webp",
+        "width": 931,
+        "height": 71
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a002-p04.webp",
+          "width": 931,
+          "height": 71
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "10111.011",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a002-a.webp",
+            "width": 114,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "10111.110",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a002-b.webp",
+            "width": 116,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "11101.011",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a002-c.webp",
+            "width": 114,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "11101.110",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a002-d.webp",
+            "width": 116,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a003",
+      "number": 3,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, FE, Subject-A, Q3)",
+      "promptText": "Q3. Which of the following is the most appropriate description of machine learning in AI?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a003-p04.webp",
+        "width": 905,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a003-p04.webp",
+          "width": 905,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a technology that enters specialized knowledge in a particular field into a computer,\nand has the computer infer by using the knowledge entered.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a003-a.webp",
+            "width": 863,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "It is a technology that gives computers the ability to learn in the same way humans\nnaturally learn, such as finding specific patterns from memorized data.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a003-b.webp",
+            "width": 811,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "It is a technology that reproduces vital phenomena or evolutionary processes by using\ncomputers and machines.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a003-c.webp",
+            "width": 841,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It is a technology to give computers the ability to manage learning materials and learning\nby using a web system or other information technology so that people can learn\ninteractively.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a003-d.webp",
+            "width": 874,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a004",
+      "number": 4,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "(2025S, FE, Subject-A, Q4)",
+      "promptText": "Q4. A vehicle travels along a circular path as shown in the figure below. Two sensors, L and\nR, whose revolution speeds are independently controlled, are attached to the left and right\nrear wheels. Sensors L and R are photo-reflective sensors, and their values change according\nto the ratio of black and white regions they pass over. If the ratio increases, the sensor value\ndecreases, and if the ratio decreases, the sensor value increases. Which of the following is\nan appropriate control to ensure that the vehicle travels along the black outline of the circle?\nHere, if the values of the two sensors are equal, the motor revolution speeds return to the\ninitial values.\nMoving\ndirection\nSensor L Sensor R\nFront wheel\nControl\nunit Rear wheels\nMotor L Motor R\nCircle",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a004-p05.webp",
+        "width": 945,
+        "height": 722
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a004-p05.webp",
+          "width": 945,
+          "height": 722
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Decrease Increase Decrease Increase",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a004-a.webp",
+            "width": 811,
+            "height": 163
+          }
+        },
+        {
+          "id": "b",
+          "text": "Decrease Increase Increase Decrease",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a004-b.webp",
+            "width": 811,
+            "height": 163
+          }
+        },
+        {
+          "id": "c",
+          "text": "Increase Decrease Decrease Increase",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a004-c.webp",
+            "width": 811,
+            "height": 163
+          }
+        },
+        {
+          "id": "d",
+          "text": "Increase Decrease Increase Decrease",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a004-d.webp",
+            "width": 811,
+            "height": 163
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a005",
+      "number": 5,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "(2025S, FE, Subject-A, Q5)",
+      "promptText": "Q5. Among the four tree traversal techniques—breadth-first, in-order, post-order, and pre-\norder—which of the following is the appropriate combination to ensure that the last two\nnodes visited are the same in the tree shown below, when the left child is explored first?\n18\n5 20\n3 22",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a005-p06.webp",
+        "width": 904,
+        "height": 440
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a005-p06.webp",
+          "width": 904,
+          "height": 440
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Breadth-First Post-order",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a005-a.webp",
+            "width": 457,
+            "height": 53
+          }
+        },
+        {
+          "id": "b",
+          "text": "Breadth-First Pre-order",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a005-b.webp",
+            "width": 456,
+            "height": 53
+          }
+        },
+        {
+          "id": "c",
+          "text": "In-order Post-order",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a005-c.webp",
+            "width": 457,
+            "height": 53
+          }
+        },
+        {
+          "id": "d",
+          "text": "In-order Pre-order",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a005-d.webp",
+            "width": 456,
+            "height": 51
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a006",
+      "number": 6,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "(2025S, FE, Subject-A, Q6)",
+      "promptText": "Q6. In the graph shown below, which of the following is the output of a depth-first traversal\nstarting from vertex A, and visiting all vertices in ascending character order?\nA D E\nB C F",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a006-p06.webp",
+        "width": 921,
+        "height": 283
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a006-p06.webp",
+          "width": 921,
+          "height": 283
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A B C D E F",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a006-a.webp",
+            "width": 142,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "A B C D F E",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a006-b.webp",
+            "width": 141,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "A B D E F C",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a006-c.webp",
+            "width": 142,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "A B D F E C",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a006-d.webp",
+            "width": 142,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a007",
+      "number": 7,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "(2025S, FE, Subject-A, Q7)",
+      "promptText": "Q7. A hash table of size 11 uses open addressing with hash function h(k)=k mod 11, and linear\nprobing. The table shown below is created after inserting 4 values into an initially empty\nhash table. Which of the following is the sequence that represents a possible order in\nwhich the key values were inserted into the table?\n0\n1\n2 79\n3 14\n4 35\n5 92\n6\n7\n8\n9\n10",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a007-p07.webp",
+        "width": 942,
+        "height": 505
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a007-p07.webp",
+          "width": 942,
+          "height": 505
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "14, 79, 35, 92",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a007-a.webp",
+            "width": 146,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "79, 14, 92, 35",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a007-b.webp",
+            "width": 148,
+            "height": 37
+          }
+        },
+        {
+          "id": "c",
+          "text": "79, 92, 35, 14",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a007-c.webp",
+            "width": 148,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "92, 79, 14, 35",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a007-d.webp",
+            "width": 148,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a008",
+      "number": 8,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "(2025S, FE, Subject-A, Q8)",
+      "promptText": "Q8. For a CPU with a clock frequency of 800 MHz, where one instruction is executed in an\naverage time of 4 clock cycles, what is the CPU performance in MIPS?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a008-p07.webp",
+        "width": 907,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a008-p07.webp",
+          "width": 907,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.2",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a008-a.webp",
+            "width": 46,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "20",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a008-b.webp",
+            "width": 40,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "200",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a008-c.webp",
+            "width": 52,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "3,200",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a008-d.webp",
+            "width": 70,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a009",
+      "number": 9,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "(2025S, FE, Subject-A, Q9)",
+      "promptText": "Q9. When a CPU has a special register used in push and pop instructions, which of the\nfollowing is an appropriate term for this register?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a009-p07.webp",
+        "width": 870,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a009-p07.webp",
+          "width": 870,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Instruction register",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a009-a.webp",
+            "width": 199,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Program counter",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a009-b.webp",
+            "width": 179,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Stack pointer",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a009-c.webp",
+            "width": 143,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Status register",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a009-d.webp",
+            "width": 153,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a010",
+      "number": 10,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, FE, Subject-A, Q10)",
+      "promptText": "Q10. The table below shows the access times for the cache memory and main memory in\nsystems A and B. Which of the following is the approximate hit ratio of the cache memory,\nwhen the effective access time and the cache memory hit ratio are the same for systems A\nand B?\nSystem A System B\nCache memory 14 ns 12 ns\nMain memory 80 ns 90 ns",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a010-p08.webp",
+        "width": 929,
+        "height": 311
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a010-p08.webp",
+          "width": 929,
+          "height": 311
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.17",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a010-a.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.20",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a010-b.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "0.83",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a010-c.webp",
+            "width": 57,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "1.00",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a010-d.webp",
+            "width": 56,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a011",
+      "number": 11,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, FE, Subject-A, Q11)",
+      "promptText": "Q11. Which of the following is a merit of migrating an internal business system to a cloud\nservice?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a011-p08.webp",
+        "width": 915,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a011-p08.webp",
+          "width": 915,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "If an internal business system that requires a very high level of availability is to be\nmigrated to IaaS, all service providers guarantee high availability, so the migration is\neasy.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a011-a.webp",
+            "width": 834,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "If an internal on-premises business system with company-specific functions is to be\nmigrated to a system provided by SaaS, the migration of the company-specific functions\nalso becomes easier.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a011-b.webp",
+            "width": 865,
+            "height": 105
+          }
+        },
+        {
+          "id": "c",
+          "text": "If PaaS is to be used, platform management and OS updates are performed by the service\nprovider, so the burden of installation and operation can be reduced.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a011-c.webp",
+            "width": 873,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "If SaaS is to be used temporarily for the development or evaluation of an internal\nbusiness system, a highly flexible development environment can be provided.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a011-d.webp",
+            "width": 796,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a012",
+      "number": 12,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, FE, Subject-A, Q12)",
+      "promptText": "Q12. In a system that is composed of two processing devices, what is the difference in\navailability between the two conditions below? Here, the availability of each processing\ndevice is 0.9, and no other factors besides the processing devices are considered.\n[Conditions]\n(1) The system is available if at least one of the processing devices is running normally.\n(2) The system is available only if both of the processing devices are running normally.",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a012-p08.webp",
+        "width": 903,
+        "height": 256
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a012-p08.webp",
+          "width": 903,
+          "height": 256
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.09",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a012-a.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "0.10",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a012-b.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "0.18",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a012-c.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "0.19",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a012-d.webp",
+            "width": 58,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a013",
+      "number": 13,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "(2025S, FE, Subject-A, Q13)",
+      "promptText": "Q13. The relation between virtual address and physical address is shown below. Each virtual\npage and page frame starts at a multiple of 4096 and ends 4095 addresses higher. Virtual\naddress space 4K-8K corresponds to 4096-8191 and 8K to 12K corresponds to 8192-12287.\nWhich of the following is the physical address corresponding to the virtual address\nnumbered 8300?\nVirtual\naddress\n60K-64K X\n56K-60K X Virtual page\n52K-56K X\n48K-52K X\n44K-48K 7\n40K-44K X\n36K-40K 5 Physical\n32K-36K X address\n28K-32K X 28K-32K\n24K-28K X 24K-28K\n20K-24K 3 20K-24K\n16K-20K 4 16K-20K\n12K-16K 0 12K-16K\n8K-12K 6 8K-12K\n4K-8K 1 4K-8K\n0K-4K 2 0K-4K\nPage frame",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a013-p09.webp",
+        "width": 939,
+        "height": 775
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a013-p09.webp",
+          "width": 939,
+          "height": 775
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "8192",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a013-a.webp",
+            "width": 63,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "8300",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a013-b.webp",
+            "width": 63,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "24576",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a013-c.webp",
+            "width": 76,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "24684",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a013-d.webp",
+            "width": 76,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a014",
+      "number": 14,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "(2025S, FE, Subject-A, Q14)",
+      "promptText": "Q14. In a system with preemptive priority scheduling, where the smallest priority number is\nconsidered as the highest priority, there are four processes, P1, P2, P3, and P4. Their arrival\ntimes, CPU-burst times, and priorities are shown in the table below. Which of the following\nis the average waiting time (in ms) for the processes to be executed?\nProcess Arrival time CPU-burst time Priority\n(in ms)\nP1 0 8 2\nP2 2 1 1\nP3 4 2 3\nP4 6 3 4",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a014-p09.webp",
+        "width": 938,
+        "height": 392
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a014-p09.webp",
+          "width": 938,
+          "height": 392
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2.75",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a014-a.webp",
+            "width": 58,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "3",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a014-b.webp",
+            "width": 27,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "3.25",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a014-c.webp",
+            "width": 57,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "3.5",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a014-d.webp",
+            "width": 46,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a015",
+      "number": 15,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, FE, Subject-A, Q15)",
+      "promptText": "Q15. When it takes 10 ns to copy a byte, which of the following is the approximate time (in\nms) to copy the data for a 1024 × 768-pixel graphics screen with 24-bit color? Here, any\noverhead time for copying can be ignored.",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a015-p10.webp",
+        "width": 928,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a015-p10.webp",
+          "width": 928,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "22",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a015-a.webp",
+            "width": 40,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "23",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a015-b.webp",
+            "width": 39,
+            "height": 34
+          }
+        },
+        {
+          "id": "c",
+          "text": "24",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a015-c.webp",
+            "width": 40,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "25",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a015-d.webp",
+            "width": 40,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a016",
+      "number": 16,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, FE, Subject-A, Q16)",
+      "promptText": "Q16. Which of the following is an appropriate explanation of an actuator?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a016-p10.webp",
+        "width": 758,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a016-p10.webp",
+          "width": 758,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It amplifies weak electrical signals sent from microphones, sensors, and similar devices.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a016-a.webp",
+            "width": 862,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "It compares a given target value with a controlled value obtained from a sensor, and\noutputs an operation amount to match the controlled value with the target value.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a016-b.webp",
+            "width": 823,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "It converts power from an energy source into rotation, translational motion, or other\nmovements based on control signals.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a016-c.webp",
+            "width": 823,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It detects position, angle, velocity, acceleration, force, temperature, and similar\nparameters, and converts them into electrical information.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a016-d.webp",
+            "width": 777,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a017",
+      "number": 17,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, FE, Subject-A, Q17)",
+      "promptText": "Q17. When ordering data is entered in the format shown below, which of the following is the\nappropriate method for checking whether the order date is a business day that is the same as\nor prior to the entering date?\nOrdering data\nForm number Order date Product code Quantity Customer code\n(Characters) (Characters) (Characters) (Number) (Characters)",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a017-p10.webp",
+        "width": 942,
+        "height": 275
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a017-p10.webp",
+          "width": 942,
+          "height": 275
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Duplication check",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a017-a.webp",
+            "width": 192,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Format check",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a017-b.webp",
+            "width": 149,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Logical check",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a017-c.webp",
+            "width": 152,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Sequence check",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a017-d.webp",
+            "width": 170,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a018",
+      "number": 18,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 10,
+      "source": "(2025S, FE, Subject-A, Q18)",
+      "promptText": "Q18. Of the functions provided by a DBMS, which of the following is a means for achieving\nprotection for data confidentiality?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a018-p10.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a018-p10.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Checking referential constraints when the data is updated",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a018-a.webp",
+            "width": 567,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Managing a transaction that combines a series of processes as a logical unit",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a018-b.webp",
+            "width": 742,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Managing the data access rights of users",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a018-c.webp",
+            "width": 405,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Placing an exclusive lock to data before updates",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a018-d.webp",
+            "width": 480,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a019",
+      "number": 19,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "(2025S, FE, Subject-A, Q19)",
+      "promptText": "Q19. Which of the following is the primary goal of conceptual database design?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a019-p11.webp",
+        "width": 797,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a019-p11.webp",
+          "width": 797,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "To create a physical data model of the database",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a019-a.webp",
+            "width": 472,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "To define the logical structure of the database",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a019-b.webp",
+            "width": 455,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "To determine the exact data types for every database attribute",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a019-c.webp",
+            "width": 607,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "To implement database security measures",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a019-d.webp",
+            "width": 418,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a020",
+      "number": 20,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "(2025S, FE, Subject-A, Q20)",
+      "promptText": "Q20. In the UML data model shown in the figure below, which of the following is a\nmultiplicity that should be inserted in blanks I and II?\n[Conditions]\n(1) One or more employees belong to a department.\n(2) An employee belongs to any one department.\n(3) The history of the departments to which an employee has belonged is recorded as\nthe assignment history.",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a020-p11.webp",
+        "width": 916,
+        "height": 548
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a020-p11.webp",
+          "width": 916,
+          "height": 548
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0..* 0..*",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a020-a.webp",
+            "width": 357,
+            "height": 90
+          }
+        },
+        {
+          "id": "b",
+          "text": "0..* 1..*",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a020-b.webp",
+            "width": 357,
+            "height": 90
+          }
+        },
+        {
+          "id": "c",
+          "text": "1..* 0..*",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a020-c.webp",
+            "width": 357,
+            "height": 90
+          }
+        },
+        {
+          "id": "d",
+          "text": "1..* 1..*",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a020-d.webp",
+            "width": 357,
+            "height": 90
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a021",
+      "number": 21,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, FE, Subject-A, Q21)",
+      "promptText": "Q21. Which of the following is the clause that should be inserted into blank ___A___ of\nthe SQL statement below in order to display the total sales data for each product that sold\nfor at least $5,000 from the table OrderDetails?\nOrderDetails (OrderID, ProductID, UnitPrice, Quantity)\n[SQL statement]\nSELECT ProductID, SUM(UnitPrice * Quantity)\nFROM OrderDetails\n___A___",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a021-p12.webp",
+        "width": 917,
+        "height": 347
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a021-p12.webp",
+          "width": 917,
+          "height": 347
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "GROUP BY ProductID HAVING SUM(UnitPrice * Quantity) >= 5000;",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a021-a.webp",
+            "width": 737,
+            "height": 36
+          }
+        },
+        {
+          "id": "b",
+          "text": "HAVING SUM(UnitPrice * Quantity) >= 5000;",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a021-b.webp",
+            "width": 506,
+            "height": 36
+          }
+        },
+        {
+          "id": "c",
+          "text": "HAVING SUM(UnitPrice * Quantity) >= 5000 GROUP BY ProductI;",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a021-c.webp",
+            "width": 724,
+            "height": 36
+          }
+        },
+        {
+          "id": "d",
+          "text": "WHERE SUM(UnitPrice * Quantity) >= 5000;",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a021-d.webp",
+            "width": 495,
+            "height": 36
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a022",
+      "number": 22,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, FE, Subject-A, Q22)",
+      "promptText": "Q22. Which of the following is an appropriate explanation of the granularity of locks?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a022-p12.webp",
+        "width": 875,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a022-p12.webp",
+          "width": 875,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "When large granularity is set for a large number of transactions to update the same data,\nthe number of transactions that can be executed simultaneously increases.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a022-a.webp",
+            "width": 861,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "When large granularity is set for all data in a table to be referenced, data referenced from\nother transactions can remain undisturbed.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a022-b.webp",
+            "width": 872,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "When large granularity is set for data to be updated, the waiting times for other\ntransactions increase, and the total throughput declines.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a022-c.webp",
+            "width": 776,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "When large granularity is set, the number of data items included increases, and the\nnumber of locks that one transaction makes increases.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a022-d.webp",
+            "width": 810,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a023",
+      "number": 23,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, FE, Subject-A, Q23)",
+      "promptText": "Q23. Which of the following is the most appropriate information for a router to determine the\ndestination of an incoming packet?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a023-p12.webp",
+        "width": 946,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a023-p12.webp",
+          "width": 946,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Destination IP address",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a023-a.webp",
+            "width": 233,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Destination MAC address",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a023-b.webp",
+            "width": 267,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Source IP address",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a023-c.webp",
+            "width": 188,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Source MAC address",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a023-d.webp",
+            "width": 222,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a024",
+      "number": 24,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "(2025S, FE, Subject-A, Q24)",
+      "promptText": "Q24. In the OSI model, which of the following is the layer that is responsible for routing\ndatagrams between hosts utilizing IP addresses across one or more networks?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a024-p13.webp",
+        "width": 899,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a024-p13.webp",
+          "width": 899,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Data link",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a024-a.webp",
+            "width": 106,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Network",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a024-b.webp",
+            "width": 102,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Physical",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a024-c.webp",
+            "width": 98,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Transport",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a024-d.webp",
+            "width": 110,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a025",
+      "number": 25,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "(2025S, FE, Subject-A, Q25)",
+      "promptText": "Q25. Which of the following is an appropriate explanation regarding Address Resolution\nProtocol (ARP)?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a025-p13.webp",
+        "width": 901,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a025-p13.webp",
+          "width": 901,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It converts MAC addresses into IP addresses.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a025-a.webp",
+            "width": 450,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "It resolves domain names into its IP addresses.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a025-b.webp",
+            "width": 463,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "It resolves IP addresses into the corresponding MAC addresses.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a025-c.webp",
+            "width": 626,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "It translates IPv4 addresses into IPv6 addresses.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a025-d.webp",
+            "width": 474,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a026",
+      "number": 26,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "(2025S, FE, Subject-A, Q26)",
+      "promptText": "Q26. An administrator of a small network is testing the new network. Which of the following\nis the correct combination of the network management tools to be inserted in the blanks\nbelow?\nThe administrator first tests reachability of a remote host using ___A___, and determines\nthe path that packets take to the destination with ___B___",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a026-p13.webp",
+        "width": 947,
+        "height": 204
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a026-p13.webp",
+          "width": 947,
+          "height": 204
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "netstat ping",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a026-a.webp",
+            "width": 384,
+            "height": 96
+          }
+        },
+        {
+          "id": "b",
+          "text": "netstat traceroute",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a026-b.webp",
+            "width": 384,
+            "height": 96
+          }
+        },
+        {
+          "id": "c",
+          "text": "ping traceroute",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a026-c.webp",
+            "width": 384,
+            "height": 96
+          }
+        },
+        {
+          "id": "d",
+          "text": "traceroute ping",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a026-d.webp",
+            "width": 384,
+            "height": 96
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a027",
+      "number": 27,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 13,
+      "source": "(2025S, FE, Subject-A, Q27)",
+      "promptText": "Q27. Which of the following is the attack that is classified as DNS cache poisoning?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a027-p13.webp",
+        "width": 858,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a027-p13.webp",
+          "width": 858,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "False domain information is injected into the DNS server that is referenced by a PC, and\nit leads the user to a fake server.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a027-a.webp",
+            "width": 867,
+            "height": 69
+          }
+        },
+        {
+          "id": "b",
+          "text": "In order to interrupt the target service, the attacker uses the DNS server as a\nsteppingstone to send a large number of recursive queries.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a027-b.webp",
+            "width": 744,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "In order to obtain internal information, the zone information stored in the DNS server is\ncompiled and transferred.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a027-c.webp",
+            "width": 860,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The version information of the DNS server software is obtained to identify a security\nhole.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a027-d.webp",
+            "width": 834,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a028",
+      "number": 28,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "(2025S, FE, Subject-A, Q28)",
+      "promptText": "Q28. A given application only has the functions of retrieving and displaying user information\nfrom a database that stores such information. When considering information security, which\nof the following is the appropriate database access right assigned to an account that the\napplication uses to access the database? The names and scopes of rights are listed below.\n[The names and scopes of rights]\nReference right: Allows the application to select a record\nUpdate right: Allows the application to insert, update, and drop a record\nAdministrator right: Allows the application to display, create, alter, and drop a\ntable",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a028-p14.webp",
+        "width": 944,
+        "height": 358
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a028-p14.webp",
+          "width": 944,
+          "height": 358
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Administrator right",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a028-a.webp",
+            "width": 203,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Reference right",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a028-b.webp",
+            "width": 166,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Update right",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a028-c.webp",
+            "width": 138,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Update right and reference right",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a028-d.webp",
+            "width": 326,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a029",
+      "number": 29,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "(2025S, FE, Subject-A, Q29)",
+      "promptText": "Q29. Which of the following is a merit in using SaaS?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a029-p14.webp",
+        "width": 568,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a029-p14.webp",
+          "width": 568,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "No system access management needs to be performed, and no consideration concerning\nthe procedure for password initialization or a password policy that satisfies complexity\nrequirements is required.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a029-a.webp",
+            "width": 861,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "No system construction needs to be performed, and neither the definition of security\nrequirements for application software development nor the design of storage volume for\nsystem logs is required.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a029-b.webp",
+            "width": 864,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "No system operation needs to be performed, and no consideration concerning work\nprocedures at the time of a failure or backup is required.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a029-c.webp",
+            "width": 817,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "No system security management needs to be performed, and neither the creation of\ninformation security management rules nor the assignment of an administrator is\nrequired.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a029-d.webp",
+            "width": 817,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a030",
+      "number": 30,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 15,
+      "source": "(2025S, FE, Subject-A, Q30)",
+      "promptText": "Q30. Which of the following is an appropriate operation for user authentication that uses an\nIC card and a PIN?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a030-p15.webp",
+        "width": 947,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a030-p15.webp",
+          "width": 947,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Given that each user can be identified by an IC card, a common PIN is set for all users in\norder to reduce the management workload.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a030-a.webp",
+            "width": 872,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "If an IC card is lost, a new IC card is issued, and after the PIN is reset, the lost IC card is\ndeactivated.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a030-b.webp",
+            "width": 867,
+            "height": 69
+          }
+        },
+        {
+          "id": "c",
+          "text": "The PIN is set by combining the numeric information imprinted on the surface of the IC\ncard.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a030-c.webp",
+            "width": 862,
+            "height": 69
+          }
+        },
+        {
+          "id": "d",
+          "text": "When an IC card is delivered, the PIN is not enclosed, but is notified to the user through\nanother channel.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a030-d.webp",
+            "width": 865,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a031",
+      "number": 31,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 15,
+      "source": "(2025S, FE, Subject-A, Q31)",
+      "promptText": "Q31. Which of the following is the most effective method of detecting unauthorized changes\nof the contents of a web server?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a031-p15.webp",
+        "width": 938,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a031-p15.webp",
+          "width": 938,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Communications to the web server are monitored to ensure that there is no\ncommunication other than HTTP and HTTPS.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a031-a.webp",
+            "width": 732,
+            "height": 69
+          }
+        },
+        {
+          "id": "b",
+          "text": "The hash value of each file of the contents of the web server is stored and periodically\ncompared with the hash value generated from each file.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a031-b.webp",
+            "width": 844,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The memory usage of the web server is checked periodically to ensure that a buffer\noverflow has not occurred.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a031-c.webp",
+            "width": 817,
+            "height": 69
+          }
+        },
+        {
+          "id": "d",
+          "text": "The updated date of each file of the contents of the web server is stored and compared\nperiodically with the updated date of each file.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a031-d.webp",
+            "width": 845,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a032",
+      "number": 32,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 15,
+      "source": "(2025S, FE, Subject-A, Q32)",
+      "promptText": "Q32. Which of the following is the function of a WAF?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a032-p15.webp",
+        "width": 581,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a032-p15.webp",
+          "width": 581,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Encrypting data and controlling access on web server",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a032-a.webp",
+            "width": 530,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Inspecting and filtering HTTP requests",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a032-b.webp",
+            "width": 391,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Managing user authentication and authorization",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a032-c.webp",
+            "width": 475,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Scanning malware on a web server",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a032-d.webp",
+            "width": 352,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a033",
+      "number": 33,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, FE, Subject-A, Q33)",
+      "promptText": "Q33. Which of the following is an appropriate description concerning SPF for email\ncommunication?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a033-p16.webp",
+        "width": 856,
+        "height": 69
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a033-p16.webp",
+          "width": 856,
+          "height": 69
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a policy of the public relations department to designate a specific person to send\nemails.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a033-a.webp",
+            "width": 830,
+            "height": 69
+          }
+        },
+        {
+          "id": "b",
+          "text": "It is an email sent from a spoofed email address without authorization.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a033-b.webp",
+            "width": 691,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "It matches the sender mail server IP address with the information from the domain server\nand accepts or rejects email.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a033-c.webp",
+            "width": 873,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It sends an email to the address of a specific person instead of sending them to multiple\nemail addresses.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a033-d.webp",
+            "width": 855,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a034",
+      "number": 34,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, FE, Subject-A, Q34)",
+      "promptText": "Q34. Which of the following is the software architecture that decomposes applications into\nsmall, loosely coupled services that communicate over APIs?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a034-p16.webp",
+        "width": 921,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a034-p16.webp",
+          "width": 921,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Event-Driven Architecture",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a034-a.webp",
+            "width": 273,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Microservices Architecture",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a034-b.webp",
+            "width": 278,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Serverless Architecture",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a034-c.webp",
+            "width": 240,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Service-Oriented Architecture (SOA)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a034-d.webp",
+            "width": 376,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a035",
+      "number": 35,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, FE, Subject-A, Q35)",
+      "promptText": "Q35. Which of the following is the UML class diagram that shows a generalization relation?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a035-p16.webp",
+        "width": 922,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a035-p16.webp",
+          "width": 922,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Automobile\n1\n1\nAutomobile\ninspection\ncertificate",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a035-a.webp",
+            "width": 176,
+            "height": 305
+          }
+        },
+        {
+          "id": "b",
+          "text": "Automobile\nDriver",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a035-b.webp",
+            "width": 176,
+            "height": 257
+          }
+        },
+        {
+          "id": "c",
+          "text": "Automobile\nSports car",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a035-c.webp",
+            "width": 176,
+            "height": 257
+          }
+        },
+        {
+          "id": "d",
+          "text": "Automobile\n1 1\n* *\nTire Engine",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a035-d.webp",
+            "width": 295,
+            "height": 269
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a036",
+      "number": 36,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "(2025S, FE, Subject-A, Q36)",
+      "promptText": "Q36. Which of the following is an explanation of a software testing tool corresponding to a\nstatic analysis tool that supports static testing?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a036-p17.webp",
+        "width": 924,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a036-p17.webp",
+          "width": 924,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Data concerning the operating characteristics during program execution, such as the\nmodule calling frequency and execution time, or the execution frequency of executable\nstatement is measured.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a036-a.webp",
+            "width": 854,
+            "height": 105
+          }
+        },
+        {
+          "id": "b",
+          "text": "The instruction coverage rate and the branch coverage rate are automatically measured\nand analyzed on the basis of the test execution results.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a036-b.webp",
+            "width": 850,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The source code is analyzed to find out if grammatical errors or logical errors exist in a\nprogram.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a036-c.webp",
+            "width": 855,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The test data of the specified conditions and the program input files are generated\nautomatically.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a036-d.webp",
+            "width": 800,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a037",
+      "number": 37,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 17,
+      "source": "(2025S, FE, Subject-A, Q37)",
+      "promptText": "Q37. Test cases for the part of a program shown in the flowchart below are created to achieve\ndecision condition coverage (branch coverage). In order to make the test cases achieve\nmultiple-condition coverage, which of the following is the appropriate set of test cases to be\nadded? Here, the part enclosed by parentheses () represents a test case.\nProcess 1\nNo\nA > 6 or B = 0\nYes\nProcess 2\n• Test cases to achieve decision condition coverage (branch coverage)\n(A = 4, B = 1), (A = 5, B = 0)",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a037-p17.webp",
+        "width": 947,
+        "height": 544
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a037-p17.webp",
+          "width": 947,
+          "height": 544
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(A = 3, B = 0), (A = 7, B = 2)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a037-a.webp",
+            "width": 298,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "(A = 3, B = 2), (A = 8, B = 0)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a037-b.webp",
+            "width": 298,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "(A = 4, B = 0), (A = 8, B = 0)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a037-c.webp",
+            "width": 298,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "(A = 7, B = 0), (A = 8, B = 2)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a037-d.webp",
+            "width": 298,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a038",
+      "number": 38,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, FE, Subject-A, Q38)",
+      "promptText": "Q38. Which of the following is an appropriate test to ensure that the interfaces and linkages\nbetween different parts of software work properly?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a038-p18.webp",
+        "width": 928,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a038-p18.webp",
+          "width": 928,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Functional test",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a038-a.webp",
+            "width": 159,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "Integration test",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a038-b.webp",
+            "width": 162,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Performance test",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a038-c.webp",
+            "width": 180,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "Unit test",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a038-d.webp",
+            "width": 100,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a039",
+      "number": 39,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, FE, Subject-A, Q39)",
+      "promptText": "Q39. Which of the following is the term that represents the process of generating a UML\nclass diagram from a program?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a039-p18.webp",
+        "width": 901,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a039-p18.webp",
+          "width": 901,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Backtracking",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a039-a.webp",
+            "width": 145,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Forward engineering",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a039-b.webp",
+            "width": 219,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Re-engineering",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a039-c.webp",
+            "width": 165,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Reverse engineering",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a039-d.webp",
+            "width": 214,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a040",
+      "number": 40,
+      "part": "A",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, FE, Subject-A, Q40)",
+      "promptText": "Q40. Which of the following is an appropriate explanation of a Sprint in the Scrum\nmethodology?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a040-p18.webp",
+        "width": 846,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a040-p18.webp",
+          "width": 846,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A daily meeting where team members review progress and plan the day's work",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a040-a.webp",
+            "width": 774,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "A fixed-length period dedicated to developing a product increment",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a040-b.webp",
+            "width": 659,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "A self-organizing team responsible for product development",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a040-c.webp",
+            "width": 597,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "List of tasks and features the Scrum team has yet to complete",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a040-d.webp",
+            "width": 605,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a041",
+      "number": 41,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 18,
+      "source": "(2025S, FE, Subject-A, Q41)",
+      "promptText": "Q41. Which of the following is an appropriate explanation of earned value in project\nmanagement?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a041-p18.webp",
+        "width": 861,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a041-p18.webp",
+          "width": 861,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A measure of work completed in terms of budget authorized for that work.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a041-a.webp",
+            "width": 734,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "A time-phased budget that estimates the total cost of a project",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a041-b.webp",
+            "width": 612,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "An authorized budget for the planned work",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a041-c.webp",
+            "width": 432,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Realized cost incurred for the work performed on an activity during a specific time\nperiod",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a041-d.webp",
+            "width": 814,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a042",
+      "number": 42,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "(2025S, FE, Subject-A, Q42)",
+      "promptText": "Q42. Which of the following is the method of estimation in the COCOMO model in software\nestimation?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a042-p19.webp",
+        "width": 943,
+        "height": 70
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a042-p19.webp",
+          "width": 943,
+          "height": 70
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The effort and duration of the project are estimated based on the size of the software.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a042-a.webp",
+            "width": 831,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "The effort of the project is estimated based on the duration of the project.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a042-b.webp",
+            "width": 718,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "The size of the software and duration of the project are estimated based on the effort of\nthe project.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a042-c.webp",
+            "width": 856,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The size of the software and effort of the project are estimated based on the duration of\nthe project.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a042-d.webp",
+            "width": 856,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a043",
+      "number": 43,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "(2025S, FE, Subject-A, Q43)",
+      "promptText": "Q43. An IT service is provided under the conditions below. What is the maximum downtime in\nhours that satisfies the SLA during a service period of one (1) month? Here, the number of\nbusiness days in one (1) month is 30, and no maintenance or other scheduled downtime of the\nservice is performed during the service period.\n[Conditions of the SLA]\n- The service period is from 8:00 AM to 10:00 PM on business days.\n- The availability should be 99.5% or more.",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a043-p19.webp",
+        "width": 950,
+        "height": 300
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a043-p19.webp",
+          "width": 950,
+          "height": 300
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0.3",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a043-a.webp",
+            "width": 45,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "2.1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a043-b.webp",
+            "width": 44,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "3.0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a043-c.webp",
+            "width": 46,
+            "height": 34
+          }
+        },
+        {
+          "id": "d",
+          "text": "3.6",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a043-d.webp",
+            "width": 46,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a044",
+      "number": 44,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "(2025S, FE, Subject-A, Q44)",
+      "promptText": "Q44. Which of the following should be accomplished in service management concerning\nMaximum Tolerable Downtime (MTD), Recovery Point Objective (RPO), and Recovery\nTime Objective (RTO)?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a044-p19.webp",
+        "width": 910,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a044-p19.webp",
+          "width": 910,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "MTD < RPO",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a044-a.webp",
+            "width": 142,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "MTD < RTO",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a044-b.webp",
+            "width": 143,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "RPO < MTD",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a044-c.webp",
+            "width": 143,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "RTO < MTD",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a044-d.webp",
+            "width": 144,
+            "height": 33
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a045",
+      "number": 45,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 19,
+      "source": "(2025S, FE, Subject-A, Q45)",
+      "promptText": "Q45. Which of the following is a checkpoint for auditing the control of risks related to\ninformation leakage and unauthorized use of documents concerning a system?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a045-p19.webp",
+        "width": 876,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a045-p19.webp",
+          "width": 876,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Creating the necessary documents even in prototype development",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a045-a.webp",
+            "width": 648,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Standardizing documents",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a045-b.webp",
+            "width": 260,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Taking measures to ensure the confidentiality of documents",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a045-c.webp",
+            "width": 591,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Updating documents without delay as changes are made in the system",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a045-d.webp",
+            "width": 690,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a046",
+      "number": 46,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 20,
+      "source": "(2025S, FE, Subject-A, Q46)",
+      "promptText": "Q46. Which of the following is a technique that is used to perform the optimal resource\nallocation for a computerization investment in each category classified on the basis of the\nsimilarities in risks and investment value?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a046-p20.webp",
+        "width": 917,
+        "height": 106
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a046-p20.webp",
+          "width": 917,
+          "height": 106
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "3C analysis",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a046-a.webp",
+            "width": 128,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Benchmarking",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a046-b.webp",
+            "width": 159,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Enterprise architecture",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a046-c.webp",
+            "width": 234,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "IT portfolio",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a046-d.webp",
+            "width": 128,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a047",
+      "number": 47,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 20,
+      "source": "(2025S, FE, Subject-A, Q47)",
+      "promptText": "Q47. Which of the following is a usage scenario for the adoption of UML as a technique for\nvisualizing business processes?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a047-p20.webp",
+        "width": 947,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a047-p20.webp",
+          "width": 947,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Diagrams are shown by using a data-oriented approach where objects are handled as\nentities, their attributes, and the relationships among the entities.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a047-a.webp",
+            "width": 827,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "To represent processes by using data flows, sources and sinks of data, data stores, and\ndata processes are connected with arrows that indicate data flow.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a047-b.webp",
+            "width": 842,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "To represent processes from multiple viewpoints, some purpose-specific modeling\nmethods are used, and each model is depicted by using standardized notation rules for\nobject modeling.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a047-c.webp",
+            "width": 842,
+            "height": 111
+          }
+        },
+        {
+          "id": "d",
+          "text": "To thoroughly represent the functions of a process, the events that occur in response to a\nsingle request are described by using the conditional branch format.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a047-d.webp",
+            "width": 866,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a048",
+      "number": 48,
+      "part": "A",
+      "domain": "management",
+      "sourcePage": 20,
+      "source": "(2025S, FE, Subject-A, Q48)",
+      "promptText": "Q48. Which of the following is an explanation of a hybrid cloud?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a048-p20.webp",
+        "width": 675,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a048-p20.webp",
+          "width": 675,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "To configure and provide the service content of a cloud service for both consumers and\ncompanies",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a048-a.webp",
+            "width": 855,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "To customize some of the functions that are provided by a cloud service for the\ncompany’s own use",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a048-b.webp",
+            "width": 778,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "To provide an environment where data and application software are linked and\ninteroperable between a cloud service for the exclusive use of a company and a general-\npurpose cloud service",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a048-c.webp",
+            "width": 862,
+            "height": 111
+          }
+        },
+        {
+          "id": "d",
+          "text": "To separately provide the service content of a cloud service as paid services and free\nservices",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a048-d.webp",
+            "width": 828,
+            "height": 69
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a049",
+      "number": 49,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 21,
+      "source": "(2025S, FE, Subject-A, Q49)",
+      "promptText": "Q49. Which of the following is an explanation of green procurement?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a049-p21.webp",
+        "width": 717,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a049-p21.webp",
+          "width": 717,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It refers not only to the fulfillment of the requirements of quality and price but to the\npreferential purchase of products and services with a lower environmental burden from\ncompanies that work toward a reduction in their environmental impact.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a049-a.webp",
+            "width": 855,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "It refers to a certificate that enables commercial trading of the green power that is\ngenerated from natural energy sources such as solar, biomass, wind power, and\ngeothermal heat.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a049-b.webp",
+            "width": 799,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "It refers to international standards concerning environmental labels that are certified by a\nthird party on the basis of certain criteria.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a049-c.webp",
+            "width": 870,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It refers to mass promotion of the details of environmental protection activities and\nraising funds for environmental protection from investors.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a049-d.webp",
+            "width": 814,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a050",
+      "number": 50,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 21,
+      "source": "(2025S, FE, Subject-A, Q50)",
+      "promptText": "Q50. Which of the following is a characteristic of the growth stage in a product life cycle?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a050-p21.webp",
+        "width": 914,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a050-p21.webp",
+          "width": 914,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Demand decreases, and the withdrawal of some companies is observed. A decision\nneeds to be made regarding whether it is possible to gain a strong foothold at this stage.\nMigration into an alternative market is also considered.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a050-a.webp",
+            "width": 856,
+            "height": 111
+          }
+        },
+        {
+          "id": "b",
+          "text": "Demand is occasional, and exploiting new demand is key to success. Conviction for\nsucceeding in a specific target market is necessary.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a050-b.webp",
+            "width": 825,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "Demand reaches a peak, and the differentiation of the product and segmentation of the\nmarket become clear. The competition between competitors also intensifies, and it\nbecomes important to add new product types and reduce costs.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a050-c.webp",
+            "width": 847,
+            "height": 111
+          }
+        },
+        {
+          "id": "d",
+          "text": "The market starts to understand the value of the product. Both the product line and\ndistribution channels need to be expanded. This stage sees an increase in sales and also\nrequires investment.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a050-d.webp",
+            "width": 851,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a051",
+      "number": 51,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 21,
+      "source": "(2025S, FE, Subject-A, Q51)",
+      "promptText": "Q51. Which of the following is a description of cost-plus pricing?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a051-p21.webp",
+        "width": 680,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a051-p21.webp",
+          "width": 680,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It determines a competitive price by referring to the industry average and the pricing of\ncompetitors.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a051-a.webp",
+            "width": 857,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "It determines a price by adding a certain margin to the manufacturing cost and the\npurchasing cost.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a051-b.webp",
+            "width": 804,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "It determines a price that ensures a certain profit margin after all costs are covered on the\nbasis of a target volume of sales.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a051-c.webp",
+            "width": 872,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "It determines an appealing price by researching the quality and price that customers\naccept.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a051-d.webp",
+            "width": 819,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a052",
+      "number": 52,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 22,
+      "source": "(2025S, FE, Subject-A, Q52)",
+      "promptText": "Q52. Which of the following is an explanation of Supply Chain Management (SCM)?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a052-p22.webp",
+        "width": 872,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a052-p22.webp",
+          "width": 872,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Customer information that are collected through various channels is consolidated and\nutilized to establish closer relationships with customers.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a052-a.webp",
+            "width": 838,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Employees’ skills and behavior characteristics are grasped, and management such as\nappropriate personnel assignment and evaluation from the perspective of human\nresources strategy is performed.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a052-b.webp",
+            "width": 829,
+            "height": 111
+          }
+        },
+        {
+          "id": "c",
+          "text": "Intellectual assets of individuals, such as know-how and experience, are shared across\nthe organization to be used for creative work.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a052-c.webp",
+            "width": 843,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "The entire series of business operations, from purchasing and production to sales and\ndistribution, is reexamined both within the company and among companies in view of\ntotal optimization in order to shorten delivery times and minimize inventory.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a052-d.webp",
+            "width": 846,
+            "height": 111
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a053",
+      "number": 53,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 22,
+      "source": "(2025S, FE, Subject-A, Q53)",
+      "promptText": "Q53. Which of the following is the appropriate explanation for product innovation in the\nmanagement of technology?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a053-p22.webp",
+        "width": 898,
+        "height": 76
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a053-p22.webp",
+          "width": 898,
+          "height": 76
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Acquiring business profits through the achievements of technology development",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a053-a.webp",
+            "width": 792,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Developing new products or products that enable differentiation from other companies",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a053-b.webp",
+            "width": 850,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Making innovative reforms in business processes",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a053-c.webp",
+            "width": 489,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Strategically managing business with technology as the core",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a053-d.webp",
+            "width": 596,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a054",
+      "number": 54,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 22,
+      "source": "(2025S, FE, Subject-A, Q54)",
+      "promptText": "Q54. Which of the following is a characteristic of MRP?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a054-p22.webp",
+        "width": 591,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a054-p22.webp",
+          "width": 591,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "The development, designing, and production preparation of a product are performed\nsimultaneously in parallel.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a054-a.webp",
+            "width": 825,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "The number of required components is calculated on the basis of the standard production\nplan of a product.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a054-b.webp",
+            "width": 872,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "The production of a product is initiated after an order from a customer is received.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a054-c.webp",
+            "width": 805,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Work instructions and transport instructions are provided by using a worksheet.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a054-d.webp",
+            "width": 781,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a055",
+      "number": 55,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 23,
+      "source": "(2025S, FE, Subject-A, Q55)",
+      "promptText": "Q55. Which of the following corresponds to (5) in the example of a model of an affiliate\nprogram that is shown in the Internet advertising? Here, (1) to (5) indicate the order of\noperations in the model, and (1), (2), (4), and (5) each correspond to one of the options a) to\nd).\nWeb site operator\n(2)\nProduct advertising\n(1) (3) Go to the (5) Web site viewer\nlink. (product buyer)\n(4)\nProduct sales page\nOnline mall EC site (advertiser)",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a055-p23.webp",
+        "width": 940,
+        "height": 538
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a055-p23.webp",
+          "width": 940,
+          "height": 538
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Agree to and participate in the affiliate program",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a055-a.webp",
+            "width": 478,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "Click the advertisement on the website",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a055-b.webp",
+            "width": 389,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "Pay a success fee on the basis of the sales of the product",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a055-c.webp",
+            "width": 557,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "Purchase the desired product",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a055-d.webp",
+            "width": 295,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a056",
+      "number": 56,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 23,
+      "source": "(2025S, FE, Subject-A, Q56)",
+      "promptText": "Q56. A smart meter is a highly functional electricity meter with a function for communications\nand a function for the management of other devices. Which of the following is not an\nappropriate purpose for installing a smart meter?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a056-p23.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a056-p23.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Continuing the power supply for a fixed amount of time by functioning as an auxiliary\npower source during a power failure",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a056-a.webp",
+            "width": 849,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "Improving the efficiency of meter reading work through automatic meter reading",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a056-b.webp",
+            "width": 795,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "Increasing awareness of power-saving through the visualization of the amount of power\nconsumption",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a056-c.webp",
+            "width": 861,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "Restraining peak power by controlling power demand through the use of demand\nresponse",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a056-d.webp",
+            "width": 797,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a057",
+      "number": 57,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 24,
+      "source": "(2025S, FE, Subject-A, Q57)",
+      "promptText": "Q57. Which of the following is the appropriate role of a facilitator in a meeting?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a057-p24.webp",
+        "width": 819,
+        "height": 40
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a057-p24.webp",
+          "width": 819,
+          "height": 40
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "To act as the chairperson and control the discussions in order to work out a conclusion\nthat matches the intentions of the management",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a057-a.webp",
+            "width": 847,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "To encourage the meeting participants to express their opinions and organize the flow\nof discussions from a neutral and impartial position",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a057-b.webp",
+            "width": 841,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "To offer specialized support for meeting administration, such as adjusting the schedule,\npreparing materials, or taking minutes.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a057-c.webp",
+            "width": 856,
+            "height": 75
+          }
+        },
+        {
+          "id": "d",
+          "text": "To provide advice only on discussions related to specific areas in which the facilitator\nspecializes, such as technical or legal fields",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a057-d.webp",
+            "width": 842,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a058",
+      "number": 58,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 24,
+      "source": "(2025S, FE, Subject-A, Q58)",
+      "promptText": "Q58. The figure below shows part of a cause and effect diagram (also known as a fishbone\ndiagram). Which of the following is the relationship between A and B?\nA\nB",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a058-p24.webp",
+        "width": 918,
+        "height": 279
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a058-p24.webp",
+          "width": 918,
+          "height": 279
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "B is an attribute of A.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a058-a.webp",
+            "width": 220,
+            "height": 33
+          }
+        },
+        {
+          "id": "b",
+          "text": "B is the cause of A.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a058-b.webp",
+            "width": 200,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "B is the means of A.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a058-c.webp",
+            "width": 208,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "B is the purpose of A.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a058-d.webp",
+            "width": 223,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a059",
+      "number": 59,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 24,
+      "source": "(2025S, FE, Subject-A, Q59)",
+      "promptText": "Q59. Both Data mining and Process mining are methods for improving business operations.\nWhile Data mining aims to discover knowledge by analyzing large amounts of data by using\nstatistical and AI analysis methods, which of the following is an appropriate explanation of\nProcess mining?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a059-p24.webp",
+        "width": 947,
+        "height": 148
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a059-p24.webp",
+          "width": 947,
+          "height": 148
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a management strategy focused on changing workflows and business processes\nwithin an organization by emphasizing new ideas and new ways of doing business.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a059-a.webp",
+            "width": 820,
+            "height": 75
+          }
+        },
+        {
+          "id": "b",
+          "text": "It is a method aimed at analyzing data sets, finding unsuspected relationships, and\nsummarizing the data in novel ways.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a059-b.webp",
+            "width": 804,
+            "height": 75
+          }
+        },
+        {
+          "id": "c",
+          "text": "It is a methodology for improving performance by systematically removing unnecessary\ndata.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a059-c.webp",
+            "width": 865,
+            "height": 69
+          }
+        },
+        {
+          "id": "d",
+          "text": "It is a technique for analyzing and improving business processes by using knowledge\nthat is extracted from event logs.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a059-d.webp",
+            "width": 834,
+            "height": 75
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-a060",
+      "number": 60,
+      "part": "A",
+      "domain": "strategy",
+      "sourcePage": 25,
+      "source": "(2025S, FE, Subject-A, Q60)",
+      "promptText": "Q60. Company A purchased a machine for an original cost of $126,000. The salvage value\nafter 6 years is $6,000. What is the annual depreciation expense (in dollars) by using the\nstraight-line method?",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/a060-p25.webp",
+        "width": 947,
+        "height": 112
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/a060-p25.webp",
+          "width": 947,
+          "height": 112
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "12,000",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a060-a.webp",
+            "width": 80,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "20,000",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a060-b.webp",
+            "width": 82,
+            "height": 37
+          }
+        },
+        {
+          "id": "c",
+          "text": "21,000",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a060-c.webp",
+            "width": 82,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "36,000",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/a060-d.webp",
+            "width": 82,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b001",
+      "number": 1,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 4,
+      "source": "(2025S, FE, Subject-B, Q1)",
+      "promptText": "Q1. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ through ____C____ in the program.\nCenturial years refer to the years that are divisible by 100. The centurial years are not leap\nyears except for years that are exactly divisible by 400. The non-centurial years, that is, years\nthat are not divisible by 100, refer to leap years that are divisible by 4. The function\nisLeapYear receives an integer number year and returns true if a given year is a leap year\nor false otherwise.\n[Program]\n○ boolean: isLeapYear(integer: year) // returns true if the variable year\n// is a leap year; otherwise, returns false\nif (____A____)\nreturn ____B____\nelseif (____C____)\nreturn false\nelseif (year mod 4 = 0)\nreturn true\nelse\nreturn false\nendif\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b001-p04.webp",
+        "width": 924,
+        "height": 790
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b001-p04.webp",
+          "width": 924,
+          "height": 790
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "year mod 100 = 0 false year mod 400 = 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-a.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "year mod 100 = 0 true year mod 400 = 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-b.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "year mod 100 ≠ 0 false year mod 400 ≠ 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-c.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "year mod 100 ≠ 0 true year mod 400 ≠ 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-d.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "e",
+          "text": "year mod 400 = 0 false year mod 100 = 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-e.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "f",
+          "text": "year mod 400 = 0 true year mod 100 = 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-f.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "g",
+          "text": "year mod 400 ≠ 0 false year mod 100 ≠ 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-g.webp",
+            "width": 640,
+            "height": 94
+          }
+        },
+        {
+          "id": "h",
+          "text": "year mod 400 ≠ 0 true year mod 100 ≠ 0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b001-h.webp",
+            "width": 640,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b002",
+      "number": 2,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 5,
+      "source": "(2025S, FE, Subject-B, Q2)",
+      "promptText": "Q2. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe function isPerfect receives positive number n, and returns whether n is a perfect\nnumber. Here, a number is a “perfect number” if the sum of its positive divisors (excluding\nthe number itself) is equal to the number itself. For instance, 28 is a perfect number because\n28 has divisors 1, 2, 4, 7, and 14, and 1 + 2 + 4 + 7 + 14 = 28.\n[Program]\n○ boolean: isPerfect(integer: n)\ninteger: k\ninteger: sum ← 0\n÷\ninteger: half ← integer part of (n 2)\nfor (increase k from 1 to half by 1)\nif (___A___)\n___B___\nendif\nendfor\nif (sum = n)\nreturn true\nelse\nreturn false\nendif\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b002-p05.webp",
+        "width": 924,
+        "height": 843
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b002-p05.webp",
+          "width": 924,
+          "height": 843
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "n mod k ≠ 0 sum ← sum + 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b002-a.webp",
+            "width": 425,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "n mod k ≠ 0 sum ← sum + k",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b002-b.webp",
+            "width": 425,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "n mod k = 0 sum ← sum + 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b002-c.webp",
+            "width": 425,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "n mod k = 0 sum ← sum + k",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b002-d.webp",
+            "width": 425,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "d"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b003",
+      "number": 3,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 6,
+      "source": "(2025S, FE, Subject-B, Q3)",
+      "promptText": "Q3. From the answer group below, select the correct answer to be inserted into _______ in\nthe description.\nThe greatest common divisor (GCD) of two numbers is the largest number that divides both\nof them. The function GCD receives two positive integer numbers and returns their GCD.\nWhen the function GCD is called as GCD(98, 56), the output is _______ in (1)–(4) below.\nHere, the output statement “output m, n” outputs the values of variables m and n, and\nsubsequently starts a new line.\n(1) 98 56 (2) 42 56 (3) 42 56 (4) 56 42\n42 14 42 14 42 28 42 14\n28 14 28 14 14 28 14 28\n14 7 14 14 14 14 14 14\n[Program]\n○\ninteger: GCD(integer: x, integer: y)\ninteger: m ← x\ninteger: n ← y\nwhile (m ≠ n)\nif (m > n)\nm ← m - n\nelse\nn ← n - m\nendif\noutput m, n\nendwhile\nreturn m\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b003-p06.webp",
+        "width": 924,
+        "height": 1010
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b003-p06.webp",
+          "width": 924,
+          "height": 1010
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "(1)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b003-a.webp",
+            "width": 44,
+            "height": 39
+          }
+        },
+        {
+          "id": "b",
+          "text": "(2)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b003-b.webp",
+            "width": 43,
+            "height": 39
+          }
+        },
+        {
+          "id": "c",
+          "text": "(3)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b003-c.webp",
+            "width": 43,
+            "height": 39
+          }
+        },
+        {
+          "id": "d",
+          "text": "(4)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b003-d.webp",
+            "width": 44,
+            "height": 39
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b004",
+      "number": 4,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 7,
+      "source": "(2025S, FE, Subject-B, Q4)",
+      "promptText": "Q4. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe following function receives an integer number and returns the result of interpreting the\ndecimal representation of the number as a binary number. Note that the number is non-\nnegative, and its decimal representation comprises only the digits 0 and 1. For instance, if it\nreceives 1100, it returns 12.\n[Program]\n○\ninteger: convert(integer: number)\ninteger: place, n, remainder, decimal\ndecimal ← 0\nplace ← 1\nn ← number\nwhile (n > 0)\nremainder ← n mod 10\n÷\nn ← integer part of (n 10)\ndecimal ← decimal + ___A___\nplace ← ___B___\nendwhile\nreturn decimal\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b004-p07.webp",
+        "width": 924,
+        "height": 779
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b004-p07.webp",
+          "width": 924,
+          "height": 779
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "2 × place n × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-a.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "b",
+          "text": "2 × place remainder × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-b.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "c",
+          "text": "10 × place 2 × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-c.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "d",
+          "text": "10 × place remainder × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-d.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "e",
+          "text": "n × place 2 × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-e.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "f",
+          "text": "n × place remainder × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-f.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "g",
+          "text": "remainder × place 2 × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-g.webp",
+            "width": 584,
+            "height": 106
+          }
+        },
+        {
+          "id": "h",
+          "text": "remainder × place 10 × place",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b004-h.webp",
+            "width": 584,
+            "height": 106
+          }
+        }
+      ],
+      "answerId": "g"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b005",
+      "number": 5,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 8,
+      "source": "(2025S, FE, Subject-B, Q5)",
+      "promptText": "Q5. From the answer group below, select the correct answer to be inserted into _________ in\nthe program.\nThe function calc receives the positive real numbers x and y, and returns the result of the\ncalculation of (√x + (cid:3493)y)2. For instance, when the function calc is called as calc(4, 9),\nthe return value is 25. Here, the function pow(a, b) returns a raised to the power of b.\n[Program]\n○ real: calc(real: x, real: y)\nreturn _______\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b005-p08.webp",
+        "width": 924,
+        "height": 434
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b005-p08.webp",
+          "width": 924,
+          "height": 434
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "pow(pow(x, 0.5) + pow(y, 0.5), 2)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b005-a.webp",
+            "width": 412,
+            "height": 38
+          }
+        },
+        {
+          "id": "b",
+          "text": "pow(pow(x, 0.5), 2) + pow(pow(y, 0.5), 2)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b005-b.webp",
+            "width": 509,
+            "height": 38
+          }
+        },
+        {
+          "id": "c",
+          "text": "pow(pow(x, 2) + pow(y, 2), 0.5)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b005-c.webp",
+            "width": 388,
+            "height": 38
+          }
+        },
+        {
+          "id": "d",
+          "text": "pow(x, 0.5) + pow(y, 0.5)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b005-d.webp",
+            "width": 315,
+            "height": 38
+          }
+        },
+        {
+          "id": "e",
+          "text": "÷\npow(x, 0.5) + pow(y, 0.5) pow(2, 0.5)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b005-e.webp",
+            "width": 486,
+            "height": 38
+          }
+        },
+        {
+          "id": "f",
+          "text": "÷\npow(x, 2) + pow(y, 2) pow(2, 0.5)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b005-f.webp",
+            "width": 437,
+            "height": 38
+          }
+        }
+      ],
+      "answerId": "a"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b006",
+      "number": 6,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 9,
+      "source": "(2025S, FE, Subject-B, Q6)",
+      "promptText": "Q6. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nGray code is a sequence of binary numbers in which two successive values differ by only 1\nbit. The function GrayBiCon converts the gray code to a binary code using bitwise operators.\nThe bitwise operators operate on the individual bits of the variables. The function receives\nthe 8-bit type argument x as a gray code, and returns a corresponding binary number of the\ngiven argument. The value of each bit after conversion is the exclusive OR of the most\nsignificant bit in the gray code up to the corresponding bit position and the converted value\nof the next higher bit position. For instance, when the function GrayBiCon is called as\nGrayBiCon(00001100), the return value is a binary number 00001000. The common bitwise\noperators are listed in the table below:\nTable Operators\nOperator Name\n& Bitwise AND\n| Bitwise OR\n^ Bitwise XOR (exclusive OR)\n<< Shift left\n>> Shift right\nFor instance, v << n performs a logical shift of the value of v by n bits to the left.\n[Program]\n○ 8-bit: GrayBiCon(8-bit: x)\n8-bit: y ← x\n8-bit: z ← x\nwhile (z ≠ 00000000)\nz ← z ____A____ 1\ny ← ____B____\nendwhile\nreturn y\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b006-p09.webp",
+        "width": 924,
+        "height": 1116
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b006-p09.webp",
+          "width": 924,
+          "height": 1116
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b006-p10.webp",
+          "width": 153,
+          "height": 34
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "& y & z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-a.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "& y ^ z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-b.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "& y | z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-c.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "<< y & z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-d.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "e",
+          "text": "<< y ^ z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-e.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "f",
+          "text": "<< y | z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-f.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "g",
+          "text": ">> y & z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-g.webp",
+            "width": 300,
+            "height": 93
+          }
+        },
+        {
+          "id": "h",
+          "text": ">> y ^ z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-h.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "i",
+          "text": ">> y | z",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b006-i.webp",
+            "width": 300,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "h"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b007",
+      "number": 7,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 11,
+      "source": "(2025S, FE, Subject-B, Q7)",
+      "promptText": "Q7. From the answer group below, select the correct answer to be inserted into _________ in\nthe description. Here, the array index starts at 1.\nThe function binarySearch receives four arguments: the first argument is an array specified\nwith the argument arr (the number of elements ≥ 1), the second argument is the value\nspecified with the argument target, the third argument is the lower bound low of the array,\nand the fourth argument is the upper bound high of the array. The array arr has no duplicate\nelements and is sorted in ascending order. If arr has an element with the same value as\ntarget, this function returns the index of that element, and -1 otherwise.\nWhen the function binarySearch is called as binarySearch({1, 2, 3, 4, 5, 6}, 5,\n1, 6), the number of times the string “call” is output is _________ .\n[Program]\n○ integer: binarySearch(integer []: arr, integer: target,\ninteger: low, integer: high)\ninteger: mid\nif (low > high)\nreturn −1\nendif\n÷\nmid ← integer part of ((low + high) 2)\nif (arr[mid] > target)\noutput \"call\"\nreturn binarySearch(arr, target, low, mid − 1)\nelseif (arr[mid] < target)\noutput \"call\"\nreturn binarySearch(arr, target, mid + 1, high)\nelse\nreturn mid\nendif\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b007-p11.webp",
+        "width": 924,
+        "height": 1130
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b007-p11.webp",
+          "width": 924,
+          "height": 1130
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-a.webp",
+            "width": 28,
+            "height": 34
+          }
+        },
+        {
+          "id": "b",
+          "text": "1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-b.webp",
+            "width": 24,
+            "height": 33
+          }
+        },
+        {
+          "id": "c",
+          "text": "2",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-c.webp",
+            "width": 28,
+            "height": 33
+          }
+        },
+        {
+          "id": "d",
+          "text": "3",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-d.webp",
+            "width": 26,
+            "height": 34
+          }
+        },
+        {
+          "id": "e",
+          "text": "4",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-e.webp",
+            "width": 28,
+            "height": 33
+          }
+        },
+        {
+          "id": "f",
+          "text": "5",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-f.webp",
+            "width": 27,
+            "height": 34
+          }
+        },
+        {
+          "id": "g",
+          "text": "6",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b007-g.webp",
+            "width": 28,
+            "height": 34
+          }
+        }
+      ],
+      "answerId": "b"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b008",
+      "number": 8,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 12,
+      "source": "(2025S, FE, Subject-B, Q8)",
+      "promptText": "Q8. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program. Here, the array index starts at 1.\nThe function reverse takes a string inputStr as a parameter and returns the reversed string.\nHere, the length of the string given to inputStr is 100 or less. In the program, areas outside\nof the arrays must not be referenced and the undefined value must not be appended to a string.\n[Program]\nglobal: character []: stack ← {100 undefined}\nglobal: integer: sp ← 0\n○ string: reverse(string: inputStr)\ninteger: n ← length of inputStr\ninteger: i\ncharacter: x, v\nstring: outputStr ← \"\"\nfor (increase i from 1 to n by 1)\nx ← the i-th character of string inputStr\npush(x)\nendfor\nwhile (sp ≠ ___A___)\nv ← pop()\nappend v to outputStr\nendwhile\nreturn outputStr\n○ push(character: x)\nsp ← sp + 1\nstack[sp] ← x\n○ character: pop()\ncharacter: retvar\n___B___\nreturn retvar\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b008-p12.webp",
+        "width": 928,
+        "height": 1119
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b008-p12.webp",
+          "width": 928,
+          "height": 1119
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b008-p13.webp",
+          "width": 153,
+          "height": 39
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "retvar ← stack[sp]\n−1\nsp ← sp + 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-a.webp",
+            "width": 442,
+            "height": 126
+          }
+        },
+        {
+          "id": "b",
+          "text": "retvar ← stack[sp]\n−1\nsp ← sp − 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-b.webp",
+            "width": 442,
+            "height": 127
+          }
+        },
+        {
+          "id": "c",
+          "text": "sp ← sp + 1\n−1\nretvar ← stack[sp]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-c.webp",
+            "width": 442,
+            "height": 126
+          }
+        },
+        {
+          "id": "d",
+          "text": "sp ← sp − 1\n−1\nretvar ← stack[sp]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-d.webp",
+            "width": 442,
+            "height": 126
+          }
+        },
+        {
+          "id": "e",
+          "text": "retvar ← stack[sp]\n0\nsp ← sp + 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-e.webp",
+            "width": 442,
+            "height": 126
+          }
+        },
+        {
+          "id": "f",
+          "text": "retvar ← stack[sp]\n0\nsp ← sp − 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-f.webp",
+            "width": 442,
+            "height": 126
+          }
+        },
+        {
+          "id": "g",
+          "text": "sp ← sp + 1\n0\nretvar ← stack[sp]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-g.webp",
+            "width": 442,
+            "height": 127
+          }
+        },
+        {
+          "id": "h",
+          "text": "sp ← sp − 1\n0\nretvar ← stack[sp]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b008-h.webp",
+            "width": 442,
+            "height": 126
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b009",
+      "number": 9,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 14,
+      "source": "(2025S, FE, Subject-B, Q9)",
+      "promptText": "Q9. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ____C____ in the program.\nGiven the root of two binary trees, the aim of the following program is to check whether\nthese two trees are identical. Two binary trees are defined as identical if they satisfy the\nfollowing formal conditions:\n• Structure: Both trees have the same structure, implying that for every corresponding\nnode in the two trees, the arrangement of the left and right children is the same.\n• Node Values: Each corresponding node in the two trees must contain the same value.\nSpecifically, if tree 𝑇 has a node 𝑁 with value 𝑣 and tree 𝑇 has the corresponding\n(cid:2869) (cid:2869) (cid:2869) (cid:2870)\nnode 𝑁 with value 𝑣 , then 𝑣 = 𝑣 .\n(cid:2870) (cid:2870) (cid:2869) (cid:2870)\nThe function isSameTree takes two instances of class TreeNode as the argument\nrepresenting the root nodes of two binary trees, and returns true if the trees are identical, or\nfalse otherwise. The member variables of TreeNode are listed in the table below:\nTable Explanation of the member variables of the class TreeNode\nMember variable Type Description\nval integer The integer value of a current node\nleft TreeNode Left child node\nright TreeNode Right child node\n[Program]\n○ boolean: isSameTree(TreeNode: p, TreeNode: q)\nboolean: checkLeft, checkRight\nif (p = undefined ____A____ q = undefined)\nreturn true\nendif\nif (p = undefined ____B____ q = undefined)\nreturn false\nendif\nif (p.val ≠ q.val)\nreturn false\nendif\ncheckLeft ← isSameTree(p.left, q.left)\ncheckRight ← isSameTree(p.right, q.right)\nreturn checkLeft ____C____ checkRight\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b009-p14.webp",
+        "width": 924,
+        "height": 1402
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b009-p14.webp",
+          "width": 924,
+          "height": 1402
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b009-p15.webp",
+          "width": 153,
+          "height": 34
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "or and and",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b009-a.webp",
+            "width": 356,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "and or or",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b009-b.webp",
+            "width": 356,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "and or and",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b009-c.webp",
+            "width": 356,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "or and or",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b009-d.webp",
+            "width": 356,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b010",
+      "number": 10,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 16,
+      "source": "(2025S, FE, Subject-B, Q10)",
+      "promptText": "Q10. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the program.\nThe procedure deleteLast removes an element at the end of a doubly linked list. Each\nelement of the doubly linked list is represented by the class ListElement. The table shows\nthe description of the class ListElement. The ListElement-type variable holds a\nreference to an instance of the class ListElement. The global variable listHead holds a\nreference to the head element of the doubly linked list. Remember that each element in the\ndoubly linked list has a reference to its previous element and its next element. Here, if the\nlist is empty, listHead is set to undefined.\nThe procedure handles three main cases: if the list is empty, it outputs \"empty.\" If the list\ncontains only one element, it becomes empty after deletion. If multiple elements are present,\nit only removes the last element.\nTable Class ListElement\nMember Variable Type Description\ndata integer The value of an element.\nnext ListElement Reference to the instance that holds the next\nelement in the list.\nprev ListElement Reference to the instance that holds the previous\nelement in the list.\n[Program]\nglobal: ListElement: listHead /* A reference to the first element of\nthe list is stored. */\n○ deleteLast()\nListElement: current\nif (listHead is undefined)\noutput \"empty\"\nelse\ncurrent ← listHead\nwhile (___A___ is not undefined)\ncurrent ← current.next\nendwhile\nif (current.prev is not undefined) // multiple elements are present\n___B___ ← undefined\nelse // only one element is present\nlistHead ← undefined // empty list\nendif\nendif\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b010-p16.webp",
+        "width": 925,
+        "height": 1388
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b010-p16.webp",
+          "width": 925,
+          "height": 1388
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b010-p17.webp",
+          "width": 153,
+          "height": 34
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "current.prev current.prev.next",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b010-a.webp",
+            "width": 520,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "current.prev current.next",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b010-b.webp",
+            "width": 520,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "current current.prev.next",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b010-c.webp",
+            "width": 520,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "current current.next",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b010-d.webp",
+            "width": 520,
+            "height": 94
+          }
+        },
+        {
+          "id": "e",
+          "text": "current.next current.prev.next",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b010-e.webp",
+            "width": 520,
+            "height": 94
+          }
+        },
+        {
+          "id": "f",
+          "text": "current.next current.next",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b010-f.webp",
+            "width": 520,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "e"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b011",
+      "number": 11,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 18,
+      "source": "(2025S, FE, Subject-B, Q11)",
+      "promptText": "Q11. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ in the description and ___B___ in the program. Here, the array index\nstarts at 0.\nThe procedure sort receives an integer array arr and prints all the integers in arr in\nascending order, separated by commas. The number of elements in arr is ≥ 1. The values\nof all array elements are in the range of 0–10.\nIf arr is {9, 3, 2, 0, 9, 3, 0, 1, 5, 3, 8}, at the end of the procedure, it outputs\n\"0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9, \" and the values of the elements of array s will\nbe {___A___}\n[Program]\n○ sort(integer []: arr) // prints all the elements in arr in ascending order\ninteger []: s ← {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\ninteger: i, j\nfor (increase i from 0 to (the number of elements in arr) - 1 by 1)\ns[arr[i]] ← s[arr[i]] + 1\nendfor\nfor (increase i from 0 to 10 by 1)\nif (s[i] > 0)\nfor (increase j from 0 to s[i] - 1 by 1)\noutput ___B___ and \", \"\nendfor\nendif\nendfor\nreturn\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b011-p18.webp",
+        "width": 924,
+        "height": 985
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b011-p18.webp",
+          "width": 924,
+          "height": 985
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9 arr[i]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-a.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "b",
+          "text": "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9 i",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-b.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "c",
+          "text": "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9 s[i]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-c.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "d",
+          "text": "0, 1, 2, 3, 5, 8, 9 arr[j]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-d.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "e",
+          "text": "0, 1, 2, 3, 5, 8, 9 i",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-e.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "f",
+          "text": "0, 1, 2, 3, 5, 8, 9 j",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-f.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "g",
+          "text": "2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0 i",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-g.webp",
+            "width": 668,
+            "height": 92
+          }
+        },
+        {
+          "id": "h",
+          "text": "2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0 j",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-h.webp",
+            "width": 668,
+            "height": 93
+          }
+        },
+        {
+          "id": "i",
+          "text": "2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0 s[j]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b011-i.webp",
+            "width": 668,
+            "height": 93
+          }
+        }
+      ],
+      "answerId": "g"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b012",
+      "number": 12,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 19,
+      "source": "(2025S, FE, Subject-B, Q12)",
+      "promptText": "Q12. From the answer group below, select the correct answer to be inserted into _______ in\nthe program. Here, the array index starts at 1.\nThe function hammingDistance compares the two-character arrays s1 and s2 that are given\nas arguments. s1 and s2 have one or more elements. If s1 and s2 do not have the same\nnumber of elements, the function returns -1. Otherwise, it returns the number of indices\nwhere two arrays have different element values at the same index. The figure shows an\nexample of two character arrays. APPLE and APRIE have different element values at two\nindices.\nA P P L E\nA P R I E\nFigure Example of two-character arrays\nThe table lists examples of s1 and s2 given to the function hammingDistance and the return\nvalues. In the program, areas outside of the arrays must not be referenced.\nTable Examples of s1 and s2 given to the function hammingDistance\nand the return values\ns1 s2 Return value\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"a\", \"p\", \"p\", \"l\", \"e\"} 0\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"a\", \"p\", \"r\", \"i\", \"l\"} 3\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"m\", \"e\", \"l\", \"o\", \"n\"} 5\n{\"a\", \"p\", \"p\", \"l\", \"e\"} {\"p\", \"i\", \"e\"} -1\n[Program]\n○ integer: hammingDistance(character []: s1, character []: s2)\ninteger: i, cnt ← 0\nif (the number of elements in s1 ≠ the number of elements in s2)\nreturn −1\nendif\nfor (increase i from 1 to the number of elements in s1 by 1)\nif (_______)\ncnt ← cnt + 1\nendif\nendfor\nreturn cnt\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b012-p19.webp",
+        "width": 924,
+        "height": 1312
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b012-p19.webp",
+          "width": 924,
+          "height": 1312
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b012-p20.webp",
+          "width": 153,
+          "height": 39
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "s1[cnt] = s2[cnt]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-a.webp",
+            "width": 219,
+            "height": 37
+          }
+        },
+        {
+          "id": "b",
+          "text": "s1[cnt] ≠ s2[cnt]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-b.webp",
+            "width": 219,
+            "height": 37
+          }
+        },
+        {
+          "id": "c",
+          "text": "s1[cnt] = s2[i]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-c.webp",
+            "width": 195,
+            "height": 37
+          }
+        },
+        {
+          "id": "d",
+          "text": "s1[cnt] ≠ s2[i]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-d.webp",
+            "width": 195,
+            "height": 37
+          }
+        },
+        {
+          "id": "e",
+          "text": "s1[i] = s2[cnt]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-e.webp",
+            "width": 195,
+            "height": 37
+          }
+        },
+        {
+          "id": "f",
+          "text": "s1[i] ≠ s2[cnt]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-f.webp",
+            "width": 195,
+            "height": 37
+          }
+        },
+        {
+          "id": "g",
+          "text": "s1[i] = s2[i]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-g.webp",
+            "width": 171,
+            "height": 37
+          }
+        },
+        {
+          "id": "h",
+          "text": "s1[i] ≠ s2[i]",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b012-h.webp",
+            "width": 170,
+            "height": 37
+          }
+        }
+      ],
+      "answerId": "h"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b013",
+      "number": 13,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 21,
+      "source": "(2025S, FE, Subject-B, Q13)",
+      "promptText": "Q13. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program. Here, the array index starts at 1.\nThe procedure maximumSubarray calculates the maximum sum of the subarray of the array\nT (the number of elements ≥ 1). A subarray is a contiguous portion of the array, for instance,\nfrom T[1] to T[3]. It can be as short as one element or as long as the entire array. The\nprocedure finds one of the subarrays with the largest sum of values, and outputs the sum, the\nfirst, and the last indices of the subarray. For instance, if the content of the array is {-2, 1,\n-3, 4, -1, 2, 1, -5, 4}, the output will be 6, 4, and 7 representing the sum, first index,\nand last index, respectively. Here, the subarray from T[4] to T[7] is {4, -1, 2, 1}.\n[Program]\n○ maximumSubarray(integer []: T)\ninteger: n ← the number of elements in T\ninteger: i, j\ninteger: first, last /* the first and last indices of the subarray */\ninteger: sum\ninteger: max ← T[1] - 1\nfor (increase i from 1 to n by 1)\nsum ← 0\nfor (increase j from ____A____ to n by 1)\nsum ← sum + T[j]\nif (sum > max)\nfirst ← i\nlast ← ____B____\nmax ← sum\nendif\nendfor\nendfor\noutput max, first, last\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b013-p21.webp",
+        "width": 924,
+        "height": 1075
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b013-p21.webp",
+          "width": 924,
+          "height": 1075
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b013-p22.webp",
+          "width": 153,
+          "height": 34
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "1 j",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b013-a.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "1 j - 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b013-b.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "i j",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b013-c.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "i j - 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b013-d.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "e",
+          "text": "i + 1 j",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b013-e.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "f",
+          "text": "i + 1 j - 1",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b013-f.webp",
+            "width": 300,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b014",
+      "number": 14,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 23,
+      "source": "(2025S, FE, Subject-B, Q14)",
+      "promptText": "Q14. From the answer group below, select the correct combination of answers to be inserted\ninto ____A____ and ____B____ in the program.\nThe function cosine(z) returns an approximate value of the cosine value of z degrees. The\nfunction uses Maclaurin series expansion for the cosine shown below and can be used to\ndetermine cos(y) for values of y radians.\n(cid:3052)(cid:3118) (cid:3052)(cid:3120) (cid:3052)(cid:3122)\ncos(y) = 1− + − +⋯\n(cid:2870)! (cid:2872)! (cid:2874)!\n[Program]\n○\nreal: cosine(real: z)\n÷\nreal: y ← z × π 180 // convert from degrees to radians\nreal: term ← 1\nreal: cosy ← term\ninteger: n ← 0\nwhile (absolute value of ____A____ > 0.000000001)\nn ← n + 1\nterm ← term × (-1 × (y ____B____) ÷ (2 × n × (2 × n - 1)))\ncosy ← cosy + term\nendwhile\nreturn cosy\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b014-p23.webp",
+        "width": 924,
+        "height": 779
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b014-p23.webp",
+          "width": 924,
+          "height": 779
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "cosy raised to the power of (2 × n)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b014-a.webp",
+            "width": 514,
+            "height": 90
+          }
+        },
+        {
+          "id": "b",
+          "text": "cosy raised to the power of 4",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b014-b.webp",
+            "width": 514,
+            "height": 89
+          }
+        },
+        {
+          "id": "c",
+          "text": "cosy squared",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b014-c.webp",
+            "width": 514,
+            "height": 90
+          }
+        },
+        {
+          "id": "d",
+          "text": "term raised to the power of (2 × n)",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b014-d.webp",
+            "width": 514,
+            "height": 90
+          }
+        },
+        {
+          "id": "e",
+          "text": "term raised to the power of 4",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b014-e.webp",
+            "width": 514,
+            "height": 90
+          }
+        },
+        {
+          "id": "f",
+          "text": "term squared",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b014-f.webp",
+            "width": 514,
+            "height": 89
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b015",
+      "number": 15,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 24,
+      "source": "(2025S, FE, Subject-B, Q15)",
+      "promptText": "Q15. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description. Here, the array index starts at 1.\nThe calcDistance returns a value based on array p1, p2 and positive integer n. Assuming\nthat the number of elements in arrays p1 and p2 are the same. The function abs(x) returns\nthe absolute value of x, and pow(a, b) returns a raised to the power of b.\nIn the case of p1 is {3, 1, 5, 2} and p2 is {4, 6, 2, 3}, the calcDistance(p1, p2,\n1) returns ___A___, whereas calcDistance(p1, p2, 2) returns ___B___. As the\nvalue of n increases, those of calcDistance(p1, p2, n) converges to 5.\n[Program]\n○ real: calcDistance(real []: p1, real []: p2, integer: n)\ninteger: i\nreal: distance ← 0\nreal: ex\nfor (increase i from 1 to number of elements in p1 by 1)\ndistance ← distance + pow(abs(p1[i] - p2[i]), n)\nendfor\n÷\nex ← 1 n /* Division is performed in data type real */\ndistance ← pow(distance, ex)\nreturn distance\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b015-p24.webp",
+        "width": 925,
+        "height": 795
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b015-p24.webp",
+          "width": 925,
+          "height": 795
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "4 4",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-a.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "4 6",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-b.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "4 10",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-c.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "4 18",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-d.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "e",
+          "text": "10 4",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-e.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "f",
+          "text": "10 6",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-f.webp",
+            "width": 300,
+            "height": 94
+          }
+        },
+        {
+          "id": "g",
+          "text": "10 10",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-g.webp",
+            "width": 300,
+            "height": 93
+          }
+        },
+        {
+          "id": "h",
+          "text": "10 18",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b015-h.webp",
+            "width": 300,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "f"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b016",
+      "number": 16,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 25,
+      "source": "(2025S, FE, Subject-B, Q16)",
+      "promptText": "Q16. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ through ___C___ in the program.\nCraps is a casino dice game in which players bet on the outcomes of the roll of a pair dice.\nIn the rules of the game, a player rolls two dice and finds their sum. There possible outcomes\ncould lead to a win or loss.\n1. If the sum is 7 or 11, the player wins.\n2. If the sum is 2, 3 or 12, the player loses.\n3. Otherwise (the sum is 4, 5, 6, 8, 9 or 10), the player neither wins nor loses. However,\nthe player continues rolling the dice until they either roll the same (initial) sum\nagain (in which case they win the game) or roll a sum of 7 (in which case they lose\nthe game).\nThe following program approximates the chance of winning a game of Craps using Monte\nCarlo method and outputs it. The Monte Carlo method is a technique used to estimate the\nprobability of certain outcomes of an experiment by running multiple trial runs, using\nrandom numbers. In the program, the playing Craps is illustrated simply by generating\nrandom numbers rather than actually rolling a pair of dice. The function random_int(1, 6)\ngenerates a random integer number between 1 and 6, and returns it.\nThe program also calculates and outputs the relative error of the measured approximate\nprobability of winning Craps. In general, the relative error Er is calculated using the\nfollowing formula:\nEr = | (Pm – Pt) / Pt |\nwhere Pm denotes the measured approximate probability and Pt denotes the theoretical\nprobability. The theoretical probability of winning Craps is known to be 244/495.\n[Program]\ninteger: wins_sum ← 0\ninteger: lose_sum ← 0\ninteger: n ← 10000\ninteger: i, dice1, dice2, sum, newsum\n÷\nreal: result, pt ← (244 495)\nfor (increase i from 1 to n by 1)\ndice1 ← random_int(1, 6)\ndice2 ← random_int(1, 6)\nsum ← dice1 + dice2\nif (sum = 7 or sum = 11)\n\nwins_sum ← wins_sum + 1\nelseif (sum = 2 or sum = 3 or sum = 12)\nlose_sum ← lose_sum + 1\nelse\ndo\ndice1 ← random_int(1, 6)\ndice2 ← random_int(1, 6)\nnewsum ← dice1 + dice2\nif (newsum = sum)\nwins_sum ← wins_sum + 1\nelseif (newsum = 7)\nlose_sum ← lose_sum + 1\nendif\nwhile (___A___)\nendif\nendfor\nresult ← ___B___\noutput result, absolute value of (___C___)\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b016-p25.webp",
+        "width": 929,
+        "height": 1399
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b016-p25.webp",
+          "width": 929,
+          "height": 1399
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b016-p26.webp",
+          "width": 542,
+          "height": 649
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "÷ ÷\nnewsum ≠ sum and wins_sum lose_sum (result − pt) pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-a.webp",
+            "width": 805,
+            "height": 126
+          }
+        },
+        {
+          "id": "b",
+          "text": "÷ ÷\nnewsum ≠ sum and wins_sum lose_sum result pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-b.webp",
+            "width": 805,
+            "height": 126
+          }
+        },
+        {
+          "id": "c",
+          "text": "÷ ÷\nnewsum ≠ sum and wins_sum n (result − pt) pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-c.webp",
+            "width": 805,
+            "height": 126
+          }
+        },
+        {
+          "id": "d",
+          "text": "÷ ÷\nnewsum ≠ sum and wins_sum n result pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-d.webp",
+            "width": 805,
+            "height": 126
+          }
+        },
+        {
+          "id": "e",
+          "text": "÷ ÷\nnewsum ≠ sum or wins_sum lose_sum (result − pt) pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-e.webp",
+            "width": 805,
+            "height": 126
+          }
+        },
+        {
+          "id": "f",
+          "text": "÷ ÷\nnewsum ≠ sum or wins_sum lose_sum result pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-f.webp",
+            "width": 805,
+            "height": 125
+          }
+        },
+        {
+          "id": "g",
+          "text": "÷ ÷\nnewsum ≠ sum or wins_sum n (result − pt) pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-g.webp",
+            "width": 805,
+            "height": 126
+          }
+        },
+        {
+          "id": "h",
+          "text": "÷ ÷\nnewsum ≠ sum or wins_sum n result pt\nnewsum ≠ 7",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b016-h.webp",
+            "width": 805,
+            "height": 126
+          }
+        }
+      ],
+      "answerId": "c"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b017",
+      "number": 17,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 27,
+      "source": "(2025S, FE, Subject-B, Q17)",
+      "promptText": "Q17. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nRecently, an e-commerce company X was cyber-attacked by an attacker. Mr. Y, the security\nteam leader at the company, is investigating the incident and considering future\ncountermeasures. The following is the summary of the incident:\nThe first half of the attack: An attacker visited company X's website to collect valuable\ninformation and knew the name of a senior worker of the IT department who was only\nresponsible for system administration. One day, a receptionist for Company X received\na phone call from a man with a fantastic voice. He asked some personal questions\nabout the senior IT guy, Mr. Z. The caller skillfully manipulated the receptionist into\ngiving him personal information about the IT guy. The caller was the attacker who got\nhelpful information for further attacks on the company's server.\nThe second half of the attack: After that, the attacker dug into social sites and other\nresources to get additional information about Mr. Z and the servers of Company X,\nand then he created a password file based on Mr. Z's information and a file with the\ncompany server's IP address list. Then, the attacker remotely attacked a server of the\ncompany using the password list and an IP address of the server.\nMr. Y implemented two measures as future countermeasures for a similar attack. The\nmeasure for the first half of the attack is ___A___. The other for the second half is\n___B___.\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b017-p27.webp",
+        "width": 924,
+        "height": 869
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b017-p27.webp",
+          "width": 924,
+          "height": 869
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b017-p28.webp",
+          "width": 153,
+          "height": 34
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "abolition of company-wide encrypting access to websites using\ntelephone use HTTPS",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-a.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "b",
+          "text": "abolition of company-wide implement account lock for consecutive\ntelephone use incorrect password attempts on the server",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-b.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "c",
+          "text": "abolition of company-wide prohibit employees from using social\ntelephone use networking services",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-c.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "d",
+          "text": "education for the employees encrypting access to websites using\nagainst social engineering HTTPS",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-d.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "e",
+          "text": "education for the employees implement account lock for consecutive\nagainst social engineering incorrect password attempts on the server",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-e.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "f",
+          "text": "education for the employees prohibit employees from using social\nagainst social engineering networking services",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-f.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "g",
+          "text": "restricting access to the websites encrypting access to websites using\nusing IP address-based block lists HTTPS",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-g.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "h",
+          "text": "restricting access to the websites implement account lock for consecutive\nusing IP address-based block lists incorrect password attempts on the server",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-h.webp",
+            "width": 816,
+            "height": 128
+          }
+        },
+        {
+          "id": "i",
+          "text": "restricting access to the websites prohibit employees from using social\nusing IP address-based block lists networking services",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b017-i.webp",
+            "width": 816,
+            "height": 128
+          }
+        }
+      ],
+      "answerId": "e"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b018",
+      "number": 18,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 29,
+      "source": "(2025S, FE, Subject-B, Q18)",
+      "promptText": "Q18. From the answer group below, select the most appropriate combination of answers to be\ninserted into ____A____ and ____B____ in the description.\nCompany Z wants to provide secure file transfer service especially for very large files for\ntheir customers. Mr. K, the system architect of the company, designed the sequence of\nuploading, storing, and downloading customer files on the web service. In this system,\ncustomers register their email addresses and their public keys during sign up. The associated\nprivate keys reside on the customers’ computers and the email address is used as the user id.\nThe requirements for the file transfer service are as follows:\n- Customers transfer files between each other by uploading files to or downloading them\nfrom the web service provided by Company Z.\n- When uploading a file, the sender supplies the recipient’s email address and the\npassword that will be used with the particular file (Upload function).\n- The file uploaded by the sender is encrypted with the supplied password and then stored\nin the database of the web service. (StoreFile function).\n- The web service assigns a file id to the uploaded file and notifies the sender of it upon\nuploading.\n- The encrypted file can only be decrypted by the sender and the recipient of the file using\nthe password supplied by the sender.\n- The password is encrypted and sent to the recipient as an email message along with the\nfile id (Message function).\n- When downloading the file, the recipient supplies the file id and the password. The web\nservice then decrypts the stored file and provides it for the recipient.\n- Even if the database is leaked, it will be difficult to decrypt the uploaded files stored in\nthe database.\nFigure 1 shows the sequence of uploading file by customer P for customer Q.\nP Server Database Q\nUpload(Q’s email, file, password)\nLoadPublicKeys(Q’s email)\nQ’s public key\nStoreFile( A (file, KDF(password)))\nfile id\nMessage(file id, B (password, Q’s public key))\nfile id\nFigure 1 Sequence on file uploading\n\nIn this system, Mr.K uses KDF (Key Derivation Function) to improve the strength of the\nsupplied password and uses ____A____ and ____B____ algorithms to accomplish above\nrequirements. Note that the format of encryption algorithms used here is algorithm(data,\nkey).\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b018-p29.webp",
+        "width": 927,
+        "height": 1405
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b018-p29.webp",
+          "width": 927,
+          "height": 1405
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b018-p30.webp",
+          "width": 895,
+          "height": 214
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "asymmetric key encryption cryptographically secure hash",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b018-a.webp",
+            "width": 697,
+            "height": 94
+          }
+        },
+        {
+          "id": "b",
+          "text": "asymmetric key encryption symmetric key encryption",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b018-b.webp",
+            "width": 697,
+            "height": 94
+          }
+        },
+        {
+          "id": "c",
+          "text": "cryptographically secure hash asymmetric key encryption",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b018-c.webp",
+            "width": 697,
+            "height": 94
+          }
+        },
+        {
+          "id": "d",
+          "text": "cryptographically secure hash symmetric key encryption",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b018-d.webp",
+            "width": 697,
+            "height": 94
+          }
+        },
+        {
+          "id": "e",
+          "text": "symmetric key encryption asymmetric key encryption",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b018-e.webp",
+            "width": 697,
+            "height": 94
+          }
+        },
+        {
+          "id": "f",
+          "text": "symmetric key encryption cryptographically secure hash",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b018-f.webp",
+            "width": 697,
+            "height": 94
+          }
+        }
+      ],
+      "answerId": "e"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b019",
+      "number": 19,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 31,
+      "source": "(2025S, FE, Subject-B, Q19)",
+      "promptText": "Q19. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nCompany V, a small-sized company specializing in manufacturing and selling home\nappliances, has recently expanded its team of website administrators to five. In addition, they\nhave renovated their website to allow customers to download user manuals for their products.\nOne day, an external security researcher highlighted that files containing a watermark with\n\"For Internal Use\" were publicly accessible in the public directory of the company’s website\nand available for download. Company V has a system that ensures all documents stored in\nthe internal folder have this watermark by default, and a rule exists stating that the watermark\nmust be removed when files are published or shared external. The website administrator\nimmediately confirmed the issue and removed the document from the public directory. Then,\nthe website administrator reported this issue to Company V's security team. The\ninvestigation of the security team revealed that the issue was caused by a website\nadministrator accidentally uploading internal documents instead of the intended public\ncatalog files. Those publicly accessible files were a draft version of the catalogs, and they\ndid not contain credential information such as API keys for website management. When\nuploading files to the website's public directory, another website administrator, other than\nthe uploader, was supposed to verify the correctness of the files. However, they failed to\nnotice the mistake. To prevent similar issues in the future, the security team suggested\nimplementing ___A___ to the website administrators. Additionally, to quickly detect\nissues, the security team suggested implementing ___B___.\n\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b019-p31.webp",
+        "width": 928,
+        "height": 797
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b019-p31.webp",
+          "width": 928,
+          "height": 797
+        },
+        {
+          "src": "exams/itpec-fe-2025-spring/b019-p32.webp",
+          "width": 153,
+          "height": 34
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a system to check all file upload a policy where all configuration\ndestinations and ensure they are not changes on Company V's website are\npublic directories before allowing the checked by at least two website\nuploads administrators",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-a.webp",
+            "width": 810,
+            "height": 185
+          }
+        },
+        {
+          "id": "b",
+          "text": "a system to check all file upload monitoring tools that alert\ndestinations and ensure they are not administrators to any unauthorized\npublic directories before allowing the access to the public directory\nuploads",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-b.webp",
+            "width": 810,
+            "height": 185
+          }
+        },
+        {
+          "id": "c",
+          "text": "a system to check all file upload periodic checks of the files in the\ndestinations and ensure they are not public directory to identify any files\npublic directories before allowing the that may be mistakenly exposed\nuploads",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-c.webp",
+            "width": 810,
+            "height": 184
+          }
+        },
+        {
+          "id": "d",
+          "text": "an automated credential scanner to a policy where all configuration\nscan files for credentials and API keys changes on Company V's website are\nbefore uploading them to the website checked by at least two website\npublic directory administrators",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-d.webp",
+            "width": 810,
+            "height": 185
+          }
+        },
+        {
+          "id": "e",
+          "text": "an automated credential scanner to monitoring tools that alert\nscan files for credentials and API keys administrators to any unauthorized\nbefore uploading them to the website access to the public directory\npublic directory",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-e.webp",
+            "width": 810,
+            "height": 177
+          }
+        },
+        {
+          "id": "f",
+          "text": "an automated credential scanner to periodic checks of the files in the\nscan files for credentials and API keys public directory to identify any files\nbefore uploading them to the website that may be mistakenly exposed\npublic directory",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-f.webp",
+            "width": 810,
+            "height": 170
+          }
+        },
+        {
+          "id": "g",
+          "text": "an automated tool to prevent the a policy where all configuration\nupload of files containing a watermark changes on Company V's website are\nwith \"For Internal Use\" to the checked by at least two website\nwebsite’s public directory administrators",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-g.webp",
+            "width": 810,
+            "height": 170
+          }
+        },
+        {
+          "id": "h",
+          "text": "an automated tool to prevent the monitoring tools that alert\nupload of files containing a watermark administrators to any unauthorized\nwith \"For Internal Use\" to the access to the public directory\nwebsite’s public directory",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-h.webp",
+            "width": 810,
+            "height": 170
+          }
+        },
+        {
+          "id": "i",
+          "text": "an automated tool to prevent the periodic checks of the files in the\nupload of files containing a watermark public directory to identify any files\nwith \"For Internal Use\" to the that may be mistakenly exposed\nwebsite’s public directory",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b019-i.webp",
+            "width": 810,
+            "height": 170
+          }
+        }
+      ],
+      "answerId": "i"
+    },
+    {
+      "id": "itpec-fe-2025-spring-b020",
+      "number": 20,
+      "part": "B",
+      "domain": "technology",
+      "sourcePage": 33,
+      "source": "(2025S, FE, Subject-B, Q20)",
+      "promptText": "Q20. From the answer group below, select the correct combination of answers to be inserted\ninto ___A___ and ___B___ in the description.\nCompany A recently experienced a security incident where confidential data were exfiltrated\nby a compromised employee account. Ms. T, a security analyst at Company A, investigated\nthe compromised employee account and found that the password used by the employee's\naccount involved in this breach was a complex password that met the company's password\npolicy. However, the same password was used across several web services. Additionally, Ms.\nT investigated the login logs of Company A’s system and discovered 1,000 failed login\nattempts recorded within 3 hours before a successful login was recorded. These failed login\nlogs included attempts to log in with different account IDs and password sets. These login\nattempts occurred from a county where Company A does not have an office. Company A has\nno employees who travel abroad.\nTo prevent future account compromise by the same attack pattern, Ms. T suggested that the\nsystem administrators of Company V implement ___A___. Additionally, to quickly detect\nany account compromise, she suggested implementing a monitoring system to alert\nadministrators of ___B___.\nAnswer group",
+      "prompt": {
+        "src": "exams/itpec-fe-2025-spring/b020-p33.webp",
+        "width": 924,
+        "height": 697
+      },
+      "promptPages": [
+        {
+          "src": "exams/itpec-fe-2025-spring/b020-p33.webp",
+          "width": 924,
+          "height": 697
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "a more complex password policy login attempts from locations where\nthe account is not usually logged in.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-a.webp",
+            "width": 804,
+            "height": 118
+          }
+        },
+        {
+          "id": "b",
+          "text": "a more complex password policy overwhelmed network traffic in\nCompany A's system",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-b.webp",
+            "width": 804,
+            "height": 119
+          }
+        },
+        {
+          "id": "c",
+          "text": "a more complex password policy unpatched servers in Company A's\nsystem",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-c.webp",
+            "width": 804,
+            "height": 118
+          }
+        },
+        {
+          "id": "d",
+          "text": "encryption of all files stored on login attempts from locations where\nemployees' computers the account is not usually logged in.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-d.webp",
+            "width": 804,
+            "height": 118
+          }
+        },
+        {
+          "id": "e",
+          "text": "encryption of all files stored on overwhelmed network traffic in\nemployees' computers Company A's system",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-e.webp",
+            "width": 804,
+            "height": 118
+          }
+        },
+        {
+          "id": "f",
+          "text": "encryption of all files stored on unpatched servers in Company A's\nemployees' computers system",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-f.webp",
+            "width": 804,
+            "height": 118
+          }
+        },
+        {
+          "id": "g",
+          "text": "Multi-Factor Authentication to all login attempts from locations where\nemployee accounts the account is not usually logged in.",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-g.webp",
+            "width": 804,
+            "height": 119
+          }
+        },
+        {
+          "id": "h",
+          "text": "Multi-Factor Authentication to all overwhelmed network traffic in\nemployee accounts Company A's system",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-h.webp",
+            "width": 804,
+            "height": 118
+          }
+        },
+        {
+          "id": "i",
+          "text": "Multi-Factor Authentication to all unpatched servers in Company A's\nemployee accounts system",
+          "image": {
+            "src": "exams/itpec-fe-2025-spring/b020-i.webp",
+            "width": 804,
+            "height": 118
+          }
+        }
+      ],
+      "answerId": "g"
+    }
+  ],
+  "editorialNotes": [
+    "Original PDF question numbering and wording are preserved.",
+    "Options are cropped and shuffled; table headers are repeated.",
+    "Domain assignments are editorial syllabus classifications."
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "durationSeconds": 5400,
+      "questionCount": 60,
+      "questionPdf": "exams/itpec-fe-2025-spring/a-questions.pdf",
+      "answerPdf": "exams/itpec-fe-2025-spring/a-answers.pdf",
+      "sourceSha256": "65889b756983dc696714004335e141df8e24d77dada186e5872bab3c17ee725d",
+      "answerSha256": "1ec4f6279e688ae6afc120262bb69b9b3640ffc6997aedfe485f02210b1f9995"
+    },
+    {
+      "id": "B",
+      "durationSeconds": 6000,
+      "questionCount": 20,
+      "questionPdf": "exams/itpec-fe-2025-spring/b-questions.pdf",
+      "answerPdf": "exams/itpec-fe-2025-spring/b-answers.pdf",
+      "sourceSha256": "15e1b6be822ca86226ac56f9e7b21a9013dd832a2c5253218cf67a8376322092",
+      "answerSha256": "326b3e4bc43bb26068cb4784641977e6e14c4b8b1a33b7c224392215878caa82"
+    }
+  ]
+}
