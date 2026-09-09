@@ -8,9 +8,11 @@ import { lessonCoverage } from '@/lib/lesson-coverage';
 import { readStorage, storageKey, summarize, type ExamMode, type ExamPack, type ExamStorage } from '@/lib/exam-session';
 import type { OfficialEntry } from './official-exams';
 const OfficialExams=lazy(()=>import('./official-exams'));
+const StudyRoadmap=lazy(()=>import('./study-roadmap'));
 const emptyStorage:ExamStorage={version:1,active:null,history:[]};
 
 export default function Page(){
+  const [roadmap,setRoadmap]=useState(false);
   const [language,setLanguage]=useState<UiLanguage>('ru');
   const [system,setSystem]=useState('ITPEC'),[level,setLevel]=useState('IP'),[year,setYear]=useState(2026);
   const [season,setSeason]=useState('spring');
@@ -60,10 +62,12 @@ export default function Page(){
   const completed=profileMatches?storage.history:[];
   const progress=profilePack?completed.reduce((s,a)=>{const r=summarize(profilePack,a);return {answered:s.answered+r.answered,correct:s.correct+r.correct};},{answered:0,correct:0}):{answered:0,correct:0};
   if(entry)return <Suspense fallback={<p className="p-8" role="status">{label('Загрузка экзамена…','Loading exam…','試験を読み込み中…')}</p>}><OfficialExams key={entry.pack.id} pack={entry.pack} language={language} onLanguage={changeLanguage} entry={entry} onExit={()=>{setEntry(null);refresh(entry.pack);}}/></Suspense>;
+  if(roadmap)return <Suspense fallback={<p className="p-8" role="status">{label('Загрузка роадмапа…','Loading roadmap…','ロードマップを読み込み中…')}</p>}><StudyRoadmap language={language} onLanguage={changeLanguage} onExit={()=>setRoadmap(false)}/></Suspense>;
   return <main lang={language} className="min-h-screen bg-background text-foreground">
     <header className="sticky top-0 z-20 border-b bg-background/95 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8"><div className="flex items-center gap-3 font-bold"><BookOpenCheck className="size-7 text-primary"/><span>Kiso<small className="block text-[9px] tracking-[.2em] text-muted-foreground">IT EXAM LAB</small></span></div><div className="global-language-switch" aria-label="Interface language">{(['ru','en','ja'] as UiLanguage[]).map(l=><button key={l} className={l===language?'active':''} onClick={()=>changeLanguage(l)}>{l==='ja'?'日本語':l.toUpperCase()}</button>)}</div></div></header>
     <section className="mx-auto grid max-w-7xl gap-10 px-5 py-10 lg:grid-cols-[1fr_370px] lg:px-8 lg:py-14">
       <div><p className="text-sm font-semibold text-primary">{t.badge}</p><h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">{t.heroA}<br/><span className="text-primary">{t.heroB}</span></h1><p className="mt-5 leading-7 text-muted-foreground">{t.intro}</p>
+        <button onClick={()=>setRoadmap(true)} className="mt-7 flex w-full items-center justify-between gap-4 rounded-2xl border border-primary/25 bg-primary/5 p-5 text-left transition-colors hover:bg-primary/10"><span><strong className="block text-lg text-primary">{label('Изучение · Роадмап','Study · Roadmap','学習・ロードマップ')}</strong><span className="mt-1 block text-sm text-muted-foreground">{label('Все темы ITPEC и IPA: маршрут, краткие описания и отметки изученного.','All ITPEC and IPA topics: a learning route, short descriptions and progress checkboxes.','ITPECとIPAの全テーマ：学習の道筋、短い説明、学習済みチェック。')}</span></span><ArrowRight className="size-5 shrink-0 text-primary"/></button>
         <div className="mt-10 space-y-8">
           <ChoiceSection number="01" title={t.system}><div className="grid gap-3 sm:grid-cols-2">{['ITPEC','IPA'].map(s=><ChoiceCard key={s} active={system===s} onClick={()=>setSystem(s)} title={s} description={s==='ITPEC'?'ITPEC Common Examination':'IPA Japan Examination'}/>)}</div><p className="mt-3 text-sm text-primary">{t.examLanguage}: {system==='ITPEC'?t.english:t.japanese}</p></ChoiceSection>
           <ChoiceSection number="02" title={t.level}><div className="grid gap-3 sm:grid-cols-2">{['IP','FE'].map(l=><ChoiceCard key={l} active={level===l} onClick={()=>setLevel(l)} title={l} description={l==='IP'?'IT Passport · Level 1':'Fundamental Engineer · Level 2'}/>)}</div><p className="mt-3 text-sm text-muted-foreground">{format}</p></ChoiceSection>
