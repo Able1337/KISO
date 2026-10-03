@@ -1,0 +1,13 @@
+Kiso EJU original Japanese practice recordings.
+
+Original scripts: Kiso. These are not JASSO examination recordings.
+Synthesized locally with pyopenjtalk-plus / Open JTalk using the Mei HTS voice.
+HTS Voice "Mei", released by MMDAgent Project Team, http://www.mmdagent.jp/
+Copyright (c) 2009-2013 Nagoya Institute of Technology,
+Department of Computer Science.
+Voice license: Creative Commons Attribution 3.0
+https://creativecommons.org/licenses/by/3.0/
+See LICENSE-Mei.txt in this directory.
+
+Processing: speed 0.92, level normalization, brief leading/trailing silence,
+mono MP3 encoding. No endorsement by the voice authors is implied.

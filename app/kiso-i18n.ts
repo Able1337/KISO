@@ -4,7 +4,7 @@ export type Lesson = { core: string; method: string; example: string; pitfall: s
 
 export const uiCopy = {
   ru: {
-    home: 'На главную', badge: 'Подготовка по официальному формату', heroA: 'Выберите свой маршрут', heroB: 'к уверенной сдаче.', intro: 'Практика по структуре ITPEC и IPA. Ошибки превращаются в понятный учебный разбор.',
+    home: 'На главную', badge: 'Подготовка по официальному формату', heroA: 'Выберите свой маршрут', heroB: 'к уверенной сдаче.', intro: 'Практика ITPEC, IPA и EJU. Ошибки превращаются в понятный учебный разбор.',
     system: 'Система экзамена', level: 'Уровень', year: 'Год экзамена', mode: 'Режим', examLanguage: 'Язык настоящего экзамена', english: 'английский', japanese: 'японский', onePart: 'Одна непрерывная часть',
     learn: 'Обучение', learnDesc: 'Ответ и учебный разбор появляются сразу', mock: 'Пробный экзамен', mockDesc: 'Без таймера и подсказок, итог в конце', exam: 'Экзамен', examDesc: 'С таймером, без подсказок, итог в конце',
     session: 'Ваша сессия', verified: 'Проверенный формат', localProgress: 'Локальный прогресс', answers: 'ответов', correctShort: 'верных', examsByYear: 'Экзамены по годам', attempts: 'попыток', best: 'лучший', notTaken: 'ещё не пройден', passed: 'Успешно', available: 'проверочных вопросов', start: 'Начать сессию',
@@ -15,7 +15,7 @@ export const uiCopy = {
     fullReview: 'Полный разбор', reviewTitle: 'Что было отвечено и где ошибка', errors: 'ошибок', noAnswer: 'нет ответа', error: 'ошибка', yourAnswer: 'Ваш ответ', correctAnswer: 'Правильный ответ', answerMissing: 'Ответ не выбран', back: 'К настройке', retry: 'Пройти ещё раз', technology: 'Технологии', management: 'Управление', strategy: 'Стратегия', source: 'Учебная адаптация',
   },
   en: {
-    home: 'Home', badge: 'Official-format preparation', heroA: 'Choose your route', heroB: 'to a confident pass.', intro: 'Practice for ITPEC and IPA. Every mistake becomes a clear learning review.',
+    home: 'Home', badge: 'Official-format preparation', heroA: 'Choose your route', heroB: 'to a confident pass.', intro: 'Practice for ITPEC, IPA and EJU. Every mistake becomes a clear learning review.',
     system: 'Exam system', level: 'Level', year: 'Exam year', mode: 'Mode', examLanguage: 'Actual exam language', english: 'English', japanese: 'Japanese', onePart: 'One continuous section',
     learn: 'Learn', learnDesc: 'Answer and lesson appear immediately', mock: 'Mock exam', mockDesc: 'No timer or hints; results at the end', exam: 'Exam', examDesc: 'Timed, no hints; results at the end',
     session: 'Your session', verified: 'Verified format', localProgress: 'Local progress', answers: 'answers', correctShort: 'correct', examsByYear: 'Exams by year', attempts: 'attempts', best: 'best', notTaken: 'not attempted', passed: 'Passed', available: 'practice questions', start: 'Start session',
@@ -26,7 +26,7 @@ export const uiCopy = {
     fullReview: 'Full review', reviewTitle: 'Your answers and mistakes', errors: 'errors', noAnswer: 'unanswered', error: 'incorrect', yourAnswer: 'Your answer', correctAnswer: 'Correct answer', answerMissing: 'No answer selected', back: 'Back to setup', retry: 'Try again', technology: 'Technology', management: 'Management', strategy: 'Strategy', source: 'Learning adaptation',
   },
   ja: {
-    home: 'ホーム', badge: '公式形式に沿った試験対策', heroA: '自分に合った学習ルートで', heroB: '合格を目指しましょう。', intro: 'ITPEC・IPA形式で練習し、間違いを分かりやすい教材として復習できます。',
+    home: 'ホーム', badge: '公式形式に沿った試験対策', heroA: '自分に合った学習ルートで', heroB: '合格を目指しましょう。', intro: 'ITPEC・IPA・EJUの練習を通じて、間違いを分かりやすい教材として復習できます。',
     system: '試験制度', level: 'レベル', year: '試験年度', mode: 'モード', examLanguage: '実際の試験言語', english: '英語', japanese: '日本語', onePart: '連続した1科目',
     learn: '学習', learnDesc: '解答後すぐに教材を表示', mock: '模擬試験', mockDesc: '時間制限・ヒントなし、最後に結果表示', exam: '試験', examDesc: '時間制限あり、ヒントなし、最後に結果表示',
     session: 'セッション', verified: '確認済みの形式', localProgress: '端末内の進捗', answers: '解答', correctShort: '正解', examsByYear: '年度別の結果', attempts: '回', best: '最高', notTaken: '未受験', passed: '合格', available: '問の練習問題', start: '開始',
