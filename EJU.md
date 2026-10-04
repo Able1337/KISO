@@ -88,6 +88,16 @@ Browser checks cover numeric entry and feedback, reload/resume, mock-mode hint s
 
 Roadmap topic marks from release 01 expand to all child lessons on read. Each subtopic has separate self-assessment; marking a topic updates its children. Search includes lesson text, and practice can be switched across all ten papers. Some enrichment sections use linked prerequisite exercises; they do not claim a dedicated exam item for every syllabus detail.
 
-The 27 topics contain 64 detailed subtopics. Math 1 paper 01 now uses identity `eju-math1-kiso-01-r2`, because its first problem was replaced. Earlier attempts remain untouched under the old browser key and are not regraded against changed content. The "Choose another paper" action prefers papers with fewer completed attempts and avoids active papers when alternatives exist.
+The 27 unique topics contain 85 detailed subtopics. Math 1 paper 01 now uses identity `eju-math1-kiso-01-r2`, because its first problem was replaced. Earlier attempts remain untouched under the old browser key and are not regraded against changed content. The "Choose another paper" action prefers papers with fewer completed attempts and avoids active papers when alternatives exist.
+
+### Roadmap review — 2026-10-04
+
+The roadmap was checked against [JASSO mathematics syllabus effective from 2026](https://www.jasso.go.jp/en/ryugaku/eju/examinee/syllabus/mathematics.html), [Japanese skills](https://www.jasso.go.jp/en/ryugaku/eju/examinee/syllabus/japanese.html), and [writing criteria](https://www.jasso.go.jp/en/ryugaku/eju/about/score/writing.html). The [2018 paper and answer archive](https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/pastpaper_2018_1.html) is a separate practice reference, not a specification of the 2026 scope.
+
+`data/eju-roadmap-plan.ts` defines 3 Math 1 stages, 7 Math 2 stages, and 4 Japanese stages with prerequisites and learning objectives. Course 2 includes all seven foundation topics before its thirteen advanced topics. Foundation lessons load Math 1 practice, without mixing roadmap progress or changing exam papers. Stage navigation resets filters and preserves stable topic numbering.
+
+`data/eju-curriculum-supplement.ts` adds 21 independently authored lessons, including integer solutions, spatial geometry, binomial trials, covariance, polar coordinates, continuity, motion, volume and curve length, as well as Japanese parsing, inference, combined information, listening notes and essay revision. Each includes a worked example and a separate self-check with a revealable solution. These exercises are explicitly not mapped to paper questions; existing 64 lessons retain their practice links. This expands study coverage, not the exam bank, and does not claim exhaustive instruction or official difficulty equivalence.
+
+Original numbered lesson IDs stay stable. Legacy topic marks expand only to original numbered lessons; new named lessons start unchecked. Math 2 foundation progress is stored independently from Math 1. `tests/eju-roadmap.test.mjs` checks scope, foundation practice routing and progress migration.
 
 `tests/eju-variants.test.mjs` additionally checks all 30 paper identities and lifecycles, all generated math keys by independent constraints, curriculum links, essay lengths, displayed table constraints and all 270 recording hashes and scripts. New EJU modules pass targeted lint; the existing main-page effects retain the repository's pre-existing React compiler lint findings.

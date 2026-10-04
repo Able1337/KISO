@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ejuTopics } from '../data/eju-topics';
+import {
+  ejuStages,
+  ejuRoadmapTopics,
+  ejuPracticeCourse,
+  ejuRoadmapSources,
+} from '../data/eju-roadmap-plan';
+import { readEjuRoadmapProgress } from '../lib/eju-roadmap-progress';
 import { ejuCurriculum, type EjuUnit } from '../data/eju-curriculum';
 import { loadEjuPack } from '../lib/eju-catalog';
 import {
@@ -20,10 +26,8 @@ export default function EjuRoadmap({
   language: EjuLanguage;
 }) {
   const l = (ru: string, en: string, ja: string) => ({ ru, en, ja })[language];
-  const topics = useMemo(
-    () => ejuTopics.filter((t) => t.courses.includes(course)),
-    [course],
-  );
+  const topics = useMemo(() => ejuRoadmapTopics(course), [course]);
+  const stages = ejuStages(course);
   const allUnits = useMemo(
     () => topics.flatMap((t) => ejuCurriculum[t.id]),
     [topics],
@@ -35,23 +39,12 @@ export default function EjuRoadmap({
     [status, setStatus] = useState('all'),
     [opened, setOpened] = useState<string | null>(null);
   const [variant, setVariant] = useState(1),
-    [pack, setPack] = useState<EjuPack | null>(null),
+    [packs, setPacks] = useState<Partial<Record<EjuCourse, EjuPack>>>({}),
     [loadError, setLoadError] = useState(false);
   const key = `kiso-eju-roadmap-v1:${course}`;
   const read = useCallback(
     (raw: string | null) => {
-      try {
-        const value: unknown = JSON.parse(raw ?? '[]');
-        if (!Array.isArray(value)) return [];
-        // Expand legacy topic marks into child lessons without touching exam attempts.
-        return allUnits
-          .filter(
-            (u) => value.includes(u.id) || value.includes(u.id.split('/')[0]),
-          )
-          .map((u) => u.id);
-      } catch {
-        return [];
-      }
+      return readEjuRoadmapProgress(raw, allUnits);
     },
     [allUnits],
   );
@@ -76,13 +69,18 @@ export default function EjuRoadmap({
     let alive = true;
     queueMicrotask(() => {
       if (alive) {
-        setPack(null);
+        setPacks({});
         setLoadError(false);
       }
     });
-    loadEjuPack(course, variant)
-      .then((p) => {
-        if (alive) setPack(p);
+    Promise.all(
+      (course === 'math2' ? (['math1', 'math2'] as const) : [course]).map((c) =>
+        loadEjuPack(c, variant),
+      ),
+    )
+      .then((loaded) => {
+        if (alive)
+          setPacks(Object.fromEntries(loaded.map((p) => [p.course, p])));
       })
       .catch(() => {
         if (alive) setLoadError(true);
@@ -140,12 +138,105 @@ export default function EjuRoadmap({
       {course === 'math2' && (
         <p className="mt-3 text-sm">
           {l(
-            'Перед этими темами пройдите базовые блоки Math 1: они также входят в программу Course 2.',
-            'Study the Math 1 foundations first: they are also part of Course 2.',
-            'Math 1の基礎を先に学びましょう。コース2の範囲にも含まれます。',
+            'Здесь включена вся база Math 1: программа Course 2 охватывает разделы 1–20. Базовые задания берутся из Math 1, отметки этого маршрута сохраняются отдельно.',
+            'Math 1 foundations are included: Course 2 covers topics 1–20. Foundation practice uses Math 1 papers; roadmap marks remain separate.',
+            'コース2は項目1〜20を含むため、Math 1の基礎も掲載しています。基礎練習はMath 1から、学習記録はコース別です。',
           )}
         </p>
       )}
+      <div className="mt-5 rounded-2xl border bg-card p-5 leading-7">
+        <p className="text-sm">
+          {l(
+            'Сверено с JASSO · 04.10.2026: ',
+            'Reviewed against JASSO · 2026-10-04: ',
+            'JASSO確認 · 2026-10-04：',
+          )}
+          <a
+            className="text-primary underline"
+            href={
+              course === 'japanese'
+                ? ejuRoadmapSources.japanese
+                : ejuRoadmapSources.mathematics
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            {l(
+              course === 'japanese'
+                ? 'навыки Japanese'
+                : 'программа математики с 2026 года',
+              'Official syllabus',
+              '公式シラバス',
+            )}
+          </a>
+          {' · '}
+          <a
+            className="text-primary underline"
+            href={ejuRoadmapSources.papers}
+            target="_blank"
+            rel="noreferrer"
+          >
+            JASSO 2018 ·{' '}
+            {l('задания и ответы', 'papers and answers', '問題・解答')}
+          </a>
+          {course === 'japanese' && (
+            <>
+              {' · '}
+              <a
+                className="text-primary underline"
+                href={ejuRoadmapSources.writing}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {l('Критерии сочинения', 'Writing criteria', '記述の採点基準')}
+              </a>
+            </>
+          )}
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          {l(
+            'Прочитайте урок → решите пример без подсказки → выполните самопроверку → выберите другой вариант практики. Отмечайте тему, когда можете объяснить решение и исправить ошибку. Уроки и порядок — авторские; банк практики пока не проверяет каждый пункт программы. Дополнительные упражнения отмечены отдельно.',
+            'Read → solve without hints → self-check → try another paper. Mark a topic when you can explain the solution and correct mistakes. Lessons and ordering are authored; the practice bank does not yet test every syllabus point. Extra exercises are labelled separately.',
+            '教材→ヒントなしで解く→自己確認→別セットで練習。解法と誤りを説明できたらチェックします。教材と順序は独自で、問題集は全項目を網羅していません。追加演習は別表示です。',
+          )}
+        </p>
+      </div>
+      <nav
+        aria-label={l('Этапы EJU', 'EJU stages', 'EJU学習段階')}
+        className="mt-5 grid gap-3 sm:grid-cols-2"
+      >
+        {stages.map((stage, i) => (
+          <button
+            key={stage.id}
+            className="rounded-xl border bg-card p-4 text-left"
+            onClick={() => {
+              setQuery('');
+              setStatus('all');
+              requestAnimationFrame(() =>
+                document
+                  .getElementById(`eju-stage-${stage.id}`)
+                  ?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+              );
+            }}
+          >
+            <span className="text-xs text-primary">
+              {l('Этап', 'Stage', '段階')} {i + 1}
+            </span>
+            <strong lang="ru" className="mt-1 block">
+              {stage.title}
+            </strong>
+            <span className="mt-2 block text-xs text-muted-foreground">
+              {
+                stage.topics
+                  .flatMap((id) => ejuCurriculum[id])
+                  .filter((u) => done.includes(u.id)).length
+              }
+              /{stage.topics.flatMap((id) => ejuCurriculum[id]).length}{' '}
+              {l('изучено', 'studied', '学習済み')}
+            </span>
+          </button>
+        ))}
+      </nav>
       <div className="my-6 rounded-2xl border bg-card p-5">
         <div className="flex flex-wrap justify-between gap-3">
           <strong>
@@ -231,122 +322,165 @@ export default function EjuRoadmap({
       )}
       <div className="space-y-7 border-l-2 border-primary/20 pl-5">
         {visible.map((t, i) => {
+          const stage = stages.find((s) => s.topics.includes(t.id))!;
+          const firstInStage =
+            i === 0 || !stage.topics.includes(visible[i - 1].id);
+          const pack = packs[ejuPracticeCourse(t.id)];
           const children = ejuCurriculum[t.id],
             count = children.filter((u) => done.includes(u.id)).length;
           return (
-            <article
-              key={t.id}
-              className="min-w-0 rounded-2xl border bg-card p-5 sm:p-6"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <h2 className="text-xl font-bold">
-                  <span className="mr-3 text-primary">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  {t.title[language]}
-                </h2>
-                <label className="flex shrink-0 items-center gap-2 text-sm">
-                  <input
-                    type="checkbox"
-                    disabled={!ready}
-                    checked={count === children.length}
-                    aria-label={
-                      l('Весь блок: ', 'Entire topic: ', '全項目：') +
-                      t.title[language]
-                    }
-                    onChange={(e) =>
-                      mark(
-                        children.map((u) => u.id),
-                        e.target.checked,
-                      )
-                    }
-                    className="size-5 accent-teal-700"
-                  />
-                  {count}/{children.length}
-                </label>
-              </div>
-              <p className="mt-4 leading-7 text-muted-foreground">
-                {t.lesson[language]}
-              </p>
-              <h3 className="mt-5 text-sm font-semibold">
-                {l('Что изучать', 'What to study', '学習項目')}
-              </h3>
-              {language !== 'ru' && (
-                <p className="mt-2 text-xs text-muted-foreground">
-                  {l(
-                    '',
-                    'Detailed lessons below are in Russian; overviews and practice controls follow your interface language.',
-                    '以下の詳しい教材はロシア語です。概要・練習操作は選択した言語で表示します。',
-                  )}
-                </p>
+            <div key={t.id}>
+              {firstInStage && (
+                <div
+                  id={`eju-stage-${stage.id}`}
+                  className="mb-5 scroll-mt-24"
+                  lang="ru"
+                >
+                  <h2 className="text-2xl font-bold">
+                    {stages.indexOf(stage) + 1}. {stage.title}
+                  </h2>
+                  <p className="mt-3 max-w-4xl leading-7 text-muted-foreground">
+                    {stage.goal}
+                  </p>
+                </div>
               )}
-              <div className="mt-3 space-y-3">
-                {t.units.map((u) => (
-                  <div key={u.id} className="rounded-xl border p-4">
-                    <div className="flex items-start gap-3">
-                      <input
-                        type="checkbox"
-                        aria-label={u.title}
-                        disabled={!ready}
-                        checked={done.includes(u.id)}
-                        onChange={(e) => mark([u.id], e.target.checked)}
-                        className="mt-1 size-5 shrink-0 accent-teal-700"
-                      />
-                      <button
-                        className="min-w-0 flex-1 text-left font-semibold leading-6"
-                        aria-expanded={opened === u.id}
-                        onClick={() => setOpened(opened === u.id ? null : u.id)}
-                        lang="ru"
-                      >
-                        {u.title}
-                        <span className="mt-1 block text-xs font-normal text-primary">
-                          {l(
-                            'Открыть урок и связанные задания',
-                            'Open lesson and linked questions',
-                            '教材と関連問題を開く',
-                          )}{' '}
-                          {opened === u.id ? '−' : '+'}
-                        </span>
-                      </button>
-                    </div>
-                    {opened === u.id && (
-                      <div className="mt-4 border-t pt-4">
-                        <div lang="ru" className="space-y-4 leading-7">
-                          <p>{u.study}</p>
-                          <div className="rounded-xl bg-primary/5 p-4">
-                            <h4 className="font-semibold">
-                              Разобранный пример
-                            </h4>
-                            <p className="mt-2">{u.example}</p>
-                          </div>
-                          <p>
-                            <strong>Типичная ошибка. </strong>
-                            {u.pitfall}
-                          </p>
-                        </div>
-                        {pack ? (
-                          <UnitPractice
-                            key={pack.id + u.id}
-                            unit={u}
-                            topic={t.id}
-                            pack={pack}
-                            language={language}
-                          />
-                        ) : (
-                          <p className="mt-4">
-                            {l(
-                              'Загрузка практики…',
-                              'Loading practice…',
-                              '練習を読み込み中…',
-                            )}
-                          </p>
-                        )}
-                      </div>
+              <article
+                key={t.id}
+                className="min-w-0 rounded-2xl border bg-card p-5 sm:p-6"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <h2 className="text-xl font-bold">
+                    <span className="mr-3 text-primary">
+                      {String(
+                        topics.findIndex((item) => item.id === t.id) + 1,
+                      ).padStart(2, '0')}
+                    </span>
+                    {t.title[language]}
+                  </h2>
+                  <label className="flex shrink-0 items-center gap-2 text-sm">
+                    <input
+                      type="checkbox"
+                      disabled={!ready}
+                      checked={count === children.length}
+                      aria-label={
+                        l('Весь блок: ', 'Entire topic: ', '全項目：') +
+                        t.title[language]
+                      }
+                      onChange={(e) =>
+                        mark(
+                          children.map((u) => u.id),
+                          e.target.checked,
+                        )
+                      }
+                      className="size-5 accent-teal-700"
+                    />
+                    {count}/{children.length}
+                  </label>
+                </div>
+                <p className="mt-4 leading-7 text-muted-foreground">
+                  {t.lesson[language]}
+                </p>
+                <h3 className="mt-5 text-sm font-semibold">
+                  {l('Что изучать', 'What to study', '学習項目')}
+                </h3>
+                {language !== 'ru' && (
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    {l(
+                      '',
+                      'Detailed lessons below are in Russian; overviews and practice controls follow your interface language.',
+                      '以下の詳しい教材はロシア語です。概要・練習操作は選択した言語で表示します。',
                     )}
-                  </div>
-                ))}
-              </div>
-            </article>
+                  </p>
+                )}
+                <div className="mt-3 space-y-3">
+                  {t.units.map((u) => (
+                    <div key={u.id} className="rounded-xl border p-4">
+                      <div className="flex items-start gap-3">
+                        <input
+                          type="checkbox"
+                          aria-label={u.title}
+                          disabled={!ready}
+                          checked={done.includes(u.id)}
+                          onChange={(e) => mark([u.id], e.target.checked)}
+                          className="mt-1 size-5 shrink-0 accent-teal-700"
+                        />
+                        <button
+                          className="min-w-0 flex-1 text-left font-semibold leading-6"
+                          aria-expanded={opened === u.id}
+                          onClick={() =>
+                            setOpened(opened === u.id ? null : u.id)
+                          }
+                          lang="ru"
+                        >
+                          {u.title}
+                          <span className="mt-1 block text-xs font-normal text-primary">
+                            {l(
+                              'Открыть урок и связанные задания',
+                              'Open lesson and linked questions',
+                              '教材と関連問題を開く',
+                            )}{' '}
+                            {opened === u.id ? '−' : '+'}
+                          </span>
+                        </button>
+                      </div>
+                      {opened === u.id && (
+                        <div className="mt-4 border-t pt-4">
+                          <div lang="ru" className="space-y-4 leading-7">
+                            <p>{u.study}</p>
+                            <div className="rounded-xl bg-primary/5 p-4">
+                              <h4 className="font-semibold">
+                                Разобранный пример
+                              </h4>
+                              <p className="mt-2">{u.example}</p>
+                            </div>
+                            <p>
+                              <strong>Типичная ошибка. </strong>
+                              {u.pitfall}
+                            </p>
+                            {u.selfCheck && (
+                              <div className="rounded-xl border p-4">
+                                <h4 className="font-semibold">
+                                  Самопроверка · дополнительное упражнение
+                                </h4>
+                                <p className="mt-2">{u.selfCheck.prompt}</p>
+                                <details className="mt-3">
+                                  <summary className="cursor-pointer text-primary">
+                                    Показать решение
+                                  </summary>
+                                  <p className="mt-2">{u.selfCheck.answer}</p>
+                                </details>
+                                <p className="mt-3 text-xs text-muted-foreground">
+                                  Это отдельная учебная задача. Прямое
+                                  соответствие заданию экзаменационного варианта
+                                  пока не задано.
+                                </p>
+                              </div>
+                            )}
+                          </div>
+                          {pack ? (
+                            <UnitPractice
+                              key={pack.id + u.id}
+                              unit={u}
+                              topic={t.id}
+                              pack={pack}
+                              language={language}
+                            />
+                          ) : (
+                            <p className="mt-4">
+                              {l(
+                                'Загрузка практики…',
+                                'Loading practice…',
+                                '練習を読み込み中…',
+                              )}
+                            </p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </article>
+            </div>
           );
         })}
       </div>
@@ -381,6 +515,7 @@ function UnitPractice({
       (!unit.questionNumbers.length || unit.questionNumbers.includes(i + 1)),
   );
   const [selected, setSelected] = useState<string | null>(null);
+  if (unit.selfCheck) return null;
   if (topic === 'jp-writing' && pack.writing)
     return (
       <section className="mt-5 border-t pt-4">

@@ -266,14 +266,21 @@ for (let v = 2; v <= 10; v++)
     }
     assert.ok(Math.abs(area - m2[19][0] / m2[19][1]) < 0.00001);
   });
-test('every curriculum unit has explanation, example and reachable practice in every paper', () => {
+test('every curriculum unit has a lesson and either dedicated self-check or reachable paper practice', () => {
   assert.equal(Object.keys(ejuCurriculum).length, 27);
-  assert.equal(Object.values(ejuCurriculum).flat().length, 64);
+  assert.equal(Object.values(ejuCurriculum).flat().length, 85);
   for (const t of ejuTopics)
     for (const u of ejuCurriculum[t.id]) {
       assert.ok(
         u.study.length > 150 && u.example.length > 40 && u.pitfall.length > 30,
       );
+      if (u.selfCheck) {
+        assert.ok(
+          u.selfCheck.prompt.length > 25 && u.selfCheck.answer.length > 20,
+        );
+        assert.deepEqual(u.questionNumbers, []);
+        continue;
+      }
       if (t.id === 'jp-writing') continue;
       for (const p of all.filter((p) => t.courses.includes(p.course)))
         assert.ok(
