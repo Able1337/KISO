@@ -266,18 +266,19 @@ for (let v = 2; v <= 10; v++)
     }
     assert.ok(Math.abs(area - m2[19][0] / m2[19][1]) < 0.00001);
   });
-test('every curriculum unit has a lesson and either dedicated self-check or reachable paper practice', () => {
+test('every curriculum unit has a self-check and original paper practice links remain reachable', () => {
   assert.equal(Object.keys(ejuCurriculum).length, 27);
-  assert.equal(Object.values(ejuCurriculum).flat().length, 85);
+  assert.equal(Object.values(ejuCurriculum).flat().length, 90);
   for (const t of ejuTopics)
     for (const u of ejuCurriculum[t.id]) {
       assert.ok(
         u.study.length > 150 && u.example.length > 40 && u.pitfall.length > 30,
       );
-      if (u.selfCheck) {
-        assert.ok(
-          u.selfCheck.prompt.length > 25 && u.selfCheck.answer.length > 20,
-        );
+      assert.ok(u.selfCheck, u.id);
+      assert.ok(
+        u.selfCheck.prompt.length > 25 && u.selfCheck.answer.length > 20,
+      );
+      if (u.standalone) {
         assert.deepEqual(u.questionNumbers, []);
         continue;
       }

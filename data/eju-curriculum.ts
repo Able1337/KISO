@@ -1,4 +1,5 @@
 import { ejuSupplement } from './eju-curriculum-supplement.ts';
+import { ejuUnitChecks } from './eju-unit-checks.ts';
 /** Detailed Russian lessons supplement the multilingual topic overviews. */
 export type EjuUnit = {
   id: string;
@@ -8,6 +9,7 @@ export type EjuUnit = {
   pitfall: string;
   questionNumbers: number[];
   selfCheck?: { prompt: string; answer: string };
+  standalone?: boolean;
 };
 type Draft = [string, string, string, string, number[]];
 const units: Record<string, Draft[]> = {
@@ -520,6 +522,7 @@ export const ejuCurriculum: Record<string, EjuUnit[]> = Object.fromEntries(
     [
       ...rows.map(([title, study, example, pitfall, questionNumbers], i) => ({
         id: `${topic}/unit-${i + 1}`,
+        selfCheck: ejuUnitChecks[`${topic}/unit-${i + 1}`],
         title,
         study,
         example,

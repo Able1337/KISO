@@ -6,6 +6,7 @@ import {
   ejuRoadmapSources,
 } from '../data/eju-roadmap-plan';
 import { readEjuRoadmapProgress } from '../lib/eju-roadmap-progress';
+import { ejuTopicGuides } from '../data/eju-topic-guides';
 import { ejuCurriculum, type EjuUnit } from '../data/eju-curriculum';
 import { loadEjuPack } from '../lib/eju-catalog';
 import {
@@ -113,7 +114,14 @@ export default function EjuRoadmap({
       ...t,
       units: ejuCurriculum[t.id].filter(
         (u) =>
-          [...Object.values(t.title), u.title, u.study, u.example]
+          [
+            ...Object.values(t.title),
+            ejuTopicGuides[t.id].terms,
+            u.title,
+            u.study,
+            u.example,
+            u.selfCheck?.prompt ?? '',
+          ]
             .join(' ')
             .normalize('NFKC')
             .toLowerCase()
@@ -345,8 +353,9 @@ export default function EjuRoadmap({
                 </div>
               )}
               <article
+                id={`eju-topic-${t.id}`}
                 key={t.id}
-                className="min-w-0 rounded-2xl border bg-card p-5 sm:p-6"
+                className="min-w-0 scroll-mt-24 rounded-2xl border bg-card p-5 sm:p-6"
               >
                 <div className="flex items-start justify-between gap-4">
                   <h2 className="text-xl font-bold">
@@ -380,6 +389,57 @@ export default function EjuRoadmap({
                 <p className="mt-4 leading-7 text-muted-foreground">
                   {t.lesson[language]}
                 </p>
+                <details className="mt-4 rounded-xl bg-primary/5 p-4" lang="ru">
+                  <summary className="cursor-pointer font-semibold">
+                    Как изучать тему и проверить готовность
+                  </summary>
+                  <div className="mt-3 space-y-3 text-sm leading-7">
+                    {ejuTopicGuides[t.id].before.length > 0 && (
+                      <div>
+                        <strong>Опора на темы: </strong>
+                        {ejuTopicGuides[t.id].before.map((id) => {
+                          const previous = topics.find(
+                            (item) => item.id === id,
+                          );
+                          return (
+                            previous && (
+                              <button
+                                key={id}
+                                className="mr-3 text-primary underline"
+                                onClick={() => {
+                                  setQuery('');
+                                  setStatus('all');
+                                  requestAnimationFrame(() =>
+                                    document
+                                      .getElementById(`eju-topic-${id}`)
+                                      ?.scrollIntoView({
+                                        behavior: 'smooth',
+                                        block: 'start',
+                                      }),
+                                  );
+                                }}
+                              >
+                                {previous.title.ru}
+                              </button>
+                            )
+                          );
+                        })}
+                      </div>
+                    )}
+                    <p>
+                      <strong>Язык задания. </strong>
+                      {ejuTopicGuides[t.id].terms}
+                    </p>
+                    <p>
+                      <strong>Метод обучения. </strong>
+                      {ejuTopicGuides[t.id].method}
+                    </p>
+                    <p>
+                      <strong>Могу без подсказки: </strong>
+                      {ejuTopicGuides[t.id].ready}
+                    </p>
+                  </div>
+                </details>
                 <h3 className="mt-5 text-sm font-semibold">
                   {l('Что изучать', 'What to study', '学習項目')}
                 </h3>
@@ -440,7 +500,7 @@ export default function EjuRoadmap({
                             {u.selfCheck && (
                               <div className="rounded-xl border p-4">
                                 <h4 className="font-semibold">
-                                  Самопроверка · дополнительное упражнение
+                                  Самопроверка · решите самостоятельно
                                 </h4>
                                 <p className="mt-2">{u.selfCheck.prompt}</p>
                                 <details className="mt-3">
@@ -449,11 +509,13 @@ export default function EjuRoadmap({
                                   </summary>
                                   <p className="mt-2">{u.selfCheck.answer}</p>
                                 </details>
-                                <p className="mt-3 text-xs text-muted-foreground">
-                                  Это отдельная учебная задача. Прямое
-                                  соответствие заданию экзаменационного варианта
-                                  пока не задано.
-                                </p>
+                                {u.standalone && (
+                                  <p className="mt-3 text-xs text-muted-foreground">
+                                    Это отдельная учебная задача. Прямое
+                                    соответствие заданию экзаменационного
+                                    варианта пока не задано.
+                                  </p>
+                                )}
                               </div>
                             )}
                           </div>
@@ -515,7 +577,7 @@ function UnitPractice({
       (!unit.questionNumbers.length || unit.questionNumbers.includes(i + 1)),
   );
   const [selected, setSelected] = useState<string | null>(null);
-  if (unit.selfCheck) return null;
+  if (unit.standalone) return null;
   if (topic === 'jp-writing' && pack.writing)
     return (
       <section className="mt-5 border-t pt-4">

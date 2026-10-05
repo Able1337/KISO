@@ -29,7 +29,7 @@ test('foundation practice in Math 2 resolves to the Math 1 bank', () => {
     const source = ejuPracticeCourse(topic.id);
     assert.equal(source, topic.courses[0]);
     const pack = mathPack(source);
-    for (const u of ejuCurriculum[topic.id].filter((u) => !u.selfCheck))
+    for (const u of ejuCurriculum[topic.id].filter((u) => !u.standalone))
       assert.ok(
         pack.questions.some(
           (q, i) => q.topic === topic.id && u.questionNumbers.includes(i + 1),
@@ -42,7 +42,7 @@ test('foundation practice in Math 2 resolves to the Math 1 bank', () => {
 test('old progress expands only original lessons; new lessons stay unstudied and invalid data is ignored', () => {
   const units = ejuRoadmapTopics('math2').flatMap((t) => ejuCurriculum[t.id]);
   const original = ejuCurriculum.expressions
-    .filter((u) => !u.selfCheck)
+    .filter((u) => !u.standalone)
     .map((u) => u.id);
   assert.deepEqual(readEjuRoadmapProgress('["expressions"]', units), original);
   assert.deepEqual(
